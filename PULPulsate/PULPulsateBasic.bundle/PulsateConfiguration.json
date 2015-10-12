@@ -26,8 +26,8 @@
             "icon_left_text": "Tap the",
             "icon_right_text": "icon to start a",
             "icon_bottom_text": "new conversation with us.",
-            "second_paragraph_text": "You can use this section to ask questions or send feedback"
-        }
+            "second_paragraph_text": "You can use this section to \n ask questions or send feedback"
+        },
         
         "message_sending_info" :
         {

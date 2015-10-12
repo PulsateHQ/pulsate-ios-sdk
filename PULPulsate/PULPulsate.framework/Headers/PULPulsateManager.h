@@ -157,5 +157,4 @@ typedef NS_ENUM(NSUInteger, PULUserGender){
  */
 -(void)createEvent:(nonnull NSString*)event;
 
-
 @end

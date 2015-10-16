@@ -1,5 +1,6 @@
-# Pulsate iOS SDK
 ![Appboy Logo](https://raw.githubusercontent.com/PulsateHQ/pulsate-ios-sdk/master/pulsate-logo.png)
+
+# Pulsate iOS SDK
 
 Pulsate SDK is in Beta and it's still in development.
 

@@ -157,4 +157,9 @@ typedef NS_ENUM(NSUInteger, PULUserGender){
  */
 -(void)createEvent:(nonnull NSString*)event;
 
+/**
+ * Attributes synchronize when the app is entering background. This method forces the synchronization to happen instantly.
+ */
+-(void)forceAttributeSync;
+
 @end

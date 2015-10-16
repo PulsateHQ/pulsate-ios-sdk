@@ -33,7 +33,7 @@
         {
             "message_sending" : "Message Sending...",
             "message_sent" : "Message Sent",
-            "message_failed" : "Message Failed",
+            "message_failed" : "No Internet Connection",
             "try_again" : "Try Again?"
         }
         

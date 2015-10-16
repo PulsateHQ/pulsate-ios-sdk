@@ -1,5 +1,13 @@
-# pulsate-ios-sdk
+# Pulsate iOS SDK
+![Appboy Logo](https://raw.githubusercontent.com/PulsateHQ/pulsate-ios-sdk/master/pulsate-logo.png)
 
 Pulsate SDK is in Beta and it's still in development.
 
-Integration Guide: http://pulsate.readme.io/v2.0/docs/installing-the-pulsate-sdk
+• [Pulsate iOS SDK Documentation](http://pulsate.readme.io/v2.0/docs/installing-the-pulsate-sdk)
+
+# Installation with CocoaPods
+
+The easiest way to install the Pulsate iOS SDK is through [CocoaPods](http://cocoapods.org) dependency manager.
+
+```pod "PULPulsate"```
+

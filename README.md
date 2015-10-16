@@ -1,4 +1,7 @@
-![Appboy Logo](https://raw.githubusercontent.com/PulsateHQ/pulsate-ios-sdk/master/pulsate-logo.png)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PulsateHQ/pulsate-ios-sdk/master/pulsate-logo.png" alt="Pulsate's Logo"/>
+</p>
 
 # Pulsate iOS SDK
 

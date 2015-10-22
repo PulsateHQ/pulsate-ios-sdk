@@ -41,7 +41,7 @@
     "pulsate_colors_configuration": {
         
         "pulsate_top_nav_bar_background_color" : "",
-        "pulsate_top_nav_bar_title_color" : "",
+        "pulsate_top_nav_bar_title_color" : "#000000",
         "pulsate_back_button_color" : "",
         "pulsate_close_button_color" : "",
         

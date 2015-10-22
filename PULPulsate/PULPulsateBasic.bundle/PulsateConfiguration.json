@@ -38,5 +38,41 @@
         }
         
     },
-    "pulsate_colors_configuration": {}
+    "pulsate_colors_configuration": {
+        
+        "pulsate_top_nav_bar_background_color" : "",
+        "pulsate_top_nav_bar_title_color" : "",
+        "pulsate_back_button_color" : "",
+        "pulsate_close_button_color" : "",
+        
+        "pulsate_feed_pencil_color" : "",
+        "pulsate_feed_pencil_background_color" : "",
+        
+        "pulsate_card_admin_name_text_color" : "",
+        "pulsate_card_admin_title_text_color" : "",
+        "pulsate_card_reply_button_text_color" : "",
+        "pulsate_card_right_button_text_color" : "",
+        
+        "pulsate_thread_card_new_message_text_color" : "",
+        
+        "pulsate_thread_user_bubble_color" : "",
+        "pulsate_thread_user_bubble_text_color" : "",
+        
+        "pulsate_thread_admin_bubble_color" : "",
+        "pulsate_thread_admin_bubble_text_color" : "",
+        
+        "pulsate_thread_bubble_date_color" : "",
+        
+        "pulsate_thread_bottom_bar_divider_color" : "",
+        "pulsate_thread_send_button_color" : "",
+        "pulsate_thread_select_subject_text_color" : "",
+        "pulsate_thread_select_subject_icon_color" : "",
+        "pulsate_thread_select_subject_dropdown_background_color" : "",
+        
+        "pulsate_card_back_reply_icon_color" : "",
+        "pulsate_card_back_button_color" : "",
+        "pulsate_card_back_button_text_color" : "",
+        "pulsate_card_back_table_label_text_color" : "",
+        "pulsate_card_back_table_value_text_color" : ""
+    }
 }

@@ -5,8 +5,6 @@
 
 # Pulsate iOS SDK
 
-The SDK is in Beta and it's still in development.
-
 • [iOS SDK Installation & Documentation](http://pulsate.readme.io/v2.0/docs/installing-the-pulsate-sdk)
 
 # Installation with CocoaPods

@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.2.2
+//  PULPulsate 2.3.1
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -17,6 +17,11 @@
 typedef NS_ENUM(NSUInteger, PULUserGender){
     PULMale,
     PULFemale
+};
+
+typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
+    PULPrivacySubscribed,
+    PULPrivacyUnsubscribed
 };
 
 /**
@@ -59,6 +64,13 @@ typedef NS_ENUM(NSUInteger, PULUserGender){
  *  @param gender user's gender
  */
 -(void)updateGender:(PULUserGender)gender;
+
+/**
+ *  Sets user's privacy settings.
+ *
+ *  @param privacyLevel user's privacy level
+ */
+-(void)setPrivacy:(PULPrivacyLevel)privacyLevel;
 
 /**
  *  Creates a custom attribute with a string. Neither can be nil. Gets updated when entering background.

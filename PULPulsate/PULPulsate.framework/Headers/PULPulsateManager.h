@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.3.3
+//  PULPulsate 2.3.4
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -173,5 +173,12 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  * Attributes synchronize when the app is entering background. This method forces the synchronization to happen instantly.
  */
 -(void)forceAttributeSync;
+
+/**
+ *  Sets the create thread button in feed visibility.
+ *
+ *  @param buttonEnabled decides if the button should be enabled
+ */
+-(void)setNewThreadButtonEnabled:(BOOL)buttonEnabled;
 
 @end

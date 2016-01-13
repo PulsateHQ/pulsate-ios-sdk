@@ -104,3 +104,6 @@
 "message_failed" = "No Internet Connection";
 "try_again" = "Try Again?";
 
+// 2.4.2
+
+"other_subject_hint" = "Please describe your message";

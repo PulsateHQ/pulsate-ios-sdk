@@ -107,3 +107,5 @@
 // 2.4.2
 
 "other_subject_hint" = "Please describe your message";
+"reached_bottom_of_feed" = "You have reached the bottom of your feed.";
+

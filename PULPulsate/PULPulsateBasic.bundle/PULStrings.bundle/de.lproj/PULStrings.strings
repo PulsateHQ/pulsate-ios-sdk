@@ -108,3 +108,8 @@
 
 "other_subject_hint" = "Please describe your message";
 "reached_bottom_of_feed" = "You have reached the bottom of your feed.";
+
+
+// 2.4.5
+
+"pulsate_YOU_in_message_card" = "You";

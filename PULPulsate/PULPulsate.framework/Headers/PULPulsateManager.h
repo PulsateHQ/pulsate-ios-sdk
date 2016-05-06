@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.4.6
+//  PULPulsate 2.5.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -29,6 +29,14 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  Session starts when the app enters foreground and ends when it goes to background.
  */
 -(void)startPulsateSession;
+
+/**
+ *  Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it'll show the prompts to the user.
+ *  Session starts when the app enters foreground and ends when it goes to background.
+ */
+-(void)startPulsateSessionForAlias:(nonnull NSString*)alias;
+
+-(void)logout;
 
 /**
  *  Updates the user's first name. Gets updated when entering background.
@@ -157,10 +165,22 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(void)startRemoteNotifications;
 
 /**
+ *  If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
+ *  This enables you to postpone the push query prompt and customize the push settings
+ */
+-(void)startRemoteNotificationsWithSettings:(nonnull UIUserNotificationSettings*)notificationSettings;
+
+/**
  *  Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
  *
  */
 -(nonnull UINavigationController*)getFeedNavigationController;
+
+/**
+ * If feed is opened automatically (by pressing a push notification for example) you might want to
+ * hide it programatically.
+ */
+-(void)closeAutomaticallyOpenedFeed;
 
 /**
  *  Sends a custom in app event
@@ -180,5 +200,11 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param buttonEnabled decides if the button should be enabled
  */
 -(void)setNewThreadButtonEnabled:(BOOL)buttonEnabled;
+
+/**
+ *  Decides if beacon actions should be sent with a location. The default is NO.
+ *
+ */
+-(void)sendLocationWithBeaconEvents:(BOOL)sendLocation;
 
 @end

@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.8.0
+//  PULPulsate 2.8.1
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "PULPulsateManagerDelegate.h"
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 
 @class UINavigationController;
 
@@ -235,4 +236,5 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *
  */
 -(void)showLastUnauthorizedMessage;
+
 @end

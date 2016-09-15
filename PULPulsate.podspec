@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.vendored_frameworks = 'PULPulsate/PULPulsate.framework'
   s.resource = 'PULPulsate/PULPulsateBasic.bundle'
-  s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
+  s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth', 'UserNotifications'
   s.library = 'z'
 
 end

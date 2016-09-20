@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.8.0
+//  PULPulsate 2.8.5
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.

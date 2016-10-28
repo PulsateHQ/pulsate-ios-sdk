@@ -14,10 +14,4 @@
 -(void)onPulsateEerror:(NSError*)error;
 @end
 
-@interface PULPulsateManagerDelegate : NSObject
 
--(void)unauthorizedAction:(NSString*)action;
-
-@property (nonatomic, weak) id  <PULPulsateManagerDelegate> delegatePasser;
-
-@end

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PULPulsateManagerDelegate.h"
 
 @protocol PULPulsateUnauthorizedManagerDelegate
 @required

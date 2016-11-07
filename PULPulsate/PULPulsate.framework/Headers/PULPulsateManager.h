@@ -1,21 +1,22 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.9.1
+//  PULPulsate 2.9.3
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "PULPulsateManagerDelegate.h"
 #import "PULPulsateUnauthorizedManagerDelegate.h"
+#import "PULPulsateBadgeDelegate.h"
 #import <UIKit/UIKit.h>
 
 @class UINavigationController;
 
 @interface PULPulsateManager : NSObject
 
-@property (nonatomic, retain) IBOutlet id<PULPulsateUnauthorizedManagerDelegate> delegate;
+@property (nonatomic, retain) IBOutlet id<PULPulsateUnauthorizedManagerDelegate> unauthorizedDelegate;
+@property (nonatomic, retain) IBOutlet id<PULPulsateBadgeDelegate> badgeDelegate;
 
 typedef NS_ENUM(NSUInteger, PULUserGender){
     PULMale,
@@ -216,13 +217,19 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  */
 -(BOOL)isUserAuthorized;
 
--(void)sendUnauthorizedEvent:(NSString*)event;
 
 /**
  *  Set if user is authorized or not. The default is YES.
  *
  */
 -(void)setUserAuthorized:(BOOL)authorized;
+
+/**
+ *  Sends a request to the server to get the Pulsate badge count.
+ *  The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
+ *
+ */
+-(void)getBadgeCount;
 
 /**
  *  Shows the last blocked message or card. User must be authorized.

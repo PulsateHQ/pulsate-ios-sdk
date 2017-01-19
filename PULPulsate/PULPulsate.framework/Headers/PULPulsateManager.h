@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.9.5
+//  PULPulsate 2.9.8
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -217,6 +217,11 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  */
 -(BOOL)isUserAuthorized;
 
+/**
+ *  Enables or Disables In-App Notifications. Default - YES.
+ *
+ */
+-(void)enableInAppNotification:(BOOL)enabled;
 
 /**
  *  Set if user is authorized or not. The default is YES.
@@ -232,8 +237,15 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(void)getBadgeCount;
 
 /**
+ *  Shows the last in app notification. In App Notification need to be enabled.
+ *  To enable in app notifications use enableInAppNotification(BOOL).
+ */
+-(void)showLastInAppNotification;
+
+/**
  *  Shows the last blocked message or card. User must be authorized.
- *
+ *  To authorize a user use setUserAuthorized(BOOL).
  */
 -(void)showLastUnauthorizedMessage;
+
 @end

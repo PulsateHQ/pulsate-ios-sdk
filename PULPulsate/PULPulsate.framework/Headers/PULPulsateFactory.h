@@ -13,6 +13,10 @@
 
 @interface PULPulsateFactory : NSObject
 
++(void)setBaseUrl:(NSString*)baseUrl;
+
++(NSString*)getBaseUrl;
+
 /**
  *  Creates pulsate manager instance with given API keys. If an instance already exists
  *  it returns it instead.

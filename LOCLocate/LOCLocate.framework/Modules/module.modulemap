@@ -1,0 +1,6 @@
+framework module LOCLocate {
+  umbrella header "LOCLocate.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.9.12
+//  PULPulsate 2.9.15
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -76,6 +76,13 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param gender user's gender
  */
 -(void)updateGender:(PULUserGender)gender;
+
+/**
+ *  Disables or Enables push notifications for Pulsate
+ *
+ *  @param disable user's push notification preference
+ */
+-(void)disablePushNotification:(BOOL)disable;
 
 /**
  *  Sets user's privacy settings.

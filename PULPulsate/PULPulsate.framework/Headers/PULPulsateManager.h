@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.9.15
+//  PULPulsate 2.10.1
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -10,6 +10,7 @@
 #import "PULPulsateUnauthorizedManagerDelegate.h"
 #import "PULPulsateBadgeDelegate.h"
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 
 @class UINavigationController;
 
@@ -254,5 +255,11 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  To authorize a user use setUserAuthorized(BOOL).
  */
 -(void)showLastUnauthorizedMessage;
+
+/**
+ *  Shows the last in app notification. In App Notification need to be enabled.
+ *  To enable in app notifications use enableInAppNotification(BOOL).
+ */
+-(id<UIApplicationDelegate, UNUserNotificationCenterDelegate>)getPulsateSystemManager;
 
 @end

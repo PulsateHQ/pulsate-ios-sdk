@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.10.3
+//  PULPulsate 2.10.4
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -42,6 +42,11 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(void)startPulsateSessionForAlias:(nonnull NSString*)alias;
 
 -(void)logout;
+
+/**
+ *  Returns the Device Guid that Pulsate uses to identify users.
+ */
+-(nonnull NSString*)getDeviceGuid;
 
 /**
  *  Updates the user's first name. Gets updated when entering background.

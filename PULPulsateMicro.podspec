@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.vendored_frameworks = 'PULPulsate/PULPulsate.framework'
-  s.resource = 'PULPulsate/PULPulsateBasic.bundle'
+  s.vendored_frameworks = 'PULPulsateMicro/PULPulsate.framework'
+  s.resource = 'PULPulsateMicro/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
   s.library = 'z'
 

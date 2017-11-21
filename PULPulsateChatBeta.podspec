@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsateChatBeta"
-  s.version          = "3.0.0-beta1"
+  s.version          = "3.0.0.0"
   s.summary          = "Pulsate SDK Chat Bot"
 
   s.homepage         = "http://pulsatehq.com/"

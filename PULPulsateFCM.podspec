@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsateFCM"
-  s.version          = "2.15.3"
+  s.version          = "2.15.4"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
   s.resource = 'PULPulsateFCM/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
   s.library = 'z'
-
+  s.static_framework = true
+  s.dependency 'Firebase'
 end

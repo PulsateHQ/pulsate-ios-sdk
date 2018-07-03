@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsateFCM"
-  s.version          = "2.15.4"
+  s.version          = "2.15.5"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -17,4 +17,9 @@ Pod::Spec.new do |s|
   s.library = 'z'
   s.static_framework = true
   s.dependency 'Firebase'
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/Messaging'
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'AFNetworking'
+  s.dependency 'SSZipArchive'
 end

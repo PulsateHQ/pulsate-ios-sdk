@@ -74,6 +74,7 @@
 "new_message_button_label" = "New Message";
 "new_messages_button_label" = "New Messages";
 "new_updates" = "New Updates";
+"no_internet_user_deleted_error" = "User deleted.";
 "no_internet_server_error" = "Unable to Connect. Swipe down to Retry.";
 "no_internet_send_message_error" = "Unable to Connect. Try again later.";
 "view_conversation_button_label" = "View Conversation";

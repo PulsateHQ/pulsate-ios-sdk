@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.license          = 'Commercial'
   s.author           = { "Pulsate" => "http://pulsatehq.com/" }
-  s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :branch => 'fcm', :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

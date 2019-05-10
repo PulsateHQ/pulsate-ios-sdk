@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.14.14
+//  PULPulsate 2.14.16
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -288,6 +288,10 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  */
 -(void)showLastUnauthorizedMessage;
 
+/**
+ *  Shows the last in app notification. In App Notification need to be enabled.
+ *  To enable in app notifications use enableInAppNotification(BOOL).
+ */
 -(nonnull id<UIApplicationDelegate, UNUserNotificationCenterDelegate>)getPulsateSystemManager;
 
 @end

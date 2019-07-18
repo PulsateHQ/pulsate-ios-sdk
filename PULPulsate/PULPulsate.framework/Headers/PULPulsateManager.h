@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.14.17
+//  PULPulsate 2.15.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -294,5 +294,4 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  */
 -(nonnull id<UIApplicationDelegate, UNUserNotificationCenterDelegate>)getPulsateSystemManager;
 
-+(void) showNotificationWithCategory:(NSString*)category andTitle:(NSString*)title andSubTitle:(NSString*)sub andBody:(NSString*)body;
 @end

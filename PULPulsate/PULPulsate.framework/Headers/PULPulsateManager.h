@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.16.3
+//  PULPulsate 2.16.4
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -197,13 +197,6 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  This enables you to postpone the location query prompt.
  */
 -(void)startLocation;
-
-/**
- *  This method will show the user the Bluetooth Permission prompt.
- *  This permission is needed to properly track user Bluetooth State and send it for analytic purposes.
- *  This permission is not needed for Beacon Scanning. It is only used to track how many users have Bluetooth ON  or  OFF.
- */
--(void)requestBluetoothPermission;
 
 /**
  *  If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.

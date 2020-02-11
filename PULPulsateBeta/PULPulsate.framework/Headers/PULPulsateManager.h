@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.17.0
+//  PULPulsate 2.17.2
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -136,7 +136,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param propertyName custom attribute name
  *  @param number       attribute value
  */
--(void)createAttribute:(nonnull NSString *)propertyName withFloat:(CGFloat)number;
+-(void)createAttribute:(nonnull NSString *)propertyName withDecimal:(NSDecimalNumber*)number;
 
 /**
  *  Creates a custom attribute with an integer. Key can't be nil. Gets updated when entering background.
@@ -184,7 +184,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)incrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
+-(void)incrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
 
 /**
  *  Decrements given float attribute with given value. Gets updated when entering background.
@@ -192,7 +192,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)decrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
+-(void)decrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
 
 /**
  *  If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.

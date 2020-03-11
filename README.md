@@ -5,7 +5,7 @@
 
 # Pulsate iOS SDK
 
-• [iOS SDK Installation & Documentation](http://pulsate.readme.io/v2.0/docs/installing-the-pulsate-sdk)
+• [iOS SDK Installation & Documentation](https://pulsate.readme.io/v2.7/docs/installing-the-pulsate-sdk)
 
 # Installation with CocoaPods
 

@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.17.2
+//  PULPulsate 2.18.0.1
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -20,8 +20,6 @@
 @property (nonnull, nonatomic, retain) IBOutlet id<PULPulsateBadgeDelegate> badgeDelegate;
 
 typedef void(^RequestListener)(BOOL success, NSError* _Nullable error);
-typedef void(^FeedListener)(NSArray* feed, NSError* _Nullable error);
-
 typedef NS_ENUM(NSUInteger, PULUserGender){
     PULMale,
     PULFemale
@@ -136,7 +134,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param propertyName custom attribute name
  *  @param number       attribute value
  */
--(void)createAttribute:(nonnull NSString *)propertyName withDecimal:(NSDecimalNumber*)number;
+-(void)createAttribute:(nonnull NSString *)propertyName withFloat:(CGFloat)number;
 
 /**
  *  Creates a custom attribute with an integer. Key can't be nil. Gets updated when entering background.
@@ -184,7 +182,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)incrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
+-(void)incrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
 
 /**
  *  Decrements given float attribute with given value. Gets updated when entering background.
@@ -192,7 +190,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)decrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
+-(void)decrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
 
 /**
  *  If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
@@ -217,18 +215,6 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *
  */
 -(nonnull UINavigationController*)getFeedNavigationController;
-
-/**
- *  Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
- *
- */
--(void)getFeed:(NSString*)page withListener:(nonnull FeedListener)listener;
-
-/**
- *  Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
- *
- */
--(void)handleFeedClick:(id)pulsateInboxItem;
 
 /**
  * If feed is opened automatically (by pressing a push notification for example) you might want to

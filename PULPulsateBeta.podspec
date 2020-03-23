@@ -14,7 +14,9 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.framework'
   s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
-  s.dependency 'AFNetworking', 'CocoaLumberjack', 'SSZipArchive'
+  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'SSZipArchive'
   s.library = 'z'
 
 end

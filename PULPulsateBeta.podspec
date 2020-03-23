@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsateBeta"
-  s.version          = "2.18.0.2"
+  s.version          = "2.18.0.3"
   s.summary          = "Pulsate SDK Beta"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.framework'
   s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
+  s.dependency 'AFNetworking', 'CocoaLumberjack', 'SSZipArchive'
   s.library = 'z'
 
 end

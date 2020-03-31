@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.16.6
+//  PULPulsate 2.17.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -48,9 +48,119 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(void)logout:(nonnull RequestListener)listener;
 
 /**
- *  Returns the Device Guid that Pulsate uses to identify users.
+ *  If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
+ *  This enables you to postpone the location query prompt.
  */
--(nonnull NSString*)getDeviceGuid;
+-(void)startLocation;
+
+/**
+ *  If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
+ *  This enables you to postpone the push query prompt.
+ */
+-(void)startRemoteNotifications;
+
+/**
+ *  If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
+ *  This enables you to postpone the push query prompt and customize the push settings
+ */
+-(void)startRemoteNotificationsWithSettings:(nonnull UIUserNotificationSettings*)notificationSettings;
+
+/**
+ *  Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
+ *
+ */
+-(nonnull UINavigationController*)getFeedNavigationController;
+
+/**
+ * If feed is opened automatically (by pressing a push notification for example) you might want to
+ * hide it programatically.
+ */
+-(void)closeAutomaticallyOpenedFeed;
+
+/**
+ * Developers can now add an additional button in the Pulsate Feed. The button will appear in the main Feed Toolbar in the right corner.
+ * To add this button you need to call the new setInboxRightButton method and pass an UIBarButtonItem that you want to show. This should be
+ * done in the AppDelegate under didFinishLaunchingWithOptions.
+ * @param rightButton
+ */
+-(void)setInboxRightButton:(UIBarButtonItem*)rightButton;
+
+/**
+ *  Disables or Enables push notifications for Pulsate
+ *
+ *  @param disable user's push notification preference
+ */
+-(void)setPushNotificationEnabled:(BOOL)enabled;
+
+-(BOOL)isPushNotificationEnabled;
+
+/**
+ *  Sets user's privacy settings.
+ *
+ *  @param privacyLevel user's privacy level
+ */
+-(void)setPrivacy:(PULPrivacyLevel)privacyLevel;
+
+-(NSUInteger)getPrivacy;
+
+/**
+ * Enables or Disables using the user initials as the user avatar.
+ * When disabled the avatar will always be an anon icon.
+ * By default enabled
+ *
+ * @param useInitials
+ */
+-(void)useInitialsForUserAvatar:(BOOL)useInitials;
+
+-(BOOL)getUseInitialsForUserAvatar;
+
+
+/**
+ * Enables or Disables the Geofencing and Beacon Scanning.
+ * By default enabled.
+ */
+-(void)setLocationUpdatesEnabled:(BOOL)enabled;
+
+-(BOOL)isLocationEnabled;
+
+/**
+ *  Enables or Disables In-App Notifications. Default - YES.
+ */
+-(void)enableInAppNotification:(BOOL)enabled;
+
+-(BOOL)isInAppNotificationEnabled;
+
+-(void)setSmallInAppNotificationDuration:(NSInteger)seconds;
+
+-(NSInteger)getSmallInAppNotificationDuration;
+
+/**
+ *  Shows the last in app notification. In App Notification need to be enabled.
+ *  To enable in app notifications use enableInAppNotification(BOOL).
+ */
+-(void)showLastInAppNotification;
+
+/**
+ *  Set if user is authorized or not. The default is YES.
+ */
+-(void)setUserAuthorized:(BOOL)authorized;
+
+-(BOOL)isUserAuthorized;
+
+/**
+ *  Shows the last blocked message or card. User must be authorized.
+ *  To authorize a user use setUserAuthorized(BOOL).
+ */
+-(void)showLastUnauthorizedMessage;
+
+/**
+ *  Sets the create thread button in feed visibility.
+ *
+ *  @param buttonEnabled decides if the button should be enabled
+ */
+-(void)setNewThreadButtonEnabled:(BOOL)buttonEnabled;
+
+-(BOOL)isNewThreadButtonEnabled;
 
 /**
  *  Updates the user's first name. Gets updated when entering background.
@@ -86,39 +196,6 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param gender user's gender
  */
 -(void)updateGender:(PULUserGender)gender;
-
-/**
- * Enables or Disables using the user initials as the user avatar.
- * When disabled the avatar will always be an anon icon.
- * By default enabled
- *
- * @param useInitials
- */
--(void)useInitialsForUserAvatar:(BOOL)useInitials;
-
-/**
- * Developers can now add an additional button in the Pulsate Feed. The button will appear in the main Feed Toolbar in the right corner.
- * To add this button you need to call the new setInboxRightButton method and pass an UIBarButtonItem that you want to show. This should be
- * done in the AppDelegate under didFinishLaunchingWithOptions.
- * @param rightButton
- */
--(void)setInboxRightButton:(UIBarButtonItem*)rightButton;
-
-/**
- *  Disables or Enables push notifications for Pulsate
- *
- *  @param disable user's push notification preference
- */
--(void)setPushNotificationEnabled:(BOOL)enabled;
-
--(BOOL)isPushNotificationEnabled;
-
-/**
- *  Sets user's privacy settings.
- *
- *  @param privacyLevel user's privacy level
- */
--(void)setPrivacy:(PULPrivacyLevel)privacyLevel;
 
 /**
  *  Creates a custom attribute with a string. Neither can be nil. Gets updated when entering background.
@@ -193,36 +270,6 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(void)decrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
 
 /**
- *  If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
- *  This enables you to postpone the location query prompt.
- */
--(void)startLocation;
-
-/**
- *  If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
- *  This enables you to postpone the push query prompt.
- */
--(void)startRemoteNotifications;
-
-/**
- *  If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
- *  This enables you to postpone the push query prompt and customize the push settings
- */
--(void)startRemoteNotificationsWithSettings:(nonnull UIUserNotificationSettings*)notificationSettings;
-
-/**
- *  Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
- *
- */
--(nonnull UINavigationController*)getFeedNavigationController;
-
-/**
- * If feed is opened automatically (by pressing a push notification for example) you might want to
- * hide it programatically.
- */
--(void)closeAutomaticallyOpenedFeed;
-
-/**
  *  Sends a custom in app event
  *
  *  @param event event to be sent - can't be nil
@@ -235,58 +282,20 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(void)forceAttributeSync;
 
 /**
- *  Sets the create thread button in feed visibility.
- *
- *  @param buttonEnabled decides if the button should be enabled
- */
--(void)setNewThreadButtonEnabled:(BOOL)buttonEnabled;
-
-/**
  *  Decides if beacon actions should be sent with a location. The default is NO.
  */
 -(void)sendLocationWithBeaconEvents:(BOOL)sendLocation;
 
 /**
- * Enables or Disables the Geofencing and Beacon Scanning.
- * By default enabled.
+ *  Returns the Device Guid that Pulsate uses to identify users.
  */
--(void)setLocationUpdatesEnabled:(BOOL)enabled;
-
-/**
- * 
- *
- */
--(BOOL)isUserAuthorized;
-
-/**
- *  Enables or Disables In-App Notifications. Default - YES.
- */
--(void)enableInAppNotification:(BOOL)enabled;
-
--(void)setSmallInAppNotificationDuration:(NSInteger)seconds;
-
-/**
- *  Set if user is authorized or not. The default is YES.
- */
--(void)setUserAuthorized:(BOOL)authorized;
+-(nonnull NSString*)getDeviceGuid;
 
 /**
  *  Sends a request to the server to get the Pulsate badge count.
  *  The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
  */
 -(void)getBadgeCount;
-
-/**
- *  Shows the last in app notification. In App Notification need to be enabled.
- *  To enable in app notifications use enableInAppNotification(BOOL).
- */
--(void)showLastInAppNotification;
-
-/**
- *  Shows the last blocked message or card. User must be authorized.
- *  To authorize a user use setUserAuthorized(BOOL).
- */
--(void)showLastUnauthorizedMessage;
 
 /**
  *  Shows the last in app notification. In App Notification need to be enabled.

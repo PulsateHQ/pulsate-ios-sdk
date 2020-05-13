@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.17.0
+//  PULPulsate 2.18.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -11,6 +11,7 @@
 #import "PULPulsateBadgeDelegate.h"
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import "PULRevenueEvent.h"
 
 @class UINavigationController;
 
@@ -211,7 +212,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param propertyName custom attribute name
  *  @param number       attribute value
  */
--(void)createAttribute:(nonnull NSString *)propertyName withFloat:(CGFloat)number;
+-(void)createAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
 
 /**
  *  Creates a custom attribute with an integer. Key can't be nil. Gets updated when entering background.
@@ -259,7 +260,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)incrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
+-(void)incrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
 
 /**
  *  Decrements given float attribute with given value. Gets updated when entering background.
@@ -267,7 +268,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)decrementFloatAttribute:(nonnull NSString*)attributeName withFloat:(CGFloat)value;
+-(void)decrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
 
 /**
  *  Sends a custom in app event
@@ -275,6 +276,13 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param event event to be sent - can't be nil
  */
 -(void)createEvent:(nonnull NSString*)event;
+
+/**
+ *  Sends a custom revenue event
+ *
+ *  @param revenueEvent event to be sent - can't be nil
+ */
+-(void)createRevenueEvent:(PULRevenueEvent*)revenueEvent;
 
 /**
  * Attributes synchronize when the app is entering background. This method forces the synchronization to happen instantly.

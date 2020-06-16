@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.18.0.6
+//  PULPulsate 2.19.1
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -21,6 +21,8 @@
 @property (nonnull, nonatomic, retain) IBOutlet id<PULPulsateBadgeDelegate> badgeDelegate;
 
 typedef void(^RequestListener)(BOOL success, NSError* _Nullable error);
+typedef void(^FeedListener)(NSArray* _Nullable feed, NSError* _Nullable error);
+
 typedef NS_ENUM(NSUInteger, PULUserGender){
     PULMale,
     PULFemale
@@ -73,6 +75,20 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
 -(nonnull UINavigationController*)getFeedNavigationController;
 
 /**
+ *  Allows Developers to get the Pulsate Inbox JSON that they can later render and show to the user in a custom way
+ *
+ */
+-(void)getFeed:(nonnull NSString*)page withListener:(nonnull FeedListener)listener;
+
+/**
+ *  When using -(void)getFeed:(NSString*)page withListener:(nonnull FeedListener)listener;
+ *  We recommend using this method to pass user onClick events to Pulsate to properly handle it.
+ *  Pulsate will make sure that the click does what it should do - open url, open deeplink, send custom events, record opens / clicks
+ *
+ */
+-(void)handleFeedClick:(nonnull id)pulsateInboxItem;
+
+/**
  * If feed is opened automatically (by pressing a push notification for example) you might want to
  * hide it programatically.
  */
@@ -84,7 +100,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  * done in the AppDelegate under didFinishLaunchingWithOptions.
  * @param rightButton
  */
--(void)setInboxRightButton:(UIBarButtonItem*)rightButton;
+-(void)setInboxRightButton:(nullable UIBarButtonItem*)rightButton;
 
 /**
  *  Disables or Enables push notifications for Pulsate
@@ -212,7 +228,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param propertyName custom attribute name
  *  @param number       attribute value
  */
--(void)createAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
+-(void)createAttribute:(nonnull NSString*)attributeName withDecimal:(nonnull NSDecimalNumber*)value;
 
 /**
  *  Creates a custom attribute with an integer. Key can't be nil. Gets updated when entering background.
@@ -260,7 +276,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)incrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
+-(void)incrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(nonnull NSDecimalNumber*)value;
 
 /**
  *  Decrements given float attribute with given value. Gets updated when entering background.
@@ -268,7 +284,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param attributeName custom attribute name
  *  @param value         attribute value
  */
--(void)decrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(NSDecimalNumber*)value;
+-(void)decrementDecimalAttribute:(nonnull NSString*)attributeName withDecimal:(nonnull NSDecimalNumber*)value;
 
 /**
  *  Sends a custom in app event
@@ -282,7 +298,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *
  *  @param revenueEvent event to be sent - can't be nil
  */
--(void)createRevenueEvent:(PULRevenueEvent*)revenueEvent;
+-(void)createRevenueEvent:(nonnull PULRevenueEvent*)revenueEvent;
 
 /**
  * Attributes synchronize when the app is entering background. This method forces the synchronization to happen instantly.

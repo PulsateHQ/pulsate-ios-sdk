@@ -12,7 +12,7 @@
 @interface PULRevenueEvent : NSObject
 
 @property (nonatomic, readonly) NSString* eventName;
-@property (readwrite, nonatomic) CGFloat amount;
+@property (nonatomic, readonly) NSDecimalNumber* amount;
 @property (nonatomic, readonly) NSString* currency;
 
 typedef NS_ENUM(NSUInteger, PULCurrency){
@@ -51,7 +51,8 @@ typedef NS_ENUM(NSUInteger, PULCurrency){
     ZAR  // Rand
 };
 
++(NSArray*) getAllCurrencyList;
++(NSString*) formatCurrencyToString:(PULCurrency)currency;
 //[[PULRevenueEvent alloc] initWithName:@"bought_car" andAmount:30000 andCurrency:PULCurrency.USD];
--(instancetype)initWithName:(NSString*)eventName andAmount:(CGFloat)amount andCurrency:(PULCurrency)currency;
-
+-(instancetype)initWithName:(NSString*)eventName andAmount:(NSDecimalNumber*)amount andCurrency:(PULCurrency)currency;
 @end

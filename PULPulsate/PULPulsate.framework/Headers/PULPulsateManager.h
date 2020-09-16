@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.19.1
+//  PULPulsate 2.20.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -199,6 +199,17 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  @param email email - can't be nil
  */
 -(void)updateEmail:(nonnull NSString*)email;
+
+/**
+ *  Updates the user's phone number. Gets updated when entering background.
+ *  Specify the phone number using the E.164 format. E.164 is a standard for the phone number structure used for international telecommunication.
+ *  Phone numbers that follow this format can have a maximum of 15 digits, and they are prefixed with the plus character (+) and the country code.
+ *  For example, a contact in the United States has a country code "1" , area code "408" and phone number "XXX-XXXX", you'd enter +1408XXXXXXX.
+ *  @param phoneNumber - can't be nil
+ */
+-(void)updatePhoneNumber:(nonnull NSString*)phoneNumber;
+
+-(NSString*)getPhoneNumber;
 
 /**
  *  Updates user's age. Gets updated when entering background.

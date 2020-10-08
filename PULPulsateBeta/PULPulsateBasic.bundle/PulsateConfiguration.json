@@ -4,6 +4,8 @@
         
         "pulsate_top_nav_bar_background_color" : "",
         "pulsate_top_nav_bar_title_color" : "",
+        "pulsate_top_nav_bar_title_size" : "",
+        "pulsate_top_nav_bar_title_expand_size" : "",
         "pulsate_back_button_color" : "",
         "pulsate_divider_lines_color" : "",
         "pulsate_send_button_color" : "",
@@ -24,6 +26,9 @@
         "pulsate_card_reply_button_text_color" : "",
         "pulsate_card_right_button_text_color" : "",
         "pulsate_card_right_button_read_text_color" : "",
+        "pulsate_card_left_btn_color" : "",
+        "pulsate_card_right_btn_color" : "",
+        "pulsate_card_single_btn_color" : "",
         
         "pulsate_card_back_background_color" : "",
         "pulsate_card_back_reply_icon_color" : "",
@@ -79,6 +84,5 @@
         "pulsate_no_internet_connection_background_color" : "",
         "pulsate_no_internet_connection_text_color" : "",
         "pulsate_no_internet_connection_cross_color" : ""
-        
     }
 }

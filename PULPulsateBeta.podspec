@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author           = { "Pulsate" => "http://pulsatehq.com/" }
   s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :branch => 'beta', :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.framework'
   s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'

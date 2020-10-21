@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.20.0
+//  PULPulsate 2.22.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -209,7 +209,7 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  */
 -(void)updatePhoneNumber:(nonnull NSString*)phoneNumber;
 
--(NSString*)getPhoneNumber;
+-(nonnull NSString*)getPhoneNumber;
 
 /**
  *  Updates user's age. Gets updated when entering background.

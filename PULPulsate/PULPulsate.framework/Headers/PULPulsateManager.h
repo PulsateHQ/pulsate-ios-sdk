@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.23.1
+//  PULPulsate 3.7.0
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -98,14 +98,14 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  * Developers can now add an additional button in the Pulsate Feed. The button will appear in the main Feed Toolbar in the right corner.
  * To add this button you need to call the new setInboxRightButton method and pass an UIBarButtonItem that you want to show. This should be
  * done in the AppDelegate under didFinishLaunchingWithOptions.
- * @param rightButton
+ * @param rightButton UIBarButtonItem
  */
 -(void)setInboxRightButton:(nullable UIBarButtonItem*)rightButton;
 
 /**
  *  Disables or Enables push notifications for Pulsate
  *
- *  @param disable user's push notification preference
+ *  @param enabled user's push notification preference
  */
 -(void)setPushNotificationEnabled:(BOOL)enabled;
 
@@ -337,5 +337,11 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  To enable in app notifications use enableInAppNotification(BOOL).
  */
 -(nonnull id<UIApplicationDelegate, UNUserNotificationCenterDelegate>)getPulsateSystemManager;
+
+/**
+ *  Sends a request to the server to get the Pulsate badge count.
+ *  The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
+ */
+-(void)startBackgroundUpdates:(nonnull RequestListener)listener;
 
 @end

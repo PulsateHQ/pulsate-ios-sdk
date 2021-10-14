@@ -171,6 +171,7 @@ typedef enum
 {
     PULNoInternetConnection,
     PULServerError,
+    PULExpired,
     PULUserDeleted,
     PULSuccess
 } PULInternetConnectionStatus;

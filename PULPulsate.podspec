@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsate"
-  s.version          = "3.8.0"
+  s.version          = "4.0.0"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'PULPulsate/PULPulsate.framework'
   s.resource = 'PULPulsate/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
+  s.dependency 'SDWebImage'
   s.library = 'z'
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'

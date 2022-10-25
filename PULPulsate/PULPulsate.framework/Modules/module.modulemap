@@ -6,6 +6,6 @@ framework module PULPulsate {
 }
 
 module PULPulsate.Swift {
-    header "PULPulsate-Swift.h"
-    requires objc
+  header "PULPulsate-Swift.h"
+  requires objc
 }

@@ -5878,6 +5878,316 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "PULTextStyle",
+        "printedName": "PULTextStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pulHeaderText",
+            "printedName": "pulHeaderText",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PULPulsate.PULTextStyle.Type) -> PULPulsate.PULTextStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PULPulsate.PULTextStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PULPulsate12PULTextStyleO13pulHeaderTextyA2CmF",
+            "mangledName": "$s10PULPulsate12PULTextStyleO13pulHeaderTextyA2CmF",
+            "moduleName": "PULPulsate"
+          },
+          {
+            "kind": "Var",
+            "name": "pulNormalText",
+            "printedName": "pulNormalText",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PULPulsate.PULTextStyle.Type) -> PULPulsate.PULTextStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PULPulsate.PULTextStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PULPulsate12PULTextStyleO13pulNormalTextyA2CmF",
+            "mangledName": "$s10PULPulsate12PULTextStyleO13pulNormalTextyA2CmF",
+            "moduleName": "PULPulsate"
+          },
+          {
+            "kind": "Var",
+            "name": "pulSmallText",
+            "printedName": "pulSmallText",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PULPulsate.PULTextStyle.Type) -> PULPulsate.PULTextStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PULPulsate.PULTextStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PULPulsate12PULTextStyleO12pulSmallTextyA2CmF",
+            "mangledName": "$s10PULPulsate12PULTextStyleO12pulSmallTextyA2CmF",
+            "moduleName": "PULPulsate"
+          },
+          {
+            "kind": "Var",
+            "name": "pulSmallHeaderText",
+            "printedName": "pulSmallHeaderText",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PULPulsate.PULTextStyle.Type) -> PULPulsate.PULTextStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PULPulsate.PULTextStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PULPulsate12PULTextStyleO18pulSmallHeaderTextyA2CmF",
+            "mangledName": "$s10PULPulsate12PULTextStyleO18pulSmallHeaderTextyA2CmF",
+            "moduleName": "PULPulsate"
+          },
+          {
+            "kind": "Var",
+            "name": "pulHeading",
+            "printedName": "pulHeading",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PULPulsate.PULTextStyle.Type) -> PULPulsate.PULTextStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PULPulsate.PULTextStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PULPulsate12PULTextStyleO10pulHeadingyA2CmF",
+            "mangledName": "$s10PULPulsate12PULTextStyleO10pulHeadingyA2CmF",
+            "moduleName": "PULPulsate"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PULPulsate.PULTextStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PULPulsate12PULTextStyleO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10PULPulsate12PULTextStyleO8rawValueACSgSi_tcfc",
+            "moduleName": "PULPulsate",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PULPulsate12PULTextStyleO8rawValueSivp",
+            "mangledName": "$s10PULPulsate12PULTextStyleO8rawValueSivp",
+            "moduleName": "PULPulsate",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate12PULTextStyleO8rawValueSivg",
+                "mangledName": "$s10PULPulsate12PULTextStyleO8rawValueSivg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PULPulsate12PULTextStyleO",
+        "mangledName": "$s10PULPulsate12PULTextStyleO",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -11491,6 +11801,66 @@
             "declAttributes": [
               "ObjC",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getViewIdentifier",
+            "printedName": "getViewIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULCallToActionBlock(im)getViewIdentifier",
+            "mangledName": "$s10PULPulsate20PULCallToActionBlockC17getViewIdentifierSSSgyF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCacheIdentifier",
+            "printedName": "getCacheIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULCallToActionBlock(im)getCacheIdentifier",
+            "mangledName": "$s10PULPulsate20PULCallToActionBlockC18getCacheIdentifierSSSgyF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -26242,6 +26612,492 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "PULTextBlock",
+        "printedName": "PULTextBlock",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "contentText",
+            "printedName": "contentText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(py)contentText",
+            "mangledName": "$s10PULPulsate12PULTextBlockC11contentTextSSSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)contentText",
+                "mangledName": "$s10PULPulsate12PULTextBlockC11contentTextSSSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)setContentText:",
+                "mangledName": "$s10PULPulsate12PULTextBlockC11contentTextSSSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate12PULTextBlockC11contentTextSSSgvM",
+                "mangledName": "$s10PULPulsate12PULTextBlockC11contentTextSSSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "textStyle",
+            "printedName": "textStyle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PULPulsate.PULTextStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULTextStyle",
+                    "printedName": "PULPulsate.PULTextStyle",
+                    "usr": "s:10PULPulsate12PULTextStyleO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvp",
+            "mangledName": "$s10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PULPulsate.PULTextStyle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvg",
+                "mangledName": "$s10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PULPulsate.PULTextStyle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PULTextStyle",
+                        "printedName": "PULPulsate.PULTextStyle",
+                        "usr": "s:10PULPulsate12PULTextStyleO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvs",
+                "mangledName": "$s10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvM",
+                "mangledName": "$s10PULPulsate12PULTextBlockC9textStyleAA0bE0OSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULTextBlock",
+                "printedName": "PULPulsate.PULTextBlock",
+                "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)initWithDictionary:",
+            "mangledName": "$s10PULPulsate12PULTextBlockC10dictionaryACSDys11AnyHashableVypGSg_tcfc",
+            "moduleName": "PULPulsate",
+            "objc_name": "initWithDictionary:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getValueDictionary",
+            "printedName": "getValueDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)getValueDictionary",
+            "mangledName": "$s10PULPulsate12PULTextBlockC18getValueDictionarySDys11AnyHashableVypGSgyF",
+            "moduleName": "PULPulsate",
+            "objc_name": "getValueDictionary",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getViewIdentifier",
+            "printedName": "getViewIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)getViewIdentifier",
+            "mangledName": "$s10PULPulsate12PULTextBlockC17getViewIdentifierSSSgyF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCacheIdentifier",
+            "printedName": "getCacheIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)getCacheIdentifier",
+            "mangledName": "$s10PULPulsate12PULTextBlockC18getCacheIdentifierSSSgyF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULTextBlock",
+                "printedName": "PULPulsate.PULTextBlock",
+                "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock(im)init",
+            "mangledName": "$s10PULPulsate12PULTextBlockCACycfc",
+            "moduleName": "PULPulsate",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PULPulsate@objc(cs)PULTextBlock",
+        "mangledName": "$s10PULPulsate12PULTextBlockC",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PULJSONSerializable",
+            "printedName": "PULJSONSerializable",
+            "usr": "c:@M@PULPulsate@objc(pl)PULJSONSerializable",
+            "mangledName": "$s10PULPulsate19PULJSONSerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -29328,6 +30184,35 @@
               "Custom",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFont",
+            "printedName": "getFont(forStyle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PULTextStyle",
+                "printedName": "PULPulsate.PULTextStyle",
+                "usr": "s:10PULPulsate12PULTextStyleO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PULPulsate22PULNormalTextBlockViewC7getFont8forStyleSo6UIFontCAA07PULTextI0O_tFZ",
+            "mangledName": "$s10PULPulsate22PULNormalTextBlockViewC7getFont8forStyleSo6UIFontCAA07PULTextI0O_tFZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -42178,1197 +43063,1197 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 599,
+      "offset": 606,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 622,
+      "offset": 629,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 644,
+      "offset": 651,
       "length": 18,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 679,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 599,
+      "offset": 606,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 622,
+      "offset": 629,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 644,
+      "offset": 651,
       "length": 18,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 679,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 599,
+      "offset": 606,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 622,
+      "offset": 629,
       "length": 12,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 644,
+      "offset": 651,
       "length": 18,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 679,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 769,
+      "offset": 776,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 800,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 820,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 837,
+      "offset": 844,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 769,
+      "offset": 776,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 800,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 820,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 837,
+      "offset": 844,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 769,
+      "offset": 776,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 800,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 820,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 837,
+      "offset": 844,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 902,
+      "offset": 909,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 902,
+      "offset": 909,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 902,
+      "offset": 909,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 984,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 1011,
       "length": 28,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1042,
+      "offset": 1049,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1066,
+      "offset": 1073,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
+      "offset": 1100,
       "length": 22,
       "value": "5"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1132,
       "length": 32,
       "value": "6"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 984,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 1011,
       "length": 28,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1042,
+      "offset": 1049,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1066,
+      "offset": 1073,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
+      "offset": 1100,
       "length": 22,
       "value": "5"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1132,
       "length": 32,
       "value": "6"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 984,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 1011,
       "length": 28,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1042,
+      "offset": 1049,
       "length": 14,
       "value": "3"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1066,
+      "offset": 1073,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
+      "offset": 1100,
       "length": 22,
       "value": "5"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1132,
       "length": 32,
       "value": "6"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1225,
+      "offset": 1232,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1244,
+      "offset": 1251,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1225,
+      "offset": 1232,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1244,
+      "offset": 1251,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1225,
+      "offset": 1232,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1244,
+      "offset": 1251,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1283,
       "length": 7,
-      "value": "\"4.0.3\""
+      "value": "\"4.0.4\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1315,
+      "offset": 1322,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1336,
+      "offset": 1343,
       "length": 28,
       "value": "\"https:\/\/app.pulsatehq.com\/\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1392,
+      "offset": 1399,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 1428,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 1476,
       "length": 14,
       "value": "\"Token token=\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1529,
+      "offset": 1536,
       "length": 30,
       "value": "\"api\/mobile\/v4\/sessions\/start\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1590,
+      "offset": 1597,
       "length": 28,
       "value": "\"api\/mobile\/v4\/users\/update\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1657,
+      "offset": 1664,
       "length": 43,
       "value": "\"api\/mobile\/v2\/general\/send_geofence_event\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1737,
+      "offset": 1744,
       "length": 41,
       "value": "\"api\/mobile\/v2\/general\/send_beacon_event\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1805,
+      "offset": 1812,
       "length": 34,
       "value": "\"api\/mobile\/v4\/localizations\/data\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1876,
+      "offset": 1883,
       "length": 45,
       "value": "\"api\/mobile\/v2\/general\/get_rich_notification\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1950,
+      "offset": 1957,
       "length": 34,
       "value": "\"api\/mobile\/v2\/messages\/get_inbox\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2016,
+      "offset": 2023,
       "length": 37,
       "value": "\"api\/mobile\/v2\/messages\/get_messages\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2084,
+      "offset": 2091,
       "length": 36,
       "value": "\"api\/mobile\/v2\/messages\/create_talk\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2150,
+      "offset": 2157,
       "length": 39,
       "value": "\"api\/mobile\/v2\/messages\/create_message\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2216,
+      "offset": 2223,
       "length": 28,
       "value": "\"api\/mobile\/v4\/sessions\/end\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2266,
+      "offset": 2273,
       "length": 30,
       "value": "\"api\/mobile\/v2\/general\/logout\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2324,
+      "offset": 2331,
       "length": 42,
       "value": "\"api\/mobile\/v2\/general\/send_in_app_events\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2402,
+      "offset": 2409,
       "length": 47,
       "value": "\"api\/mobile\/v2\/general\/update_push_preferences\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2485,
+      "offset": 2492,
       "length": 48,
       "value": "\"api\/mobile\/v2\/general\/update_location_tracking\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2560,
+      "offset": 2567,
       "length": 31,
       "value": "\"api\/mobile\/v2\/general\/privacy\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2614,
+      "offset": 2621,
       "length": 31,
       "value": "\"api\/mobile\/v2\/general\/archive\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2675,
+      "offset": 2682,
       "length": 39,
       "value": "\"api\/mobile\/v2\/messages\/get_inbox_item\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2759,
       "length": 20,
       "value": "\"kPULTextHeaderView\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2821,
       "length": 20,
       "value": "\"kPULNormalTextView\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2878,
+      "offset": 2885,
       "length": 21,
       "value": "\"kPULAdminHeaderView\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2936,
+      "offset": 2943,
       "length": 15,
       "value": "\"kPULAdminView\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2982,
+      "offset": 2989,
       "length": 23,
       "value": "\"kPULImageWithTextView\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3046,
+      "offset": 3053,
       "length": 22,
       "value": "\"kPULCallToActionView\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3102,
+      "offset": 3109,
       "length": 13,
       "value": "\"kPULDivider\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 3157,
       "length": 14,
       "value": "\"kPULKeyValue\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3207,
+      "offset": 3214,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3243,
+      "offset": 3250,
       "length": 10,
       "value": "\"Other...\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3291,
+      "offset": 3298,
       "length": 11,
       "value": "\"Complaint\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3338,
+      "offset": 3345,
       "length": 20,
       "value": "\"Feature Suggestion\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3395,
+      "offset": 3402,
       "length": 10,
       "value": "\"Feedback\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3436,
+      "offset": 3443,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3468,
+      "offset": 3475,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3505,
+      "offset": 3512,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3539,
+      "offset": 3546,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3544,
+      "offset": 3551,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3549,
+      "offset": 3556,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3576,
+      "offset": 3583,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3619,
+      "offset": 3626,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3662,
+      "offset": 3669,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3718,
+      "offset": 3725,
       "length": 5,
       "value": "\"8.0\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3757,
+      "offset": 3764,
       "length": 9,
       "value": "\"Pulsate\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3807,
+      "offset": 3814,
       "length": 9,
       "value": "\"App Key\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3856,
+      "offset": 3863,
       "length": 8,
       "value": "\"App ID\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3908,
+      "offset": 3915,
       "length": 17,
       "value": "\"PULPulsateBasic\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3968,
+      "offset": 3975,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4024,
+      "offset": 4031,
       "length": 46,
       "value": "\"kiPulsateUniversallyUniqueIdentifierKeychain\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4094,
+      "offset": 4101,
       "length": 14,
       "value": "\"PulsateModel\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4143,
+      "offset": 4150,
       "length": 6,
       "value": "\"momd\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4189,
+      "offset": 4196,
       "length": 24,
       "value": "\"PulsateVersion2.sqlite\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4251,
+      "offset": 4258,
       "length": 12,
       "value": "\"PULMessage\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4300,
+      "offset": 4307,
       "length": 14,
       "value": "\"kReloadInbox\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4347,
+      "offset": 4354,
       "length": 22,
       "value": "\"kPULOpenNotification\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4404,
+      "offset": 4411,
       "length": 15,
       "value": "\"kPULSendEvent\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4457,
+      "offset": 4464,
       "length": 18,
       "value": "\"kPULOpenCampaign\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4516,
+      "offset": 4523,
       "length": 20,
       "value": "\"kPULOpenSingleCard\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4578,
+      "offset": 4585,
       "length": 21,
       "value": "\"kPULDIsmissBackCard\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4637,
+      "offset": 4644,
       "length": 18,
       "value": "\"kPULDIsmissInApp\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4695,
+      "offset": 4702,
       "length": 19,
       "value": "\"kPULSendOpenEvent\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4742,
+      "offset": 4749,
       "length": 10,
       "value": "\"lightFin\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4779,
+      "offset": 4786,
       "length": 9,
       "value": "\"darkFin\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4808,
+      "offset": 4815,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4847,
+      "offset": 4854,
       "length": 3,
       "value": "3.6"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4886,
+      "offset": 4893,
       "length": 4,
       "value": "10.4"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4924,
+      "offset": 4931,
       "length": 5,
       "value": "1009"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 4966,
       "length": 10,
       "value": "\"PULCache\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5005,
+      "offset": 5012,
       "length": 6,
       "value": "\"guid\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5050,
+      "offset": 5057,
       "length": 13,
       "value": "\"occurred_at\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5108,
+      "offset": 5115,
       "length": 19,
       "value": "\"occurred_at_array\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5162,
+      "offset": 5169,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5203,
+      "offset": 5210,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5246,
+      "offset": 5253,
       "length": 10,
       "value": "\"campaign\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5289,
+      "offset": 5296,
       "length": 6,
       "value": "\"talk\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5333,
+      "offset": 5340,
       "length": 15,
       "value": "\"push_delivery\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5384,
+      "offset": 5391,
       "length": 13,
       "value": "\"push_bounce\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5435,
+      "offset": 5442,
       "length": 14,
       "value": "\"dismiss_push\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5485,
+      "offset": 5492,
       "length": 12,
       "value": "\"push_click\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5542,
+      "offset": 5549,
       "length": 23,
       "value": "\"push_button_click_one\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5610,
+      "offset": 5617,
       "length": 23,
       "value": "\"push_button_click_two\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5680,
+      "offset": 5687,
       "length": 25,
       "value": "\"push_button_click_three\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5747,
+      "offset": 5754,
       "length": 25,
       "value": "\"push_button_click_reply\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5812,
+      "offset": 5819,
       "length": 17,
       "value": "\"in_app_delivery\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5867,
+      "offset": 5874,
       "length": 15,
       "value": "\"in_app_bounce\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5923,
+      "offset": 5930,
       "length": 19,
       "value": "\"in_app_impression\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5982,
+      "offset": 5989,
       "length": 16,
       "value": "\"in_app_dismiss\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6045,
+      "offset": 6052,
       "length": 25,
       "value": "\"in_app_button_click_one\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6117,
+      "offset": 6124,
       "length": 25,
       "value": "\"in_app_button_click_two\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6182,
+      "offset": 6189,
       "length": 17,
       "value": "\"in_app_time_out\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6234,
+      "offset": 6241,
       "length": 13,
       "value": "\"card_delete\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6292,
+      "offset": 6299,
       "length": 23,
       "value": "\"card_front_impression\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6360,
+      "offset": 6367,
       "length": 29,
       "value": "\"card_front_button_click_one\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6436,
+      "offset": 6443,
       "length": 31,
       "value": "\"card_front_button_click_reply\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6511,
+      "offset": 6518,
       "length": 22,
       "value": "\"card_back_impression\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6583,
+      "offset": 6590,
       "length": 28,
       "value": "\"card_back_button_click_one\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6661,
+      "offset": 6668,
       "length": 28,
       "value": "\"card_back_button_click_two\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6735,
+      "offset": 6742,
       "length": 30,
       "value": "\"card_back_button_click_reply\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6789,
+      "offset": 6796,
       "length": 11,
       "value": "\"PULDBTalk\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6827,
+      "offset": 6834,
       "length": 14,
       "value": "\"PULDBMessage\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6869,
+      "offset": 6876,
       "length": 15,
       "value": "\"PULDBCampaign\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6909,
+      "offset": 6916,
       "length": 12,
       "value": "\"PULDBImage\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6957,
+      "offset": 6964,
       "length": 22,
       "value": "\"PULDBCustomAttribute\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7012,
+      "offset": 7019,
       "length": 19,
       "value": "\"PULDBScreenRecord\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7062,
+      "offset": 7069,
       "length": 17,
       "value": "\"PULDBUserAction\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7114,
+      "offset": 7121,
       "length": 19,
       "value": "\"PULLocationEntity\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7158,
+      "offset": 7165,
       "length": 12,
       "value": "\"PULDBEvent\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7204,
+      "offset": 7211,
       "length": 14,
       "value": "\"campaignGUID\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7249,
+      "offset": 7256,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7286,
+      "offset": 7293,
       "length": 17,
       "value": "\"groupIdentifier\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7333,
+      "offset": 7340,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7379,
+      "offset": 7386,
       "length": 23,
       "value": "\"creationTimeTimestamp\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7434,
+      "offset": 7441,
       "length": 8,
       "value": "\"update\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7477,
+      "offset": 7484,
       "length": 11,
       "value": "\"increment\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7523,
+      "offset": 7530,
       "length": 11,
       "value": "\"decrement\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7564,
+      "offset": 7571,
       "length": 17,
       "value": "\"PULDBImpression\""
     },
@@ -44866,7 +45751,7 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/iOS\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/DynamicViewBlocks\/PULTextBlock.swift",
       "kind": "StringLiteral",
-      "offset": 294,
+      "offset": 301,
       "length": 12,
       "value": "\"PULPulsate.PULTextBlock\""
     },

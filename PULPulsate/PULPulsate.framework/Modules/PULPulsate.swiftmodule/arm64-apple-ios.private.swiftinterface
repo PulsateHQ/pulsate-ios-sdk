@@ -94,6 +94,18 @@ extension UIKit.UIView {
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
   @objc deinit
 }
+public enum PULTextStyle : Swift.Int {
+  case pulHeaderText
+  case pulNormalText
+  case pulSmallText
+  case pulSmallHeaderText
+  case pulHeading
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc public enum PULCallToActionType : Swift.Int {
   case pulDismissBackCard
   case pulDismiss
@@ -193,6 +205,8 @@ extension UIKit.UIView {
   @objc public var buttons: [Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  @objc public func getViewIdentifier() -> Swift.String?
+  @objc public func getCacheIdentifier() -> Swift.String?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULDevice : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
@@ -524,6 +538,15 @@ extension PULPulsate.PULLocationEntity {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc @objcMembers public class PULTextBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
+  @objc public var contentText: Swift.String?
+  public var textStyle: PULPulsate.PULTextStyle?
+  @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  @objc public func getViewIdentifier() -> Swift.String?
+  @objc public func getCacheIdentifier() -> Swift.String?
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class PULPulsateFactory : ObjectiveC.NSObject {
   @objc public class func setBaseUrl(_ baseUrl: Swift.String)
   @objc public class func getBaseUrl() -> Swift.String?
@@ -602,6 +625,7 @@ extension PULPulsate.PULLocationEntity {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var contentLabel: UIKit.UILabel!
   @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?)
   @objc @_Concurrency.MainActor(unsafe) public class func getEstimatedHeightForText(forData data: Swift.AnyObject, andWidth width: Swift.UInt) -> Swift.UInt
+  @_Concurrency.MainActor(unsafe) public class func getFont(forStyle style: PULPulsate.PULTextStyle) -> UIKit.UIFont
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -872,6 +896,9 @@ extension PULPulsate.PULFeedTableViewController {
   @objc override dynamic public init()
   @objc deinit
 }
+extension PULPulsate.PULTextStyle : Swift.Equatable {}
+extension PULPulsate.PULTextStyle : Swift.Hashable {}
+extension PULPulsate.PULTextStyle : Swift.RawRepresentable {}
 extension PULPulsate.PULCallToActionType : Swift.Equatable {}
 extension PULPulsate.PULCallToActionType : Swift.Hashable {}
 extension PULPulsate.PULCallToActionType : Swift.RawRepresentable {}

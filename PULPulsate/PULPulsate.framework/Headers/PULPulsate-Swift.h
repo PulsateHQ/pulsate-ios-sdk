@@ -397,6 +397,8 @@ SWIFT_CLASS("_TtC10PULPulsate20PULCallToActionBlock")
 @property (nonatomic, copy) NSArray * _Nullable buttons;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getViewIdentifier SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getCacheIdentifier SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1522,6 +1524,18 @@ SWIFT_CLASS("_TtC10PULPulsate18PULTalkMessageCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timestamp;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC10PULPulsate12PULTextBlock")
+@interface PULTextBlock : NSObject <PULJSONSerializable>
+@property (nonatomic, copy) NSString * _Nullable contentText;
+- (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getViewIdentifier SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getCacheIdentifier SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

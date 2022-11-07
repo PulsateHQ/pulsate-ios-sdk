@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsateBeta"
-  s.version          = "2.23.0RC1"
+  s.version          = "4.0.5RC1"
   s.summary          = "Pulsate SDK Beta"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -9,15 +9,12 @@ Pod::Spec.new do |s|
   s.author           = { "Pulsate" => "http://pulsatehq.com/" }
   s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :branch => 'beta', :tag => s.version.to_s }
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '12.0'
   s.requires_arc = true
-  s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.framework'
+  s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.xcframework'
   s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
   s.library = 'z'
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.dependency 'SDWebImage'
 
 end

@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :branch => 'beta', :tag => s.version.to_s }
 
   s.platform     = :ios, '12.0'
+  s.swift_version = '5.0'
   s.requires_arc = true
   s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.xcframework'
   s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'

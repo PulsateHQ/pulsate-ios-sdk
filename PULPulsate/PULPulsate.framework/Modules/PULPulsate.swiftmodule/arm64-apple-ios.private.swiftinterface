@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PULPulsate
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -375,7 +375,7 @@ public typealias FeedListener = ([Any]?, Swift.Error?) -> Swift.Void
   @objc public func isInAppNotificationEnabled() -> Swift.Bool
   @objc public func setSmallInAppNotificationDuration(_ seconds: Swift.Int)
   @objc public func getSmallInAppNotificationDuration() -> Swift.Int
-  @objc public func showLastInAppNotification()
+  @objc public func showLastInAppNotification(_ forceShow: Swift.Bool = false)
   @objc public func setUserAuthorized(_ authorized: Swift.Bool)
   @objc public func isUserAuthorized() -> Swift.Bool
   @objc public func setNewThreadButtonEnabled(_ buttonEnabled: Swift.Bool)
@@ -412,7 +412,7 @@ public typealias FeedListener = ([Any]?, Swift.Error?) -> Swift.Void
   @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andAllowReply allowReply: Swift.Bool, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
   @objc public func receivedMessage(_ talkGUID: Swift.String?, withTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?, fromForeground foreground: Swift.Bool) -> Swift.Bool
   @objc public func recordUserAction(withGuid guid: Swift.String?, withAction action: Swift.String?, withType type: Swift.String?)
-  @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?)
+  @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
   @objc public func getPulsateSystemManager() -> (UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)
   @objc override dynamic public init()

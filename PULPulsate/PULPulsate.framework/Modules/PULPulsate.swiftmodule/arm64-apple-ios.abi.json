@@ -43435,7 +43435,7 @@
       "kind": "StringLiteral",
       "offset": 1283,
       "length": 7,
-      "value": "\"4.0.5\""
+      "value": "\"4.0.6\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",

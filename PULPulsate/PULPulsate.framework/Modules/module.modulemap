@@ -4,8 +4,3 @@ framework module PULPulsate {
   export *
   module * { export * }
 }
-
-module PULPulsate.Swift {
-  header "PULPulsate-Swift.h"
-  requires objc
-}

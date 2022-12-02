@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '12.0'
   s.requires_arc = true
-  s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.framework'
-  s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'
+  s.vendored_frameworks = 'PULPulsate/PULPulsate.framework'
+  s.resource = 'PULPulsate/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
   s.library = 'z'
   s.pod_target_xcconfig = {

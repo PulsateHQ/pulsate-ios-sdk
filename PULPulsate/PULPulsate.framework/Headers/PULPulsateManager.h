@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 3.8.1
+//  PULPulsate 3.8.2
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -343,5 +343,10 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  *  The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
  */
 -(void)startBackgroundUpdates:(nonnull RequestListener)listener;
+
+
+-(void)showFake1;
+-(void)showFake2;
+-(void)showFake3;
 
 @end

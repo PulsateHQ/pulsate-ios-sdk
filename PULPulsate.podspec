@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsate"
-  s.version          = "3.8.1"
+  s.version          = "3.8.2"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  
+  s.dependency 'SDWebImage'
 end

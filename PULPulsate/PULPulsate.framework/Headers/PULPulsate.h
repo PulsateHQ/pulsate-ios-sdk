@@ -7,6 +7,5 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PULPulsateFactory.h"
-#import "PULPulsateManager.h"
-#import "PULAuthorizationData.h"
+
+#import "PULSystemKeychain.h"

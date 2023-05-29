@@ -1151,10 +1151,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)startPulsateSessionWithAppBundleIdentifier:(NSString * _Nullable)appBundleIdentifier :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias appBundleIdentifier:(NSString * _Nullable)appBundleIdentifier withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 - (void)clearAllNotifications;
 /// Logs out the current user
 - (void)logout:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;

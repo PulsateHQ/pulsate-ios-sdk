@@ -351,8 +351,8 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateManager : ObjectiveC.NSObject {
   @objc @IBOutlet weak public var unauthorizedDelegate: (any PULPulsate.PULPulsateUnauthorizedManagerDelegate)?
   @objc @IBOutlet weak public var badgeDelegate: (any PULPulsate.PULPulsateBadgeDelegate)?
-  @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
-  @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
+  @objc public func startPulsateSession(appBundleIdentifier: Swift.String? = nil, _ listener: @escaping PULPulsate.RequestListener)
+  @objc public func startPulsateSession(forAlias alias: Swift.String, appBundleIdentifier: Swift.String? = nil, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()

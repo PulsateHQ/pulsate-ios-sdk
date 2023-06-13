@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PULPulsate
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -122,6 +122,9 @@ public enum PULTextStyle : Swift.Int {
   }
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULCallToActionButton : ObjectiveC.NSObject {
+  @objc public var orderNumber: Swift.String?
+  @objc public var btnColor: Swift.String?
+  @objc public var txtColor: Swift.String?
   @objc public var buttonLabel: Swift.String?
   public var actionType: PULPulsate.PULCallToActionType!
   @objc public var destination: Swift.String?
@@ -184,6 +187,7 @@ public enum PULTextStyle : Swift.Int {
   @objc public var timestamp: Foundation.NSNumber?
   @objc public var timestampsArray: [Any]?
   @objc override dynamic public init()
+  @objc public func recordUserStatAction(guid: Swift.String?, action: Swift.String?, type: Swift.String?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
   @objc deinit
@@ -249,6 +253,7 @@ public enum PULTextStyle : Swift.Int {
 }
 @objc public protocol PULBlockDataInjectable : ObjectiveC.NSObjectProtocol {
   @objc func injectData(_ data: Any?)
+  @objc func injectData(_ data: Any?, isInApp: Swift.Bool)
 }
 @_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -408,12 +413,12 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
   @objc public func sendLocation(withBeaconEvents sendLocation: Swift.Bool)
   @objc public func getDeviceGuid() -> Swift.String?
   @objc public func getBadgeCount()
-  @objc public func saveUnauthorizedCampaign(withGUID guid: Swift.String?, andTitle title: Swift.String?, andAllowReply allowReply: Swift.Bool, andNotificationMessage notificationMessage: Swift.String?)
+  @objc public func saveUnauthorizedCampaign(withGUID guid: Swift.String?, andTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?)
   @objc public func saveUnauthorizedMessage(withGUID guid: Swift.String?, andTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?)
   @objc public func saveUnauthorizedCtaAction(_ destination_type: Swift.String?, andDestination destination: Swift.String?)
   @objc public func showLastUnauthorizedMessage()
   @objc public func removeUnauthorizedMessage()
-  @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andAllowReply allowReply: Swift.Bool, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
+  @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
   @objc public func receivedMessage(_ talkGUID: Swift.String?, withTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?, fromForeground foreground: Swift.Bool) -> Swift.Bool
   @objc public func recordUserAction(withGuid guid: Swift.String?, withAction action: Swift.String?, withType type: Swift.String?)
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
@@ -521,14 +526,9 @@ extension PULPulsate.PULLocationEntity {
   @objc public var viewBlocks: [Swift.AnyObject]?
   @objc public var backViewBlocks: [Any]?
   @objc public var campaignGUID: Swift.String?
-  @objc public var allowReply: Foundation.NSNumber?
   @objc public var createdAt: Foundation.Date?
   @objc public var expiresAtTimestamp: Foundation.NSNumber?
-  @objc public var messagesUnread: Foundation.NSNumber?
-  @objc public var bothReplied: Foundation.NSNumber?
-  @objc public var isLastSenderIsAdmin: Swift.Bool
   @objc public var isUnread: Swift.Bool
-  @objc public var isContainsMessage: Swift.Bool
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc deinit
@@ -540,6 +540,7 @@ extension PULPulsate.PULLocationEntity {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var bottomConstraint: UIKit.NSLayoutConstraint!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var topConstraint: UIKit.NSLayoutConstraint!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -630,6 +631,7 @@ extension PULPulsate.PULLocationEntity {
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULNormalTextBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var contentLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?)
   @objc @_Concurrency.MainActor(unsafe) public class func getEstimatedHeightForText(forData data: Swift.AnyObject, andWidth width: Swift.UInt) -> Swift.UInt
   @_Concurrency.MainActor(unsafe) public class func getFont(forStyle style: PULPulsate.PULTextStyle) -> UIKit.UIFont
@@ -710,6 +712,7 @@ extension PULPulsate.PULLocationEntity {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PULKeyValueTextBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
+  @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -737,8 +740,10 @@ extension PULPulsate.PULLocationEntity {
 public typealias ButtonCallback = ((Swift.String) -> Swift.Void)
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULButtonsBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @_Concurrency.MainActor(unsafe) public var callBack: PULPulsate.ButtonCallback?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
   @objc @_Concurrency.MainActor(unsafe) public func setCorners(_ corner: CoreFoundation.CGFloat)
   @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?)
+  @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -864,7 +869,6 @@ public let PUL_KVO_FEED_FAILED: Swift.String
 @objc public protocol PULFeedTableViewControllerDelegate {
   @objc func openBackOfTheCard(for card: PULPulsate.PULCard)
   @objc func openMessage(for talk: PULPulsate.PULTalk)
-  @objc func openCardReply(for talk: PULPulsate.PULCard)
   @objc func didScrollDown(_ scrolledDown: Swift.Bool)
   @objc func showNewCardsBullet()
   @objc func willDisplayCell(_ cellIndex: Swift.Int)
@@ -895,7 +899,7 @@ extension PULPulsate.PULFeedTableViewController {
 }
 extension PULPulsate.PULFeedTableViewController {
   @_Concurrency.MainActor(unsafe) public func cardAdded(toFavorites cell: UIKit.UITableViewCell)
-  @_Concurrency.MainActor(unsafe) public func didRegisterOpenCard(forGUID guid: Swift.String, andIsUnread isUnread: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func didRegisterOpenCard(forGUID guid: Swift.String, andIsUnread isUnread: Swift.Bool, forButton buttonNumber: Swift.String)
   @_Concurrency.MainActor(unsafe) public func deleteCard(for cell: UIKit.UITableViewCell)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateError : ObjectiveC.NSObject {

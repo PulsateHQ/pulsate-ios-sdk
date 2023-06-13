@@ -44251,343 +44251,343 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 4934,
+      "offset": 4831,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 5239,
+      "offset": 5136,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5568,
+      "offset": 5465,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5671,
+      "offset": 5568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6131,
+      "offset": 6028,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6144,
+      "offset": 6041,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7078,
+      "offset": 6914,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "Dictionary",
-      "offset": 7228,
+      "offset": 7064,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 7326,
+      "offset": 7162,
       "length": 5,
       "value": "\"One\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 7440,
+      "offset": 7276,
       "length": 17,
       "value": "\"V:|-0-[One]-0-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "Array",
-      "offset": 7468,
+      "offset": 7304,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 7598,
+      "offset": 7434,
       "length": 17,
       "value": "\"H:|-0-[One]-0-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "Array",
-      "offset": 7626,
+      "offset": 7462,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "FloatLiteral",
-      "offset": 8138,
+      "offset": 7974,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8153,
+      "offset": 7989,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8479,
+      "offset": 8315,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8527,
+      "offset": 8363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8613,
+      "offset": 8449,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8830,
+      "offset": 8666,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9047,
+      "offset": 8883,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9536,
+      "offset": 9372,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "FloatLiteral",
-      "offset": 9642,
+      "offset": 9478,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "FloatLiteral",
-      "offset": 9737,
+      "offset": 9573,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "FloatLiteral",
-      "offset": 10031,
+      "offset": 9867,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 10173,
+      "offset": 10009,
       "length": 10,
       "value": "\"Semibold\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10188,
+      "offset": 10024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10482,
+      "offset": 10318,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10811,
+      "offset": 10647,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "FloatLiteral",
-      "offset": 11246,
+      "offset": 11082,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "FloatLiteral",
-      "offset": 11309,
+      "offset": 11145,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12343,
+      "offset": 12179,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12380,
+      "offset": 12216,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 12423,
+      "offset": 12259,
       "length": 31,
       "value": "\"In app notification received.\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12507,
+      "offset": 12343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12749,
+      "offset": 12585,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12756,
+      "offset": 12592,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12834,
+      "offset": 12670,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13018,
+      "offset": 12854,
       "length": 71,
       "value": "\"In app notification received from \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13060,
+      "offset": 12896,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13069,
+      "offset": 12905,
       "length": 1,
       "value": "\". Message \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13087,
+      "offset": 12923,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13171,
+      "offset": 13007,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13257,
+      "offset": 13093,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13261,
+      "offset": 13097,
       "length": 3,
       "value": "104"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13267,
+      "offset": 13103,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13328,
+      "offset": 13164,
       "length": 57,
       "value": "\"pulsate_big_in_app_message_button_background_text_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13477,
+      "offset": 13313,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13531,
+      "offset": 13367,
       "length": 52,
       "value": "\"pulsate_big_in_app_message_button_background_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
       "kind": "StringLiteral",
-      "offset": 13679,
+      "offset": 13515,
       "length": 2,
       "value": "\"\""
     },
@@ -46045,7 +46045,7 @@
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 14,
-      "value": "\"4.0.9BetaRC8\""
+      "value": "\"4.0.9BetaRC9\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -47891,224 +47891,245 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5510,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5581,
+      "offset": 5526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5618,
+      "offset": 5563,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5777,
+      "offset": 5722,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6285,
+      "offset": 6230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6422,
+      "offset": 6367,
       "length": 37,
       "value": "\"pulsate_card_back_button_text_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6516,
+      "offset": 6461,
       "length": 37,
       "value": "\"pulsate_card_back_button_text_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6613,
+      "offset": 6558,
       "length": 32,
       "value": "\"pulsate_card_back_button_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6704,
+      "offset": 6649,
       "length": 32,
       "value": "\"pulsate_card_back_button_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7012,
+      "offset": 6957,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7619,
+      "offset": 7564,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8014,
+      "offset": 7959,
       "length": 13,
       "value": "\"DynamicCard\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8330,
+      "offset": 8275,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8361,
+      "offset": 8306,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8442,
+      "offset": 8387,
       "length": 25,
       "value": "\"V:|-0-[DynamicCard]-0-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8664,
+      "offset": 8609,
       "length": 25,
       "value": "\"H:|-0-[DynamicCard]-0-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9292,
+      "offset": 9180,
       "length": 12,
       "value": "\"ButtonView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9413,
+      "offset": 9301,
       "length": 20,
       "value": "\"V:[ButtonView]-0-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9632,
-      "length": 22,
-      "value": "\"V:[ButtonView(==45)]\""
+      "kind": "IntegerLiteral",
+      "offset": 9512,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9516,
+      "length": 3,
+      "value": "104"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9522,
+      "length": 2,
+      "value": "52"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9856,
+      "offset": 9620,
+      "length": 36,
+      "value": "\"V:[ButtonView(==\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9653,
+      "length": 1,
+      "value": "\")]\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9858,
       "length": 26,
       "value": "\"H:|-15-[ButtonView]-15-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10026,
+      "offset": 10028,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10074,
+      "offset": 10076,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10143,
+      "offset": 10145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "Array",
-      "offset": 10559,
+      "offset": 10561,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11045,
+      "offset": 11047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11260,
+      "offset": 11262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11386,
+      "offset": 11388,
       "length": 36,
       "value": "\"pulsate_card_back_background_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11919,
+      "offset": 11921,
       "length": 12,
       "value": "\"ScrollView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12011,
+      "offset": 12013,
       "length": 12,
       "value": "\"ButtonView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12138,
+      "offset": 12140,
       "length": 20,
       "value": "\"V:|-0-[ScrollView]\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12357,
+      "offset": 12359,
       "length": 20,
       "value": "\"V:[ScrollView]-0-|\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12579,
+      "offset": 12581,
       "length": 24,
       "value": "\"H:|-0-[ScrollView]-0-|\""
     },
@@ -65286,182 +65307,175 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 883,
+      "offset": 739,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "BooleanLiteral",
-      "offset": 941,
+      "offset": 933,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1249,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1288,
+      "offset": 972,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1122,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1488,
+      "offset": 1172,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 1612,
+      "offset": 1296,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1662,
+      "offset": 1346,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1749,
+      "offset": 1433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 2264,
+      "offset": 1948,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 2414,
+      "offset": 2098,
       "length": 9,
       "value": "\"#ffffff\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 2428,
       "length": 34,
       "value": "\"pulsate_big_in_app_one_txt_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 2944,
+      "offset": 2628,
       "length": 33,
       "value": "\"pulsate_card_back_one_txt_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 3139,
+      "offset": 2823,
       "length": 9,
       "value": "\"#0E7AFE\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 3497,
+      "offset": 3181,
       "length": 34,
       "value": "\"pulsate_big_in_app_one_btn_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 3697,
+      "offset": 3381,
       "length": 33,
       "value": "\"pulsate_card_back_one_btn_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 4021,
+      "offset": 3705,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 4171,
+      "offset": 3855,
       "length": 9,
       "value": "\"#0E7AFE\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 4185,
       "length": 34,
       "value": "\"pulsate_big_in_app_two_txt_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 4701,
+      "offset": 4385,
       "length": 33,
       "value": "\"pulsate_card_back_two_txt_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 4896,
+      "offset": 4580,
       "length": 9,
       "value": "\"#ffffff\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 5254,
+      "offset": 4938,
       "length": 34,
       "value": "\"pulsate_big_in_app_two_btn_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "StringLiteral",
-      "offset": 5454,
+      "offset": 5138,
       "length": 33,
       "value": "\"pulsate_card_back_two_btn_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5717,
+      "offset": 5401,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5997,
+      "offset": 5681,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/CardBlocksViews\/ButtonsBlock\/PULButtonsBlockView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10614,
+      "offset": 10298,
       "length": 4,
       "value": "true"
     },

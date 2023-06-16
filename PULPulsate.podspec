@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsate"
-  s.version          = "4.0.8.1"
+  s.version          = "4.0.8.2"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"
 
   s.license          = 'Commercial'
   s.author           = { "Pulsate" => "http://pulsatehq.com/" }
-  s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :branch => '4.0.8.x', :tag => s.version.to_s }
 
   s.platform     = :ios, '12.0'
   s.swift_version = '5.0'

@@ -27,7 +27,7 @@
         "pulsate_card_one_txt_color" : "",
         "pulsate_card_two_btn_color" : "",
         "pulsate_card_two_txt_color" : "",
-        "pulsate_card_two_btn_outline_color" : ""
+        "pulsate_card_two_btn_outline_color" : "",
         
         "pulsate_card_back_background_color" : "",
         "pulsate_card_back_reply_icon_color" : "",
@@ -35,7 +35,7 @@
         "pulsate_card_back_one_txt_color" : "",
         "pulsate_card_back_two_btn_color" : "",
         "pulsate_card_back_two_txt_color" : "",
-        "pulsate_card_back_two_btn_outline_color" : ""
+        "pulsate_card_back_two_btn_outline_color" : "",
         "pulsate_card_back_table_label_text_color" : "",
         "pulsate_card_back_table_value_text_color" : "",
         

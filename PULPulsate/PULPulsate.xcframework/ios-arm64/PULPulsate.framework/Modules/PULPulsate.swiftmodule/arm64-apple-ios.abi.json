@@ -43278,7 +43278,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULWindowPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 16176,
+      "offset": 16266,
       "length": 30,
       "value": "\"PULBigInAppMessageController\""
     },
@@ -46045,7 +46045,7 @@
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 7,
-      "value": "\"4.2.2\""
+      "value": "\"4.2.3\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -53351,280 +53351,294 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2593,
+      "offset": 2472,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2492,
+      "length": 23,
+      "value": "\"Please provide alias.\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2657,
+      "offset": 2795,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2931,
+      "offset": 3069,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 2984,
+      "offset": 3122,
       "length": 6,
       "value": "\"10.0\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8899,
+      "offset": 9037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9374,
+      "offset": 9512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 11596,
+      "offset": 11734,
       "length": 13,
       "value": "\"+0123456789\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 11757,
+      "offset": 11895,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11825,
+      "offset": 11963,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 11896,
+      "offset": 12034,
       "length": 20,
       "value": "\"^(\\+)[0-9]{8,15}$\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 11961,
+      "offset": 12099,
       "length": 17,
       "value": "\"SELF MATCHES %@\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "Array",
-      "offset": 18129,
+      "offset": 18267,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 18631,
+      "offset": 18769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 19483,
+      "offset": 19621,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 19513,
+      "offset": 19651,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 19543,
+      "offset": 19681,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 19824,
+      "offset": 19962,
       "length": 10,
       "value": "\"campaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 20000,
+      "offset": 20138,
       "length": 10,
       "value": "\"campaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 20268,
+      "offset": 20406,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 20443,
+      "offset": 20581,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 20726,
+      "offset": 20864,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 20982,
+      "offset": 21120,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 21112,
+      "offset": 21250,
       "length": 10,
       "value": "\"campaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 21298,
+      "offset": 21436,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 21482,
+      "offset": 21620,
       "length": 15,
       "value": "\"inappCampaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 21639,
+      "offset": 21777,
       "length": 11,
       "value": "\"inappTalk\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 21789,
+      "offset": 21927,
       "length": 6,
       "value": "\"feed\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 21821,
+      "offset": 21959,
       "length": 10,
       "value": "\"openfeed\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 22436,
+      "offset": 22574,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 22669,
+      "offset": 22807,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 22724,
+      "offset": 22862,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 22780,
+      "offset": 22918,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 23141,
+      "offset": 23279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 23554,
+      "offset": 23692,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 24243,
+      "offset": 24381,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 25545,
+      "offset": 25683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 25630,
+      "offset": 25768,
       "length": 1010,
       "value": "\"{\"guid\" : \"qDd12qNA\",\"allow_reply\" : null,\"position\" : \"top\",\"type\" : \"corporate\",\"created_at\" : 1675777079,\"front\" : [{\"type\" : \"call_to_action\",\"position\" : 3,\"attrs\" : [{\"destination\" : \"pulsatebanking:\/\/auto_loan\",\"shown_btn\" : true,\"show_in_app\" : false,\"destination_url\" : \"pulsatebanking:\/\/auto_loan\",\"in_app_events\" : null,\"label\" : \"Apply now\",\"order_number\" : 1,\"destination_type\" : \"deeplink\"}]},{\"type\" : \"image\",\"position\" : 0,\"attrs\" : [{\"image_url\" : \"https:\/\/pulsate-campaign-attachments-production.s3.eu-west-1.amazonaws.com\/2023-02-14\/63c7dd25f5b3648c8b35d8a4\/1676396929_car%281%29.png\",\"name\" : \"dreaming-woman-traveling-by-car-2021-08-27-09-27-32-utc 1.png\",\"width\" : 960,\"height\" : 606}]},{\"type\" : \"text\",\"position\" : 2,\"attrs\" : [{\"text\" : \"Olivia Still interested? Don't forget, Pulsate CU has the best rate just for you. Tap to get started. \"}]}],\"size\" : \"large\",\"campaign_guid\" : \"VsnN6rnT\"}\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 26751,
+      "offset": 26889,
       "length": 1009,
       "value": "\"{\"guid\" : \"qDd12qNA\",\"allow_reply\" : null,\"position\" : \"top\",\"type\" : \"personal\",\"created_at\" : 1675777079,\"front\" : [{\"type\" : \"call_to_action\",\"position\" : 3,\"attrs\" : [{\"destination\" : \"pulsatebanking:\/\/auto_loan\",\"shown_btn\" : true,\"show_in_app\" : false,\"destination_url\" : \"pulsatebanking:\/\/auto_loan\",\"in_app_events\" : null,\"label\" : \"Apply now\",\"order_number\" : 1,\"destination_type\" : \"deeplink\"}]},{\"type\" : \"image\",\"position\" : 0,\"attrs\" : [{\"image_url\" : \"https:\/\/pulsate-campaign-attachments-production.s3.eu-west-1.amazonaws.com\/2023-02-14\/63c7dd25f5b3648c8b35d8a4\/1676396929_car%281%29.png\",\"name\" : \"dreaming-woman-traveling-by-car-2021-08-27-09-27-32-utc 1.png\",\"width\" : 960,\"height\" : 606}]},{\"type\" : \"text\",\"position\" : 2,\"attrs\" : [{\"text\" : \"Olivia Still interested? Don't forget, Pulsate CU has the best rate just for you. Tap to get started. \"}]}],\"size\" : \"large\",\"campaign_guid\" : \"VsnN6rnT\"}\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 27871,
+      "offset": 28009,
       "length": 687,
       "value": "\"{\"guid\" : \"qDd12qNA\",\"allow_reply\" : null,\"position\" : \"top\",\"type\" : \"corporate\",\"created_at\" : 1675777079,\"front\" : [{\"type\" : \"call_to_action\",\"position\" : 3,\"attrs\" : [{\"destination\" : \"pulsatebanking:\/\/auto_loan\",\"shown_btn\" : true,\"show_in_app\" : false,\"destination_url\" : \"pulsatebanking:\/\/auto_loan\",\"in_app_events\" : null,\"label\" : \"Apply now\",\"order_number\" : 1,\"destination_type\" : \"deeplink\"}]},{\"type\" : \"text\",\"position\" : 2,\"attrs\" : [{\"text\" : \"Olivia Still interested? Don't forget, Pulsate CU has the best rate just for you. Tap to get started. \"}]}],\"size\" : \"large\",\"campaign_guid\" : \"VsnN6rnT\"}\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 28975,
+      "offset": 29113,
       "length": 4,
       "value": "true"
     },

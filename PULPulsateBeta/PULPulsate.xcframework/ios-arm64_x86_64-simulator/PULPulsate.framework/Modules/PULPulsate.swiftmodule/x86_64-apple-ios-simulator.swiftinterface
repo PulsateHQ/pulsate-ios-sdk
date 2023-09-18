@@ -174,6 +174,9 @@ public enum PULTextStyle : Swift.Int {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+extension PULPulsate.PULPulsateManager {
+  @objc dynamic public func getAllLocations() -> [PULPulsate.PULLocation]
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULTopViewController : ObjectiveC.NSObject {
   @objc public class func getTopMostViewController() -> Any?
   @objc public class func unwrapTopMostViewController() -> UIKit.UIViewController?

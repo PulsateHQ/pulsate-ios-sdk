@@ -1412,6 +1412,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @end
 
 
+@interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
+- (NSArray<PULLocation *> * _Nonnull)getAllLocations SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 SWIFT_PROTOCOL("_TtP10PULPulsate37PULPulsateUnauthorizedManagerDelegate_")
 @protocol PULPulsateUnauthorizedManagerDelegate

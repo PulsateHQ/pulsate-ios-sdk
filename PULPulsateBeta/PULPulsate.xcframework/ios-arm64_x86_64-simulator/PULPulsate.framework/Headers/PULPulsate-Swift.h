@@ -931,7 +931,7 @@ SWIFT_CLASS_NAMED("PULLocationEntity")
 @property (nonatomic, strong) NSNumber * _Nullable longitude;
 @property (nonatomic, copy) NSDate * _Nullable timestamp;
 @property (nonatomic, strong) NSNumber * _Nullable verticalAccuracy;
-@property (nonatomic, copy) NSString * _Nullable timestampAsString;
+@property (nonatomic, copy) NSString * _Nullable timeStampAsString;
 @end
 
 
@@ -2571,7 +2571,7 @@ SWIFT_CLASS_NAMED("PULLocationEntity")
 @property (nonatomic, strong) NSNumber * _Nullable longitude;
 @property (nonatomic, copy) NSDate * _Nullable timestamp;
 @property (nonatomic, strong) NSNumber * _Nullable verticalAccuracy;
-@property (nonatomic, copy) NSString * _Nullable timestampAsString;
+@property (nonatomic, copy) NSString * _Nullable timeStampAsString;
 @end
 
 

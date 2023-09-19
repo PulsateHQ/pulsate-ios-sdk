@@ -147,6 +147,33 @@ public enum PULTextStyle : Swift.Int {
 @objc public protocol PULPulsateUnauthorizedManagerDelegate {
   @objc func unauthorizedAction(_ action: Swift.String)
 }
+extension PULPulsate.PULLocationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
+  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
 @objc public protocol PULCreateTalkViewControllerDelegate {
   @objc func showMessage(withTalk talk: PULPulsate.PULTalk, thatHasBeenCreated justCreated: Swift.Bool)
 }
@@ -257,10 +284,6 @@ extension PULPulsate.PULPulsateManager {
 @objc public protocol PULBlockDataInjectable : ObjectiveC.NSObjectProtocol {
   @objc func injectData(_ data: Any?)
   @objc func injectData(_ data: Any?, isInApp: Swift.Bool)
-}
-@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
 }
 extension PULPulsate.PULDBEvent {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBEvent>
@@ -502,33 +525,6 @@ extension Swift.String {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension PULPulsate.PULLocationEntity {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
-  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timestampAsString: Swift.String? {
-    @objc get
-    @objc set
-  }
-}
 @objc @objcMembers public class PULCard : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var viewBlocks: [Swift.AnyObject]?
   @objc public var backViewBlocks: [Any]?
@@ -572,6 +568,10 @@ extension PULPulsate.PULLocationEntity {
   @objc public class func initDefault(with token: PULPulsate.PULAccessToken?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
   @objc public class func getInstanceWithLaunchOptions(_ launchOptions: [Swift.String : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
 @objc public enum PULBeaconAction : Swift.Int {

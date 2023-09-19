@@ -15519,13 +15519,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Foundation.Date?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
                   }
                 ],
                 "usr": "s:Sq"
@@ -15533,7 +15533,7 @@
             ],
             "declKind": "Var",
             "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)timestamp",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC9timestampSSSgvp",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC9timestamp10Foundation4DateVSgvp",
             "moduleName": "PULPulsate",
             "declAttributes": [
               "Dynamic",
@@ -15551,13 +15551,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Date?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
                       }
                     ],
                     "usr": "s:Sq"
@@ -15565,7 +15565,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)timestamp",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC9timestampSSSgvg",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC9timestamp10Foundation4DateVSgvg",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "declAttributes": [
@@ -15588,13 +15588,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Date?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
                       }
                     ],
                     "usr": "s:Sq"
@@ -15602,7 +15602,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setTimestamp:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC9timestampSSSgvs",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC9timestamp10Foundation4DateVSgvs",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "declAttributes": [
@@ -15706,6 +15706,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setVerticalAccuracy:",
                 "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestampAsString",
+            "printedName": "timestampAsString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)timestampAsString",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC17timestampAsStringSSSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)timestampAsString",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC17timestampAsStringSSSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setTimestampAsString:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC17timestampAsStringSSSgvs",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "declAttributes": [
@@ -46077,7 +46180,7 @@
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 14,
-      "value": "\"4.2.4BetaRC1\""
+      "value": "\"4.2.4BetaRC2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -52914,105 +53017,105 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 13057,
+      "offset": 13065,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14127,
+      "offset": 14210,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14379,
+      "offset": 14462,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14433,
+      "offset": 14516,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14582,
+      "offset": 14665,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14657,
+      "offset": 14740,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14752,
+      "offset": 14835,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14843,
+      "offset": 14926,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 15322,
+      "offset": 15472,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16375,
+      "offset": 16525,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16433,
+      "offset": 16583,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16788,
+      "offset": 16938,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16897,
+      "offset": 17047,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 17444,
+      "offset": 17594,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 17489,
+      "offset": 17639,
       "length": 2,
       "value": "[]"
     },

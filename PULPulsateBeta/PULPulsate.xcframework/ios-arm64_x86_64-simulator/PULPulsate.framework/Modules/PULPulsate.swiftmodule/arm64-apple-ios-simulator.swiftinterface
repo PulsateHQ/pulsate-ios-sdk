@@ -516,11 +516,15 @@ extension PULPulsate.PULLocationEntity {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timestamp: Swift.String? {
+  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
     @objc get
     @objc set
   }
   @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestampAsString: Swift.String? {
     @objc get
     @objc set
   }

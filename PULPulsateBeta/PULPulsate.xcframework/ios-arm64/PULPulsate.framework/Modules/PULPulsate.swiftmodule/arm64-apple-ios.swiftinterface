@@ -321,7 +321,7 @@ extension PULPulsate.PULDBScreenRecord {
   @objc public init(authorizationData authData: PULPulsate.PULAuthorizationData?)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class PULLocation : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class PULLocation : ObjectiveC.NSObject, Swift.Codable {
   @objc public var longitude: Swift.Double
   @objc public var latitude: Swift.Double
   @objc public var verticalAccuracy: Swift.Double
@@ -329,6 +329,8 @@ extension PULPulsate.PULDBScreenRecord {
   @objc public var timestamp: Foundation.Date?
   @objc override dynamic public init()
   @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol PULPulsateBadgeDelegate {
   @objc func badgeUpdated(_ badgeNumber: Swift.Int)

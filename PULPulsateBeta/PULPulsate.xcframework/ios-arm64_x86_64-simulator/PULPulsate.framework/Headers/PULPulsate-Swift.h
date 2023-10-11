@@ -919,6 +919,7 @@ SWIFT_CLASS("_TtC10PULPulsate11PULLocation")
 @end
 
 
+
 SWIFT_CLASS_NAMED("PULLocationEntity")
 @interface PULLocationEntity : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -2557,6 +2558,7 @@ SWIFT_CLASS("_TtC10PULPulsate11PULLocation")
 @property (nonatomic, copy) NSDate * _Nullable timestamp;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS_NAMED("PULLocationEntity")

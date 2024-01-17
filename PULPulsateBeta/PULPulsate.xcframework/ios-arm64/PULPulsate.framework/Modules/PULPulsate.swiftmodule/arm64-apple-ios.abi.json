@@ -46076,7 +46076,7 @@
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 14,
-      "value": "\"4.3.0BetaRC3\""
+      "value": "\"4.3.0BetaRC4\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -52842,267 +52842,260 @@
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
-      "kind": "Dictionary",
-      "offset": 4715,
-      "length": 56,
-      "value": "[(\"journal_mode\", \"DELETE\")]"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4831,
+      "offset": 4627,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4889,
+      "offset": 4685,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 5542,
+      "offset": 5338,
       "length": 31,
       "value": "\"Persistent Coordinator is nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 7444,
+      "offset": 7240,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7494,
+      "offset": 7290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 7739,
+      "offset": 7535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 8276,
+      "offset": 8072,
       "length": 10,
       "value": "\"%K == %@\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 8320,
+      "offset": 8116,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8642,
+      "offset": 8438,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8647,
+      "offset": 8443,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8688,
+      "offset": 8484,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9062,
+      "offset": 8858,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 9456,
+      "offset": 9252,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 9521,
+      "offset": 9317,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 10830,
+      "offset": 10626,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 10976,
+      "offset": 10772,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 12003,
+      "offset": 11799,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 12061,
+      "offset": 11857,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12353,
+      "offset": 12149,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12443,
+      "offset": 12239,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12524,
+      "offset": 12320,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12561,
+      "offset": 12357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 13023,
+      "offset": 12819,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14093,
+      "offset": 13889,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14345,
+      "offset": 14141,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14399,
+      "offset": 14195,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14548,
+      "offset": 14344,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14623,
+      "offset": 14419,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14718,
+      "offset": 14514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14809,
+      "offset": 14605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 15288,
+      "offset": 15084,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16341,
+      "offset": 16137,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16399,
+      "offset": 16195,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16754,
+      "offset": 16550,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16863,
+      "offset": 16659,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 17421,
+      "offset": 17206,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 17466,
+      "offset": 17251,
       "length": 2,
       "value": "[]"
     },
@@ -56399,21 +56392,21 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/UserData\/API\/PULUpdateUserRequest.swift",
       "kind": "Array",
-      "offset": 1605,
+      "offset": 1617,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/UserData\/API\/PULUpdateUserRequest.swift",
       "kind": "Array",
-      "offset": 1964,
+      "offset": 1988,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/UserData\/API\/PULUpdateUserRequest.swift",
       "kind": "Dictionary",
-      "offset": 2288,
+      "offset": 2312,
       "length": 3,
       "value": "[]"
     },
@@ -62426,245 +62419,245 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 48008,
+      "offset": 48005,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 48050,
+      "offset": 48044,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48345,
+      "offset": 48339,
       "length": 8,
       "value": "\"netfox\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48414,
+      "offset": 48408,
       "length": 23,
       "value": "\"PULFeedViewController\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48497,
+      "offset": 48491,
       "length": 28,
       "value": "\"PULFeedTableViewController\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48703,
+      "offset": 48697,
       "length": 21,
       "value": "\"Pulsate Single Card\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48777,
+      "offset": 48771,
       "length": 14,
       "value": "\"Pulsate Feed\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48863,
+      "offset": 48857,
       "length": 29,
       "value": "\"PULCreateTalkViewController\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48906,
+      "offset": 48900,
       "length": 26,
       "value": "\"PULMessageViewController\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 48955,
+      "offset": 48949,
       "length": 22,
       "value": "\"Pulsate Conversation\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 49007,
+      "offset": 49001,
       "length": 29,
       "value": "\"PULBackOfCardViewController\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 49058,
+      "offset": 49052,
       "length": 19,
       "value": "\"Pulsate Card Back\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 49292,
+      "offset": 49286,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 49509,
+      "offset": 49503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 49632,
+      "offset": 49626,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 49899,
+      "offset": 49893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 50152,
+      "offset": 50146,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 50170,
+      "offset": 50164,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 50483,
+      "offset": 50474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 50525,
+      "offset": 50513,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 50786,
+      "offset": 50774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 51111,
+      "offset": 51099,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 51240,
+      "offset": 51228,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 51498,
+      "offset": 51486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 51615,
+      "offset": 51603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 51808,
+      "offset": 51796,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 51931,
+      "offset": 51919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52026,
+      "offset": 52014,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52057,
+      "offset": 52045,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52381,
+      "offset": 52369,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52509,
+      "offset": 52497,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52549,
+      "offset": 52537,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52823,
+      "offset": 52811,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 52970,
+      "offset": 52958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 53010,
+      "offset": 52998,
       "length": 5,
       "value": "false"
     },
@@ -65222,6 +65215,20 @@
       "offset": 811,
       "length": 12,
       "value": "\"time_spent\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Analytics\/PULScreenRecord.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Analytics\/PULScreenRecord.swift",
+      "kind": "IntegerLiteral",
+      "offset": 892,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/API\/PULCreateTalkRemoteStorage.swift",

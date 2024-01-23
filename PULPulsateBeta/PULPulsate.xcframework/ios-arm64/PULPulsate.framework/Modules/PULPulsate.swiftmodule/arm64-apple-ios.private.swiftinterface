@@ -93,6 +93,10 @@ extension UIKit.UIView {
   @objc public init(dbObject dbCustomAttribute: PULPulsate.PULDBCustomAttribute?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
 public enum PULTextStyle : Swift.Int {
@@ -190,6 +194,10 @@ public enum PULTextStyle : Swift.Int {
   @objc override dynamic public init()
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULUser : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {

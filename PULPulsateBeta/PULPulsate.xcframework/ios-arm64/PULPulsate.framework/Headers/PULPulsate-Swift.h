@@ -566,6 +566,8 @@ SWIFT_CLASS("_TtC10PULPulsate25PULCustomAttributeAdapter")
 - (nonnull instancetype)initWithDbObject:(PULDBCustomAttribute * _Nullable)dbCustomAttribute OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) NSUInteger hash;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1625,6 +1627,8 @@ SWIFT_CLASS("_TtC10PULPulsate13PULUserAction")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) NSUInteger hash;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {

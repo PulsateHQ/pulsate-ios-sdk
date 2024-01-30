@@ -90,6 +90,10 @@ extension UIKit.UIView {
   @objc deinit
 }
 @objc @objcMembers public class PULCustomAttributeAdapter : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
+  @objc public var key: Swift.String?
+  @objc public var value: Swift.String?
+  @objc public var action: Swift.String?
+  @objc public var type: Swift.String?
   @objc public init(dbObject dbCustomAttribute: PULPulsate.PULDBCustomAttribute?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)

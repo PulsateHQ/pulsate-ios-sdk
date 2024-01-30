@@ -563,6 +563,10 @@ typedef SWIFT_ENUM(NSInteger, PULCurrency, open) {
 
 SWIFT_CLASS("_TtC10PULPulsate25PULCustomAttributeAdapter")
 @interface PULCustomAttributeAdapter : NSObject <PULJSONSerializable>
+@property (nonatomic, copy) NSString * _Nullable key;
+@property (nonatomic, copy) NSString * _Nullable value;
+@property (nonatomic, copy) NSString * _Nullable action;
+@property (nonatomic, copy) NSString * _Nullable type;
 - (nonnull instancetype)initWithDbObject:(PULDBCustomAttribute * _Nullable)dbCustomAttribute OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;

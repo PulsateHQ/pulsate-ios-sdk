@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PULPulsate
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PULPulsate
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import CoreData
@@ -15,6 +15,7 @@ import UserNotifications
 import UserNotificationsUI
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public func remove()
@@ -89,9 +90,17 @@ extension UIKit.UIView {
   @objc deinit
 }
 @objc @objcMembers public class PULCustomAttributeAdapter : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
+  @objc public var key: Swift.String?
+  @objc public var value: Swift.String?
+  @objc public var action: Swift.String?
+  @objc public var type: Swift.String?
   @objc public init(dbObject dbCustomAttribute: PULPulsate.PULDBCustomAttribute?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
 public enum PULTextStyle : Swift.Int {
@@ -187,9 +196,12 @@ public enum PULTextStyle : Swift.Int {
   @objc public var timestamp: Foundation.NSNumber?
   @objc public var timestampsArray: [Any]?
   @objc override dynamic public init()
-  @objc public func recordUserStatAction(guid: Swift.String?, action: Swift.String?, type: Swift.String?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULUser : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
@@ -420,7 +432,6 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
   @objc public func removeUnauthorizedMessage()
   @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
   @objc public func receivedMessage(_ talkGUID: Swift.String?, withTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?, fromForeground foreground: Swift.Bool) -> Swift.Bool
-  @objc public func recordUserAction(withGuid guid: Swift.String?, withAction action: Swift.String?, withType type: Swift.String?)
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
   @objc public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)

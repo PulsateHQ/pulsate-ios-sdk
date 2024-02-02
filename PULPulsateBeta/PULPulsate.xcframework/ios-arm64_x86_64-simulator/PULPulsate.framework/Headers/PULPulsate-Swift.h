@@ -942,6 +942,7 @@ SWIFT_CLASS("_TtC10PULPulsate11PULLocation")
 @end
 
 
+
 SWIFT_CLASS_NAMED("PULLocationEntity")
 @interface PULLocationEntity : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -952,8 +953,9 @@ SWIFT_CLASS_NAMED("PULLocationEntity")
 @property (nonatomic, strong) NSNumber * _Nullable horizontalAccuracy;
 @property (nonatomic, strong) NSNumber * _Nullable latitude;
 @property (nonatomic, strong) NSNumber * _Nullable longitude;
-@property (nonatomic, copy) NSString * _Nullable timestamp;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
 @property (nonatomic, strong) NSNumber * _Nullable verticalAccuracy;
+@property (nonatomic, copy) NSString * _Nullable timeStampAsString;
 @end
 
 
@@ -1433,6 +1435,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
+- (NSArray<PULLocation *> * _Nonnull)getAllLocations SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 SWIFT_PROTOCOL("_TtP10PULPulsate37PULPulsateUnauthorizedManagerDelegate_")
@@ -2600,6 +2606,7 @@ SWIFT_CLASS("_TtC10PULPulsate11PULLocation")
 @end
 
 
+
 SWIFT_CLASS_NAMED("PULLocationEntity")
 @interface PULLocationEntity : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -2610,8 +2617,9 @@ SWIFT_CLASS_NAMED("PULLocationEntity")
 @property (nonatomic, strong) NSNumber * _Nullable horizontalAccuracy;
 @property (nonatomic, strong) NSNumber * _Nullable latitude;
 @property (nonatomic, strong) NSNumber * _Nullable longitude;
-@property (nonatomic, copy) NSString * _Nullable timestamp;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
 @property (nonatomic, strong) NSNumber * _Nullable verticalAccuracy;
+@property (nonatomic, copy) NSString * _Nullable timeStampAsString;
 @end
 
 
@@ -3091,6 +3099,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
+- (NSArray<PULLocation *> * _Nonnull)getAllLocations SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 SWIFT_PROTOCOL("_TtP10PULPulsate37PULPulsateUnauthorizedManagerDelegate_")

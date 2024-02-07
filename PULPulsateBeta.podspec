@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsateBeta"
-  s.version          = "4.4.0BetaRC1"
+  s.version          = "4.4.0BetaRC2"
   s.summary          = "Pulsate SDK Beta"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author           = { "Pulsate" => "http://pulsatehq.com/" }
   s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :branch => 'beta', :tag =>  s.version.to_s  }
 
-  s.platform     = :ios, '12.0'
+  s.platform     = :ios, '13.0'
   s.swift_version = "5.0"
   s.vendored_frameworks = 'PULPulsateBeta/PULPulsate.xcframework'
   s.resource = 'PULPulsateBeta/PULPulsateBasic.bundle'

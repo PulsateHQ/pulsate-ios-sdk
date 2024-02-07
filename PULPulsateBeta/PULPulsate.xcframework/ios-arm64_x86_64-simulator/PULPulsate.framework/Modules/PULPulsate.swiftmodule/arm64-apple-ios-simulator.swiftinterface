@@ -156,33 +156,6 @@ public enum PULTextStyle : Swift.Int {
 @objc public protocol PULPulsateUnauthorizedManagerDelegate {
   @objc func unauthorizedAction(_ action: Swift.String)
 }
-extension PULPulsate.PULLocationEntity {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
-  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
-    @objc get
-    @objc set
-  }
-}
 @objc public protocol PULCreateTalkViewControllerDelegate {
   @objc func showMessage(withTalk talk: PULPulsate.PULTalk, thatHasBeenCreated justCreated: Swift.Bool)
 }
@@ -583,10 +556,6 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
 @objc public enum PULBeaconAction : Swift.Int {
   case pulBeaconExit
   case pulBeaconEnter
@@ -824,6 +793,37 @@ extension PULPulsate.PULDBUserAction {
     @objc get
     @objc set
   }
+}
+extension PULPulsate.PULLocationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
+  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
 }
 @objc @objcMembers public class PULImageBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var imageUrl: Swift.String?

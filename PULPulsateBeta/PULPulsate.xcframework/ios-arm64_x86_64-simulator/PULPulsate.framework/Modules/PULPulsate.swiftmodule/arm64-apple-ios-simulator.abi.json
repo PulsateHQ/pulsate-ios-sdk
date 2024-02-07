@@ -9031,23 +9031,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11516,6 +11499,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
       },
       {
         "kind": "Import",
@@ -27826,814 +27826,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PULLocationEntity",
-        "printedName": "PULLocationEntity",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(entity:insertInto:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PULLocationEntity",
-                "printedName": "PULPulsate.PULLocationEntity",
-                "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSEntityDescription",
-                "printedName": "CoreData.NSEntityDescription",
-                "usr": "c:objc(cs)NSEntityDescription"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreData.NSManagedObjectContext?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSManagedObjectContext",
-                    "printedName": "CoreData.NSManagedObjectContext",
-                    "usr": "c:objc(cs)NSManagedObjectContext"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity(im)initWithEntity:insertIntoManagedObjectContext:",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
-            "moduleName": "PULPulsate",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchRequest",
-            "printedName": "fetchRequest()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NSFetchRequest",
-                "printedName": "CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PULLocationEntity",
-                    "printedName": "PULPulsate.PULLocationEntity",
-                    "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity"
-                  }
-                ],
-                "usr": "c:objc(cs)NSFetchRequest"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PULPulsate17PULLocationEntityC12fetchRequestSo07NSFetchE0CyACGyFZ",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC12fetchRequestSo07NSFetchE0CyACGyFZ",
-            "moduleName": "PULPulsate",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "NonObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "horizontalAccuracy",
-            "printedName": "horizontalAccuracy",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)horizontalAccuracy",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC18horizontalAccuracySo8NSNumberCSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "NSManaged",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)horizontalAccuracy",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC18horizontalAccuracySo8NSNumberCSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setHorizontalAccuracy:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC18horizontalAccuracySo8NSNumberCSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "latitude",
-            "printedName": "latitude",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)latitude",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC8latitudeSo8NSNumberCSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "NSManaged",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)latitude",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC8latitudeSo8NSNumberCSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setLatitude:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC8latitudeSo8NSNumberCSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "longitude",
-            "printedName": "longitude",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)longitude",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC9longitudeSo8NSNumberCSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "NSManaged",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)longitude",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC9longitudeSo8NSNumberCSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setLongitude:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC9longitudeSo8NSNumberCSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "timestamp",
-            "printedName": "timestamp",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)timestamp",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC9timestamp10Foundation4DateVSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "NSManaged",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Date?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)timestamp",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC9timestamp10Foundation4DateVSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Date?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setTimestamp:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC9timestamp10Foundation4DateVSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "verticalAccuracy",
-            "printedName": "verticalAccuracy",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)verticalAccuracy",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "NSManaged",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)verticalAccuracy",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setVerticalAccuracy:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "timeStampAsString",
-            "printedName": "timeStampAsString",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)timeStampAsString",
-            "mangledName": "$s10PULPulsate17PULLocationEntityC17timeStampAsStringSSSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "NSManaged",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)timeStampAsString",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC17timeStampAsStringSSSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setTimeStampAsString:",
-                "mangledName": "$s10PULPulsate17PULLocationEntityC17timeStampAsStringSSSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity",
-        "mangledName": "$s10PULPulsate17PULLocationEntityC",
-        "moduleName": "PULPulsate",
-        "objc_name": "PULLocationEntity",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSManagedObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "CoreData.NSManagedObject",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -36907,6 +36099,831 @@
         "printedName": "CoreData",
         "declKind": "Import",
         "moduleName": "PULPulsate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PULLocationEntity",
+        "printedName": "PULLocationEntity",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULLocationEntity",
+                "printedName": "PULPulsate.PULLocationEntity",
+                "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "PULPulsate",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULLocationEntity",
+                    "printedName": "PULPulsate.PULLocationEntity",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PULPulsate17PULLocationEntityC12fetchRequestSo07NSFetchE0CyACGyFZ",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC12fetchRequestSo07NSFetchE0CyACGyFZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "horizontalAccuracy",
+            "printedName": "horizontalAccuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)horizontalAccuracy",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC18horizontalAccuracySo8NSNumberCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)horizontalAccuracy",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC18horizontalAccuracySo8NSNumberCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setHorizontalAccuracy:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC18horizontalAccuracySo8NSNumberCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "latitude",
+            "printedName": "latitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)latitude",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC8latitudeSo8NSNumberCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)latitude",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC8latitudeSo8NSNumberCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setLatitude:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC8latitudeSo8NSNumberCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "longitude",
+            "printedName": "longitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)longitude",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC9longitudeSo8NSNumberCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)longitude",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC9longitudeSo8NSNumberCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setLongitude:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC9longitudeSo8NSNumberCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeStampAsString",
+            "printedName": "timeStampAsString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)timeStampAsString",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC17timeStampAsStringSSSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)timeStampAsString",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC17timeStampAsStringSSSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setTimeStampAsString:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC17timeStampAsStringSSSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verticalAccuracy",
+            "printedName": "verticalAccuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)verticalAccuracy",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)verticalAccuracy",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setVerticalAccuracy:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC16verticalAccuracySo8NSNumberCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeStamp",
+            "printedName": "timeStamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(py)timeStamp",
+            "mangledName": "$s10PULPulsate17PULLocationEntityC9timeStamp10Foundation4DateVSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)timeStamp",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC9timeStamp10Foundation4DateVSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PULPulsate@objc(cs)PULLocationEntity(im)setTimeStamp:",
+                "mangledName": "$s10PULPulsate17PULLocationEntityC9timeStamp10Foundation4DateVSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PULPulsate@objc(cs)PULLocationEntity",
+        "mangledName": "$s10PULPulsate17PULLocationEntityC",
+        "moduleName": "PULPulsate",
+        "objc_name": "PULLocationEntity",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -46909,7 +46926,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.4.0BetaRC1\""
+      "value": "\"4.4.0BetaRC2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -50039,13 +50056,6 @@
       "offset": 500,
       "length": 26,
       "value": "\"PULPulsate.PULSessionLifetimeMediator\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/Entities\/PULLocationEntity+CoreDataProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 312,
-      "length": 19,
-      "value": "\"PULLocationEntity\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULCreateSessionRequest.swift",
@@ -53683,273 +53693,273 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3658,
+      "offset": 3659,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 3697,
+      "offset": 3698,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4627,
+      "offset": 4641,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4685,
+      "offset": 4699,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 5338,
+      "offset": 5352,
       "length": 31,
       "value": "\"Persistent Coordinator is nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 7240,
+      "offset": 7254,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7290,
+      "offset": 7304,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 7535,
+      "offset": 7549,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 8072,
+      "offset": 8086,
       "length": 10,
       "value": "\"%K == %@\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 8116,
+      "offset": 8130,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8438,
+      "offset": 8452,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8443,
+      "offset": 8457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8484,
+      "offset": 8498,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8858,
+      "offset": 8872,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 9252,
+      "offset": 9266,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 9317,
+      "offset": 9331,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 10626,
+      "offset": 10640,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 10772,
+      "offset": 10786,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 11799,
+      "offset": 11813,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 11857,
+      "offset": 11871,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12149,
+      "offset": 12163,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12239,
+      "offset": 12253,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12320,
+      "offset": 12334,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12357,
+      "offset": 12371,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 12827,
+      "offset": 12841,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 13972,
+      "offset": 13986,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14224,
+      "offset": 14238,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 14278,
+      "offset": 14292,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14427,
+      "offset": 14441,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14502,
+      "offset": 14516,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14597,
+      "offset": 14611,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14688,
+      "offset": 14702,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "FloatLiteral",
-      "offset": 15234,
+      "offset": 15248,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16287,
+      "offset": 16301,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16345,
+      "offset": 16359,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 16700,
+      "offset": 16714,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16809,
+      "offset": 16823,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 17356,
+      "offset": 17370,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/PULDatabaseManager.swift",
       "kind": "Array",
-      "offset": 17401,
+      "offset": 17415,
       "length": 2,
       "value": "[]"
     },
@@ -67252,6 +67262,13 @@
       "offset": 306,
       "length": 17,
       "value": "\"PULDBUserAction\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/DatabaseModule\/Entities\/PULLocationEntity+CoreDataProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 19,
+      "value": "\"PULLocationEntity\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/DynamicViewBlocks\/PULImageHeaderBlock.swift",

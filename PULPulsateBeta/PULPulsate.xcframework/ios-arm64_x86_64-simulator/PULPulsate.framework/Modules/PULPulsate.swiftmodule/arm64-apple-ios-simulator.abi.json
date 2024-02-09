@@ -11512,23 +11512,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -46926,7 +46909,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.4.0BetaRC2\""
+      "value": "\"4.4.0BetaRC3\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -60811,127 +60794,148 @@
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
+      "kind": "Array",
+      "offset": 2659,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2661,
+      "offset": 2709,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2711,
+      "offset": 2759,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2739,
+      "offset": 2787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2800,
+      "offset": 2848,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2874,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3046,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3031,
+      "offset": 3425,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3120,
+      "offset": 3514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3207,
+      "offset": 3601,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 3370,
+      "offset": 3764,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3715,
+      "offset": 4109,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3762,
+      "offset": 4156,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3809,
+      "offset": 4203,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3856,
+      "offset": 4250,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3989,
+      "offset": 4383,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4005,
+      "offset": 4399,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4021,
+      "offset": 4415,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4037,
+      "offset": 4431,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4094,
+      "offset": 4488,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Geofence\/PULGeofenceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 4128,
+      "offset": 4522,
       "length": 6,
       "value": "6372.8"
     },
@@ -63990,385 +63994,455 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5118,
+      "offset": 3973,
+      "length": 22,
+      "value": "\"geofence \""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3994,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5197,
       "length": 25,
       "value": "\"cache location else nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5201,
+      "offset": 5280,
       "length": 59,
       "value": "\"cache location \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5237,
+      "offset": 5316,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5259,
+      "offset": 5338,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5299,
+      "offset": 5378,
       "length": 65,
       "value": "\"cache location \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5335,
+      "offset": 5414,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5357,
+      "offset": 5436,
       "length": 5,
       "value": "\" force\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5493,
+      "offset": 5572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5517,
+      "offset": 5596,
       "length": 56,
       "value": "\"cache location location diff \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5572,
+      "offset": 5651,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5620,
+      "offset": 5699,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5651,
+      "offset": 5730,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5673,
+      "offset": 5752,
       "length": 60,
       "value": "\"cache location location diff \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5728,
+      "offset": 5807,
       "length": 3,
       "value": "\" nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5791,
+      "offset": 5870,
       "length": 56,
       "value": "\"cache location accuracy \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5846,
+      "offset": 5925,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5899,
+      "offset": 5978,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5923,
+      "offset": 6002,
       "length": 62,
       "value": "\"cache location accuracy \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 5978,
+      "offset": 6057,
       "length": 1,
       "value": "\" > 300\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6863,
+      "length": 24,
+      "value": "\"monitoredRegions count\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7405,
+      "offset": 6948,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7480,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7417,
+      "offset": 7492,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8614,
+      "length": 55,
+      "value": "\"geofence \""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8645,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8668,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8699,
+      "offset": 8874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8849,
+      "offset": 9024,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8875,
+      "offset": 9050,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8929,
+      "offset": 9104,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9132,
+      "offset": 9307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9179,
+      "offset": 9354,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9442,
+      "offset": 9402,
+      "length": 71,
+      "value": "\"startMonitoring geofence \""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9449,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9472,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9539,
+      "offset": 9732,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9829,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9670,
+      "offset": 9960,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9713,
+      "offset": 10003,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9768,
+      "offset": 10058,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "Array",
-      "offset": 10107,
+      "offset": 10397,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "Array",
-      "offset": 10493,
+      "offset": 10783,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10850,
+      "offset": 11140,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10919,
+      "offset": 11209,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10995,
+      "offset": 11285,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11067,
+      "offset": 11357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12043,
+      "offset": 12333,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12118,
+      "offset": 12408,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "Array",
-      "offset": 12257,
+      "offset": 12547,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12913,
+      "offset": 13203,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13535,
+      "offset": 13825,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14126,
+      "offset": 14416,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14198,
+      "offset": 14488,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "Array",
-      "offset": 15591,
+      "offset": 15881,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16572,
+      "offset": 16862,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 17023,
+      "offset": 17313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 17064,
+      "offset": 17354,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17094,
+      "offset": 17384,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 17362,
+      "offset": 17652,
       "length": 48,
       "value": "\"didFailWithError \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 17409,
+      "offset": 17699,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17481,
+      "offset": 17771,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 17520,
+      "offset": 17810,
       "length": 24,
       "value": "\"didFailWithError else \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 17607,
+      "offset": 17897,
       "length": 1,
       "value": "5"
     },

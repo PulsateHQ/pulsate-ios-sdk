@@ -185,6 +185,7 @@ public enum PULTextStyle : Swift.Int {
 }
 extension PULPulsate.PULPulsateManager {
   @objc dynamic public func getAllLocations() -> [PULPulsate.PULLocation]
+  @objc dynamic public func resetStoredLocations() throws
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULTopViewController : ObjectiveC.NSObject {
   @objc public class func getTopMostViewController() -> Any?
@@ -261,6 +262,7 @@ extension PULPulsate.PULPulsateManager {
   @objc public func fetchScreenRecords() -> [PULPulsate.PULScreenRecord]
   @objc public func storeLocations(_ record: PULPulsate.PULLocation?)
   @objc public func fetchLocations() -> [PULPulsate.PULLocation]
+  @objc public func deleteSavedLocations() throws
   @objc public func storeUserAction(_ record: PULPulsate.PULUserAction?)
   @objc public func fetchUserActions() -> [PULPulsate.PULUserAction]
   @objc public func clearAllDataToSynchronise()

@@ -662,6 +662,7 @@ SWIFT_CLASS("_TtC10PULPulsate18PULDatabaseManager")
 - (NSArray<PULScreenRecord *> * _Nonnull)fetchScreenRecords SWIFT_WARN_UNUSED_RESULT;
 - (void)storeLocations:(PULLocation * _Nullable)record;
 - (NSArray<PULLocation *> * _Nonnull)fetchLocations SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)deleteSavedLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (void)storeUserAction:(PULUserAction * _Nullable)record;
 - (NSArray<PULUserAction *> * _Nonnull)fetchUserActions SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllDataToSynchronise;
@@ -1438,6 +1439,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 
 @interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
 - (NSArray<PULLocation *> * _Nonnull)getAllLocations SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)resetStoredLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 @end
 
 
@@ -1645,6 +1647,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 
@@ -2326,6 +2329,7 @@ SWIFT_CLASS("_TtC10PULPulsate18PULDatabaseManager")
 - (NSArray<PULScreenRecord *> * _Nonnull)fetchScreenRecords SWIFT_WARN_UNUSED_RESULT;
 - (void)storeLocations:(PULLocation * _Nullable)record;
 - (NSArray<PULLocation *> * _Nonnull)fetchLocations SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)deleteSavedLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (void)storeUserAction:(PULUserAction * _Nullable)record;
 - (NSArray<PULUserAction *> * _Nonnull)fetchUserActions SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAllDataToSynchronise;
@@ -3102,6 +3106,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 
 @interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
 - (NSArray<PULLocation *> * _Nonnull)getAllLocations SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)resetStoredLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 @end
 
 
@@ -3309,6 +3314,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 

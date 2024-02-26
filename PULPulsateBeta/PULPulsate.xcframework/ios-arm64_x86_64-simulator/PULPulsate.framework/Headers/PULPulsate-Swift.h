@@ -303,6 +303,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+
 @class NSString;
 @class PULAuthorizationData;
 
@@ -1970,6 +1972,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+
 @class NSString;
 @class PULAuthorizationData;
 

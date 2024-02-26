@@ -698,6 +698,9 @@ extension Swift.String {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+extension Dispatch.DispatchQueue {
+  public func asyncDeduped(target: Swift.AnyObject, after delay: Foundation.TimeInterval, execute work: @escaping @convention(block) () -> Swift.Void)
+}
 @_inheritsConvenienceInitializers @objc(PULDBScreenRecord) public class PULDBScreenRecord : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit

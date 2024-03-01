@@ -381,7 +381,7 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
   @objc public func startRemoteNotifications()
-  @objc public func startRemoteNotifications(with notificationSettings: UIKit.UIUserNotificationSettings)
+  @objc public func startRemoteNotifications(with notificationSettings: UserNotifications.UNAuthorizationOptions)
   @objc public func getFeedNavigationController() -> UIKit.UINavigationController?
   @objc public func getFeed(_ page: Swift.String?, with listener: @escaping PULPulsate.FeedListener)
   @objc public func handleFeedClick(_ pulsateInboxItem: Any?)
@@ -613,7 +613,6 @@ extension Swift.String {
   @_Concurrency.MainActor(unsafe) @objc public func applicationWillTerminate(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor(unsafe) @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, open url: Foundation.URL, sourceApplication: Swift.String?, annotation: Any) -> Swift.Bool
   @objc deinit
 }
 @objc @objcMembers public class PULRemoteStorage : ObjectiveC.NSObject {

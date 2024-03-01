@@ -1166,7 +1166,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 @end
 
 @protocol PULPulsateUnauthorizedManagerDelegate;
-@class UIUserNotificationSettings;
 @class UIBarButtonItem;
 enum PULUserGender : NSInteger;
 @class NSDecimalNumber;
@@ -1198,7 +1197,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)startRemoteNotifications;
 /// If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the push query prompt and customize the push settings
-- (void)startRemoteNotificationsWith:(UIUserNotificationSettings * _Nonnull)notificationSettings;
+- (void)startRemoteNotificationsWith:(UNAuthorizationOptions)notificationSettings;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
 - (UINavigationController * _Nullable)getFeedNavigationController SWIFT_WARN_UNUSED_RESULT;
 /// Allows Developers to get the Pulsate Inbox JSON that they can later render and show to the user in a custom way
@@ -1556,7 +1555,6 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)application continueUserActivity:(NSUserActivity * _Nonnull)userActivity restorationHandler:(void (^ _Nonnull)(NSArray<id <UIUserActivityRestoring>> * _Nullable))restorationHandler SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2835,7 +2833,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 @end
 
 @protocol PULPulsateUnauthorizedManagerDelegate;
-@class UIUserNotificationSettings;
 @class UIBarButtonItem;
 enum PULUserGender : NSInteger;
 @class NSDecimalNumber;
@@ -2867,7 +2864,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)startRemoteNotifications;
 /// If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the push query prompt and customize the push settings
-- (void)startRemoteNotificationsWith:(UIUserNotificationSettings * _Nonnull)notificationSettings;
+- (void)startRemoteNotificationsWith:(UNAuthorizationOptions)notificationSettings;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
 - (UINavigationController * _Nullable)getFeedNavigationController SWIFT_WARN_UNUSED_RESULT;
 /// Allows Developers to get the Pulsate Inbox JSON that they can later render and show to the user in a custom way
@@ -3225,7 +3222,6 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)application continueUserActivity:(NSUserActivity * _Nonnull)userActivity restorationHandler:(void (^ _Nonnull)(NSArray<id <UIUserActivityRestoring>> * _Nullable))restorationHandler SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

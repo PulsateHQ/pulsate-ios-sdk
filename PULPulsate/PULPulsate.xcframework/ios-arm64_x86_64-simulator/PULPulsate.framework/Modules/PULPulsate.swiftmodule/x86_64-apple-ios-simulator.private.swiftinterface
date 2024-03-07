@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PULPulsate
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PULPulsate
 import CommonCrypto
 import CoreData
 import CoreGraphics
@@ -183,6 +182,10 @@ public enum PULTextStyle : Swift.Int {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+extension PULPulsate.PULPulsateManager {
+  @objc dynamic public func getAllLocations() -> [PULPulsate.PULLocation]
+  @objc dynamic public func resetStoredLocations() throws
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULTopViewController : ObjectiveC.NSObject {
   @objc public class func getTopMostViewController() -> Any?
   @objc public class func unwrapTopMostViewController() -> UIKit.UIViewController?
@@ -258,6 +261,7 @@ public enum PULTextStyle : Swift.Int {
   @objc public func fetchScreenRecords() -> [PULPulsate.PULScreenRecord]
   @objc public func storeLocations(_ record: PULPulsate.PULLocation?)
   @objc public func fetchLocations() -> [PULPulsate.PULLocation]
+  @objc public func deleteSavedLocations() throws
   @objc public func storeUserAction(_ record: PULPulsate.PULUserAction?)
   @objc public func fetchUserActions() -> [PULPulsate.PULUserAction]
   @objc public func clearAllDataToSynchronise()
@@ -266,10 +270,6 @@ public enum PULTextStyle : Swift.Int {
 @objc public protocol PULBlockDataInjectable : ObjectiveC.NSObjectProtocol {
   @objc func injectData(_ data: Any?)
   @objc func injectData(_ data: Any?, isInApp: Swift.Bool)
-}
-@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
 }
 extension PULPulsate.PULDBEvent {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBEvent>
@@ -307,7 +307,7 @@ extension PULPulsate.PULDBScreenRecord {
   @objc public init(authorizationData authData: PULPulsate.PULAuthorizationData?)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class PULLocation : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class PULLocation : ObjectiveC.NSObject, Swift.Codable {
   @objc public var longitude: Swift.Double
   @objc public var latitude: Swift.Double
   @objc public var verticalAccuracy: Swift.Double
@@ -315,6 +315,8 @@ extension PULPulsate.PULDBScreenRecord {
   @objc public var timestamp: Foundation.Date?
   @objc override dynamic public init()
   @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol PULPulsateBadgeDelegate {
   @objc func badgeUpdated(_ badgeNumber: Swift.Int)
@@ -378,7 +380,7 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
   @objc public func startRemoteNotifications()
-  @objc public func startRemoteNotifications(with notificationSettings: UIKit.UIUserNotificationSettings)
+  @objc public func startRemoteNotifications(with notificationSettings: UserNotifications.UNAuthorizationOptions)
   @objc public func getFeedNavigationController() -> UIKit.UINavigationController?
   @objc public func getFeed(_ page: Swift.String?, with listener: @escaping PULPulsate.FeedListener)
   @objc public func handleFeedClick(_ pulsateInboxItem: Any?)
@@ -510,29 +512,6 @@ extension Swift.String {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension PULPulsate.PULLocationEntity {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
-  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timestamp: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-}
 @objc @objcMembers public class PULCard : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var viewBlocks: [Swift.AnyObject]?
   @objc public var backViewBlocks: [Any]?
@@ -633,7 +612,6 @@ extension PULPulsate.PULLocationEntity {
   @_Concurrency.MainActor(unsafe) @objc public func applicationWillTerminate(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor(unsafe) @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, open url: Foundation.URL, sourceApplication: Swift.String?, annotation: Any) -> Swift.Bool
   @objc deinit
 }
 @objc @objcMembers public class PULRemoteStorage : ObjectiveC.NSObject {
@@ -815,6 +793,37 @@ extension PULPulsate.PULDBUserAction {
     @objc get
     @objc set
   }
+}
+extension PULPulsate.PULLocationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
+  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
 }
 @objc @objcMembers public class PULImageBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var imageUrl: Swift.String?

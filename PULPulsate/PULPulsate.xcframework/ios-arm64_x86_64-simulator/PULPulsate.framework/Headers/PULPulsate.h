@@ -9,3 +9,4 @@
 #import <UIKit/UIKit.h>
 
 #import "PULSystemKeychain.h"
+#import "BSBacktraceLogger.h"

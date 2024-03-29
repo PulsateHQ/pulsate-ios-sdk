@@ -1,12 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PULPulsate
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PULPulsate
 import CommonCrypto
 import CoreData
 import CoreGraphics
 import CoreLocation
 import Foundation
+import OSLog
 @_exported import PULPulsate
 import SDWebImage
 import Swift
@@ -15,6 +15,7 @@ import UserNotifications
 import UserNotificationsUI
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public func remove()
@@ -159,7 +160,7 @@ public enum PULTextStyle : Swift.Int {
   @objc func showMessage(withTalk talk: PULPulsate.PULTalk, thatHasBeenCreated justCreated: Swift.Bool)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULCreateTalkViewController : PULPulsate.PULBaseViewController, PULPulsate.PULCreateTalkRemoteStorageDelegate, UIKit.UITextFieldDelegate, UIKit.UITextViewDelegate {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: PULPulsate.PULCreateTalkViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any PULPulsate.PULCreateTalkViewControllerDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
@@ -206,6 +207,15 @@ extension PULPulsate.PULPulsateManager {
   }
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
+}
+public enum CrashModelType : Swift.Int {
+  case signal
+  case exception
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULUser : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var device: PULPulsate.PULDevice?
@@ -315,8 +325,8 @@ extension PULPulsate.PULDBScreenRecord {
   @objc public var timestamp: Foundation.Date?
   @objc override dynamic public init()
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol PULPulsateBadgeDelegate {
   @objc func badgeUpdated(_ badgeNumber: Swift.Int)
@@ -347,8 +357,8 @@ extension PULPulsate.PULDBScreenRecord {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public typealias RequestListener = (Swift.Bool, Swift.Error?) -> Swift.Void
-public typealias FeedListener = ([Any]?, Swift.Error?) -> Swift.Void
+public typealias RequestListener = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
+public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
 @objc public enum PULUserGender : Swift.Int {
   case pulMale
   case pulFemale
@@ -368,8 +378,8 @@ public typealias FeedListener = ([Any]?, Swift.Error?) -> Swift.Void
   }
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateManager : ObjectiveC.NSObject {
-  @objc @IBOutlet weak public var unauthorizedDelegate: PULPulsate.PULPulsateUnauthorizedManagerDelegate?
-  @objc @IBOutlet weak public var badgeDelegate: PULPulsate.PULPulsateBadgeDelegate?
+  @objc @IBOutlet weak public var unauthorizedDelegate: (any PULPulsate.PULPulsateUnauthorizedManagerDelegate)?
+  @objc @IBOutlet weak public var badgeDelegate: (any PULPulsate.PULPulsateBadgeDelegate)?
   @objc public var resourceBundleIdentifier: Swift.String? {
     @objc get
     @objc set
@@ -435,11 +445,13 @@ public typealias FeedListener = ([Any]?, Swift.Error?) -> Swift.Void
   @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
   @objc public func receivedMessage(_ talkGUID: Swift.String?, withTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?, fromForeground foreground: Swift.Bool) -> Swift.Bool
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
-  @objc public func getPulsateSystemManager() -> (UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
+  @objc public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func showFake1()
   @objc public func showFake2()
   @objc public func showFake3()
+  @objc public func forceCrash()
+  @objc public func forceANR()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -523,6 +535,25 @@ extension Swift.String {
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc deinit
 }
+extension PULPulsate.PULDebugLog {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDebugLog>
+  @objc @NSManaged dynamic public var message: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var uid: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULImageViewBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var dynamicImageView: PULPulsate.PULDynamicImageView!
   @IBOutlet @objc @_Concurrency.MainActor(unsafe) public var imageBlock: PULPulsate.PULImageBlock!
@@ -593,13 +624,16 @@ extension Swift.String {
   @objc public init(withAppId pAppId: Swift.String?, andAppKey pAppKey: Swift.String?) throws
   @objc deinit
 }
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
 @objc @objcMembers @_Concurrency.MainActor(unsafe) public class PULSystemManager : ObjectiveC.NSObject, UIKit.UIApplicationDelegate, UserNotifications.UNUserNotificationCenterDelegate {
   @_Concurrency.MainActor(unsafe) @objc public var window: UIKit.UIWindow?
   @objc @_Concurrency.MainActor(unsafe) public init(pulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func getDeviceInfo(_ withPermissions: Swift.Bool) -> PULPulsate.PULDevice?
-  @objc @_Concurrency.MainActor(unsafe) public func getPulsateSystemManager() -> (UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data)
-  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Swift.Error)
   @objc @_Concurrency.MainActor(unsafe) public func registerToPushNotifications()
   @_Concurrency.MainActor(unsafe) @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
@@ -611,11 +645,15 @@ extension Swift.String {
   @_Concurrency.MainActor(unsafe) @objc public func applicationWillResignActive(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor(unsafe) @objc public func applicationWillTerminate(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor(unsafe) @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
   @objc deinit
 }
 @objc @objcMembers public class PULRemoteStorage : ObjectiveC.NSObject {
   @objc public init?(accessToken token: PULPulsate.PULAccessToken?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PULDebugLog) public class PULDebugLog : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULNormalTextBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
@@ -719,7 +757,7 @@ extension Swift.String {
   @objc func failedToLoadMessages()
 }
 @objc @objcMembers public class PULMessagesModel : ObjectiveC.NSObject {
-  @objc weak public var delegate: PULPulsate.PULMessageModelDelegate?
+  @objc weak public var delegate: (any PULPulsate.PULMessageModelDelegate)?
   @objc public init(accessToken: PULPulsate.PULAccessToken?)
   @objc public func failedToLoadMessages()
   @objc public func messagesReceived(_ messages: [Any]?, withNumberOfMessagesUnread numberOfMessages: Foundation.NSNumber?, withMessageSubject messageSubject: Swift.String?)
@@ -894,7 +932,7 @@ public let PUL_KVO_FEED_FAILED: Swift.String
   @objc func willDisplayCell(_ cellIndex: Swift.Int)
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class PULFeedTableViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: PULPulsate.PULFeedTableViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any PULPulsate.PULFeedTableViewControllerDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public var isSingleCardView: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public var singleCardGuid: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
@@ -923,7 +961,7 @@ extension PULPulsate.PULFeedTableViewController {
   @_Concurrency.MainActor(unsafe) public func deleteCard(for cell: UIKit.UITableViewCell)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateError : ObjectiveC.NSObject {
-  @objc public class func createKeyError(withDescription description: Swift.String?, andCode errorCode: Swift.Int) -> Swift.Error?
+  @objc public class func createKeyError(withDescription description: Swift.String?, andCode errorCode: Swift.Int) -> (any Swift.Error)?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -933,6 +971,9 @@ extension PULPulsate.PULTextStyle : Swift.RawRepresentable {}
 extension PULPulsate.PULCallToActionType : Swift.Equatable {}
 extension PULPulsate.PULCallToActionType : Swift.Hashable {}
 extension PULPulsate.PULCallToActionType : Swift.RawRepresentable {}
+extension PULPulsate.CrashModelType : Swift.Equatable {}
+extension PULPulsate.CrashModelType : Swift.Hashable {}
+extension PULPulsate.CrashModelType : Swift.RawRepresentable {}
 extension PULPulsate.PULUserGender : Swift.Equatable {}
 extension PULPulsate.PULUserGender : Swift.Hashable {}
 extension PULPulsate.PULUserGender : Swift.RawRepresentable {}

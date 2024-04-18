@@ -45660,7 +45660,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.5.1BetaRC1\""
+      "value": "\"4.5.1BetaRC2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -48013,13 +48013,6 @@
       "offset": 607,
       "length": 2,
       "value": "85"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Small\/PULSmallInAppMessageControllerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 895,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Small\/PULSmallInAppMessageControllerViewController.swift",

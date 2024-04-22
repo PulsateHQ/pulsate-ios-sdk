@@ -385,7 +385,6 @@ public typealias IPulsateDeeplinkListener = (Swift.String) -> Swift.Bool
     @objc get
     @objc set
   }
-  @objc public var pulsateDeeplinkListener: PULPulsate.IPulsateDeeplinkListener?
   @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()

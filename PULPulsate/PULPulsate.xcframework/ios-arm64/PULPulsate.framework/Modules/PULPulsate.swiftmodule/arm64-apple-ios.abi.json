@@ -19778,162 +19778,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "pulsateDeeplinkListener",
-            "printedName": "pulsateDeeplinkListener",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String) -> Swift.Bool)?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> Swift.Bool",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(py)pulsateDeeplinkListener",
-            "mangledName": "$s10PULPulsate0A7ManagerC23pulsateDeeplinkListenerSbSScSgvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.String) -> Swift.Bool)?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.String) -> Swift.Bool",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)pulsateDeeplinkListener",
-                "mangledName": "$s10PULPulsate0A7ManagerC23pulsateDeeplinkListenerSbSScSgvg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.String) -> Swift.Bool)?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.String) -> Swift.Bool",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)setPulsateDeeplinkListener:",
-                "mangledName": "$s10PULPulsate0A7ManagerC23pulsateDeeplinkListenerSbSScSgvs",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PULPulsate0A7ManagerC23pulsateDeeplinkListenerSbSScSgvM",
-                "mangledName": "$s10PULPulsate0A7ManagerC23pulsateDeeplinkListenerSbSScSgvM",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "startPulsateSession",
             "printedName": "startPulsateSession(_:)",
@@ -45707,7 +45551,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 8,
-      "value": "\"4.4.4C\""
+      "value": "\"4.4.5C\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -47847,35 +47691,35 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1652,
       "length": 28,
       "value": "\"setPushNotificationEnabled\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1737,
+      "offset": 1730,
       "length": 12,
       "value": "\"setPrivacy\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1803,
+      "offset": 1796,
       "length": 27,
       "value": "\"setLocationUpdatesEnabled\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1875,
+      "offset": 1868,
       "length": 12,
       "value": "\"inAppQueue\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12075,
+      "offset": 12068,
       "length": 5,
       "value": "false"
     },

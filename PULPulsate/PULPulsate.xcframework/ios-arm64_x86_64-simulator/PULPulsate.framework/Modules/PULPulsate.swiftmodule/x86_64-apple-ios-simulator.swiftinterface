@@ -260,23 +260,6 @@ public enum CrashModelType : Swift.Int {
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class PULDatabaseManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public func setUpCoredataStack() throws
-  @objc public func changePersistentStore(toAlias alias: Swift.String?)
-  @objc public func changePersistentStoreToDefault()
-  @objc public func storeCustomAttribute(withKey key: Swift.String?, andValue value: Swift.String?, andType type: Swift.String?, andAction action: Swift.String?) throws
-  @objc public func fetchCustomAttributes() -> [PULPulsate.PULCustomAttributeAdapter]?
-  @objc public func storeScreenRecord(with record: PULPulsate.PULScreenRecord?)
-  @objc public func fetchScreenRecords() -> [PULPulsate.PULScreenRecord]
-  @objc public func storeLocations(_ record: PULPulsate.PULLocation?)
-  @objc public func fetchLocations() -> [PULPulsate.PULLocation]
-  @objc public func deleteSavedLocations() throws
-  @objc public func storeUserAction(_ record: PULPulsate.PULUserAction?)
-  @objc public func fetchUserActions() -> [PULPulsate.PULUserAction]
-  @objc public func clearAllDataToSynchronise()
-  @objc deinit
-}
 @objc public protocol PULBlockDataInjectable : ObjectiveC.NSObjectProtocol {
   @objc func injectData(_ data: Any?)
   @objc func injectData(_ data: Any?, isInApp: Swift.Bool)

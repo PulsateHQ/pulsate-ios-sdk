@@ -600,28 +600,6 @@ SWIFT_CLASS_NAMED("PULDBUserAction")
 @property (nonatomic, copy) NSString * _Nullable type;
 @end
 
-@class PULScreenRecord;
-@class PULLocation;
-@class PULUserAction;
-
-SWIFT_CLASS("_TtC10PULPulsate18PULDatabaseManager")
-@interface PULDatabaseManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)setUpCoredataStackAndReturnError:(NSError * _Nullable * _Nullable)error;
-- (void)changePersistentStoreToAlias:(NSString * _Nullable)alias;
-- (void)changePersistentStoreToDefault;
-- (BOOL)storeCustomAttributeWithKey:(NSString * _Nullable)key andValue:(NSString * _Nullable)value andType:(NSString * _Nullable)type andAction:(NSString * _Nullable)action error:(NSError * _Nullable * _Nullable)error;
-- (NSArray<PULCustomAttributeAdapter *> * _Nullable)fetchCustomAttributes SWIFT_WARN_UNUSED_RESULT;
-- (void)storeScreenRecordWith:(PULScreenRecord * _Nullable)record;
-- (NSArray<PULScreenRecord *> * _Nonnull)fetchScreenRecords SWIFT_WARN_UNUSED_RESULT;
-- (void)storeLocations:(PULLocation * _Nullable)record;
-- (NSArray<PULLocation *> * _Nonnull)fetchLocations SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)deleteSavedLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
-- (void)storeUserAction:(PULUserAction * _Nullable)record;
-- (NSArray<PULUserAction *> * _Nonnull)fetchUserActions SWIFT_WARN_UNUSED_RESULT;
-- (void)clearAllDataToSynchronise;
-@end
-
 
 SWIFT_CLASS_NAMED("PULDebugLog")
 @interface PULDebugLog : NSManagedObject
@@ -2235,28 +2213,6 @@ SWIFT_CLASS_NAMED("PULDBUserAction")
 @property (nonatomic, copy) NSString * _Nullable guid;
 @property (nonatomic, copy) NSDate * _Nullable timestamp;
 @property (nonatomic, copy) NSString * _Nullable type;
-@end
-
-@class PULScreenRecord;
-@class PULLocation;
-@class PULUserAction;
-
-SWIFT_CLASS("_TtC10PULPulsate18PULDatabaseManager")
-@interface PULDatabaseManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)setUpCoredataStackAndReturnError:(NSError * _Nullable * _Nullable)error;
-- (void)changePersistentStoreToAlias:(NSString * _Nullable)alias;
-- (void)changePersistentStoreToDefault;
-- (BOOL)storeCustomAttributeWithKey:(NSString * _Nullable)key andValue:(NSString * _Nullable)value andType:(NSString * _Nullable)type andAction:(NSString * _Nullable)action error:(NSError * _Nullable * _Nullable)error;
-- (NSArray<PULCustomAttributeAdapter *> * _Nullable)fetchCustomAttributes SWIFT_WARN_UNUSED_RESULT;
-- (void)storeScreenRecordWith:(PULScreenRecord * _Nullable)record;
-- (NSArray<PULScreenRecord *> * _Nonnull)fetchScreenRecords SWIFT_WARN_UNUSED_RESULT;
-- (void)storeLocations:(PULLocation * _Nullable)record;
-- (NSArray<PULLocation *> * _Nonnull)fetchLocations SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)deleteSavedLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
-- (void)storeUserAction:(PULUserAction * _Nullable)record;
-- (NSArray<PULUserAction *> * _Nonnull)fetchUserActions SWIFT_WARN_UNUSED_RESULT;
-- (void)clearAllDataToSynchronise;
 @end
 
 

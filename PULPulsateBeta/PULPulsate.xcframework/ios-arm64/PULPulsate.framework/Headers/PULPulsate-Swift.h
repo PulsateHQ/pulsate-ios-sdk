@@ -1199,6 +1199,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, weak) IBOutlet id <PULPulsateUnauthorizedManagerDelegate> _Nullable unauthorizedDelegate;
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
 @property (nonatomic, copy) NSString * _Nullable resourceBundleIdentifier;
+@property (nonatomic, copy) BOOL (^ _Nullable pulsateDeeplinkListener)(NSString * _Nonnull);
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
 - (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
@@ -1450,6 +1451,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// Sends a request to the server to get the Pulsate badge count.
 /// The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
 - (void)startBackgroundUpdates:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)setPulsateDeepLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
 - (void)showFake1;
 - (void)showFake2;
 - (void)showFake3;

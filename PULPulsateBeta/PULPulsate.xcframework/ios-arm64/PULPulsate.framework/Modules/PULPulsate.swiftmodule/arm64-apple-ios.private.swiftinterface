@@ -359,6 +359,7 @@ extension PULPulsate.PULDBScreenRecord {
 }
 public typealias RequestListener = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
 public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
+public typealias IPulsateDeeplinkListener = (Swift.String) -> Swift.Bool
 @objc public enum PULUserGender : Swift.Int {
   case pulMale
   case pulFemale
@@ -384,6 +385,7 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
     @objc get
     @objc set
   }
+  @objc public var pulsateDeeplinkListener: PULPulsate.IPulsateDeeplinkListener?
   @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
@@ -447,6 +449,7 @@ public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
   @objc public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)
+  @objc public func setPulsateDeepLinkListener(_ listener: @escaping PULPulsate.IPulsateDeeplinkListener)
   @objc public func showFake1()
   @objc public func showFake2()
   @objc public func showFake3()

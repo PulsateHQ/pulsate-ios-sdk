@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsate"
-  s.version          = "4.4.6C"
+  s.version          = "4.4.7C"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"

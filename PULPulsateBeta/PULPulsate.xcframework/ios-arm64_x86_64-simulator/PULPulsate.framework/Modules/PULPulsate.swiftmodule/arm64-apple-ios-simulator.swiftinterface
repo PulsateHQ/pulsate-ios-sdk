@@ -89,6 +89,33 @@ extension UIKit.UIView {
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc deinit
 }
+extension PULPulsate.PULLocationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
+  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
 @objc @objcMembers public class PULCustomAttributeAdapter : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var key: Swift.String?
   @objc public var value: Swift.String?
@@ -148,6 +175,25 @@ public enum PULTextStyle : Swift.Int {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class PULImageCache : ObjectiveC.NSObject {
   @objc public class func clearMemoryCaches()
   @objc deinit
+}
+extension PULPulsate.PULDebugLog {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDebugLog>
+  @objc @NSManaged dynamic public var message: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var uid: Swift.String? {
+    @objc get
+    @objc set
+  }
 }
 @objc public protocol PULJSONSerializable : ObjectiveC.NSObjectProtocol {
   @objc func getValueDictionary() -> [Swift.AnyHashable : Any]?
@@ -260,21 +306,8 @@ public enum CrashModelType : Swift.Int {
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class PULDatabaseManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public func setUpCoredataStack() throws
-  @objc public func changePersistentStore(toAlias alias: Swift.String?)
-  @objc public func changePersistentStoreToDefault()
-  @objc public func storeCustomAttribute(withKey key: Swift.String?, andValue value: Swift.String?, andType type: Swift.String?, andAction action: Swift.String?) throws
-  @objc public func fetchCustomAttributes() -> [PULPulsate.PULCustomAttributeAdapter]?
-  @objc public func storeScreenRecord(with record: PULPulsate.PULScreenRecord?)
-  @objc public func fetchScreenRecords() -> [PULPulsate.PULScreenRecord]
-  @objc public func storeLocations(_ record: PULPulsate.PULLocation?)
-  @objc public func fetchLocations() -> [PULPulsate.PULLocation]
-  @objc public func deleteSavedLocations() throws
-  @objc public func storeUserAction(_ record: PULPulsate.PULUserAction?)
-  @objc public func fetchUserActions() -> [PULPulsate.PULUserAction]
-  @objc public func clearAllDataToSynchronise()
+@_inheritsConvenienceInitializers @objc(PULDebugLog) public class PULDebugLog : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
 @objc public protocol PULBlockDataInjectable : ObjectiveC.NSObjectProtocol {
@@ -359,7 +392,7 @@ extension PULPulsate.PULDBScreenRecord {
 }
 public typealias RequestListener = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
 public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
-public typealias IPulsateDeeplinkListener = (Swift.String) -> Swift.Bool
+public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
 @objc public enum PULUserGender : Swift.Int {
   case pulMale
   case pulFemale
@@ -385,7 +418,6 @@ public typealias IPulsateDeeplinkListener = (Swift.String) -> Swift.Bool
     @objc get
     @objc set
   }
-  @objc public var pulsateDeeplinkListener: PULPulsate.IPulsateDeeplinkListener?
   @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
@@ -449,7 +481,9 @@ public typealias IPulsateDeeplinkListener = (Swift.String) -> Swift.Bool
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
   @objc public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)
-  @objc public func setPulsateDeepLinkListener(_ listener: @escaping PULPulsate.IPulsateDeeplinkListener)
+  @objc public func setPULPulsateLinkListener(_ listener: @escaping PULPulsate.PULPulsateLinkListener)
+  @objc public func userHasLoggedIn()
+  @objc public func userHasLoggedOut()
   @objc public func showFake1()
   @objc public func showFake2()
   @objc public func showFake3()
@@ -537,25 +571,6 @@ extension Swift.String {
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
   @objc deinit
-}
-extension PULPulsate.PULDebugLog {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDebugLog>
-  @objc @NSManaged dynamic public var message: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var messageType: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var uid: Swift.String? {
-    @objc get
-    @objc set
-  }
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULImageViewBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var dynamicImageView: PULPulsate.PULDynamicImageView!
@@ -655,10 +670,6 @@ extension UIKit.UIDevice {
   @objc public init?(accessToken token: PULPulsate.PULAccessToken?)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PULDebugLog) public class PULDebugLog : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PULNormalTextBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var contentLabel: UIKit.UILabel!
   @_Concurrency.MainActor(unsafe) @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
@@ -748,6 +759,10 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
 @objc @objcMembers public class PULEventAdapter : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc required public init(dbObject dbEvent: PULPulsate.PULDBEvent?)
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
@@ -834,37 +849,6 @@ extension PULPulsate.PULDBUserAction {
     @objc get
     @objc set
   }
-}
-extension PULPulsate.PULLocationEntity {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
-  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
-    @objc get
-    @objc set
-  }
-}
-@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
 }
 @objc @objcMembers public class PULImageBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var imageUrl: Swift.String?

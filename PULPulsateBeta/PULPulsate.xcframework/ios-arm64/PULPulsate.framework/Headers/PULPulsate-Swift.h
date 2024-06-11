@@ -653,28 +653,6 @@ SWIFT_CLASS_NAMED("PULDBUserAction")
 @property (nonatomic, copy) NSString * _Nullable type;
 @end
 
-@class PULScreenRecord;
-@class PULLocation;
-@class PULUserAction;
-
-SWIFT_CLASS("_TtC10PULPulsate18PULDatabaseManager")
-@interface PULDatabaseManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)setUpCoredataStackAndReturnError:(NSError * _Nullable * _Nullable)error;
-- (void)changePersistentStoreToAlias:(NSString * _Nullable)alias;
-- (void)changePersistentStoreToDefault;
-- (BOOL)storeCustomAttributeWithKey:(NSString * _Nullable)key andValue:(NSString * _Nullable)value andType:(NSString * _Nullable)type andAction:(NSString * _Nullable)action error:(NSError * _Nullable * _Nullable)error;
-- (NSArray<PULCustomAttributeAdapter *> * _Nullable)fetchCustomAttributes SWIFT_WARN_UNUSED_RESULT;
-- (void)storeScreenRecordWith:(PULScreenRecord * _Nullable)record;
-- (NSArray<PULScreenRecord *> * _Nonnull)fetchScreenRecords SWIFT_WARN_UNUSED_RESULT;
-- (void)storeLocations:(PULLocation * _Nullable)record;
-- (NSArray<PULLocation *> * _Nonnull)fetchLocations SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)deleteSavedLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
-- (void)storeUserAction:(PULUserAction * _Nullable)record;
-- (NSArray<PULUserAction *> * _Nonnull)fetchUserActions SWIFT_WARN_UNUSED_RESULT;
-- (void)clearAllDataToSynchronise;
-@end
-
 
 SWIFT_CLASS_NAMED("PULDebugLog")
 @interface PULDebugLog : NSManagedObject
@@ -1199,7 +1177,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, weak) IBOutlet id <PULPulsateUnauthorizedManagerDelegate> _Nullable unauthorizedDelegate;
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
 @property (nonatomic, copy) NSString * _Nullable resourceBundleIdentifier;
-@property (nonatomic, copy) BOOL (^ _Nullable pulsateDeeplinkListener)(NSString * _Nonnull);
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
 - (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
@@ -1451,7 +1428,12 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// Sends a request to the server to get the Pulsate badge count.
 /// The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
 - (void)startBackgroundUpdates:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
-- (void)setPulsateDeepLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
+/// Use PulsateLinkListener to listen links coming in compaigns. Return true if link already handeld otherwise return false so pulsate can handle.
+/// \param listener 
+///
+- (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
+- (void)userHasLoggedIn;
+- (void)userHasLoggedOut;
 - (void)showFake1;
 - (void)showFake2;
 - (void)showFake3;

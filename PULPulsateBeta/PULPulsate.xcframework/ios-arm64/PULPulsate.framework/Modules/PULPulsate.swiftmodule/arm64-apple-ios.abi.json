@@ -10431,6 +10431,13 @@
       },
       {
         "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19143,6 +19150,13 @@
         "moduleName": "PULPulsate"
       },
       {
+        "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PULUserGender",
         "printedName": "PULUserGender",
@@ -22321,6 +22335,34 @@
             "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)userHasLoggedOut",
             "mangledName": "$s10PULPulsate0A7ManagerC16userHasLoggedOutyyF",
             "moduleName": "PULPulsate",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBackgroundAppRefreshTask",
+            "printedName": "setBackgroundAppRefreshTask(timeInterval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)setBackgroundAppRefreshTaskWithTimeInterval:",
+            "mangledName": "$s10PULPulsate0A7ManagerC27setBackgroundAppRefreshTask12timeIntervalySd_tF",
+            "moduleName": "PULPulsate",
+            "objc_name": "setBackgroundAppRefreshTaskWithTimeInterval:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -29525,6 +29567,13 @@
         "moduleName": "PULPulsate"
       },
       {
+        "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PULSystemManager",
         "printedName": "PULSystemManager",
@@ -30082,6 +30131,37 @@
               "ObjC",
               "Custom",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllNotificationCategories",
+            "printedName": "getAllNotificationCategories()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UserNotifications.UNNotificationCategory>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotificationCategory",
+                    "printedName": "UserNotifications.UNNotificationCategory",
+                    "usr": "c:objc(cs)UNNotificationCategory"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)getAllNotificationCategories",
+            "mangledName": "$s10PULPulsate16PULSystemManagerC28getAllNotificationCategoriesShySo22UNNotificationCategoryCGyF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -45235,7 +45315,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.5.2BetaRC1\""
+      "value": "\"4.5.2BetaRC2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -47347,63 +47427,63 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 464,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 464,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 535,
+      "offset": 558,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 535,
+      "offset": 558,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1644,
+      "offset": 1667,
       "length": 28,
       "value": "\"setPushNotificationEnabled\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1722,
+      "offset": 1745,
       "length": 12,
       "value": "\"setPrivacy\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1788,
+      "offset": 1811,
       "length": 27,
       "value": "\"setLocationUpdatesEnabled\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1860,
+      "offset": 1883,
       "length": 12,
       "value": "\"inAppQueue\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12060,
+      "offset": 12222,
       "length": 5,
       "value": "false"
     },
@@ -50000,91 +50080,91 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 263,
+      "offset": 286,
       "length": 3,
       "value": "\"b\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 302,
+      "offset": 325,
       "length": 4,
       "value": "\"on\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 343,
+      "offset": 366,
       "length": 5,
       "value": "\"iae\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 403,
       "length": 3,
       "value": "\"d\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 420,
+      "offset": 443,
       "length": 4,
       "value": "\"dt\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 453,
+      "offset": 476,
       "length": 4,
       "value": "\"cg\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 485,
+      "offset": 508,
       "length": 4,
       "value": "\"tg\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 538,
       "length": 4,
       "value": "\"ea\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1027,
+      "offset": 1050,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1063,
+      "offset": 1086,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1093,
+      "offset": 1116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 50473,
+      "offset": 50946,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "StringLiteral",
-      "offset": 774,
+      "offset": 797,
       "length": 16,
       "value": "\"PULPulsate.PULSystemManager\""
     },

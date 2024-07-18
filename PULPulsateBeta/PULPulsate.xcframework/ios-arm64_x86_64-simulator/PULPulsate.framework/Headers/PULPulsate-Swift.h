@@ -1434,7 +1434,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
 - (void)userHasLoggedIn;
 - (void)userHasLoggedOut;
-- (void)setBackgroundAppRefreshTaskWithTimeInterval:(NSTimeInterval)timeInterval;
+- (void)registerRefreshBackgroundTask;
+- (void)scheduelAppRefreshInBackgroundWithTimeInterval:(NSTimeInterval)timeInterval;
 - (void)showFake1;
 - (void)showFake2;
 - (void)showFake3;
@@ -3110,7 +3111,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
 - (void)userHasLoggedIn;
 - (void)userHasLoggedOut;
-- (void)setBackgroundAppRefreshTaskWithTimeInterval:(NSTimeInterval)timeInterval;
+- (void)registerRefreshBackgroundTask;
+- (void)scheduelAppRefreshInBackgroundWithTimeInterval:(NSTimeInterval)timeInterval;
 - (void)showFake1;
 - (void)showFake2;
 - (void)showFake3;

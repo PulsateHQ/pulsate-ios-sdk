@@ -30028,6 +30028,51 @@
           },
           {
             "kind": "Function",
+            "name": "handlePulsatePushNotificationPayload",
+            "printedName": "handlePulsatePushNotificationPayload(response:withCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNNotificationResponse",
+                "printedName": "UserNotifications.UNNotificationResponse",
+                "usr": "c:objc(cs)UNNotificationResponse"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)handlePulsatePushNotificationPayloadWithResponse:withCompletionHandler:",
+            "mangledName": "$s10PULPulsate16PULSystemManagerC36handlePulsatePushNotificationPayload8response21withCompletionHandlerySo22UNNotificationResponseC_yyctF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "handleActionButton",
             "printedName": "handleActionButton(_:withGuid:)",
             "children": [
@@ -45336,7 +45381,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.5.2BetaRC6\""
+      "value": "\"4.5.2BetaRC7\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -50178,7 +50223,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 52261,
+      "offset": 51541,
       "length": 3,
       "value": "[]"
     },

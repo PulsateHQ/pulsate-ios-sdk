@@ -1554,6 +1554,7 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)registerToPushNotifications;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)handlePulsatePushNotificationPayloadWithResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)handleActionButton:(NSDictionary<NSString *, id> * _Nullable)btnDictionary withGuid:(NSString * _Nullable)guid;
 - (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
 - (NSSet<UNNotificationCategory *> * _Nonnull)getAllNotificationCategories SWIFT_WARN_UNUSED_RESULT;

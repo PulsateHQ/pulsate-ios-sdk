@@ -658,6 +658,7 @@ extension UIKit.UIDevice {
   @objc @_Concurrency.MainActor(unsafe) public func registerToPushNotifications()
   @_Concurrency.MainActor(unsafe) @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public func handlePulsatePushNotificationPayload(response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func handleActionButton(_ btnDictionary: [Swift.String : Any]?, withGuid guid: Swift.String?)
   @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func getAllNotificationCategories() -> Swift.Set<UserNotifications.UNNotificationCategory>

@@ -45382,7 +45382,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 15,
-      "value": "\"4.5.2BetaRC12\""
+      "value": "\"4.5.2BetaRC13\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -50231,7 +50231,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 51313,
+      "offset": 51363,
       "length": 3,
       "value": "[]"
     },

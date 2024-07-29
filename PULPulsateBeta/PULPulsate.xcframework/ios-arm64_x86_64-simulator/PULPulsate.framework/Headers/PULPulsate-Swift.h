@@ -1502,7 +1502,7 @@ SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
 
 SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 @interface PULSwipeToHideManager : NSObject
-- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(void))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(BOOL))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3180,7 +3180,7 @@ SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
 
 SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 @interface PULSwipeToHideManager : NSObject
-- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(void))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(BOOL))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

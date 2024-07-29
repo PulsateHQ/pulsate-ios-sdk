@@ -219,7 +219,7 @@ extension PULPulsate.PULDebugLog {
   @objc deinit
 }
 @objc @objcMembers public class PULSwipeToHideManager : ObjectiveC.NSObject {
-  @objc public init(view: UIKit.UIView?, andHideEventBlock hideEventBlock: @escaping () -> Swift.Void, andTimeoutEventBlock timeoutEventBlock: @escaping () -> Swift.Void)
+  @objc public init(view: UIKit.UIView?, andHideEventBlock hideEventBlock: @escaping (Swift.Bool) -> Swift.Void, andTimeoutEventBlock timeoutEventBlock: @escaping () -> Swift.Void)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class PulsateBundle {

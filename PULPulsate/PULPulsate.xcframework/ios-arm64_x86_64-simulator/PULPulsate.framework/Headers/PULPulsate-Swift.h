@@ -1432,6 +1432,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// \param listener 
 ///
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
+- (void)userHasLoggedIn;
+- (void)userHasLoggedOut;
 - (void)showFake1;
 - (void)showFake2;
 - (void)showFake3;
@@ -1498,7 +1500,7 @@ SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
 
 SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 @interface PULSwipeToHideManager : NSObject
-- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(void))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(BOOL))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1509,6 +1511,7 @@ SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 @class UNUserNotificationCenter;
 @class UNNotification;
 @class UNNotificationResponse;
+@class UNNotificationCategory;
 @class NSURL;
 @class NSUserActivity;
 @protocol UIUserActivityRestoring;
@@ -1549,8 +1552,11 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)registerToPushNotifications;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)handlePulsatePushNotificationPayloadWithResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)handleActionButton:(NSDictionary<NSString *, id> * _Nullable)btnDictionary withGuid:(NSString * _Nullable)guid;
+- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
+- (NSSet<UNNotificationCategory *> * _Nonnull)getAllNotificationCategories SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -3103,6 +3109,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// \param listener 
 ///
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
+- (void)userHasLoggedIn;
+- (void)userHasLoggedOut;
 - (void)showFake1;
 - (void)showFake2;
 - (void)showFake3;
@@ -3169,7 +3177,7 @@ SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
 
 SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 @interface PULSwipeToHideManager : NSObject
-- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(void))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithView:(UIView * _Nullable)view andHideEventBlock:(void (^ _Nonnull)(BOOL))hideEventBlock andTimeoutEventBlock:(void (^ _Nonnull)(void))timeoutEventBlock OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3180,6 +3188,7 @@ SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 @class UNUserNotificationCenter;
 @class UNNotification;
 @class UNNotificationResponse;
+@class UNNotificationCategory;
 @class NSURL;
 @class NSUserActivity;
 @protocol UIUserActivityRestoring;
@@ -3220,8 +3229,11 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)registerToPushNotifications;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)handlePulsatePushNotificationPayloadWithResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)handleActionButton:(NSDictionary<NSString *, id> * _Nullable)btnDictionary withGuid:(NSString * _Nullable)guid;
+- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
+- (NSSet<UNNotificationCategory *> * _Nonnull)getAllNotificationCategories SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;

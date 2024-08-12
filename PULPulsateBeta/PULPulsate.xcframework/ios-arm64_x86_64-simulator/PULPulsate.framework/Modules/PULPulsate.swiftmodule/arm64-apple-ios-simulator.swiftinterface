@@ -17,6 +17,12 @@ import UserNotificationsUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class PULTestManager {
+  @objc public func showBigTest1() -> PULPulsate.PULBigInAppMessageController?
+  @objc public func showBigTest2() -> PULPulsate.PULBigInAppMessageController?
+  @objc public func showBigTest3() -> PULPulsate.PULBigInAppMessageController?
+  @objc deinit
+}
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public func remove()
@@ -83,6 +89,13 @@ extension UIKit.UIView {
   @objc public var messageTryAgain: Swift.String?
   @objc override dynamic public init()
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PULBigInAppMessageController : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @objc @objcMembers public class PULDynamicViewBlocks : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var viewBlocks: [Any]?
@@ -419,6 +432,7 @@ public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
     @objc get
     @objc set
   }
+  final public let testingManager: PULPulsate.PULTestManager
   @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
@@ -485,11 +499,6 @@ public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
   @objc public func setPULPulsateLinkListener(_ listener: @escaping PULPulsate.PULPulsateLinkListener)
   @objc public func userHasLoggedIn()
   @objc public func userHasLoggedOut()
-  @objc public func registerRefreshBackgroundTask()
-  @objc public func scheduelAppRefreshInBackground(timeInterval: Foundation.TimeInterval)
-  @objc public func showFake1()
-  @objc public func showFake2()
-  @objc public func showFake3()
   @objc public func forceCrash()
   @objc public func forceANR()
   @objc override dynamic public init()
@@ -660,6 +669,7 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func handlePulsatePushNotificationPayload(response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func handleActionButton(_ btnDictionary: [Swift.String : Any]?, withGuid guid: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func getAllNotificationCategories() -> Swift.Set<UserNotifications.UNNotificationCategory>
   @_Concurrency.MainActor(unsafe) @objc public func applicationDidBecomeActive(_ application: UIKit.UIApplication)

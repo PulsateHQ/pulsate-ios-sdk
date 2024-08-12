@@ -395,6 +395,15 @@ typedef SWIFT_ENUM(NSInteger, PULBeaconAction, open) {
 };
 
 
+SWIFT_CLASS("_TtC10PULPulsate28PULBigInAppMessageController")
+@interface PULBigInAppMessageController : UIView
+- (void)drawRect:(CGRect)rect;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_PROTOCOL("_TtP10PULPulsate22PULBlockDataInjectable_")
 @protocol PULBlockDataInjectable <NSObject>
 - (void)injectData:(id _Nullable)data;
@@ -1434,11 +1443,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
 - (void)userHasLoggedIn;
 - (void)userHasLoggedOut;
-- (void)registerRefreshBackgroundTask;
-- (void)scheduelAppRefreshInBackgroundWithTimeInterval:(NSTimeInterval)timeInterval;
-- (void)showFake1;
-- (void)showFake2;
-- (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1556,6 +1560,7 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)handlePulsatePushNotificationPayloadWithResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)handleActionButton:(NSDictionary<NSString *, id> * _Nullable)btnDictionary withGuid:(NSString * _Nullable)guid;
+- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
 - (NSSet<UNNotificationCategory *> * _Nonnull)getAllNotificationCategories SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;

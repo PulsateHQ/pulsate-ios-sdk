@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PULPulsate"
-  s.version          = "4.5.5"
+  s.version          = "4.5.6"
   s.summary          = "Pulsate SDK"
 
   s.homepage         = "http://pulsatehq.com/"
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'PULPulsate/PULPulsate.xcframework'
   s.resource = 'PULPulsate/PULPulsateBasic.bundle'
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
-  s.library = 'z'
+  s.static_framework = false
   s.dependency 'SDWebImage'
 end

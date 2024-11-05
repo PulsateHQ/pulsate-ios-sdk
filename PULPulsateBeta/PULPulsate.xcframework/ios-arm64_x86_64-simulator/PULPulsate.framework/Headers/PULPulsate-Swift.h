@@ -395,15 +395,6 @@ typedef SWIFT_ENUM(NSInteger, PULBeaconAction, open) {
 };
 
 
-SWIFT_CLASS("_TtC10PULPulsate28PULBigInAppMessageController")
-@interface PULBigInAppMessageController : UIView
-- (void)drawRect:(CGRect)rect;
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_PROTOCOL("_TtP10PULPulsate22PULBlockDataInjectable_")
 @protocol PULBlockDataInjectable <NSObject>
 - (void)injectData:(id _Nullable)data;
@@ -1085,7 +1076,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns nil if keys weren’t found
-+ (PULPulsateManager * _Nullable)getInstanceWithLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Creates pulsate manager instance with given API keys. If an instance already exists
 /// it returns it instead.
 /// <ul>
@@ -1113,7 +1104,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withLaunchOptions:(NSDictionary * _Nullable)launchOptions withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Creates pulsate manager instance with given API keys. If an instance already exists
 /// it returns it instead.
 /// <ul>
@@ -1136,38 +1127,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 + (PULPulsateManager * _Nullable)getDefaultInstance SWIFT_WARN_UNUSED_RESULT;
-/// initialize Pulsate manager with given data
-/// <ul>
-///   <li>
-///     Parameters:
-///   </li>
-///   <li>
-///     token:           <#token description#>
-///   </li>
-///   <li>
-///     error:           <#error description#>
-///   </li>
-///   <li>
-///     locationEnabled: <#locationEnabled description#>
-///   </li>
-///   <li>
-///     pushEnabled:     <#pushEnabled description#>
-///   </li>
-///   <li>
-///     isPulsateAppDelegate: isPulsateAppDelegate description
-///   </li>
-/// </ul>
-///
-/// returns:
-/// <#return value description#>
-+ (PULPulsateManager * _Nullable)initDefaultWith:(PULAccessToken * _Nullable)token withLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
-/// Creates a PulsateManager instance with API Keys fetched from the config, location enabled and push enabled. If an instance already exists it returns it instead.
-///
-/// returns:
-/// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithLaunchOptions:(NSDictionary<NSString *, id> * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1185,7 +1146,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @interface PULPulsateManager : NSObject
 @property (nonatomic, weak) IBOutlet id <PULPulsateUnauthorizedManagerDelegate> _Nullable unauthorizedDelegate;
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
-@property (nonatomic, copy) NSString * _Nullable resourceBundleIdentifier;
+@property (nonatomic, strong) NSBundle * _Nullable externalResourceBundle;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
 - (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
@@ -1205,7 +1166,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// This enables you to postpone the push query prompt and customize the push settings
 - (void)startRemoteNotificationsWith:(UNAuthorizationOptions)notificationSettings;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
-- (UINavigationController * _Nullable)getFeedNavigationController SWIFT_WARN_UNUSED_RESULT;
+- (UINavigationController * _Nullable)getFeedNavigationControllerWithCompletion:(void (^ _Nullable)(void))completion SWIFT_WARN_UNUSED_RESULT;
 /// Allows Developers to get the Pulsate Inbox JSON that they can later render and show to the user in a custom way
 - (void)getFeed:(NSString * _Nullable)page with:(void (^ _Nonnull)(NSArray * _Nullable, NSError * _Nullable))listener;
 /// When using -(void)getFeed:(NSString*)page withListener:(nonnull FeedListener)listener;
@@ -1418,6 +1379,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)sendLocationWithBeaconEvents:(BOOL)sendLocation;
 /// Returns the Device Guid that Pulsate uses to identify users.
 - (NSString * _Nullable)getDeviceGuid SWIFT_WARN_UNUSED_RESULT;
+- (void)getFeedUnreadCountWithCompletion:(void (^ _Nonnull)(NSInteger))completion;
 /// Sends a request to the server to get the Pulsate badge count.
 /// The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
 - (void)getBadgeCount;
@@ -1443,6 +1405,9 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
 - (void)userHasLoggedIn;
 - (void)userHasLoggedOut;
+- (void)showFake1;
+- (void)showFake2;
+- (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1662,6 +1627,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 
@@ -2078,15 +2044,6 @@ typedef SWIFT_ENUM(NSInteger, PULBeaconAction, open) {
 };
 
 
-SWIFT_CLASS("_TtC10PULPulsate28PULBigInAppMessageController")
-@interface PULBigInAppMessageController : UIView
-- (void)drawRect:(CGRect)rect;
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_PROTOCOL("_TtP10PULPulsate22PULBlockDataInjectable_")
 @protocol PULBlockDataInjectable <NSObject>
 - (void)injectData:(id _Nullable)data;
@@ -2768,7 +2725,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns nil if keys weren’t found
-+ (PULPulsateManager * _Nullable)getInstanceWithLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Creates pulsate manager instance with given API keys. If an instance already exists
 /// it returns it instead.
 /// <ul>
@@ -2796,7 +2753,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withLaunchOptions:(NSDictionary * _Nullable)launchOptions withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Creates pulsate manager instance with given API keys. If an instance already exists
 /// it returns it instead.
 /// <ul>
@@ -2819,38 +2776,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 + (PULPulsateManager * _Nullable)getDefaultInstance SWIFT_WARN_UNUSED_RESULT;
-/// initialize Pulsate manager with given data
-/// <ul>
-///   <li>
-///     Parameters:
-///   </li>
-///   <li>
-///     token:           <#token description#>
-///   </li>
-///   <li>
-///     error:           <#error description#>
-///   </li>
-///   <li>
-///     locationEnabled: <#locationEnabled description#>
-///   </li>
-///   <li>
-///     pushEnabled:     <#pushEnabled description#>
-///   </li>
-///   <li>
-///     isPulsateAppDelegate: isPulsateAppDelegate description
-///   </li>
-/// </ul>
-///
-/// returns:
-/// <#return value description#>
-+ (PULPulsateManager * _Nullable)initDefaultWith:(PULAccessToken * _Nullable)token withLocationEnabled:(BOOL)locationEnabled withPushEnabled:(BOOL)pushEnabled withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
-/// Creates a PulsateManager instance with API Keys fetched from the config, location enabled and push enabled. If an instance already exists it returns it instead.
-///
-/// returns:
-/// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithLaunchOptions:(NSDictionary<NSString *, id> * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2868,7 +2795,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @interface PULPulsateManager : NSObject
 @property (nonatomic, weak) IBOutlet id <PULPulsateUnauthorizedManagerDelegate> _Nullable unauthorizedDelegate;
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
-@property (nonatomic, copy) NSString * _Nullable resourceBundleIdentifier;
+@property (nonatomic, strong) NSBundle * _Nullable externalResourceBundle;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
 - (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
@@ -2888,7 +2815,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// This enables you to postpone the push query prompt and customize the push settings
 - (void)startRemoteNotificationsWith:(UNAuthorizationOptions)notificationSettings;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
-- (UINavigationController * _Nullable)getFeedNavigationController SWIFT_WARN_UNUSED_RESULT;
+- (UINavigationController * _Nullable)getFeedNavigationControllerWithCompletion:(void (^ _Nullable)(void))completion SWIFT_WARN_UNUSED_RESULT;
 /// Allows Developers to get the Pulsate Inbox JSON that they can later render and show to the user in a custom way
 - (void)getFeed:(NSString * _Nullable)page with:(void (^ _Nonnull)(NSArray * _Nullable, NSError * _Nullable))listener;
 /// When using -(void)getFeed:(NSString*)page withListener:(nonnull FeedListener)listener;
@@ -3101,6 +3028,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)sendLocationWithBeaconEvents:(BOOL)sendLocation;
 /// Returns the Device Guid that Pulsate uses to identify users.
 - (NSString * _Nullable)getDeviceGuid SWIFT_WARN_UNUSED_RESULT;
+- (void)getFeedUnreadCountWithCompletion:(void (^ _Nonnull)(NSInteger))completion;
 /// Sends a request to the server to get the Pulsate badge count.
 /// The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
 - (void)getBadgeCount;
@@ -3126,6 +3054,9 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
 - (void)userHasLoggedIn;
 - (void)userHasLoggedOut;
+- (void)showFake1;
+- (void)showFake2;
+- (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -3345,6 +3276,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 

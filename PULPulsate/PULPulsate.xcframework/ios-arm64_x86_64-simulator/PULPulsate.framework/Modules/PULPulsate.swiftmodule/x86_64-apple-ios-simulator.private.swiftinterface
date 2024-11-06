@@ -394,6 +394,7 @@ extension PULPulsate.PULDBScreenRecord {
 public typealias RequestListener = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
 public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
 public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
+public typealias Completion = () -> Swift.Void
 @objc public enum PULUserGender : Swift.Int {
   case pulMale
   case pulFemale
@@ -415,7 +416,7 @@ public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateManager : ObjectiveC.NSObject {
   @objc @IBOutlet weak public var unauthorizedDelegate: (any PULPulsate.PULPulsateUnauthorizedManagerDelegate)?
   @objc @IBOutlet weak public var badgeDelegate: (any PULPulsate.PULPulsateBadgeDelegate)?
-  @objc public var resourceBundleIdentifier: Swift.String? {
+  @objc public var externalResourceBundle: Foundation.Bundle? {
     @objc get
     @objc set
   }
@@ -426,7 +427,7 @@ public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
   @objc public func startLocation()
   @objc public func startRemoteNotifications()
   @objc public func startRemoteNotifications(with notificationSettings: UserNotifications.UNAuthorizationOptions)
-  @objc public func getFeedNavigationController() -> UIKit.UINavigationController?
+  @objc public func getFeedNavigationController(completion: PULPulsate.Completion? = nil) -> UIKit.UINavigationController?
   @objc public func getFeed(_ page: Swift.String?, with listener: @escaping PULPulsate.FeedListener)
   @objc public func handleFeedClick(_ pulsateInboxItem: Any?)
   @objc public func closeAutomaticallyOpenedFeed()
@@ -471,6 +472,7 @@ public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
   @objc public func showCampaignExpired()
   @objc public func sendLocation(withBeaconEvents sendLocation: Swift.Bool)
   @objc public func getDeviceGuid() -> Swift.String?
+  @objc public func getFeedUnreadCount(completion: @escaping (Swift.Int) -> Swift.Void)
   @objc public func getBadgeCount()
   @objc public func saveUnauthorizedCampaign(withGUID guid: Swift.String?, andTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?)
   @objc public func saveUnauthorizedMessage(withGUID guid: Swift.String?, andTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?)
@@ -598,12 +600,10 @@ extension Swift.String {
 @_inheritsConvenienceInitializers @objc public class PULPulsateFactory : ObjectiveC.NSObject {
   @objc public class func setBaseUrl(_ baseUrl: Swift.String)
   @objc public class func getBaseUrl() -> Swift.String?
-  @objc public class func getInstanceWithLocationEnabled(_ locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
-  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
-  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstance(withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
-  @objc public class func initDefault(with token: PULPulsate.PULAccessToken?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
-  @objc public class func getInstanceWithLaunchOptions(_ launchOptions: [Swift.String : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc override dynamic public init()
   @objc deinit
 }

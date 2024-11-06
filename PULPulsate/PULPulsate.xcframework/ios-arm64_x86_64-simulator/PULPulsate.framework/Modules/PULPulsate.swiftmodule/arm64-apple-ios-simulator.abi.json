@@ -19812,27 +19812,27 @@
           },
           {
             "kind": "Var",
-            "name": "resourceBundleIdentifier",
-            "printedName": "resourceBundleIdentifier",
+            "name": "externalResourceBundle",
+            "printedName": "externalResourceBundle",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Foundation.Bundle?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(py)resourceBundleIdentifier",
-            "mangledName": "$s10PULPulsate0A7ManagerC24resourceBundleIdentifierSSSgvp",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(py)externalResourceBundle",
+            "mangledName": "$s10PULPulsate0A7ManagerC22externalResourceBundleSo8NSBundleCSgvp",
             "moduleName": "PULPulsate",
             "declAttributes": [
               "HasInitialValue",
@@ -19850,21 +19850,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Bundle?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Bundle",
+                        "printedName": "Foundation.Bundle",
+                        "usr": "c:objc(cs)NSBundle"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)resourceBundleIdentifier",
-                "mangledName": "$s10PULPulsate0A7ManagerC24resourceBundleIdentifierSSSgvg",
+                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)externalResourceBundle",
+                "mangledName": "$s10PULPulsate0A7ManagerC22externalResourceBundleSo8NSBundleCSgvg",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "declAttributes": [
@@ -19885,21 +19885,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Bundle?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Bundle",
+                        "printedName": "Foundation.Bundle",
+                        "usr": "c:objc(cs)NSBundle"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)setResourceBundleIdentifier:",
-                "mangledName": "$s10PULPulsate0A7ManagerC24resourceBundleIdentifierSSSgvs",
+                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)setExternalResourceBundle:",
+                "mangledName": "$s10PULPulsate0A7ManagerC22externalResourceBundleSo8NSBundleCSgvs",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "declAttributes": [
@@ -19919,8 +19919,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PULPulsate0A7ManagerC24resourceBundleIdentifierSSSgvM",
-                "mangledName": "$s10PULPulsate0A7ManagerC24resourceBundleIdentifierSSSgvM",
+                "usr": "s:10PULPulsate0A7ManagerC22externalResourceBundleSo8NSBundleCSgvM",
+                "mangledName": "$s10PULPulsate0A7ManagerC22externalResourceBundleSo8NSBundleCSgvM",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -20214,7 +20214,7 @@
           {
             "kind": "Function",
             "name": "getFeedNavigationController",
-            "printedName": "getFeedNavigationController()",
+            "printedName": "getFeedNavigationController(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20229,12 +20229,39 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)getFeedNavigationController",
-            "mangledName": "$s10PULPulsate0A7ManagerC27getFeedNavigationControllerSo012UINavigationF0CSgyF",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)getFeedNavigationControllerWithCompletion:",
+            "mangledName": "$s10PULPulsate0A7ManagerC27getFeedNavigationController10completionSo012UINavigationF0CSgyycSg_tF",
             "moduleName": "PULPulsate",
+            "objc_name": "getFeedNavigationControllerWithCompletion:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -21718,6 +21745,46 @@
               "AccessControl",
               "ObjC",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeedUnreadCount",
+            "printedName": "getFeedUnreadCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)getFeedUnreadCountWithCompletion:",
+            "mangledName": "$s10PULPulsate0A7ManagerC18getFeedUnreadCount10completionyySic_tF",
+            "moduleName": "PULPulsate",
+            "objc_name": "getFeedUnreadCountWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -27854,26 +27921,14 @@
           },
           {
             "kind": "Function",
-            "name": "getInstanceWithLocationEnabled",
-            "printedName": "getInstanceWithLocationEnabled(_:withPushEnabled:withLaunchOptions:)",
+            "name": "getInstance",
+            "printedName": "getInstance(withLaunchOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "PULPulsateManager",
                 "printedName": "PULPulsate.PULPulsateManager",
                 "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -27904,10 +27959,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithLocationEnabled:withPushEnabled:withLaunchOptions:error:",
-            "mangledName": "$s10PULPulsate0A7FactoryC30getInstanceWithLocationEnabled_08withPushG00H13LaunchOptionsAA0A7ManagerCSb_SbSDys11AnyHashableVypGSgtKFZ",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithLaunchOptions:error:",
+            "mangledName": "$s10PULPulsate0A7FactoryC11getInstance17withLaunchOptionsAA0A7ManagerCSDys11AnyHashableVypGSg_tKFZ",
             "moduleName": "PULPulsate",
             "static": true,
+            "objc_name": "getInstanceWithLaunchOptions:error:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -27919,7 +27975,7 @@
           {
             "kind": "Function",
             "name": "getInstance",
-            "printedName": "getInstance(withAuthorizationData:withLocationEnabled:withPushEnabled:withLaunchOptions:withPulsateAppDelegate:andPulsateNotificationDelegate:)",
+            "printedName": "getInstance(withAuthorizationData:withLaunchOptions:withPulsateAppDelegate:andPulsateNotificationDelegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27943,18 +27999,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "[Swift.AnyHashable : Any]?",
                 "children": [
@@ -27994,11 +28038,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithAuthorizationData:withLocationEnabled:withPushEnabled:withLaunchOptions:withPulsateAppDelegate:andPulsateNotificationDelegate:error:",
-            "mangledName": "$s10PULPulsate0A7FactoryC11getInstance21withAuthorizationData0E15LocationEnabled0e4PushI00E13LaunchOptions0E18PulsateAppDelegate03andm12NotificationO0AA0A7ManagerCAA016PULAuthorizationG0CSg_S2bSDys11AnyHashableVypGSgS2btKFZ",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithAuthorizationData:withLaunchOptions:withPulsateAppDelegate:andPulsateNotificationDelegate:error:",
+            "mangledName": "$s10PULPulsate0A7FactoryC11getInstance21withAuthorizationData0E13LaunchOptions0E18PulsateAppDelegate03andj12NotificationL0AA0A7ManagerCAA016PULAuthorizationG0CSg_SDys11AnyHashableVypGSgS2btKFZ",
             "moduleName": "PULPulsate",
             "static": true,
-            "objc_name": "getInstanceWithAuthorizationData:withLocationEnabled:withPushEnabled:withLaunchOptions:withPulsateAppDelegate:andPulsateNotificationDelegate:error:",
+            "objc_name": "getInstanceWithAuthorizationData:withLaunchOptions:withPulsateAppDelegate:andPulsateNotificationDelegate:error:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -28010,7 +28054,7 @@
           {
             "kind": "Function",
             "name": "getInstance",
-            "printedName": "getInstance(withAuthorizationData:withLocationEnabled:withPushEnabled:withLaunchOptions:)",
+            "printedName": "getInstance(withAuthorizationData:withLaunchOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28034,18 +28078,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "[Swift.AnyHashable : Any]?",
                 "children": [
@@ -28073,11 +28105,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithAuthorizationData:withLocationEnabled:withPushEnabled:withLaunchOptions:error:",
-            "mangledName": "$s10PULPulsate0A7FactoryC11getInstance21withAuthorizationData0E15LocationEnabled0e4PushI00E13LaunchOptionsAA0A7ManagerCAA016PULAuthorizationG0CSg_S2bSDys11AnyHashableVypGSgtKFZ",
+            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithAuthorizationData:withLaunchOptions:error:",
+            "mangledName": "$s10PULPulsate0A7FactoryC11getInstance21withAuthorizationData0E13LaunchOptionsAA0A7ManagerCAA016PULAuthorizationG0CSg_SDys11AnyHashableVypGSgtKFZ",
             "moduleName": "PULPulsate",
             "static": true,
-            "objc_name": "getInstanceWithAuthorizationData:withLocationEnabled:withPushEnabled:withLaunchOptions:error:",
+            "objc_name": "getInstanceWithAuthorizationData:withLaunchOptions:error:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -28115,122 +28147,6 @@
               "AccessControl",
               "ObjC"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initDefault",
-            "printedName": "initDefault(with:withLocationEnabled:withPushEnabled:withPulsateAppDelegate:andPulsateNotificationDelegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PULPulsateManager",
-                "printedName": "PULPulsate.PULPulsateManager",
-                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PULPulsate.PULAccessToken?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PULAccessToken",
-                    "printedName": "PULPulsate.PULAccessToken",
-                    "usr": "c:@M@PULPulsate@objc(cs)PULAccessToken"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)initDefaultWith:withLocationEnabled:withPushEnabled:withPulsateAppDelegate:andPulsateNotificationDelegate:error:",
-            "mangledName": "$s10PULPulsate0A7FactoryC11initDefault4with0E15LocationEnabled0e4PushG00E18PulsateAppDelegate03andi12NotificationK0AA0A7ManagerCAA14PULAccessTokenCSg_S4btKFZ",
-            "moduleName": "PULPulsate",
-            "static": true,
-            "objc_name": "initDefaultWith:withLocationEnabled:withPushEnabled:withPulsateAppDelegate:andPulsateNotificationDelegate:error:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getInstanceWithLaunchOptions",
-            "printedName": "getInstanceWithLaunchOptions(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PULPulsateManager",
-                "printedName": "PULPulsate.PULPulsateManager",
-                "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateFactory(cm)getInstanceWithLaunchOptions:error:",
-            "mangledName": "$s10PULPulsate0A7FactoryC28getInstanceWithLaunchOptionsyAA0A7ManagerCSDySSypGSgKFZ",
-            "moduleName": "PULPulsate",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -28588,6 +28504,16 @@
             "usr": "s:SY",
             "mangledName": "$sSY"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -45401,7 +45327,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 7,
-      "value": "\"4.5.9\""
+      "value": "\"4.6.0\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -47527,63 +47453,77 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 464,
+      "offset": 505,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 464,
+      "offset": 505,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 558,
+      "offset": 599,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 558,
+      "offset": 599,
       "length": 22,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1747,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1716,
+      "offset": 1810,
       "length": 28,
       "value": "\"setPushNotificationEnabled\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1794,
+      "offset": 1888,
       "length": 12,
       "value": "\"setPrivacy\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1860,
+      "offset": 1954,
       "length": 27,
       "value": "\"setLocationUpdatesEnabled\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "StringLiteral",
-      "offset": 1932,
+      "offset": 2026,
       "length": 12,
       "value": "\"inAppQueue\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2089,
+      "length": 13,
+      "value": "\"badgeUpdate\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12271,
+      "offset": 12485,
       "length": 5,
       "value": "false"
     },
@@ -48304,56 +48244,56 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1220,
+      "offset": 1270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1267,
+      "offset": 1317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1306,
+      "offset": 1356,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1863,
+      "offset": 1913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1996,
+      "offset": 2046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2093,
+      "offset": 2143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2185,
+      "offset": 2235,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2225,
+      "offset": 2275,
       "length": 5,
       "value": "false"
     },
@@ -48419,6 +48359,13 @@
       "offset": 544,
       "length": 14,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULDebounceTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 342,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/PULInAppMessage.swift",
@@ -50257,7 +50204,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/AppDelegate\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 51914,
+      "offset": 51588,
       "length": 3,
       "value": "[]"
     },

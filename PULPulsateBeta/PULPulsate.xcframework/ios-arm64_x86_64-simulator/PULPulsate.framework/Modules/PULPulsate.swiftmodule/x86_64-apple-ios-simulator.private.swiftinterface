@@ -431,6 +431,8 @@ public typealias Completion = () -> Swift.Void
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
+  @objc public func startDebugLogging(enableNetworkLogs: Swift.Bool)
+  @objc public func stopDebugLogging()
   @objc public func startRemoteNotifications()
   @objc public func startRemoteNotifications(with notificationSettings: UserNotifications.UNAuthorizationOptions)
   @objc public func getFeedNavigationController(completion: PULPulsate.Completion? = nil) -> UIKit.UINavigationController?

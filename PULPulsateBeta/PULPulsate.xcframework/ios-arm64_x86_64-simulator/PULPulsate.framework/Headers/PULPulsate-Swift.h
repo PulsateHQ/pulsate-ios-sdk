@@ -1163,6 +1163,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the location query prompt.
 - (void)startLocation;
+- (void)startDebugLoggingWithEnableNetworkLogs:(BOOL)enableNetworkLogs;
+- (void)stopDebugLogging;
 /// If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the push query prompt.
 - (void)startRemoteNotifications;
@@ -2816,6 +2818,8 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the location query prompt.
 - (void)startLocation;
+- (void)startDebugLoggingWithEnableNetworkLogs:(BOOL)enableNetworkLogs;
+- (void)stopDebugLogging;
 /// If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the push query prompt.
 - (void)startRemoteNotifications;

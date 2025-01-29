@@ -48421,7 +48421,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 15,
-      "value": "\"4.7.0BetaRC10\""
+      "value": "\"4.7.0BetaRC11\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -51576,35 +51576,35 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 28528,
+      "offset": 28658,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28777,
+      "offset": 28907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36318,
+      "offset": 36448,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36360,
+      "offset": 36490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/PulFeedViewController\/PULFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36492,
+      "offset": 36622,
       "length": 1,
       "value": "6"
     },

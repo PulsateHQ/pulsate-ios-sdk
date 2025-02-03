@@ -455,8 +455,6 @@ public typealias Completion = () -> Swift.Void
   @objc public func showLastInAppNotification(_ forceShow: Swift.Bool = false)
   @objc public func setUserAuthorized(_ authorized: Swift.Bool)
   @objc public func isUserAuthorized() -> Swift.Bool
-  @objc public func setNewThreadButtonEnabled(_ buttonEnabled: Swift.Bool)
-  @objc public func isNewThreadButtonEnabled() -> Swift.Bool
   @objc public func updateFirstName(_ firstName: Swift.String?)
   @objc public func updateLastName(_ lastName: Swift.String?)
   @objc public func updateEmail(_ email: Swift.String?)

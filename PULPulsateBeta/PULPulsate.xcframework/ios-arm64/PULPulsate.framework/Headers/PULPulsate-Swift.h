@@ -1220,11 +1220,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// Set if user is authorized or not. The default is YES.
 - (void)setUserAuthorized:(BOOL)authorized;
 - (BOOL)isUserAuthorized SWIFT_WARN_UNUSED_RESULT;
-/// Sets the create thread button in feed visibility.
-/// \param buttonEnabled decides if the button should be enabled
-///
-- (void)setNewThreadButtonEnabled:(BOOL)buttonEnabled;
-- (BOOL)isNewThreadButtonEnabled SWIFT_WARN_UNUSED_RESULT;
 /// Updates the user’s first name. Gets updated when entering background.
 /// \param firstName firstName - can’t be nil
 ///

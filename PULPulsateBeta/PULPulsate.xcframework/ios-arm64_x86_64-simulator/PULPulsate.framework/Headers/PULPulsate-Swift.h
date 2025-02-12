@@ -1049,6 +1049,8 @@ SWIFT_CLASS("_TtC10PULPulsate15PULPulsateError")
 SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 @interface PULPulsateFactory : NSObject
 + (void)setBaseUrl:(NSString * _Nonnull)baseUrl;
++ (void)setHTMLFeedBaseUrl:(NSString * _Nonnull)baseUrl;
++ (NSString * _Nonnull)getHTMLFeedBaseUrl SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getBaseUrl SWIFT_WARN_UNUSED_RESULT;
 /// Creates a PulsateManager instance with API Keys fetched from the *.plist file. If an instance
 /// already exists it returns it instead.
@@ -2699,6 +2701,8 @@ SWIFT_CLASS("_TtC10PULPulsate15PULPulsateError")
 SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 @interface PULPulsateFactory : NSObject
 + (void)setBaseUrl:(NSString * _Nonnull)baseUrl;
++ (void)setHTMLFeedBaseUrl:(NSString * _Nonnull)baseUrl;
++ (NSString * _Nonnull)getHTMLFeedBaseUrl SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getBaseUrl SWIFT_WARN_UNUSED_RESULT;
 /// Creates a PulsateManager instance with API Keys fetched from the *.plist file. If an instance
 /// already exists it returns it instead.

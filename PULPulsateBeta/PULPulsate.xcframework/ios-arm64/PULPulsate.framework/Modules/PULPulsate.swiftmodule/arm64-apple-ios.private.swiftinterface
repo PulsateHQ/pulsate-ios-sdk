@@ -605,6 +605,8 @@ extension Swift.String {
 }
 @_inheritsConvenienceInitializers @objc public class PULPulsateFactory : ObjectiveC.NSObject {
   @objc public class func setBaseUrl(_ baseUrl: Swift.String)
+  @objc public class func setHTMLFeedBaseUrl(_ baseUrl: Swift.String)
+  @objc public class func getHTMLFeedBaseUrl() -> Swift.String
   @objc public class func getBaseUrl() -> Swift.String?
   @objc public class func getInstance(withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager

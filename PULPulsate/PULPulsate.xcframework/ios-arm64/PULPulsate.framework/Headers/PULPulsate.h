@@ -10,3 +10,4 @@
 
 #import "PULSystemKeychain.h"
 #import "BSBacktraceLogger.h"
+#import "FBShimmeringView.h"

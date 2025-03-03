@@ -17,11 +17,11 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PULPulsate",
-            path: "PULPulsate/PULPulsate.xcframework"
+            path: "PULPulsateBeta/PULPulsate.xcframework"
         ),
         .resource(
             name: "PULPulsateResources",
-            path: "PULPulsate/PULPulsateBasic.bundle"
+            path: "PULPulsateBeta/PULPulsateBasic.bundle"
         )
     ]
 ) 

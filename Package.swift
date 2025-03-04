@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "PULPulsate",
-            targets: ["PULPulsate", "PULPulsateResources"]
+            targets: ["PULPulsate"]
         ),
     ],
     dependencies: [
@@ -19,10 +19,6 @@ let package = Package(
         .binaryTarget(
             name: "PULPulsate",
             path: "PULPulsateBeta/PULPulsate.xcframework"
-        ),
-        .binaryTarget(
-            name: "PULPulsateResources",
-            path: "PULPulsateBeta/PULPulsateBasic.bundle"
         )
     ]
 ) 

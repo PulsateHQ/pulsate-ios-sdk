@@ -22,8 +22,9 @@ let package = Package(
         ),
         .target(
             name: "PULPulsateResources",
+            path: "PULPulsateBeta",
             resources: [
-                .process("PULPulsateBeta/PULPulsateBasic.bundle")
+                .process("PULPulsateBasic.bundle")
             ]
         )
     ]

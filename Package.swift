@@ -24,7 +24,7 @@ let package = Package(
             dependencies: [],
             path: "PULPulsateBeta",
             resources: [
-                .copy("PULPulsateBasic.bundle")
+                .process("PULPulsateBasic.bundle")
             ]
         )
     ]

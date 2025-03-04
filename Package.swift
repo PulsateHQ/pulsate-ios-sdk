@@ -20,12 +20,9 @@ let package = Package(
             name: "PULPulsate",
             path: "PULPulsateBeta/PULPulsate.xcframework"
         ),
-        .target(
+        .binaryTarget(
             name: "PULPulsateResources",
-            path: "PULPulsateBeta",
-            resources: [
-                .process("PULPulsateBasic.bundle")
-            ]
+            path: "PULPulsateBeta/PULPulsateBasic.bundle"
         )
     ]
 ) 

@@ -19,7 +19,7 @@ let package = Package(
             name: "PULPulsate",
             dependencies: [],
             resources: [
-                .copy("PULPulsateBeta/PULPulsateBasic.bundle")
+                .copy("../../PULPulsateBeta/PULPulsateBasic.bundle")
             ]
         ),
         .binaryTarget(

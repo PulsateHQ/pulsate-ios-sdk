@@ -1,20 +1,7 @@
 {
   "object" : {
     "artifacts" : [
-      {
-        "kind" : "xcframework",
-        "packageRef" : {
-          "identity" : "pulsate-ios-sdk",
-          "kind" : "root",
-          "location" : "/Users/ali/Projects/pulsate-ios-sdk",
-          "name" : "pulsate-ios-sdk"
-        },
-        "path" : "/Users/ali/Projects/pulsate-ios-sdk/Frameworks/PULPulsate.xcframework",
-        "source" : {
-          "type" : "local"
-        },
-        "targetName" : "PULPulsate"
-      }
+
     ],
     "dependencies" : [
       {

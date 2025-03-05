@@ -1,8 +1,7 @@
 import Foundation
 import SDWebImage
-import PULPulsate
 
-public enum PULPulsateResources {
+public enum PULPulsateBundle {
     /// Returns the resource bundle containing Pulsate resources
     public static var resourceBundle: Bundle? {
         let bundleName = "PULPulsateBasic"
@@ -18,26 +17,6 @@ public enum PULPulsateResources {
         for candidate in candidates {
             let bundlePath = candidate?.appendingPathComponent(bundleName + ".bundle")
             if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
-                return bundle
-            }
-        }
-        return nil
-    }
-    
-    /// Returns the framework bundle
-    public static var frameworkBundle: Bundle? {
-        let candidates = [
-            // Bundle should be present here when the package is linked into an App
-            Bundle.main.resourceURL,
-            // Bundle should be present here when the package is linked into a framework
-            Bundle(for: BundleToken.self).resourceURL,
-            // For command-line tools
-            Bundle.main.bundleURL,
-        ]
-
-        for candidate in candidates {
-            let frameworkPath = candidate?.appendingPathComponent("PULPulsate.xcframework")
-            if let bundle = frameworkPath.flatMap(Bundle.init(url:)) {
                 return bundle
             }
         }

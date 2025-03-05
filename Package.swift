@@ -19,9 +19,9 @@ let package = Package(
         ),
         .target(
             name: "PULPulsateBundle",
-            path: "PULPulsateBundle",
+            path: "Sources/PULPulsateBundle",
             resources: [
-                .copy("../Resources/PULPulsateBasic.bundle")
+                .copy("../../Resources/PULPulsateBasic.bundle")
             ]
         )
     ]

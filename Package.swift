@@ -11,9 +11,7 @@ let package = Package(
             name: "PULPulsate",
             targets: ["PULPulsate", "PULPulsateBundle"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0")
-    ],
+    dependencies: [ ],
     targets: [
         .binaryTarget(
             name: "PULPulsate",
@@ -23,7 +21,7 @@ let package = Package(
             name: "PULPulsateBundle",
             path: "PULPulsateBundle",
             resources: [
-                .process("../Resources/PULPulsateBasic.bundle")
+                .copy("../Resources/PULPulsateBasic.bundle")
             ]
         )
     ]

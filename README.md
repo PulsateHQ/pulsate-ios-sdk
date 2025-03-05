@@ -29,3 +29,43 @@ dependencies: [
 ]
 ```
 
+# PULPulsate SDK for iOS
+
+## Overview
+This repository contains the Swift Package Manager distribution of the PULPulsate SDK for iOS.
+
+## Requirements
+- iOS 13.0+
+- Swift 5.3+
+- Xcode 12.0+
+
+## Installation
+
+### Swift Package Manager
+
+1. In Xcode, select "File" → "Swift Packages" → "Add Package Dependency..."
+2. Enter the repository URL: `https://github.com/yourusername/pulsate-ios-sdk.git`
+3. Select the version you want to use
+
+## Usage
+
+### Basic Setup
+In your Swift file, import the module:
+
+```swift
+// Option 1: Import the binary framework directly
+import PULPulsate
+
+// Option 2: Import the wrapper that includes SDWebImage dependency
+import PULPulsateWrapper
+```
+
+### Common Issue Resolution
+If you encounter build errors when importing PULPulsate directly, try using PULPulsateWrapper instead, which includes all necessary dependencies.
+
+## Problem Solving Import Issues
+If you see the error: "Failed to build module 'PULPulsate' for importation", please use the PULPulsateWrapper instead of importing PULPulsate directly.
+
+## License
+See the LICENSE file for more info.
+

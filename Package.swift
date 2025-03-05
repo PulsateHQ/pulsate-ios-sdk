@@ -9,22 +9,25 @@ let package = Package(
     products: [
         .library(
             name: "PULPulsate",
-            targets: ["PULPulsate"])
+            targets: ["PULPulsateFramework"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0")
     ],
     targets: [
-        .target(
-            name: "PULPulsate",
-            dependencies: [],
-            resources: [
-                .copy("../../PULPulsateBeta/PULPulsateBasic.bundle")
-            ]
-        ),
         .binaryTarget(
             name: "PULPulsateFramework",
             path: "PULPulsateBeta/PULPulsate.xcframework"
+        ),
+        .target(
+            name: "PULPulsate",
+            dependencies: [
+                .product(name: "SDWebImage", package: "SDWebImage"),
+                "PULPulsateFramework"
+            ],
+            resources: [
+                .copy("Resources/PULPulsateBasic.bundle")
+            ]
         )
     ]
 ) 

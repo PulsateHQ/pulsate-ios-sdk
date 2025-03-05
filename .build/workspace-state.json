@@ -9,11 +9,11 @@
           "location" : "/Users/ali/Projects/pulsate-ios-sdk",
           "name" : "pulsate-ios-sdk"
         },
-        "path" : "/Users/ali/Projects/pulsate-ios-sdk/PULPulsateBeta/PULPulsate.xcframework",
+        "path" : "/Users/ali/Projects/pulsate-ios-sdk/Frameworks/PULPulsate.xcframework",
         "source" : {
           "type" : "local"
         },
-        "targetName" : "PULPulsateFramework"
+        "targetName" : "PULPulsate"
       }
     ],
     "dependencies" : [

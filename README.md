@@ -64,7 +64,39 @@ import PULPulsateWrapper
 If you encounter build errors when importing PULPulsate directly, try using PULPulsateWrapper instead, which includes all necessary dependencies.
 
 ## Problem Solving Import Issues
-If you see the error: "Failed to build module 'PULPulsate' for importation", please use the PULPulsateWrapper instead of importing PULPulsate directly.
+If you see the error: "Failed to build module 'PULPulsate' for importation" or "No such module 'PULPulsateWrapper'", follow these steps:
+
+### Fix for SPmTest Project
+
+1. In your SPmTest Xcode project, navigate to your project settings
+2. Under "Build Phases", add SDWebImage.framework to the "Link Binary With Libraries" section:
+   - Click on the "+" button
+   - Select "Add Other..." and then "Add Package Dependency..."
+   - Select SDWebImage from the list
+3. In your AppDelegate.swift, use the direct import:
+   ```swift
+   import PULPulsate
+   import SDWebImage
+   ```
+4. Clean your project (Product > Clean Build Folder)
+5. Rebuild your project
+
+This approach ensures that your project directly links against both PULPulsate and its required dependency SDWebImage.
+
+### Alternative Solution
+
+If the above solution doesn't work, you may need to include the XCFramework directly in your project:
+
+1. Download the PULPulsate.xcframework from this repository
+2. In Xcode, right-click on your project in the navigator and select "Add Files to..."
+3. Select the PULPulsate.xcframework you downloaded
+4. Make sure "Copy items if needed" is checked
+5. Add SDWebImage using Swift Package Manager separately
+6. In your code, use:
+   ```swift
+   import PULPulsate
+   import SDWebImage
+   ```
 
 ## License
 See the LICENSE file for more info.

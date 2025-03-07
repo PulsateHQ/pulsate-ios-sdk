@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-#import "PULSystemKeychain.h"
 #import "BSBacktraceLogger.h"
 #import "FBShimmeringView.h"

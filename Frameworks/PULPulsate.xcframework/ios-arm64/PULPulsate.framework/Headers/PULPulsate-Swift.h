@@ -874,14 +874,12 @@ SWIFT_CLASS("_TtC10PULPulsate15PULInAppMessage")
 
 SWIFT_CLASS("_TtC10PULPulsate20PULInitialsImageView")
 @interface PULInitialsImageView : UIImageView
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)layoutSubviews;
-- (void)setAdminInitialsImageViewWith:(NSString * _Nonnull)userName andAvatarURL:(NSString * _Nonnull)url andTextColorIdentifier:(NSString * _Nonnull)textColorId andBackgroundColorIdentifier:(NSString * _Nonnull)backgroundColorId;
-/// If background ID is nil the background color is set to clear color, not default
-- (void)setUserInitialsImageViewWith:(NSString * _Nonnull)userName andAvatarURL:(NSString * _Nonnull)url andTextColorIdentifier:(NSString * _Nonnull)textColorId andBackgroundColorIdentifier:(NSString * _Nullable)backgroundColorId withDefaultImageName:(NSString * _Nonnull)defaultImageName setClearColorForDefaultImage:(BOOL)clearColorForImage;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
+@property (nonatomic, strong) UIImage * _Nullable image;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

@@ -44,8 +44,10 @@ This repository contains the Swift Package Manager distribution of the PULPulsat
 ### Swift Package Manager
 
 1. In Xcode, select "File" → "Swift Packages" → "Add Package Dependency..."
-2. Enter the repository URL: `https://github.com/yourusername/pulsate-ios-sdk.git`
+2. Enter the repository URL: `https://github.com/PulsateHQ/pulsate-ios-sdk.git`
 3. Select the version you want to use
+
+The package will automatically include all necessary dependencies (including SDWebImage) and resources.
 
 ## Usage
 
@@ -53,18 +55,31 @@ This repository contains the Swift Package Manager distribution of the PULPulsat
 In your Swift file, import the module:
 
 ```swift
-// Option 1: Import the binary framework directly
+// Import the PULPulsate module with all dependencies properly linked
 import PULPulsate
-
-// Option 2: Import the wrapper that includes SDWebImage dependency
-import PULPulsateWrapper
 ```
 
-### Common Issue Resolution
-If you encounter build errors when importing PULPulsate directly, try using PULPulsateWrapper instead, which includes all necessary dependencies.
+The package is now structured to automatically handle all dependencies (including SDWebImage) when you import PULPulsate.
+
+### Resource Bundle Support
+
+The package includes proper support for the PULPulsateBasic.bundle resource bundle. You can access resources from the SDK like this:
+
+```swift
+import PULPulsate
+
+// Access the resource bundle
+let pulsateBundle = Bundle.pulsateResourceBundle
+
+// Use resources from the bundle
+if let imagePath = pulsateBundle.path(forResource: "imageName", ofType: "png") {
+    let image = UIImage(contentsOfFile: imagePath)
+    // Use the image
+}
+```
 
 ## Problem Solving Import Issues
-If you see the error: "Failed to build module 'PULPulsate' for importation" or "No such module 'PULPulsateWrapper'", follow these steps:
+If you see the error: "Failed to build module 'PULPulsate' for importation", follow these steps:
 
 ### Fix for SPmTest Project
 

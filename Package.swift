@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "PULPulsate",
-            targets: ["PULPulsateWrapper"])
+            targets: ["PULPulsate", "PULPulsateWrapper"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0")
@@ -22,7 +22,6 @@ let package = Package(
         .target(
             name: "PULPulsateWrapper",
             dependencies: [
-                "PULPulsate",
                 .product(name: "SDWebImage", package: "SDWebImage")
             ],
             resources: [

@@ -52,29 +52,34 @@ The package will automatically include all necessary dependencies (including SDW
 ## Usage
 
 ### Basic Setup
-In your Swift file, import the module:
+In your Swift file, import both modules:
 
 ```swift
-// Import the PULPulsate module with all dependencies properly linked
 import PULPulsate
+import PULPulsateWrapper
 ```
 
-The package is now structured to automatically handle all dependencies (including SDWebImage) when you import PULPulsate.
+Initialize the compatibility layer to ensure all dependencies are properly linked:
+
+```swift
+// Call this in your AppDelegate or early in your app's lifecycle
+PULPulsateCompat.ensureDependenciesLinked()
+```
+
+Then use the PULPulsate SDK normally according to its documentation.
 
 ### Resource Bundle Support
 
 The package includes proper support for the PULPulsateBasic.bundle resource bundle. You can access resources from the SDK like this:
 
 ```swift
-import PULPulsate
-
-// Access the resource bundle
-let pulsateBundle = Bundle.pulsateResourceBundle
-
-// Use resources from the bundle
-if let imagePath = pulsateBundle.path(forResource: "imageName", ofType: "png") {
-    let image = UIImage(contentsOfFile: imagePath)
-    // Use the image
+// Get the resource bundle
+if let pulsateBundle = Bundle.pulsateResourceBundle {
+    // Use the bundle resources
+    if let imagePath = pulsateBundle.path(forResource: "imageName", ofType: "png") {
+        let image = UIImage(contentsOfFile: imagePath)
+        // Use the image
+    }
 }
 ```
 
@@ -83,20 +88,34 @@ If you see the error: "Failed to build module 'PULPulsate' for importation", fol
 
 ### Fix for SPmTest Project
 
-1. In your SPmTest Xcode project, navigate to your project settings
-2. Under "Build Phases", add SDWebImage.framework to the "Link Binary With Libraries" section:
-   - Click on the "+" button
-   - Select "Add Other..." and then "Add Package Dependency..."
-   - Select SDWebImage from the list
-3. In your AppDelegate.swift, use the direct import:
-   ```swift
-   import PULPulsate
-   import SDWebImage
-   ```
-4. Clean your project (Product > Clean Build Folder)
-5. Rebuild your project
+To resolve import issues, you need to import both modules separately in your code:
 
-This approach ensures that your project directly links against both PULPulsate and its required dependency SDWebImage.
+```swift
+import PULPulsate
+import PULPulsateWrapper  // Contains compatibility helpers and ensures SDWebImage is linked
+
+// Initialize the compatibility layer (optional, but recommended)
+PULPulsateCompat.ensureDependenciesLinked()
+
+// Use the SDK normally from this point...
+```
+
+For resource access, use:
+
+```swift
+// Get the resource bundle
+if let pulsateBundle = Bundle.pulsateResourceBundle {
+    // Use the bundle resources
+    let imagePath = pulsateBundle.path(forResource: "imageName", ofType: "png")
+    // ...
+}
+```
+
+If you encounter build errors, try the following:
+
+1. Clean your project (Product > Clean Build Folder)
+2. Reset Package Caches (File > Packages > Reset Package Caches)
+3. Rebuild your project
 
 ### Alternative Solution
 

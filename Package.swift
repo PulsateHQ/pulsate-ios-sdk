@@ -9,7 +9,10 @@ let package = Package(
     products: [
         .library(
             name: "PULPulsate",
-            targets: ["PULPulsate", "PULPulsateWrapper"])
+            targets: ["PULPulsate"]),
+        .library(
+            name: "PULPulsateResources",
+            targets: ["PULPulsateWrapper"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0")

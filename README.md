@@ -19,7 +19,7 @@ From Xcode 11 onwards, you can use [Swift Package Manager](https://swift.org/pac
 1. Select File > Swift Packages > Add Package Dependency
 2. Enter the repository URL: https://github.com/PulsateHQ/pulsate-ios-sdk.git
 3. Specify the version: Version 4.7.1 or later
-4. Xcode will handle the dependencies automatically
+4. Xcode will handle the dependencies automatically (including SDWebImage)
 
 You can also add it directly to your Package.swift file:
 
@@ -28,6 +28,37 @@ dependencies: [
     .package(url: "https://github.com/PulsateHQ/pulsate-ios-sdk.git", from: "4.7.1")
 ]
 ```
+
+## Usage with Swift Package Manager
+
+When you import PULPulsate in your code, SDWebImage will automatically be linked since it's a dependency. However, to ensure proper linking in some configurations, it's recommended to:
+
+```swift
+import PULPulsate
+
+// Optional but recommended: explicitly ensure SDWebImage is linked
+SDWebImageLinker.ensureLinked()
+```
+
+## Troubleshooting Swift Package Manager Issues
+
+If you encounter build errors like "Failed to build module 'PULPulsate' for importation", try these steps:
+
+1. Clean your project (Product > Clean Build Folder)
+2. Reset Package Caches (File > Packages > Reset Package Caches)
+3. Make sure both PULPulsate and SDWebImage are properly added to your target's linked libraries
+4. Rebuild your project
+
+If you still encounter issues, the manual approach is to:
+
+1. Download the PULPulsate.xcframework from this repository
+2. Add it directly to your project
+3. Add SDWebImage via Swift Package Manager separately
+4. Import both in your code:
+   ```swift
+   import PULPulsate
+   import SDWebImage
+   ```
 
 # PULPulsate SDK for iOS
 

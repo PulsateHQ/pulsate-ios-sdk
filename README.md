@@ -121,63 +121,29 @@ if let pulsateBundle = Bundle.pulsateResourceBundle {
 ## Problem Solving Import Issues
 If you see the error: "Failed to build module 'PULPulsate' for importation", follow these steps:
 
-### Automatic Integration Helper
-
-We've included a helper script to make integration easier. To use it:
-
-1. Download the `fix_spmtest.sh` script from this repository
-2. Make it executable: `chmod +x fix_spmtest.sh`
-3. Run it with your Xcode project path:
-   ```
-   ./fix_spmtest.sh /path/to/YourProject.xcodeproj
-   ```
-4. Follow the on-screen instructions
-
-The script will automatically add both PULPulsate and SDWebImage as dependencies to your project.
-
-### Fix for SPmTest Project - UPDATED SOLUTION
-
-Due to Swift Package Manager limitations with binary frameworks, we've separated the dependencies into standalone libraries. To use them:
-
-1. First, add both libraries in your `Package.swift` dependencies:
+1. Make sure you have added SDWebImage to your project separately:
    ```swift
+   // In Swift Package Manager:
    dependencies: [
        .package(url: "https://github.com/PulsateHQ/pulsate-ios-sdk.git", from: "4.7.1"),
        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0")
    ]
    ```
 
-2. In your Xcode project, navigate to Project Settings > Build Phases
-   - Under "Link Binary With Libraries" add:
-     - PULPulsate.framework
-     - SDWebImage.framework
-     - PULPulsateResources.framework (if needed for resources)
-
-3. In your AppDelegate.swift, add:
+2. Import both packages in your code:
    ```swift
    import PULPulsate
    import SDWebImage
-   import PULPulsateResources // Only if you need resource bundle access
-   
-   // In didFinishLaunchingWithOptions:
-   PULPulsateCompat.ensureDependenciesLinked()
    ```
 
-4. If you need resources, access them with:
-   ```swift
-   if let bundle = Bundle.pulsateResourceBundle {
-       // Use the bundle
-   }
-   ```
-
-5. Clean and rebuild your project:
+3. Try cleaning your project:
    - File > Packages > Reset Package Caches
    - Product > Clean Build Folder
    - Build again
 
-### Troubleshooting Last Resort
+### Manual Integration
 
-If all other approaches fail, the most reliable solution is to manually download both dependencies:
+If you continue to experience issues with Swift Package Manager, try the manual approach:
 
 1. Download the PULPulsate.xcframework from this repository
 2. Add it directly to your project (drag & drop into Xcode)

@@ -9,8 +9,8 @@ import CoreLocation
 import Foundation
 import Network
 import OSLog
+import ObjectiveC
 @_exported import PULPulsate
-import SDWebImage
 import Swift
 import SystemConfiguration
 import UIKit
@@ -148,6 +148,11 @@ public enum PULTextStyle : Swift.Int {
     get
   }
 }
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency public func pul_setImage(withURL url: Foundation.URL?, placeholder: UIKit.UIImage? = nil, cacheKey: Swift.String? = nil, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func pul_setImage(withFileName fileName: Swift.String?, placeholder: UIKit.UIImage? = nil)
+  @_Concurrency.MainActor @preconcurrency public func pul_cancelImageLoad()
+}
 @objc public enum PULCallToActionType : Swift.Int {
   case pulDismissBackCard
   case pulDismiss
@@ -179,8 +184,10 @@ public enum PULTextStyle : Swift.Int {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class PULImageCache : ObjectiveC.NSObject {
-  @objc public class func clearMemoryCaches()
+  @objc public static let shared: PULPulsate.PULImageCache
   @objc deinit
+  @objc public class func clearMemoryCaches()
+  @objc public class func clearAllCaches()
 }
 extension PULPulsate.PULDebugLog {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDebugLog>

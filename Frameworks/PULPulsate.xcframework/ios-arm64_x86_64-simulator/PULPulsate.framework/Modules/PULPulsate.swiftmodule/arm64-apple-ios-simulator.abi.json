@@ -6862,6 +6862,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8857,10 +8874,71 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PULImageCache",
         "printedName": "PULImageCache",
         "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULImageCache",
+                "printedName": "PULPulsate.PULImageCache",
+                "usr": "c:@M@PULPulsate@objc(cs)PULImageCache"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULImageCache(cpy)shared",
+            "mangledName": "$s10PULPulsate13PULImageCacheC6sharedACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULImageCache",
+                    "printedName": "PULPulsate.PULImageCache",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULImageCache"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULImageCache(cm)shared",
+                "mangledName": "$s10PULPulsate13PULImageCacheC6sharedACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "clearMemoryCaches",
@@ -8875,6 +8953,29 @@
             "declKind": "Func",
             "usr": "c:@M@PULPulsate@objc(cs)PULImageCache(cm)clearMemoryCaches",
             "mangledName": "$s10PULPulsate13PULImageCacheC17clearMemoryCachesyyFZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAllCaches",
+            "printedName": "clearAllCaches()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULImageCache(cm)clearAllCaches",
+            "mangledName": "$s10PULPulsate13PULImageCacheC14clearAllCachesyyFZ",
             "moduleName": "PULPulsate",
             "static": true,
             "declAttributes": [
@@ -9261,13 +9362,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
       },
       {
         "kind": "TypeDecl",
@@ -25281,13 +25375,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
-      },
-      {
         "kind": "TypeDecl",
         "name": "PULInitialsImageView",
         "printedName": "PULInitialsImageView",
@@ -27195,13 +27282,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
       },
       {
         "kind": "TypeDecl",
@@ -33936,13 +34016,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
       },
       {
         "kind": "Import",
@@ -46544,6 +46617,301 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIImageView",
+        "printedName": "UIImageView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pul_setImage",
+            "printedName": "pul_setImage(withURL:placeholder:cacheKey:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIImage?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So11UIImageViewC10PULPulsateE12pul_setImage7withURL11placeholder8cacheKey10completiony10Foundation0H0VSg_So0A0CSgSSSgyAOcSgtF",
+            "mangledName": "$sSo11UIImageViewC10PULPulsateE12pul_setImage7withURL11placeholder8cacheKey10completiony10Foundation0H0VSg_So0A0CSgSSSgyAOcSgtF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pul_setImage",
+            "printedName": "pul_setImage(withFileName:placeholder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So11UIImageViewC10PULPulsateE12pul_setImage12withFileName11placeholderySSSg_So0A0CSgtF",
+            "mangledName": "$sSo11UIImageViewC10PULPulsateE12pul_setImage12withFileName11placeholderySSSg_So0A0CSgtF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pul_cancelImageLoad",
+            "printedName": "pul_cancelImageLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So11UIImageViewC10PULPulsateE19pul_cancelImageLoadyyF",
+            "mangledName": "$sSo11UIImageViewC10PULPulsateE19pul_cancelImageLoadyyF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImageView",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImageView",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Data",
         "printedName": "Data",
         "children": [
@@ -49386,6 +49754,13 @@
       "value": "\"PUL_USER_AUTHORIZED\""
     },
     {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/ImageCache\/UIImageView+PULImageCache.swift",
+      "kind": "StringLiteral",
+      "offset": 3209,
+      "length": 24,
+      "value": "\"pul_activeDownloadsKey\""
+    },
+    {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Table\/API\/PULArchiveRequest.swift",
       "kind": "StringLiteral",
       "offset": 205,
@@ -49521,9 +49896,16 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/ImageCache\/PULImageCache.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 205,
       "length": 20,
       "value": "\"image:\/\/userAvatar\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/ImageCache\/PULImageCache.swift",
+      "kind": "StringLiteral",
+      "offset": 608,
+      "length": 31,
+      "value": "\"com.pulsate.imagecache.diskio\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Back\/PULBackOfCardViewController.swift",
@@ -49759,350 +50141,336 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 206,
       "length": 4,
       "value": "-300"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "Dictionary",
-      "offset": 1761,
+      "offset": 1743,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1805,
+      "offset": 1787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1899,
+      "offset": 1881,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1942,
+      "offset": 1924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1984,
+      "offset": 1966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2037,
+      "offset": 2019,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2082,
+      "offset": 2064,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8990,
+      "offset": 8981,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9204,
-      "length": 11,
-      "value": "\"anonymous\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9220,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9449,
+      "offset": 9361,
       "length": 3,
       "value": "233"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9453,
+      "offset": 9365,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9465,
+      "offset": 9377,
       "length": 3,
       "value": "233"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9469,
+      "offset": 9381,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9480,
+      "offset": 9392,
       "length": 3,
       "value": "233"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9484,
+      "offset": 9396,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9496,
+      "offset": 9408,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9608,
+      "offset": 9520,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9671,
+      "offset": 9583,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9776,
+      "offset": 9688,
       "length": 23,
       "value": "\"pulsate_front_unknown\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9929,
+      "offset": 9841,
       "length": 3,
       "value": "233"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9933,
+      "offset": 9845,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9945,
+      "offset": 9857,
       "length": 3,
       "value": "233"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9949,
+      "offset": 9861,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9960,
+      "offset": 9872,
       "length": 3,
       "value": "233"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9964,
+      "offset": 9876,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9976,
+      "offset": 9888,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 10088,
+      "offset": 10000,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10151,
+      "offset": 10063,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11319,
+      "offset": 11231,
       "length": 3,
       "value": "195"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11323,
+      "offset": 11235,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11335,
+      "offset": 11247,
       "length": 3,
       "value": "195"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11339,
+      "offset": 11251,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11350,
+      "offset": 11262,
       "length": 3,
       "value": "195"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11354,
+      "offset": 11266,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 11366,
+      "offset": 11278,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19716,
+      "offset": 19628,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19757,
+      "offset": 19669,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19801,
+      "offset": 19713,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19846,
+      "offset": 19758,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 19898,
+      "offset": 19810,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19955,
+      "offset": 19867,
       "length": 3,
       "value": "203"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19959,
+      "offset": 19871,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19971,
+      "offset": 19883,
       "length": 3,
       "value": "203"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19975,
+      "offset": 19887,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19986,
+      "offset": 19898,
       "length": 3,
       "value": "203"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19990,
+      "offset": 19902,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 20002,
+      "offset": 19914,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Create\/ViewController\/PULCreateTalkViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20086,
+      "offset": 19998,
       "length": 41,
       "value": "\"pulsate_thread_other_subject_box_border\""
     },
@@ -53847,196 +54215,196 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 208,
+      "offset": 190,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 254,
+      "offset": 236,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 257,
       "length": 16,
       "value": "\"cellIdentifier\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "FloatLiteral",
-      "offset": 330,
+      "offset": 312,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "FloatLiteral",
-      "offset": 376,
+      "offset": 358,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "FloatLiteral",
-      "offset": 425,
+      "offset": 407,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 445,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 475,
       "length": 7,
       "value": "\"arrow\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 503,
       "length": 5,
       "value": "\"png\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "FloatLiteral",
-      "offset": 567,
+      "offset": 549,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "FloatLiteral",
-      "offset": 574,
+      "offset": 556,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 600,
+      "offset": 582,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 630,
+      "offset": 612,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1952,
+      "offset": 1934,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1991,
+      "offset": 1973,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2033,
+      "offset": 2015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2069,
+      "offset": 2051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 19962,
+      "offset": 19921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 20002,
+      "offset": 19961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 20128,
+      "offset": 20087,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 20161,
+      "offset": 20120,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "FloatLiteral",
-      "offset": 20201,
+      "offset": 20160,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 20278,
+      "offset": 20237,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 20321,
+      "offset": 20280,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 20781,
+      "offset": 20740,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 20962,
+      "offset": 20921,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 21015,
+      "offset": 20974,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Talk\/Back\/PULMessageViewController\/MessageVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 21182,
+      "offset": 21141,
       "length": 1,
       "value": "0"
     },

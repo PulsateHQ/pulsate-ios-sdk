@@ -800,9 +800,12 @@ SWIFT_CLASS("_TtC10PULPulsate13PULImageBlock")
 
 SWIFT_CLASS("_TtC10PULPulsate13PULImageCache")
 @interface PULImageCache : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULImageCache * _Nonnull shared;)
++ (PULImageCache * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)clearMemoryCaches;
++ (void)clearAllCaches;
 @end
 
 
@@ -1628,6 +1631,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 
@@ -2450,9 +2454,12 @@ SWIFT_CLASS("_TtC10PULPulsate13PULImageBlock")
 
 SWIFT_CLASS("_TtC10PULPulsate13PULImageCache")
 @interface PULImageCache : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULImageCache * _Nonnull shared;)
++ (PULImageCache * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)clearMemoryCaches;
++ (void)clearAllCaches;
 @end
 
 
@@ -3278,6 +3285,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 

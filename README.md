@@ -19,32 +19,25 @@ From Xcode 11 onwards, you can use [Swift Package Manager](https://swift.org/pac
 1. Select File > Swift Packages > Add Package Dependency
 2. Enter the repository URL: https://github.com/PulsateHQ/pulsate-ios-sdk.git
 3. Specify the version: Version 4.7.1 or later
-4. Xcode will handle the dependencies automatically (including SDWebImage)
 
-You can also add it directly to your Package.swift file:
+## Important: Manual SDWebImage Integration Required
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/PulsateHQ/pulsate-ios-sdk.git", from: "4.7.1")
-]
-```
+The PULPulsate SDK requires SDWebImage to function properly. You need to add SDWebImage to your project separately:
 
-## Usage with Swift Package Manager - IMPORTANT
+1. Select File > Swift Packages > Add Package Dependency
+2. Enter the repository URL: https://github.com/SDWebImage/SDWebImage.git
+3. Specify the version (5.0.0 or later is recommended)
 
-For Swift Package Manager, we provide a special wrapper module called `PULPulsateKit` that includes both PULPulsate and its required SDWebImage dependency.
+## Usage with Swift Package Manager
 
-**In your code, use the following import:**
+After adding both packages, import them in your code:
 
 ```swift
-import PULPulsateKit
-
-// Initialize the SDK (in your AppDelegate's didFinishLaunchingWithOptions)
-PULPulsateKit.initialize()
+import PULPulsate
+import SDWebImage
 
 // Then use PULPulsate normally according to the documentation
 ```
-
-This wrapper ensures that SDWebImage is properly linked, which prevents the "No such module 'SDWebImage'" error.
 
 ## Troubleshooting Swift Package Manager Issues
 
@@ -52,13 +45,13 @@ If you encounter build errors, try these steps:
 
 1. Clean your project (Product > Clean Build Folder)
 2. Reset Package Caches (File > Packages > Reset Package Caches)
-3. Make sure you import `PULPulsateKit` rather than `PULPulsate` directly
+3. Make sure both PULPulsate and SDWebImage are properly imported
 4. Rebuild your project
 
-If you still encounter issues, the manual approach is to:
+If you still encounter issues with the Swift Package Manager integration, try the manual approach:
 
 1. Download the PULPulsate.xcframework from this repository
-2. Add it directly to your project
+2. Add it directly to your project (drag & drop into Xcode)
 3. Add SDWebImage via Swift Package Manager separately
 4. Import both in your code:
    ```swift
@@ -89,17 +82,15 @@ The package will automatically include all necessary dependencies (including SDW
 ## Usage
 
 ### Basic Setup
-The package now provides a unified wrapper module to avoid integration issues:
+To use PULPulsate with its required dependency:
 
 ```swift
-// Import the wrapper module
-import PULPulsateKit
+// Import both required packages
+import PULPulsate
+import SDWebImage
 
-// Initialize in your AppDelegate
+// In your AppDelegate
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Initialize PULPulsate with its dependencies
-    PULPulsateKit.initialize()
-    
     // Configure PULPulsate as normal
     // PULPulsate.sharedInstance.startPulsateSession(...)
     
@@ -107,7 +98,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-This approach ensures that both PULPulsate and its required dependency SDWebImage are properly linked together.
+Make sure to add both PULPulsate and SDWebImage to your project to avoid build errors.
 
 ### Resource Bundle Support
 
@@ -189,9 +180,9 @@ Due to Swift Package Manager limitations with binary frameworks, we've separated
 If all other approaches fail, the most reliable solution is to manually download both dependencies:
 
 1. Download the PULPulsate.xcframework from this repository
-2. Add it directly to your project (drag & drop)
+2. Add it directly to your project (drag & drop into Xcode)
 3. Add SDWebImage via Swift Package Manager separately
-4. In your code:
+4. Import both in your code:
    ```swift
    import PULPulsate
    import SDWebImage

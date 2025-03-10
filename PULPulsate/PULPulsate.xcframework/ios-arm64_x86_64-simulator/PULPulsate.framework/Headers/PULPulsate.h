@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-<<<<<<<< HEAD:Frameworks/PULPulsate.xcframework/ios-arm64/PULPulsate.framework/Headers/PULPulsate.h
-========
 #import "PULSystemKeychain.h"
->>>>>>>> master:PULPulsate/PULPulsate.xcframework/ios-arm64/PULPulsate.framework/Headers/PULPulsate.h
 #import "BSBacktraceLogger.h"
 #import "FBShimmeringView.h"

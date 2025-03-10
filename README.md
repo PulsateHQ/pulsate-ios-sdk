@@ -29,24 +29,30 @@ dependencies: [
 ]
 ```
 
-## Usage with Swift Package Manager
+## Usage with Swift Package Manager - IMPORTANT
 
-When you import PULPulsate in your code, SDWebImage will automatically be linked since it's a dependency. However, to ensure proper linking in some configurations, it's recommended to:
+For Swift Package Manager, we provide a special wrapper module called `PULPulsateKit` that includes both PULPulsate and its required SDWebImage dependency.
+
+**In your code, use the following import:**
 
 ```swift
-import PULPulsate
+import PULPulsateKit
 
-// Optional but recommended: explicitly ensure SDWebImage is linked
-SDWebImageLinker.ensureLinked()
+// Initialize the SDK (in your AppDelegate's didFinishLaunchingWithOptions)
+PULPulsateKit.initialize()
+
+// Then use PULPulsate normally according to the documentation
 ```
+
+This wrapper ensures that SDWebImage is properly linked, which prevents the "No such module 'SDWebImage'" error.
 
 ## Troubleshooting Swift Package Manager Issues
 
-If you encounter build errors like "Failed to build module 'PULPulsate' for importation", try these steps:
+If you encounter build errors, try these steps:
 
 1. Clean your project (Product > Clean Build Folder)
 2. Reset Package Caches (File > Packages > Reset Package Caches)
-3. Make sure both PULPulsate and SDWebImage are properly added to your target's linked libraries
+3. Make sure you import `PULPulsateKit` rather than `PULPulsate` directly
 4. Rebuild your project
 
 If you still encounter issues, the manual approach is to:
@@ -83,32 +89,25 @@ The package will automatically include all necessary dependencies (including SDW
 ## Usage
 
 ### Basic Setup
-The package now provides two separate libraries to avoid integration issues:
-
-1. `PULPulsate` - The main binary framework
-2. `PULPulsateResources` - Helper module with resource bundle access
-
-In your Swift file, import the modules you need:
+The package now provides a unified wrapper module to avoid integration issues:
 
 ```swift
-// For the main SDK functionality
-import PULPulsate
+// Import the wrapper module
+import PULPulsateKit
 
-// Needed for SDK's internal image handling
-import SDWebImage
-
-// Optional: Only if you need resource bundle access
-import PULPulsateResources
+// Initialize in your AppDelegate
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // Initialize PULPulsate with its dependencies
+    PULPulsateKit.initialize()
+    
+    // Configure PULPulsate as normal
+    // PULPulsate.sharedInstance.startPulsateSession(...)
+    
+    return true
+}
 ```
 
-When using both libraries, make sure to initialize the compatibility helpers:
-
-```swift
-// Call this in your AppDelegate or early in your app's lifecycle
-PULPulsateCompat.ensureDependenciesLinked()
-```
-
-Then use the PULPulsate SDK normally according to its documentation.
+This approach ensures that both PULPulsate and its required dependency SDWebImage are properly linked together.
 
 ### Resource Bundle Support
 

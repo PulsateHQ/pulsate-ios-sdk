@@ -8,8 +8,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "PULPulsate",
-            targets: ["PULPulsate", "PULPulsateDeps"])
+            name: "PULPulsateKit", 
+            targets: ["PULPulsateKit"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.0.0")
@@ -23,6 +23,13 @@ let package = Package(
             name: "PULPulsateDeps",
             dependencies: [
                 .product(name: "SDWebImage", package: "SDWebImage")
+            ]
+        ),
+        .target(
+            name: "PULPulsateKit",
+            dependencies: ["PULPulsate", "PULPulsateDeps"],
+            linkerSettings: [
+                .linkedFramework("SDWebImage")
             ]
         )
     ]

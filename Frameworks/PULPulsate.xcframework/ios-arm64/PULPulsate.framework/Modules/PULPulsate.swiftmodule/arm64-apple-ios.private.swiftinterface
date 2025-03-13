@@ -1003,6 +1003,11 @@ extension PULPulsate.Reachability {
   @objc public static let bigInAppMessageBackground: PULPulsate.PULThemeKey
   @objc public static let bigInAppMessageButtonBackground: PULPulsate.PULThemeKey
   @objc public static let bigInAppMessageButtonText: PULPulsate.PULThemeKey
+  @objc public static let bigInAppOneButton: PULPulsate.PULThemeKey
+  @objc public static let bigInAppOneButtonText: PULPulsate.PULThemeKey
+  @objc public static let bigInAppTwoButton: PULPulsate.PULThemeKey
+  @objc public static let bigInAppTwoButtonText: PULPulsate.PULThemeKey
+  @objc public static let bigInAppTwoButtonOutline: PULPulsate.PULThemeKey
   @objc public static let newUpdatesPillBackground: PULPulsate.PULThemeKey
   @objc public static let newUpdatesPillText: PULPulsate.PULThemeKey
   @objc public static let newUpdatesPillArrow: PULPulsate.PULThemeKey
@@ -1077,6 +1082,11 @@ extension PULPulsate.Reachability {
   @objc public var bigInAppMessageBackgroundColor: UIKit.UIColor?
   @objc public var bigInAppMessageButtonBackgroundColor: UIKit.UIColor?
   @objc public var bigInAppMessageButtonTextColor: UIKit.UIColor?
+  @objc public var bigInAppOneButtonColor: UIKit.UIColor?
+  @objc public var bigInAppOneButtonTextColor: UIKit.UIColor?
+  @objc public var bigInAppTwoButtonColor: UIKit.UIColor?
+  @objc public var bigInAppTwoButtonTextColor: UIKit.UIColor?
+  @objc public var bigInAppTwoButtonOutlineColor: UIKit.UIColor?
   @objc public var newUpdatesPillBackgroundColor: UIKit.UIColor?
   @objc public var newUpdatesPillTextColor: UIKit.UIColor?
   @objc public var newUpdatesPillArrowColor: UIKit.UIColor?
@@ -1112,6 +1122,11 @@ extension PULPulsate.Reachability {
   @objc dynamic public func setSmallInAppMessageBackgroundColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppHeaderColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppMessageBackgroundColor(_ color: UIKit.UIColor)
+  @objc dynamic public func setBigInAppOneButtonColor(_ color: UIKit.UIColor)
+  @objc dynamic public func setBigInAppOneButtonTextColor(_ color: UIKit.UIColor)
+  @objc dynamic public func setBigInAppTwoButtonColor(_ color: UIKit.UIColor)
+  @objc dynamic public func setBigInAppTwoButtonTextColor(_ color: UIKit.UIColor)
+  @objc dynamic public func setBigInAppTwoButtonOutlineColor(_ color: UIKit.UIColor)
   @objc dynamic public func getThemeConfigurationKeys() -> [Swift.String]
   @objc dynamic public func setCustomColorWithThemeKey(_ key: PULPulsate.PULThemeKey, color: UIKit.UIColor)
   @objc dynamic public func setCustomColor(forKey key: Swift.String, color: UIKit.UIColor)

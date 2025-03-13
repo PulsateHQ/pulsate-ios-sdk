@@ -1477,6 +1477,16 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setBigInAppHeaderColor:(UIColor * _Nonnull)color;
 /// Sets the background color for big in-app notifications
 - (void)setBigInAppMessageBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the primary button color in big in-app notifications
+- (void)setBigInAppOneButtonColor:(UIColor * _Nonnull)color;
+/// Sets the primary button text color in big in-app notifications
+- (void)setBigInAppOneButtonTextColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button color in big in-app notifications
+- (void)setBigInAppTwoButtonColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button text color in big in-app notifications
+- (void)setBigInAppTwoButtonTextColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button outline color in big in-app notifications
+- (void)setBigInAppTwoButtonOutlineColor:(UIColor * _Nonnull)color;
 /// Gets all available configuration keys
 - (NSArray<NSString *> * _Nonnull)getThemeConfigurationKeys SWIFT_WARN_UNUSED_RESULT;
 /// Sets a color for a specific configuration key with type safety
@@ -1721,6 +1731,11 @@ SWIFT_CLASS("_TtC10PULPulsate21PULThemeConfiguration")
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppOneButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppOneButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppTwoButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppTwoButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppTwoButtonOutlineColor;
 @property (nonatomic, strong) UIColor * _Nullable newUpdatesPillBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable newUpdatesPillTextColor;
 @property (nonatomic, strong) UIColor * _Nullable newUpdatesPillArrowColor;
@@ -1864,6 +1879,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)bigInAppMessageButtonBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonText;)
 + (PULThemeKey * _Nonnull)bigInAppMessageButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppOneButton;)
++ (PULThemeKey * _Nonnull)bigInAppOneButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppOneButtonText;)
++ (PULThemeKey * _Nonnull)bigInAppOneButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppTwoButton;)
++ (PULThemeKey * _Nonnull)bigInAppTwoButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppTwoButtonText;)
++ (PULThemeKey * _Nonnull)bigInAppTwoButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppTwoButtonOutline;)
++ (PULThemeKey * _Nonnull)bigInAppTwoButtonOutline SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillBackground;)
 + (PULThemeKey * _Nonnull)newUpdatesPillBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillText;)
@@ -3423,6 +3448,16 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)setBigInAppHeaderColor:(UIColor * _Nonnull)color;
 /// Sets the background color for big in-app notifications
 - (void)setBigInAppMessageBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the primary button color in big in-app notifications
+- (void)setBigInAppOneButtonColor:(UIColor * _Nonnull)color;
+/// Sets the primary button text color in big in-app notifications
+- (void)setBigInAppOneButtonTextColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button color in big in-app notifications
+- (void)setBigInAppTwoButtonColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button text color in big in-app notifications
+- (void)setBigInAppTwoButtonTextColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button outline color in big in-app notifications
+- (void)setBigInAppTwoButtonOutlineColor:(UIColor * _Nonnull)color;
 /// Gets all available configuration keys
 - (NSArray<NSString *> * _Nonnull)getThemeConfigurationKeys SWIFT_WARN_UNUSED_RESULT;
 /// Sets a color for a specific configuration key with type safety
@@ -3667,6 +3702,11 @@ SWIFT_CLASS("_TtC10PULPulsate21PULThemeConfiguration")
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppOneButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppOneButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppTwoButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppTwoButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppTwoButtonOutlineColor;
 @property (nonatomic, strong) UIColor * _Nullable newUpdatesPillBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable newUpdatesPillTextColor;
 @property (nonatomic, strong) UIColor * _Nullable newUpdatesPillArrowColor;
@@ -3810,6 +3850,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)bigInAppMessageButtonBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonText;)
 + (PULThemeKey * _Nonnull)bigInAppMessageButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppOneButton;)
++ (PULThemeKey * _Nonnull)bigInAppOneButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppOneButtonText;)
++ (PULThemeKey * _Nonnull)bigInAppOneButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppTwoButton;)
++ (PULThemeKey * _Nonnull)bigInAppTwoButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppTwoButtonText;)
++ (PULThemeKey * _Nonnull)bigInAppTwoButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppTwoButtonOutline;)
++ (PULThemeKey * _Nonnull)bigInAppTwoButtonOutline SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillBackground;)
 + (PULThemeKey * _Nonnull)newUpdatesPillBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillText;)

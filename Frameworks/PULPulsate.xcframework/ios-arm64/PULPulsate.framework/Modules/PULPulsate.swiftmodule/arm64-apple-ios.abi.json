@@ -23910,6 +23910,151 @@
           },
           {
             "kind": "Function",
+            "name": "setBigInAppOneButtonColor",
+            "printedName": "setBigInAppOneButtonColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULPulsateManager(im)setBigInAppOneButtonColor:",
+            "mangledName": "$s10PULPulsate0A7ManagerC25setBigInAppOneButtonColoryySo7UIColorCF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBigInAppOneButtonTextColor",
+            "printedName": "setBigInAppOneButtonTextColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULPulsateManager(im)setBigInAppOneButtonTextColor:",
+            "mangledName": "$s10PULPulsate0A7ManagerC29setBigInAppOneButtonTextColoryySo7UIColorCF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBigInAppTwoButtonColor",
+            "printedName": "setBigInAppTwoButtonColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULPulsateManager(im)setBigInAppTwoButtonColor:",
+            "mangledName": "$s10PULPulsate0A7ManagerC25setBigInAppTwoButtonColoryySo7UIColorCF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBigInAppTwoButtonTextColor",
+            "printedName": "setBigInAppTwoButtonTextColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULPulsateManager(im)setBigInAppTwoButtonTextColor:",
+            "mangledName": "$s10PULPulsate0A7ManagerC29setBigInAppTwoButtonTextColoryySo7UIColorCF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBigInAppTwoButtonOutlineColor",
+            "printedName": "setBigInAppTwoButtonOutlineColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULPulsateManager(im)setBigInAppTwoButtonOutlineColor:",
+            "mangledName": "$s10PULPulsate0A7ManagerC32setBigInAppTwoButtonOutlineColoryySo7UIColorCF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getThemeConfigurationKeys",
             "printedName": "getThemeConfigurationKeys()",
             "children": [
@@ -44909,6 +45054,271 @@
           },
           {
             "kind": "Var",
+            "name": "bigInAppOneButton",
+            "printedName": "bigInAppOneButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULThemeKey",
+                "printedName": "PULPulsate.PULThemeKey",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cpy)bigInAppOneButton",
+            "mangledName": "$s10PULPulsate11PULThemeKeyC17bigInAppOneButtonACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULThemeKey",
+                    "printedName": "PULPulsate.PULThemeKey",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cm)bigInAppOneButton",
+                "mangledName": "$s10PULPulsate11PULThemeKeyC17bigInAppOneButtonACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppOneButtonText",
+            "printedName": "bigInAppOneButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULThemeKey",
+                "printedName": "PULPulsate.PULThemeKey",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cpy)bigInAppOneButtonText",
+            "mangledName": "$s10PULPulsate11PULThemeKeyC21bigInAppOneButtonTextACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULThemeKey",
+                    "printedName": "PULPulsate.PULThemeKey",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cm)bigInAppOneButtonText",
+                "mangledName": "$s10PULPulsate11PULThemeKeyC21bigInAppOneButtonTextACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppTwoButton",
+            "printedName": "bigInAppTwoButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULThemeKey",
+                "printedName": "PULPulsate.PULThemeKey",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cpy)bigInAppTwoButton",
+            "mangledName": "$s10PULPulsate11PULThemeKeyC17bigInAppTwoButtonACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULThemeKey",
+                    "printedName": "PULPulsate.PULThemeKey",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cm)bigInAppTwoButton",
+                "mangledName": "$s10PULPulsate11PULThemeKeyC17bigInAppTwoButtonACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppTwoButtonText",
+            "printedName": "bigInAppTwoButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULThemeKey",
+                "printedName": "PULPulsate.PULThemeKey",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cpy)bigInAppTwoButtonText",
+            "mangledName": "$s10PULPulsate11PULThemeKeyC21bigInAppTwoButtonTextACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULThemeKey",
+                    "printedName": "PULPulsate.PULThemeKey",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cm)bigInAppTwoButtonText",
+                "mangledName": "$s10PULPulsate11PULThemeKeyC21bigInAppTwoButtonTextACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppTwoButtonOutline",
+            "printedName": "bigInAppTwoButtonOutline",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULThemeKey",
+                "printedName": "PULPulsate.PULThemeKey",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cpy)bigInAppTwoButtonOutline",
+            "mangledName": "$s10PULPulsate11PULThemeKeyC24bigInAppTwoButtonOutlineACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULThemeKey",
+                    "printedName": "PULPulsate.PULThemeKey",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cm)bigInAppTwoButtonOutline",
+                "mangledName": "$s10PULPulsate11PULThemeKeyC24bigInAppTwoButtonOutlineACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "newUpdatesPillBackground",
             "printedName": "newUpdatesPillBackground",
             "children": [
@@ -52950,6 +53360,591 @@
                 "declKind": "Accessor",
                 "usr": "s:10PULPulsate21PULThemeConfigurationC30bigInAppMessageButtonTextColorSo7UIColorCSgvM",
                 "mangledName": "$s10PULPulsate21PULThemeConfigurationC30bigInAppMessageButtonTextColorSo7UIColorCSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppOneButtonColor",
+            "printedName": "bigInAppOneButtonColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(py)bigInAppOneButtonColor",
+            "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppOneButtonColorSo7UIColorCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)bigInAppOneButtonColor",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppOneButtonColorSo7UIColorCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)setBigInAppOneButtonColor:",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppOneButtonColorSo7UIColorCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate21PULThemeConfigurationC22bigInAppOneButtonColorSo7UIColorCSgvM",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppOneButtonColorSo7UIColorCSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppOneButtonTextColor",
+            "printedName": "bigInAppOneButtonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(py)bigInAppOneButtonTextColor",
+            "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppOneButtonTextColorSo7UIColorCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)bigInAppOneButtonTextColor",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppOneButtonTextColorSo7UIColorCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)setBigInAppOneButtonTextColor:",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppOneButtonTextColorSo7UIColorCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate21PULThemeConfigurationC26bigInAppOneButtonTextColorSo7UIColorCSgvM",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppOneButtonTextColorSo7UIColorCSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppTwoButtonColor",
+            "printedName": "bigInAppTwoButtonColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(py)bigInAppTwoButtonColor",
+            "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppTwoButtonColorSo7UIColorCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)bigInAppTwoButtonColor",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppTwoButtonColorSo7UIColorCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)setBigInAppTwoButtonColor:",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppTwoButtonColorSo7UIColorCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate21PULThemeConfigurationC22bigInAppTwoButtonColorSo7UIColorCSgvM",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC22bigInAppTwoButtonColorSo7UIColorCSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppTwoButtonTextColor",
+            "printedName": "bigInAppTwoButtonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(py)bigInAppTwoButtonTextColor",
+            "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppTwoButtonTextColorSo7UIColorCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)bigInAppTwoButtonTextColor",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppTwoButtonTextColorSo7UIColorCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)setBigInAppTwoButtonTextColor:",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppTwoButtonTextColorSo7UIColorCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate21PULThemeConfigurationC26bigInAppTwoButtonTextColorSo7UIColorCSgvM",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC26bigInAppTwoButtonTextColorSo7UIColorCSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppTwoButtonOutlineColor",
+            "printedName": "bigInAppTwoButtonOutlineColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(py)bigInAppTwoButtonOutlineColor",
+            "mangledName": "$s10PULPulsate21PULThemeConfigurationC29bigInAppTwoButtonOutlineColorSo7UIColorCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)bigInAppTwoButtonOutlineColor",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC29bigInAppTwoButtonOutlineColorSo7UIColorCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)setBigInAppTwoButtonOutlineColor:",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC29bigInAppTwoButtonOutlineColorSo7UIColorCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate21PULThemeConfigurationC29bigInAppTwoButtonOutlineColorSo7UIColorCSgvM",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC29bigInAppTwoButtonOutlineColorSo7UIColorCSgvM",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -68516,42 +69511,77 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 7617,
+      "offset": 7585,
+      "length": 34,
+      "value": "\"pulsate_big_in_app_one_btn_color\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 7685,
+      "length": 34,
+      "value": "\"pulsate_big_in_app_one_txt_color\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 7781,
+      "length": 34,
+      "value": "\"pulsate_big_in_app_two_btn_color\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 7881,
+      "length": 34,
+      "value": "\"pulsate_big_in_app_two_txt_color\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 7984,
+      "length": 42,
+      "value": "\"pulsate_big_in_app_two_btn_outline_color\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 8120,
       "length": 43,
       "value": "\"pulsate_new_updates_pill_background_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 7723,
+      "offset": 8226,
       "length": 37,
       "value": "\"pulsate_new_updates_pill_text_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 7824,
+      "offset": 8327,
       "length": 38,
       "value": "\"pulsate_new_updates_pill_arrow_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 7967,
+      "offset": 8470,
       "length": 49,
       "value": "\"pulsate_no_internet_connection_background_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 8085,
+      "offset": 8588,
       "length": 43,
       "value": "\"pulsate_no_internet_connection_text_color\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 8198,
+      "offset": 8701,
       "length": 44,
       "value": "\"pulsate_no_internet_connection_cross_color\""
     },

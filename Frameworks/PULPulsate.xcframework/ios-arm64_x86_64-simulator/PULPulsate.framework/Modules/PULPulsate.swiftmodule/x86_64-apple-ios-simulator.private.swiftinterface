@@ -940,55 +940,149 @@ extension PULPulsate.Reachability {
   @objc public func getStringValue() -> Swift.String
   @objc public static let navBarBackground: PULPulsate.PULThemeKey
   @objc public static let navBarTitle: PULPulsate.PULThemeKey
+  @objc public static let navBarTitleSize: PULPulsate.PULThemeKey
+  @objc public static let navBarTitleExpandSize: PULPulsate.PULThemeKey
   @objc public static let backButton: PULPulsate.PULThemeKey
+  @objc public static let dividerLines: PULPulsate.PULThemeKey
+  @objc public static let sendButton: PULPulsate.PULThemeKey
+  @objc public static let textHint: PULPulsate.PULThemeKey
+  @objc public static let textInput: PULPulsate.PULThemeKey
+  @objc public static let frontUnknown: PULPulsate.PULThemeKey
+  @objc public static let dateCardBackground: PULPulsate.PULThemeKey
+  @objc public static let feedBackground: PULPulsate.PULThemeKey
+  @objc public static let feedPencil: PULPulsate.PULThemeKey
+  @objc public static let feedPencilBackground: PULPulsate.PULThemeKey
+  @objc public static let feedIsEmptyTitle: PULPulsate.PULThemeKey
+  @objc public static let feedIsEmptyText: PULPulsate.PULThemeKey
+  @objc public static let feedIsEmptyIconBackground: PULPulsate.PULThemeKey
+  @objc public static let feedIsEmptyIcon: PULPulsate.PULThemeKey
   @objc public static let cardText: PULPulsate.PULThemeKey
   @objc public static let cardBackground: PULPulsate.PULThemeKey
   @objc public static let cardAdminName: PULPulsate.PULThemeKey
   @objc public static let cardAdminTitle: PULPulsate.PULThemeKey
+  @objc public static let cardReplyButton: PULPulsate.PULThemeKey
+  @objc public static let cardRightButton: PULPulsate.PULThemeKey
+  @objc public static let cardRightButtonRead: PULPulsate.PULThemeKey
+  @objc public static let cardLeftButton: PULPulsate.PULThemeKey
+  @objc public static let cardRightButton2: PULPulsate.PULThemeKey
+  @objc public static let cardSingleButton: PULPulsate.PULThemeKey
   @objc public static let cardPrimaryButton: PULPulsate.PULThemeKey
   @objc public static let cardPrimaryButtonText: PULPulsate.PULThemeKey
   @objc public static let cardSecondaryButton: PULPulsate.PULThemeKey
   @objc public static let cardSecondaryButtonText: PULPulsate.PULThemeKey
   @objc public static let cardSecondaryButtonOutline: PULPulsate.PULThemeKey
-  @objc public static let feedBackground: PULPulsate.PULThemeKey
-  @objc public static let feedPencil: PULPulsate.PULThemeKey
-  @objc public static let feedPencilBackground: PULPulsate.PULThemeKey
+  @objc public static let cardBackBackground: PULPulsate.PULThemeKey
+  @objc public static let cardBackReplyIcon: PULPulsate.PULThemeKey
+  @objc public static let cardBackButton: PULPulsate.PULThemeKey
+  @objc public static let cardBackButtonText: PULPulsate.PULThemeKey
+  @objc public static let cardBackTableLabel: PULPulsate.PULThemeKey
+  @objc public static let cardBackTableValue: PULPulsate.PULThemeKey
+  @objc public static let cardDeleteIcon: PULPulsate.PULThemeKey
+  @objc public static let cardDeleteIconBackground: PULPulsate.PULThemeKey
+  @objc public static let cardCreateIcon: PULPulsate.PULThemeKey
+  @objc public static let cardCreateIconBackground: PULPulsate.PULThemeKey
+  @objc public static let threadCardNewMessage: PULPulsate.PULThemeKey
   @objc public static let threadUserBubble: PULPulsate.PULThemeKey
   @objc public static let threadUserBubbleText: PULPulsate.PULThemeKey
   @objc public static let threadAdminBubble: PULPulsate.PULThemeKey
   @objc public static let threadAdminBubbleText: PULPulsate.PULThemeKey
   @objc public static let threadBubbleDate: PULPulsate.PULThemeKey
   @objc public static let threadBackground: PULPulsate.PULThemeKey
+  @objc public static let threadMiddleHint: PULPulsate.PULThemeKey
+  @objc public static let threadSelectSubjectText: PULPulsate.PULThemeKey
+  @objc public static let threadSelectSubjectIcon: PULPulsate.PULThemeKey
+  @objc public static let threadSelectSubjectDropdownBackground: PULPulsate.PULThemeKey
+  @objc public static let threadOtherSubjectBoxBackground: PULPulsate.PULThemeKey
+  @objc public static let threadOtherSubjectBoxBorder: PULPulsate.PULThemeKey
+  @objc public static let threadMessageBackground: PULPulsate.PULThemeKey
+  @objc public static let threadNavbarAdminTitle: PULPulsate.PULThemeKey
+  @objc public static let threadSendingMessageBackground: PULPulsate.PULThemeKey
+  @objc public static let threadSendingMessageText: PULPulsate.PULThemeKey
   @objc public static let smallInAppMessageBackground: PULPulsate.PULThemeKey
   @objc public static let bigInAppHeader: PULPulsate.PULThemeKey
   @objc public static let bigInAppMessageBackground: PULPulsate.PULThemeKey
+  @objc public static let bigInAppMessageButtonBackground: PULPulsate.PULThemeKey
+  @objc public static let bigInAppMessageButtonText: PULPulsate.PULThemeKey
+  @objc public static let newUpdatesPillBackground: PULPulsate.PULThemeKey
+  @objc public static let newUpdatesPillText: PULPulsate.PULThemeKey
+  @objc public static let newUpdatesPillArrow: PULPulsate.PULThemeKey
+  @objc public static let noInternetConnectionBackground: PULPulsate.PULThemeKey
+  @objc public static let noInternetConnectionText: PULPulsate.PULThemeKey
+  @objc public static let noInternetConnectionCross: PULPulsate.PULThemeKey
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PULThemeConfiguration : ObjectiveC.NSObject {
   @objc public var navBarBackgroundColor: UIKit.UIColor?
   @objc public var navBarTitleColor: UIKit.UIColor?
+  @objc public var navBarTitleSize: Swift.String?
+  @objc public var navBarTitleExpandSize: Swift.String?
   @objc public var backButtonColor: UIKit.UIColor?
+  @objc public var dividerLinesColor: UIKit.UIColor?
+  @objc public var sendButtonColor: UIKit.UIColor?
+  @objc public var textHintColor: UIKit.UIColor?
+  @objc public var textInputColor: UIKit.UIColor?
+  @objc public var frontUnknownColor: UIKit.UIColor?
+  @objc public var dateCardBackgroundColor: UIKit.UIColor?
+  @objc public var feedBackgroundColor: UIKit.UIColor?
+  @objc public var feedPencilColor: UIKit.UIColor?
+  @objc public var feedPencilBackgroundColor: UIKit.UIColor?
+  @objc public var feedIsEmptyTitleColor: UIKit.UIColor?
+  @objc public var feedIsEmptyTextColor: UIKit.UIColor?
+  @objc public var feedIsEmptyIconBackgroundColor: UIKit.UIColor?
+  @objc public var feedIsEmptyIconColor: UIKit.UIColor?
   @objc public var cardTextColor: UIKit.UIColor?
   @objc public var cardBackgroundColor: UIKit.UIColor?
   @objc public var cardAdminNameTextColor: UIKit.UIColor?
   @objc public var cardAdminTitleTextColor: UIKit.UIColor?
+  @objc public var cardReplyButtonTextColor: UIKit.UIColor?
+  @objc public var cardRightButtonTextColor: UIKit.UIColor?
+  @objc public var cardRightButtonReadTextColor: UIKit.UIColor?
+  @objc public var cardLeftButtonColor: UIKit.UIColor?
+  @objc public var cardRightButtonColor: UIKit.UIColor?
+  @objc public var cardSingleButtonColor: UIKit.UIColor?
   @objc public var cardPrimaryButtonColor: UIKit.UIColor?
   @objc public var cardPrimaryButtonTextColor: UIKit.UIColor?
   @objc public var cardSecondaryButtonColor: UIKit.UIColor?
   @objc public var cardSecondaryButtonTextColor: UIKit.UIColor?
   @objc public var cardSecondaryButtonOutlineColor: UIKit.UIColor?
-  @objc public var feedBackgroundColor: UIKit.UIColor?
-  @objc public var feedPencilColor: UIKit.UIColor?
-  @objc public var feedPencilBackgroundColor: UIKit.UIColor?
+  @objc public var cardBackBackgroundColor: UIKit.UIColor?
+  @objc public var cardBackReplyIconColor: UIKit.UIColor?
+  @objc public var cardBackButtonColor: UIKit.UIColor?
+  @objc public var cardBackButtonTextColor: UIKit.UIColor?
+  @objc public var cardBackTableLabelTextColor: UIKit.UIColor?
+  @objc public var cardBackTableValueTextColor: UIKit.UIColor?
+  @objc public var cardDeleteIconColor: UIKit.UIColor?
+  @objc public var cardDeleteIconBackgroundColor: UIKit.UIColor?
+  @objc public var cardCreateIconColor: UIKit.UIColor?
+  @objc public var cardCreateIconBackgroundColor: UIKit.UIColor?
+  @objc public var threadCardNewMessageTextColor: UIKit.UIColor?
   @objc public var threadUserBubbleColor: UIKit.UIColor?
   @objc public var threadUserBubbleTextColor: UIKit.UIColor?
   @objc public var threadAdminBubbleColor: UIKit.UIColor?
   @objc public var threadAdminBubbleTextColor: UIKit.UIColor?
   @objc public var threadBubbleDateColor: UIKit.UIColor?
   @objc public var threadBackgroundColor: UIKit.UIColor?
+  @objc public var threadMiddleHintColor: UIKit.UIColor?
+  @objc public var threadSelectSubjectTextColor: UIKit.UIColor?
+  @objc public var threadSelectSubjectIconColor: UIKit.UIColor?
+  @objc public var threadSelectSubjectDropdownBackgroundColor: UIKit.UIColor?
+  @objc public var threadOtherSubjectBoxBackgroundColor: UIKit.UIColor?
+  @objc public var threadOtherSubjectBoxBorderColor: UIKit.UIColor?
+  @objc public var threadMessageBackgroundColor: UIKit.UIColor?
+  @objc public var threadNavbarAdminTitleColor: UIKit.UIColor?
+  @objc public var threadSendingMessageBackgroundColor: UIKit.UIColor?
+  @objc public var threadSendingMessageTextColor: UIKit.UIColor?
   @objc public var smallInAppMessageBackgroundColor: UIKit.UIColor?
   @objc public var bigInAppHeaderColor: UIKit.UIColor?
   @objc public var bigInAppMessageBackgroundColor: UIKit.UIColor?
+  @objc public var bigInAppMessageButtonBackgroundColor: UIKit.UIColor?
+  @objc public var bigInAppMessageButtonTextColor: UIKit.UIColor?
+  @objc public var newUpdatesPillBackgroundColor: UIKit.UIColor?
+  @objc public var newUpdatesPillTextColor: UIKit.UIColor?
+  @objc public var newUpdatesPillArrowColor: UIKit.UIColor?
+  @objc public var noInternetConnectionBackgroundColor: UIKit.UIColor?
+  @objc public var noInternetConnectionTextColor: UIKit.UIColor?
+  @objc public var noInternetConnectionCrossColor: UIKit.UIColor?
   @objc override dynamic public init()
   @objc deinit
 }

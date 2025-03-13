@@ -1658,28 +1658,75 @@ SWIFT_CLASS("_TtC10PULPulsate21PULThemeConfiguration")
 @interface PULThemeConfiguration : NSObject
 @property (nonatomic, strong) UIColor * _Nullable navBarBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable navBarTitleColor;
+@property (nonatomic, copy) NSString * _Nullable navBarTitleSize;
+@property (nonatomic, copy) NSString * _Nullable navBarTitleExpandSize;
 @property (nonatomic, strong) UIColor * _Nullable backButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable dividerLinesColor;
+@property (nonatomic, strong) UIColor * _Nullable sendButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable textHintColor;
+@property (nonatomic, strong) UIColor * _Nullable textInputColor;
+@property (nonatomic, strong) UIColor * _Nullable frontUnknownColor;
+@property (nonatomic, strong) UIColor * _Nullable dateCardBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedPencilColor;
+@property (nonatomic, strong) UIColor * _Nullable feedPencilBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyTitleColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyTextColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyIconBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyIconColor;
 @property (nonatomic, strong) UIColor * _Nullable cardTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable cardAdminNameTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardAdminTitleTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardReplyButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardRightButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardRightButtonReadTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardLeftButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardRightButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardSingleButtonColor;
 @property (nonatomic, strong) UIColor * _Nullable cardPrimaryButtonColor;
 @property (nonatomic, strong) UIColor * _Nullable cardPrimaryButtonTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonColor;
 @property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonOutlineColor;
-@property (nonatomic, strong) UIColor * _Nullable feedBackgroundColor;
-@property (nonatomic, strong) UIColor * _Nullable feedPencilColor;
-@property (nonatomic, strong) UIColor * _Nullable feedPencilBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackReplyIconColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackTableLabelTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackTableValueTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardDeleteIconColor;
+@property (nonatomic, strong) UIColor * _Nullable cardDeleteIconBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardCreateIconColor;
+@property (nonatomic, strong) UIColor * _Nullable cardCreateIconBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadCardNewMessageTextColor;
 @property (nonatomic, strong) UIColor * _Nullable threadUserBubbleColor;
 @property (nonatomic, strong) UIColor * _Nullable threadUserBubbleTextColor;
 @property (nonatomic, strong) UIColor * _Nullable threadAdminBubbleColor;
 @property (nonatomic, strong) UIColor * _Nullable threadAdminBubbleTextColor;
 @property (nonatomic, strong) UIColor * _Nullable threadBubbleDateColor;
 @property (nonatomic, strong) UIColor * _Nullable threadBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadMiddleHintColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSelectSubjectTextColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSelectSubjectIconColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSelectSubjectDropdownBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadOtherSubjectBoxBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadOtherSubjectBoxBorderColor;
+@property (nonatomic, strong) UIColor * _Nullable threadMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadNavbarAdminTitleColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSendingMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSendingMessageTextColor;
 @property (nonatomic, strong) UIColor * _Nullable smallInAppMessageBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppHeaderColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable newUpdatesPillBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable newUpdatesPillTextColor;
+@property (nonatomic, strong) UIColor * _Nullable newUpdatesPillArrowColor;
+@property (nonatomic, strong) UIColor * _Nullable noInternetConnectionBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable noInternetConnectionTextColor;
+@property (nonatomic, strong) UIColor * _Nullable noInternetConnectionCrossColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1691,8 +1738,38 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)navBarBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitle;)
 + (PULThemeKey * _Nonnull)navBarTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitleSize;)
++ (PULThemeKey * _Nonnull)navBarTitleSize SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitleExpandSize;)
++ (PULThemeKey * _Nonnull)navBarTitleExpandSize SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull backButton;)
 + (PULThemeKey * _Nonnull)backButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull dividerLines;)
++ (PULThemeKey * _Nonnull)dividerLines SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull sendButton;)
++ (PULThemeKey * _Nonnull)sendButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull textHint;)
++ (PULThemeKey * _Nonnull)textHint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull textInput;)
++ (PULThemeKey * _Nonnull)textInput SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull frontUnknown;)
++ (PULThemeKey * _Nonnull)frontUnknown SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull dateCardBackground;)
++ (PULThemeKey * _Nonnull)dateCardBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedBackground;)
++ (PULThemeKey * _Nonnull)feedBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencil;)
++ (PULThemeKey * _Nonnull)feedPencil SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencilBackground;)
++ (PULThemeKey * _Nonnull)feedPencilBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyTitle;)
++ (PULThemeKey * _Nonnull)feedIsEmptyTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyText;)
++ (PULThemeKey * _Nonnull)feedIsEmptyText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyIconBackground;)
++ (PULThemeKey * _Nonnull)feedIsEmptyIconBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyIcon;)
++ (PULThemeKey * _Nonnull)feedIsEmptyIcon SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardText;)
 + (PULThemeKey * _Nonnull)cardText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackground;)
@@ -1701,6 +1778,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)cardAdminName SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardAdminTitle;)
 + (PULThemeKey * _Nonnull)cardAdminTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardReplyButton;)
++ (PULThemeKey * _Nonnull)cardReplyButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardRightButton;)
++ (PULThemeKey * _Nonnull)cardRightButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardRightButtonRead;)
++ (PULThemeKey * _Nonnull)cardRightButtonRead SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardLeftButton;)
++ (PULThemeKey * _Nonnull)cardLeftButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardRightButton2;)
++ (PULThemeKey * _Nonnull)cardRightButton2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSingleButton;)
++ (PULThemeKey * _Nonnull)cardSingleButton SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardPrimaryButton;)
 + (PULThemeKey * _Nonnull)cardPrimaryButton SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardPrimaryButtonText;)
@@ -1711,12 +1800,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)cardSecondaryButtonText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSecondaryButtonOutline;)
 + (PULThemeKey * _Nonnull)cardSecondaryButtonOutline SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedBackground;)
-+ (PULThemeKey * _Nonnull)feedBackground SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencil;)
-+ (PULThemeKey * _Nonnull)feedPencil SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencilBackground;)
-+ (PULThemeKey * _Nonnull)feedPencilBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackBackground;)
++ (PULThemeKey * _Nonnull)cardBackBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackReplyIcon;)
++ (PULThemeKey * _Nonnull)cardBackReplyIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackButton;)
++ (PULThemeKey * _Nonnull)cardBackButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackButtonText;)
++ (PULThemeKey * _Nonnull)cardBackButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackTableLabel;)
++ (PULThemeKey * _Nonnull)cardBackTableLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackTableValue;)
++ (PULThemeKey * _Nonnull)cardBackTableValue SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardDeleteIcon;)
++ (PULThemeKey * _Nonnull)cardDeleteIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardDeleteIconBackground;)
++ (PULThemeKey * _Nonnull)cardDeleteIconBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardCreateIcon;)
++ (PULThemeKey * _Nonnull)cardCreateIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardCreateIconBackground;)
++ (PULThemeKey * _Nonnull)cardCreateIconBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadCardNewMessage;)
++ (PULThemeKey * _Nonnull)threadCardNewMessage SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadUserBubble;)
 + (PULThemeKey * _Nonnull)threadUserBubble SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadUserBubbleText;)
@@ -1729,12 +1834,48 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)threadBubbleDate SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadBackground;)
 + (PULThemeKey * _Nonnull)threadBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadMiddleHint;)
++ (PULThemeKey * _Nonnull)threadMiddleHint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSelectSubjectText;)
++ (PULThemeKey * _Nonnull)threadSelectSubjectText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSelectSubjectIcon;)
++ (PULThemeKey * _Nonnull)threadSelectSubjectIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSelectSubjectDropdownBackground;)
++ (PULThemeKey * _Nonnull)threadSelectSubjectDropdownBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadOtherSubjectBoxBackground;)
++ (PULThemeKey * _Nonnull)threadOtherSubjectBoxBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadOtherSubjectBoxBorder;)
++ (PULThemeKey * _Nonnull)threadOtherSubjectBoxBorder SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadMessageBackground;)
++ (PULThemeKey * _Nonnull)threadMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadNavbarAdminTitle;)
++ (PULThemeKey * _Nonnull)threadNavbarAdminTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSendingMessageBackground;)
++ (PULThemeKey * _Nonnull)threadSendingMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSendingMessageText;)
++ (PULThemeKey * _Nonnull)threadSendingMessageText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull smallInAppMessageBackground;)
 + (PULThemeKey * _Nonnull)smallInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppHeader;)
 + (PULThemeKey * _Nonnull)bigInAppHeader SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageBackground;)
 + (PULThemeKey * _Nonnull)bigInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonBackground;)
++ (PULThemeKey * _Nonnull)bigInAppMessageButtonBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonText;)
++ (PULThemeKey * _Nonnull)bigInAppMessageButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillBackground;)
++ (PULThemeKey * _Nonnull)newUpdatesPillBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillText;)
++ (PULThemeKey * _Nonnull)newUpdatesPillText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillArrow;)
++ (PULThemeKey * _Nonnull)newUpdatesPillArrow SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull noInternetConnectionBackground;)
++ (PULThemeKey * _Nonnull)noInternetConnectionBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull noInternetConnectionText;)
++ (PULThemeKey * _Nonnull)noInternetConnectionText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull noInternetConnectionCross;)
++ (PULThemeKey * _Nonnull)noInternetConnectionCross SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3463,28 +3604,75 @@ SWIFT_CLASS("_TtC10PULPulsate21PULThemeConfiguration")
 @interface PULThemeConfiguration : NSObject
 @property (nonatomic, strong) UIColor * _Nullable navBarBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable navBarTitleColor;
+@property (nonatomic, copy) NSString * _Nullable navBarTitleSize;
+@property (nonatomic, copy) NSString * _Nullable navBarTitleExpandSize;
 @property (nonatomic, strong) UIColor * _Nullable backButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable dividerLinesColor;
+@property (nonatomic, strong) UIColor * _Nullable sendButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable textHintColor;
+@property (nonatomic, strong) UIColor * _Nullable textInputColor;
+@property (nonatomic, strong) UIColor * _Nullable frontUnknownColor;
+@property (nonatomic, strong) UIColor * _Nullable dateCardBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedPencilColor;
+@property (nonatomic, strong) UIColor * _Nullable feedPencilBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyTitleColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyTextColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyIconBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedIsEmptyIconColor;
 @property (nonatomic, strong) UIColor * _Nullable cardTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable cardAdminNameTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardAdminTitleTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardReplyButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardRightButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardRightButtonReadTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardLeftButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardRightButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardSingleButtonColor;
 @property (nonatomic, strong) UIColor * _Nullable cardPrimaryButtonColor;
 @property (nonatomic, strong) UIColor * _Nullable cardPrimaryButtonTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonColor;
 @property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonTextColor;
 @property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonOutlineColor;
-@property (nonatomic, strong) UIColor * _Nullable feedBackgroundColor;
-@property (nonatomic, strong) UIColor * _Nullable feedPencilColor;
-@property (nonatomic, strong) UIColor * _Nullable feedPencilBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackReplyIconColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackTableLabelTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackTableValueTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardDeleteIconColor;
+@property (nonatomic, strong) UIColor * _Nullable cardDeleteIconBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardCreateIconColor;
+@property (nonatomic, strong) UIColor * _Nullable cardCreateIconBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadCardNewMessageTextColor;
 @property (nonatomic, strong) UIColor * _Nullable threadUserBubbleColor;
 @property (nonatomic, strong) UIColor * _Nullable threadUserBubbleTextColor;
 @property (nonatomic, strong) UIColor * _Nullable threadAdminBubbleColor;
 @property (nonatomic, strong) UIColor * _Nullable threadAdminBubbleTextColor;
 @property (nonatomic, strong) UIColor * _Nullable threadBubbleDateColor;
 @property (nonatomic, strong) UIColor * _Nullable threadBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadMiddleHintColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSelectSubjectTextColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSelectSubjectIconColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSelectSubjectDropdownBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadOtherSubjectBoxBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadOtherSubjectBoxBorderColor;
+@property (nonatomic, strong) UIColor * _Nullable threadMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadNavbarAdminTitleColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSendingMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadSendingMessageTextColor;
 @property (nonatomic, strong) UIColor * _Nullable smallInAppMessageBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppHeaderColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable newUpdatesPillBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable newUpdatesPillTextColor;
+@property (nonatomic, strong) UIColor * _Nullable newUpdatesPillArrowColor;
+@property (nonatomic, strong) UIColor * _Nullable noInternetConnectionBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable noInternetConnectionTextColor;
+@property (nonatomic, strong) UIColor * _Nullable noInternetConnectionCrossColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3496,8 +3684,38 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)navBarBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitle;)
 + (PULThemeKey * _Nonnull)navBarTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitleSize;)
++ (PULThemeKey * _Nonnull)navBarTitleSize SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitleExpandSize;)
++ (PULThemeKey * _Nonnull)navBarTitleExpandSize SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull backButton;)
 + (PULThemeKey * _Nonnull)backButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull dividerLines;)
++ (PULThemeKey * _Nonnull)dividerLines SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull sendButton;)
++ (PULThemeKey * _Nonnull)sendButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull textHint;)
++ (PULThemeKey * _Nonnull)textHint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull textInput;)
++ (PULThemeKey * _Nonnull)textInput SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull frontUnknown;)
++ (PULThemeKey * _Nonnull)frontUnknown SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull dateCardBackground;)
++ (PULThemeKey * _Nonnull)dateCardBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedBackground;)
++ (PULThemeKey * _Nonnull)feedBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencil;)
++ (PULThemeKey * _Nonnull)feedPencil SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencilBackground;)
++ (PULThemeKey * _Nonnull)feedPencilBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyTitle;)
++ (PULThemeKey * _Nonnull)feedIsEmptyTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyText;)
++ (PULThemeKey * _Nonnull)feedIsEmptyText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyIconBackground;)
++ (PULThemeKey * _Nonnull)feedIsEmptyIconBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedIsEmptyIcon;)
++ (PULThemeKey * _Nonnull)feedIsEmptyIcon SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardText;)
 + (PULThemeKey * _Nonnull)cardText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackground;)
@@ -3506,6 +3724,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)cardAdminName SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardAdminTitle;)
 + (PULThemeKey * _Nonnull)cardAdminTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardReplyButton;)
++ (PULThemeKey * _Nonnull)cardReplyButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardRightButton;)
++ (PULThemeKey * _Nonnull)cardRightButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardRightButtonRead;)
++ (PULThemeKey * _Nonnull)cardRightButtonRead SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardLeftButton;)
++ (PULThemeKey * _Nonnull)cardLeftButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardRightButton2;)
++ (PULThemeKey * _Nonnull)cardRightButton2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSingleButton;)
++ (PULThemeKey * _Nonnull)cardSingleButton SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardPrimaryButton;)
 + (PULThemeKey * _Nonnull)cardPrimaryButton SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardPrimaryButtonText;)
@@ -3516,12 +3746,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)cardSecondaryButtonText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSecondaryButtonOutline;)
 + (PULThemeKey * _Nonnull)cardSecondaryButtonOutline SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedBackground;)
-+ (PULThemeKey * _Nonnull)feedBackground SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencil;)
-+ (PULThemeKey * _Nonnull)feedPencil SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencilBackground;)
-+ (PULThemeKey * _Nonnull)feedPencilBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackBackground;)
++ (PULThemeKey * _Nonnull)cardBackBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackReplyIcon;)
++ (PULThemeKey * _Nonnull)cardBackReplyIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackButton;)
++ (PULThemeKey * _Nonnull)cardBackButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackButtonText;)
++ (PULThemeKey * _Nonnull)cardBackButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackTableLabel;)
++ (PULThemeKey * _Nonnull)cardBackTableLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackTableValue;)
++ (PULThemeKey * _Nonnull)cardBackTableValue SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardDeleteIcon;)
++ (PULThemeKey * _Nonnull)cardDeleteIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardDeleteIconBackground;)
++ (PULThemeKey * _Nonnull)cardDeleteIconBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardCreateIcon;)
++ (PULThemeKey * _Nonnull)cardCreateIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardCreateIconBackground;)
++ (PULThemeKey * _Nonnull)cardCreateIconBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadCardNewMessage;)
++ (PULThemeKey * _Nonnull)threadCardNewMessage SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadUserBubble;)
 + (PULThemeKey * _Nonnull)threadUserBubble SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadUserBubbleText;)
@@ -3534,12 +3780,48 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)threadBubbleDate SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadBackground;)
 + (PULThemeKey * _Nonnull)threadBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadMiddleHint;)
++ (PULThemeKey * _Nonnull)threadMiddleHint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSelectSubjectText;)
++ (PULThemeKey * _Nonnull)threadSelectSubjectText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSelectSubjectIcon;)
++ (PULThemeKey * _Nonnull)threadSelectSubjectIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSelectSubjectDropdownBackground;)
++ (PULThemeKey * _Nonnull)threadSelectSubjectDropdownBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadOtherSubjectBoxBackground;)
++ (PULThemeKey * _Nonnull)threadOtherSubjectBoxBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadOtherSubjectBoxBorder;)
++ (PULThemeKey * _Nonnull)threadOtherSubjectBoxBorder SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadMessageBackground;)
++ (PULThemeKey * _Nonnull)threadMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadNavbarAdminTitle;)
++ (PULThemeKey * _Nonnull)threadNavbarAdminTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSendingMessageBackground;)
++ (PULThemeKey * _Nonnull)threadSendingMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadSendingMessageText;)
++ (PULThemeKey * _Nonnull)threadSendingMessageText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull smallInAppMessageBackground;)
 + (PULThemeKey * _Nonnull)smallInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppHeader;)
 + (PULThemeKey * _Nonnull)bigInAppHeader SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageBackground;)
 + (PULThemeKey * _Nonnull)bigInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonBackground;)
++ (PULThemeKey * _Nonnull)bigInAppMessageButtonBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonText;)
++ (PULThemeKey * _Nonnull)bigInAppMessageButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillBackground;)
++ (PULThemeKey * _Nonnull)newUpdatesPillBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillText;)
++ (PULThemeKey * _Nonnull)newUpdatesPillText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull newUpdatesPillArrow;)
++ (PULThemeKey * _Nonnull)newUpdatesPillArrow SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull noInternetConnectionBackground;)
++ (PULThemeKey * _Nonnull)noInternetConnectionBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull noInternetConnectionText;)
++ (PULThemeKey * _Nonnull)noInternetConnectionText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull noInternetConnectionCross;)
++ (PULThemeKey * _Nonnull)noInternetConnectionCross SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

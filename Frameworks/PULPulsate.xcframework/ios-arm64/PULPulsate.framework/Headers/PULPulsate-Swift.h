@@ -1423,6 +1423,70 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (BOOL)resetStoredLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 @end
 
+@class PULThemeConfiguration;
+@class PULThemeKey;
+
+@interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
+/// Apply an entire theme configuration at once
+- (void)applyThemeConfiguration:(PULThemeConfiguration * _Nonnull)config;
+/// Sets the background color of the top navigation bar
+- (void)setTopNavBarBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the title color of the top navigation bar
+- (void)setTopNavBarTitleColor:(UIColor * _Nonnull)color;
+/// Sets the back button color
+- (void)setBackButtonColor:(UIColor * _Nonnull)color;
+/// Sets the text color for cards
+- (void)setCardTextColor:(UIColor * _Nonnull)color;
+/// Sets the background color for cards
+- (void)setCardBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the admin name text color on cards
+- (void)setCardAdminNameTextColor:(UIColor * _Nonnull)color;
+/// Sets the admin title text color on cards
+- (void)setCardAdminTitleTextColor:(UIColor * _Nonnull)color;
+/// Sets the primary button color on cards
+- (void)setCardPrimaryButtonColor:(UIColor * _Nonnull)color;
+/// Sets the primary button text color on cards
+- (void)setCardPrimaryButtonTextColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button color on cards
+- (void)setCardSecondaryButtonColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button text color on cards
+- (void)setCardSecondaryButtonTextColor:(UIColor * _Nonnull)color;
+/// Sets the secondary button outline color on cards
+- (void)setCardSecondaryButtonOutlineColor:(UIColor * _Nonnull)color;
+/// Sets the background color for the feed
+- (void)setFeedBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the pencil icon color in the feed
+- (void)setFeedPencilColor:(UIColor * _Nonnull)color;
+/// Sets the pencil icon background color in the feed
+- (void)setFeedPencilBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the user message bubble color in threads
+- (void)setThreadUserBubbleColor:(UIColor * _Nonnull)color;
+/// Sets the user message text color in threads
+- (void)setThreadUserBubbleTextColor:(UIColor * _Nonnull)color;
+/// Sets the admin message bubble color in threads
+- (void)setThreadAdminBubbleColor:(UIColor * _Nonnull)color;
+/// Sets the admin message text color in threads
+- (void)setThreadAdminBubbleTextColor:(UIColor * _Nonnull)color;
+/// Sets the date color in thread bubbles
+- (void)setThreadBubbleDateColor:(UIColor * _Nonnull)color;
+/// Sets the thread background color
+- (void)setThreadBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the background color for small in-app notifications
+- (void)setSmallInAppMessageBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the header color for big in-app notifications
+- (void)setBigInAppHeaderColor:(UIColor * _Nonnull)color;
+/// Sets the background color for big in-app notifications
+- (void)setBigInAppMessageBackgroundColor:(UIColor * _Nonnull)color;
+/// Gets all available configuration keys
+- (NSArray<NSString *> * _Nonnull)getThemeConfigurationKeys SWIFT_WARN_UNUSED_RESULT;
+/// Sets a color for a specific configuration key with type safety
+- (void)setCustomColorWithThemeKey:(PULThemeKey * _Nonnull)key color:(UIColor * _Nonnull)color;
+/// Sets a color for a specific configuration key using a string key
+- (void)setCustomColorForKey:(NSString * _Nonnull)key color:(UIColor * _Nonnull)color;
+/// Resets all custom colors to default values from the SDK
+- (void)resetThemeColors;
+@end
+
 
 SWIFT_PROTOCOL("_TtP10PULPulsate37PULPulsateUnauthorizedManagerDelegate_")
 @protocol PULPulsateUnauthorizedManagerDelegate
@@ -1590,6 +1654,92 @@ SWIFT_CLASS("_TtC10PULPulsate12PULTextBlock")
 @end
 
 
+SWIFT_CLASS("_TtC10PULPulsate21PULThemeConfiguration")
+@interface PULThemeConfiguration : NSObject
+@property (nonatomic, strong) UIColor * _Nullable navBarBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable navBarTitleColor;
+@property (nonatomic, strong) UIColor * _Nullable backButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable cardAdminNameTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardAdminTitleTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardPrimaryButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardPrimaryButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonColor;
+@property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonTextColor;
+@property (nonatomic, strong) UIColor * _Nullable cardSecondaryButtonOutlineColor;
+@property (nonatomic, strong) UIColor * _Nullable feedBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable feedPencilColor;
+@property (nonatomic, strong) UIColor * _Nullable feedPencilBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable threadUserBubbleColor;
+@property (nonatomic, strong) UIColor * _Nullable threadUserBubbleTextColor;
+@property (nonatomic, strong) UIColor * _Nullable threadAdminBubbleColor;
+@property (nonatomic, strong) UIColor * _Nullable threadAdminBubbleTextColor;
+@property (nonatomic, strong) UIColor * _Nullable threadBubbleDateColor;
+@property (nonatomic, strong) UIColor * _Nullable threadBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable smallInAppMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppHeaderColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppMessageBackgroundColor;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10PULPulsate11PULThemeKey")
+@interface PULThemeKey : NSObject
+- (NSString * _Nonnull)getStringValue SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarBackground;)
++ (PULThemeKey * _Nonnull)navBarBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull navBarTitle;)
++ (PULThemeKey * _Nonnull)navBarTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull backButton;)
++ (PULThemeKey * _Nonnull)backButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardText;)
++ (PULThemeKey * _Nonnull)cardText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardBackground;)
++ (PULThemeKey * _Nonnull)cardBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardAdminName;)
++ (PULThemeKey * _Nonnull)cardAdminName SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardAdminTitle;)
++ (PULThemeKey * _Nonnull)cardAdminTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardPrimaryButton;)
++ (PULThemeKey * _Nonnull)cardPrimaryButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardPrimaryButtonText;)
++ (PULThemeKey * _Nonnull)cardPrimaryButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSecondaryButton;)
++ (PULThemeKey * _Nonnull)cardSecondaryButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSecondaryButtonText;)
++ (PULThemeKey * _Nonnull)cardSecondaryButtonText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull cardSecondaryButtonOutline;)
++ (PULThemeKey * _Nonnull)cardSecondaryButtonOutline SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedBackground;)
++ (PULThemeKey * _Nonnull)feedBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencil;)
++ (PULThemeKey * _Nonnull)feedPencil SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull feedPencilBackground;)
++ (PULThemeKey * _Nonnull)feedPencilBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadUserBubble;)
++ (PULThemeKey * _Nonnull)threadUserBubble SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadUserBubbleText;)
++ (PULThemeKey * _Nonnull)threadUserBubbleText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadAdminBubble;)
++ (PULThemeKey * _Nonnull)threadAdminBubble SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadAdminBubbleText;)
++ (PULThemeKey * _Nonnull)threadAdminBubbleText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadBubbleDate;)
++ (PULThemeKey * _Nonnull)threadBubbleDate SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull threadBackground;)
++ (PULThemeKey * _Nonnull)threadBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull smallInAppMessageBackground;)
++ (PULThemeKey * _Nonnull)smallInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppHeader;)
++ (PULThemeKey * _Nonnull)bigInAppHeader SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageBackground;)
++ (PULThemeKey * _Nonnull)bigInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC10PULPulsate20PULTopViewController")
 @interface PULTopViewController : NSObject
 + (id _Nullable)getTopMostViewController SWIFT_WARN_UNUSED_RESULT;
@@ -1631,6 +1781,7 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
 
 
 

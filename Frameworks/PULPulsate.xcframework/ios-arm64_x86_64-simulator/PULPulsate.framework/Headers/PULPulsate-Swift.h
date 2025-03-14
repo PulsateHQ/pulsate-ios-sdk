@@ -1423,6 +1423,54 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (BOOL)resetStoredLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 @end
 
+@class PULStringConfiguration;
+@class PULStringKey;
+
+@interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
+/// Apply an entire string configuration at once
+- (void)applyStringConfiguration:(PULStringConfiguration * _Nonnull)config;
+/// Apply an entire string configuration for a specific language
+- (void)applyStringConfiguration:(PULStringConfiguration * _Nonnull)config languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the “Just now” text
+- (void)setJustNowText:(NSString * _Nonnull)text;
+/// Sets the “Just now” text for a specific language
+- (void)setJustNowText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the “A minute ago” text
+- (void)setMinuteAgoText:(NSString * _Nonnull)text;
+/// Sets the “A minute ago” text for a specific language
+- (void)setMinuteAgoText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the “An hour ago” text
+- (void)setHourAgoText:(NSString * _Nonnull)text;
+/// Sets the “An hour ago” text for a specific language
+- (void)setHourAgoText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the reply button text
+- (void)setReplyButtonText:(NSString * _Nonnull)text;
+/// Sets the reply button text for a specific language
+- (void)setReplyButtonText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the new message button text
+- (void)setNewMessageButtonText:(NSString * _Nonnull)text;
+/// Sets the new message button text for a specific language
+- (void)setNewMessageButtonText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the send button text
+- (void)setSendButtonText:(NSString * _Nonnull)text;
+/// Sets the send button text for a specific language
+- (void)setSendButtonText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the current language for string display
+- (void)setCurrentLanguage:(NSString * _Nonnull)languageCode;
+/// Gets the current language for string display
+- (NSString * _Nonnull)getCurrentLanguage SWIFT_WARN_UNUSED_RESULT;
+/// Sets a string for a specific configuration key with type safety
+- (void)setCustomStringWithKey:(PULStringKey * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets a string for a specific configuration key with type safety for a specific language
+- (void)setCustomStringWithKey:(PULStringKey * _Nonnull)key value:(NSString * _Nonnull)value languageCode:(NSString * _Nonnull)languageCode;
+/// Sets a string for a specific configuration key using a string key
+- (void)setCustomStringForKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets a string for a specific configuration key using a string key for a specific language
+- (void)setCustomStringForKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value languageCode:(NSString * _Nonnull)languageCode;
+/// Resets all custom strings to default values from the SDK
+- (void)resetStrings;
+@end
+
 @class PULThemeConfiguration;
 @class PULThemeKey;
 
@@ -1544,6 +1592,140 @@ SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC10PULPulsate22PULStringConfiguration")
+@interface PULStringConfiguration : NSObject
+@property (nonatomic, copy) NSString * _Nullable justNow;
+@property (nonatomic, copy) NSString * _Nullable minuteAgo;
+@property (nonatomic, copy) NSString * _Nullable hourAgo;
+@property (nonatomic, copy) NSString * _Nullable yesterday;
+@property (nonatomic, copy) NSString * _Nullable lastWeek;
+@property (nonatomic, copy) NSString * _Nullable lastMonth;
+@property (nonatomic, copy) NSString * _Nullable lastYear;
+@property (nonatomic, copy) NSString * _Nullable replyButton;
+@property (nonatomic, copy) NSString * _Nullable newMessageButton;
+@property (nonatomic, copy) NSString * _Nullable newMessagesButton;
+@property (nonatomic, copy) NSString * _Nullable viewConversationButton;
+@property (nonatomic, copy) NSString * _Nullable sendButton;
+@property (nonatomic, copy) NSString * _Nullable selectSubject;
+@property (nonatomic, copy) NSString * _Nullable writeAMessage;
+@property (nonatomic, copy) NSString * _Nullable feedTitle;
+@property (nonatomic, copy) NSString * _Nullable singleCardFeedTitle;
+@property (nonatomic, copy) NSString * _Nullable createMessageTitle;
+@property (nonatomic, copy) NSString * _Nullable bottomOfFeed;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyTitle;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyLeftIcon;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyRightIcon;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyBottomIcon;
+@property (nonatomic, copy) NSString * _Nullable feedEmptySecondParagraph;
+@property (nonatomic, copy) NSString * _Nullable feedback;
+@property (nonatomic, copy) NSString * _Nullable featureSuggestion;
+@property (nonatomic, copy) NSString * _Nullable complaint;
+@property (nonatomic, copy) NSString * _Nullable other;
+@property (nonatomic, copy) NSString * _Nullable otherHint;
+@property (nonatomic, copy) NSString * _Nullable giveYourMessageSubject;
+@property (nonatomic, copy) NSString * _Nullable messageSending;
+@property (nonatomic, copy) NSString * _Nullable messageSent;
+@property (nonatomic, copy) NSString * _Nullable messageFailed;
+@property (nonatomic, copy) NSString * _Nullable messageTryAgain;
+@property (nonatomic, copy) NSString * _Nullable repliedToYour;
+@property (nonatomic, copy) NSString * _Nullable sentAMessage;
+@property (nonatomic, copy) NSString * _Nullable youLabel;
+@property (nonatomic, copy) NSString * _Nullable newUpdates;
+@property (nonatomic, copy) NSString * _Nullable serverErrorDeletedUserConnection;
+@property (nonatomic, copy) NSString * _Nullable serverErrorConnection;
+@property (nonatomic, copy) NSString * _Nullable serverErrorMessageConnection;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10PULPulsate12PULStringKey")
+@interface PULStringKey : NSObject
+- (NSString * _Nonnull)getStringValue SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull justNow;)
++ (PULStringKey * _Nonnull)justNow SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull minuteAgo;)
++ (PULStringKey * _Nonnull)minuteAgo SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull hourAgo;)
++ (PULStringKey * _Nonnull)hourAgo SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull yesterday;)
++ (PULStringKey * _Nonnull)yesterday SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull lastWeek;)
++ (PULStringKey * _Nonnull)lastWeek SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull lastMonth;)
++ (PULStringKey * _Nonnull)lastMonth SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull lastYear;)
++ (PULStringKey * _Nonnull)lastYear SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull replyButton;)
++ (PULStringKey * _Nonnull)replyButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull newMessageButton;)
++ (PULStringKey * _Nonnull)newMessageButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull newMessagesButton;)
++ (PULStringKey * _Nonnull)newMessagesButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull viewConversationButton;)
++ (PULStringKey * _Nonnull)viewConversationButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull sendButton;)
++ (PULStringKey * _Nonnull)sendButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull selectSubject;)
++ (PULStringKey * _Nonnull)selectSubject SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull writeAMessage;)
++ (PULStringKey * _Nonnull)writeAMessage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedTitle;)
++ (PULStringKey * _Nonnull)feedTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull singleCardFeedTitle;)
++ (PULStringKey * _Nonnull)singleCardFeedTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull createMessageTitle;)
++ (PULStringKey * _Nonnull)createMessageTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull bottomOfFeed;)
++ (PULStringKey * _Nonnull)bottomOfFeed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyTitle;)
++ (PULStringKey * _Nonnull)feedEmptyTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyLeftIcon;)
++ (PULStringKey * _Nonnull)feedEmptyLeftIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyRightIcon;)
++ (PULStringKey * _Nonnull)feedEmptyRightIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyBottomIcon;)
++ (PULStringKey * _Nonnull)feedEmptyBottomIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptySecondParagraph;)
++ (PULStringKey * _Nonnull)feedEmptySecondParagraph SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedback;)
++ (PULStringKey * _Nonnull)feedback SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull featureSuggestion;)
++ (PULStringKey * _Nonnull)featureSuggestion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull complaint;)
++ (PULStringKey * _Nonnull)complaint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull other;)
++ (PULStringKey * _Nonnull)other SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull otherHint;)
++ (PULStringKey * _Nonnull)otherHint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull giveYourMessageSubject;)
++ (PULStringKey * _Nonnull)giveYourMessageSubject SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageSending;)
++ (PULStringKey * _Nonnull)messageSending SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageSent;)
++ (PULStringKey * _Nonnull)messageSent SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageFailed;)
++ (PULStringKey * _Nonnull)messageFailed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageTryAgain;)
++ (PULStringKey * _Nonnull)messageTryAgain SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull repliedToYour;)
++ (PULStringKey * _Nonnull)repliedToYour SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull sentAMessage;)
++ (PULStringKey * _Nonnull)sentAMessage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull youLabel;)
++ (PULStringKey * _Nonnull)youLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull newUpdates;)
++ (PULStringKey * _Nonnull)newUpdates SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull serverErrorDeletedUserConnection;)
++ (PULStringKey * _Nonnull)serverErrorDeletedUserConnection SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull serverErrorConnection;)
++ (PULStringKey * _Nonnull)serverErrorConnection SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull serverErrorMessageConnection;)
++ (PULStringKey * _Nonnull)serverErrorMessageConnection SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -3393,6 +3575,54 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (BOOL)resetStoredLocationsAndReturnError:(NSError * _Nullable * _Nullable)error;
 @end
 
+@class PULStringConfiguration;
+@class PULStringKey;
+
+@interface PULPulsateManager (SWIFT_EXTENSION(PULPulsate))
+/// Apply an entire string configuration at once
+- (void)applyStringConfiguration:(PULStringConfiguration * _Nonnull)config;
+/// Apply an entire string configuration for a specific language
+- (void)applyStringConfiguration:(PULStringConfiguration * _Nonnull)config languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the “Just now” text
+- (void)setJustNowText:(NSString * _Nonnull)text;
+/// Sets the “Just now” text for a specific language
+- (void)setJustNowText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the “A minute ago” text
+- (void)setMinuteAgoText:(NSString * _Nonnull)text;
+/// Sets the “A minute ago” text for a specific language
+- (void)setMinuteAgoText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the “An hour ago” text
+- (void)setHourAgoText:(NSString * _Nonnull)text;
+/// Sets the “An hour ago” text for a specific language
+- (void)setHourAgoText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the reply button text
+- (void)setReplyButtonText:(NSString * _Nonnull)text;
+/// Sets the reply button text for a specific language
+- (void)setReplyButtonText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the new message button text
+- (void)setNewMessageButtonText:(NSString * _Nonnull)text;
+/// Sets the new message button text for a specific language
+- (void)setNewMessageButtonText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the send button text
+- (void)setSendButtonText:(NSString * _Nonnull)text;
+/// Sets the send button text for a specific language
+- (void)setSendButtonText:(NSString * _Nonnull)text languageCode:(NSString * _Nonnull)languageCode;
+/// Sets the current language for string display
+- (void)setCurrentLanguage:(NSString * _Nonnull)languageCode;
+/// Gets the current language for string display
+- (NSString * _Nonnull)getCurrentLanguage SWIFT_WARN_UNUSED_RESULT;
+/// Sets a string for a specific configuration key with type safety
+- (void)setCustomStringWithKey:(PULStringKey * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets a string for a specific configuration key with type safety for a specific language
+- (void)setCustomStringWithKey:(PULStringKey * _Nonnull)key value:(NSString * _Nonnull)value languageCode:(NSString * _Nonnull)languageCode;
+/// Sets a string for a specific configuration key using a string key
+- (void)setCustomStringForKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Sets a string for a specific configuration key using a string key for a specific language
+- (void)setCustomStringForKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value languageCode:(NSString * _Nonnull)languageCode;
+/// Resets all custom strings to default values from the SDK
+- (void)resetStrings;
+@end
+
 @class PULThemeConfiguration;
 @class PULThemeKey;
 
@@ -3514,6 +3744,140 @@ SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
 - (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC10PULPulsate22PULStringConfiguration")
+@interface PULStringConfiguration : NSObject
+@property (nonatomic, copy) NSString * _Nullable justNow;
+@property (nonatomic, copy) NSString * _Nullable minuteAgo;
+@property (nonatomic, copy) NSString * _Nullable hourAgo;
+@property (nonatomic, copy) NSString * _Nullable yesterday;
+@property (nonatomic, copy) NSString * _Nullable lastWeek;
+@property (nonatomic, copy) NSString * _Nullable lastMonth;
+@property (nonatomic, copy) NSString * _Nullable lastYear;
+@property (nonatomic, copy) NSString * _Nullable replyButton;
+@property (nonatomic, copy) NSString * _Nullable newMessageButton;
+@property (nonatomic, copy) NSString * _Nullable newMessagesButton;
+@property (nonatomic, copy) NSString * _Nullable viewConversationButton;
+@property (nonatomic, copy) NSString * _Nullable sendButton;
+@property (nonatomic, copy) NSString * _Nullable selectSubject;
+@property (nonatomic, copy) NSString * _Nullable writeAMessage;
+@property (nonatomic, copy) NSString * _Nullable feedTitle;
+@property (nonatomic, copy) NSString * _Nullable singleCardFeedTitle;
+@property (nonatomic, copy) NSString * _Nullable createMessageTitle;
+@property (nonatomic, copy) NSString * _Nullable bottomOfFeed;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyTitle;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyLeftIcon;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyRightIcon;
+@property (nonatomic, copy) NSString * _Nullable feedEmptyBottomIcon;
+@property (nonatomic, copy) NSString * _Nullable feedEmptySecondParagraph;
+@property (nonatomic, copy) NSString * _Nullable feedback;
+@property (nonatomic, copy) NSString * _Nullable featureSuggestion;
+@property (nonatomic, copy) NSString * _Nullable complaint;
+@property (nonatomic, copy) NSString * _Nullable other;
+@property (nonatomic, copy) NSString * _Nullable otherHint;
+@property (nonatomic, copy) NSString * _Nullable giveYourMessageSubject;
+@property (nonatomic, copy) NSString * _Nullable messageSending;
+@property (nonatomic, copy) NSString * _Nullable messageSent;
+@property (nonatomic, copy) NSString * _Nullable messageFailed;
+@property (nonatomic, copy) NSString * _Nullable messageTryAgain;
+@property (nonatomic, copy) NSString * _Nullable repliedToYour;
+@property (nonatomic, copy) NSString * _Nullable sentAMessage;
+@property (nonatomic, copy) NSString * _Nullable youLabel;
+@property (nonatomic, copy) NSString * _Nullable newUpdates;
+@property (nonatomic, copy) NSString * _Nullable serverErrorDeletedUserConnection;
+@property (nonatomic, copy) NSString * _Nullable serverErrorConnection;
+@property (nonatomic, copy) NSString * _Nullable serverErrorMessageConnection;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10PULPulsate12PULStringKey")
+@interface PULStringKey : NSObject
+- (NSString * _Nonnull)getStringValue SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull justNow;)
++ (PULStringKey * _Nonnull)justNow SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull minuteAgo;)
++ (PULStringKey * _Nonnull)minuteAgo SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull hourAgo;)
++ (PULStringKey * _Nonnull)hourAgo SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull yesterday;)
++ (PULStringKey * _Nonnull)yesterday SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull lastWeek;)
++ (PULStringKey * _Nonnull)lastWeek SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull lastMonth;)
++ (PULStringKey * _Nonnull)lastMonth SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull lastYear;)
++ (PULStringKey * _Nonnull)lastYear SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull replyButton;)
++ (PULStringKey * _Nonnull)replyButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull newMessageButton;)
++ (PULStringKey * _Nonnull)newMessageButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull newMessagesButton;)
++ (PULStringKey * _Nonnull)newMessagesButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull viewConversationButton;)
++ (PULStringKey * _Nonnull)viewConversationButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull sendButton;)
++ (PULStringKey * _Nonnull)sendButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull selectSubject;)
++ (PULStringKey * _Nonnull)selectSubject SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull writeAMessage;)
++ (PULStringKey * _Nonnull)writeAMessage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedTitle;)
++ (PULStringKey * _Nonnull)feedTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull singleCardFeedTitle;)
++ (PULStringKey * _Nonnull)singleCardFeedTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull createMessageTitle;)
++ (PULStringKey * _Nonnull)createMessageTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull bottomOfFeed;)
++ (PULStringKey * _Nonnull)bottomOfFeed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyTitle;)
++ (PULStringKey * _Nonnull)feedEmptyTitle SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyLeftIcon;)
++ (PULStringKey * _Nonnull)feedEmptyLeftIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyRightIcon;)
++ (PULStringKey * _Nonnull)feedEmptyRightIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptyBottomIcon;)
++ (PULStringKey * _Nonnull)feedEmptyBottomIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedEmptySecondParagraph;)
++ (PULStringKey * _Nonnull)feedEmptySecondParagraph SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull feedback;)
++ (PULStringKey * _Nonnull)feedback SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull featureSuggestion;)
++ (PULStringKey * _Nonnull)featureSuggestion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull complaint;)
++ (PULStringKey * _Nonnull)complaint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull other;)
++ (PULStringKey * _Nonnull)other SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull otherHint;)
++ (PULStringKey * _Nonnull)otherHint SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull giveYourMessageSubject;)
++ (PULStringKey * _Nonnull)giveYourMessageSubject SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageSending;)
++ (PULStringKey * _Nonnull)messageSending SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageSent;)
++ (PULStringKey * _Nonnull)messageSent SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageFailed;)
++ (PULStringKey * _Nonnull)messageFailed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull messageTryAgain;)
++ (PULStringKey * _Nonnull)messageTryAgain SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull repliedToYour;)
++ (PULStringKey * _Nonnull)repliedToYour SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull sentAMessage;)
++ (PULStringKey * _Nonnull)sentAMessage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull youLabel;)
++ (PULStringKey * _Nonnull)youLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull newUpdates;)
++ (PULStringKey * _Nonnull)newUpdates SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull serverErrorDeletedUserConnection;)
++ (PULStringKey * _Nonnull)serverErrorDeletedUserConnection SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull serverErrorConnection;)
++ (PULStringKey * _Nonnull)serverErrorConnection SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULStringKey * _Nonnull serverErrorMessageConnection;)
++ (PULStringKey * _Nonnull)serverErrorMessageConnection SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

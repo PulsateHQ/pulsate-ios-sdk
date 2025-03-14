@@ -817,6 +817,117 @@ public typealias ButtonCallback = ((Swift.String) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class PULStringKey : ObjectiveC.NSObject {
+  @objc public func getStringValue() -> Swift.String
+  @objc public static let justNow: PULPulsate.PULStringKey
+  @objc public static let minuteAgo: PULPulsate.PULStringKey
+  @objc public static let hourAgo: PULPulsate.PULStringKey
+  @objc public static let yesterday: PULPulsate.PULStringKey
+  @objc public static let lastWeek: PULPulsate.PULStringKey
+  @objc public static let lastMonth: PULPulsate.PULStringKey
+  @objc public static let lastYear: PULPulsate.PULStringKey
+  @objc public static let replyButton: PULPulsate.PULStringKey
+  @objc public static let newMessageButton: PULPulsate.PULStringKey
+  @objc public static let newMessagesButton: PULPulsate.PULStringKey
+  @objc public static let viewConversationButton: PULPulsate.PULStringKey
+  @objc public static let sendButton: PULPulsate.PULStringKey
+  @objc public static let selectSubject: PULPulsate.PULStringKey
+  @objc public static let writeAMessage: PULPulsate.PULStringKey
+  @objc public static let feedTitle: PULPulsate.PULStringKey
+  @objc public static let singleCardFeedTitle: PULPulsate.PULStringKey
+  @objc public static let createMessageTitle: PULPulsate.PULStringKey
+  @objc public static let bottomOfFeed: PULPulsate.PULStringKey
+  @objc public static let feedEmptyTitle: PULPulsate.PULStringKey
+  @objc public static let feedEmptyLeftIcon: PULPulsate.PULStringKey
+  @objc public static let feedEmptyRightIcon: PULPulsate.PULStringKey
+  @objc public static let feedEmptyBottomIcon: PULPulsate.PULStringKey
+  @objc public static let feedEmptySecondParagraph: PULPulsate.PULStringKey
+  @objc public static let feedback: PULPulsate.PULStringKey
+  @objc public static let featureSuggestion: PULPulsate.PULStringKey
+  @objc public static let complaint: PULPulsate.PULStringKey
+  @objc public static let other: PULPulsate.PULStringKey
+  @objc public static let otherHint: PULPulsate.PULStringKey
+  @objc public static let giveYourMessageSubject: PULPulsate.PULStringKey
+  @objc public static let messageSending: PULPulsate.PULStringKey
+  @objc public static let messageSent: PULPulsate.PULStringKey
+  @objc public static let messageFailed: PULPulsate.PULStringKey
+  @objc public static let messageTryAgain: PULPulsate.PULStringKey
+  @objc public static let repliedToYour: PULPulsate.PULStringKey
+  @objc public static let sentAMessage: PULPulsate.PULStringKey
+  @objc public static let youLabel: PULPulsate.PULStringKey
+  @objc public static let newUpdates: PULPulsate.PULStringKey
+  @objc public static let serverErrorDeletedUserConnection: PULPulsate.PULStringKey
+  @objc public static let serverErrorConnection: PULPulsate.PULStringKey
+  @objc public static let serverErrorMessageConnection: PULPulsate.PULStringKey
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PULStringConfiguration : ObjectiveC.NSObject {
+  @objc public var justNow: Swift.String?
+  @objc public var minuteAgo: Swift.String?
+  @objc public var hourAgo: Swift.String?
+  @objc public var yesterday: Swift.String?
+  @objc public var lastWeek: Swift.String?
+  @objc public var lastMonth: Swift.String?
+  @objc public var lastYear: Swift.String?
+  @objc public var replyButton: Swift.String?
+  @objc public var newMessageButton: Swift.String?
+  @objc public var newMessagesButton: Swift.String?
+  @objc public var viewConversationButton: Swift.String?
+  @objc public var sendButton: Swift.String?
+  @objc public var selectSubject: Swift.String?
+  @objc public var writeAMessage: Swift.String?
+  @objc public var feedTitle: Swift.String?
+  @objc public var singleCardFeedTitle: Swift.String?
+  @objc public var createMessageTitle: Swift.String?
+  @objc public var bottomOfFeed: Swift.String?
+  @objc public var feedEmptyTitle: Swift.String?
+  @objc public var feedEmptyLeftIcon: Swift.String?
+  @objc public var feedEmptyRightIcon: Swift.String?
+  @objc public var feedEmptyBottomIcon: Swift.String?
+  @objc public var feedEmptySecondParagraph: Swift.String?
+  @objc public var feedback: Swift.String?
+  @objc public var featureSuggestion: Swift.String?
+  @objc public var complaint: Swift.String?
+  @objc public var other: Swift.String?
+  @objc public var otherHint: Swift.String?
+  @objc public var giveYourMessageSubject: Swift.String?
+  @objc public var messageSending: Swift.String?
+  @objc public var messageSent: Swift.String?
+  @objc public var messageFailed: Swift.String?
+  @objc public var messageTryAgain: Swift.String?
+  @objc public var repliedToYour: Swift.String?
+  @objc public var sentAMessage: Swift.String?
+  @objc public var youLabel: Swift.String?
+  @objc public var newUpdates: Swift.String?
+  @objc public var serverErrorDeletedUserConnection: Swift.String?
+  @objc public var serverErrorConnection: Swift.String?
+  @objc public var serverErrorMessageConnection: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension PULPulsate.PULPulsateManager {
+  @objc dynamic public func applyStringConfiguration(_ config: PULPulsate.PULStringConfiguration)
+  @objc dynamic public func applyStringConfiguration(_ config: PULPulsate.PULStringConfiguration, languageCode: Swift.String)
+  @objc dynamic public func setJustNowText(_ text: Swift.String)
+  @objc dynamic public func setJustNowText(_ text: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setMinuteAgoText(_ text: Swift.String)
+  @objc dynamic public func setMinuteAgoText(_ text: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setHourAgoText(_ text: Swift.String)
+  @objc dynamic public func setHourAgoText(_ text: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setReplyButtonText(_ text: Swift.String)
+  @objc dynamic public func setReplyButtonText(_ text: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setNewMessageButtonText(_ text: Swift.String)
+  @objc dynamic public func setNewMessageButtonText(_ text: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setSendButtonText(_ text: Swift.String)
+  @objc dynamic public func setSendButtonText(_ text: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setCurrentLanguage(_ languageCode: Swift.String)
+  @objc dynamic public func getCurrentLanguage() -> Swift.String
+  @objc dynamic public func setCustomStringWithKey(_ key: PULPulsate.PULStringKey, value: Swift.String)
+  @objc dynamic public func setCustomStringWithKey(_ key: PULPulsate.PULStringKey, value: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func setCustomString(forKey key: Swift.String, value: Swift.String)
+  @objc dynamic public func setCustomString(forKey key: Swift.String, value: Swift.String, languageCode: Swift.String)
+  @objc dynamic public func resetStrings()
+}
 extension PULPulsate.PULDBImpression {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBImpression>
   @objc @NSManaged dynamic public var guid: Swift.String? {

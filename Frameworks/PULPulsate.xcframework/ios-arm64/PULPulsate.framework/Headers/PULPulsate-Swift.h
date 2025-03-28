@@ -569,19 +569,6 @@ SWIFT_CLASS_NAMED("PULDBImpression")
 @end
 
 
-SWIFT_CLASS_NAMED("PULDBScreenRecord")
-@interface PULDBScreenRecord : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface PULDBScreenRecord (SWIFT_EXTENSION(PULPulsate))
-@property (nonatomic, copy) NSDate * _Nullable end_at;
-@property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSDate * _Nullable start_at;
-@end
-
-
 SWIFT_CLASS_NAMED("PULDBUserAction")
 @interface PULDBUserAction : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -1332,18 +1319,6 @@ SWIFT_CLASS("_TtC10PULPulsate15PULRevenueEvent")
 + (NSString * _Nullable)formatCurrencyToString:(enum PULCurrency)currency SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC10PULPulsate15PULScreenRecord")
-@interface PULScreenRecord : NSObject <PULJSONSerializable>
-@property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, strong) NSNumber * _Nullable start_at;
-@property (nonatomic, strong) NSNumber * _Nullable end_at;
-@property (nonatomic, strong) NSNumber * _Nullable time_spent;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
-- (NSDictionary * _Nullable)getValueDictionary SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

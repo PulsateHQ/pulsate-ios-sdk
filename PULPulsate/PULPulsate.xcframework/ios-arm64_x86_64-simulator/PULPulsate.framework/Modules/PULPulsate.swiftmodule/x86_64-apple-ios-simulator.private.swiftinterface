@@ -1,31 +1,26 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PULPulsate
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PULPulsate
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import BackgroundTasks
 import CommonCrypto
 import CoreData
 import CoreGraphics
 import CoreLocation
 import Foundation
-import Network
 import OSLog
 @_exported import PULPulsate
 import SDWebImage
 import Swift
-import SystemConfiguration
 import UIKit
 import UserNotifications
 import UserNotificationsUI
-import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency public func remove()
-  @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController, frame: CoreFoundation.CGRect? = nil)
-  @_Concurrency.MainActor @preconcurrency public func remove(_ child: UIKit.UIViewController)
 }
 extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public func removeAllConstraints()
@@ -400,7 +395,6 @@ extension PULPulsate.PULDBScreenRecord {
 public typealias RequestListener = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
 public typealias FeedListener = ([Any]?, (any Swift.Error)?) -> Swift.Void
 public typealias PULPulsateLinkListener = (Swift.String) -> Swift.Bool
-public typealias Completion = () -> Swift.Void
 @objc public enum PULUserGender : Swift.Int {
   case pulMale
   case pulFemale
@@ -422,7 +416,7 @@ public typealias Completion = () -> Swift.Void
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateManager : ObjectiveC.NSObject {
   @objc @IBOutlet weak public var unauthorizedDelegate: (any PULPulsate.PULPulsateUnauthorizedManagerDelegate)?
   @objc @IBOutlet weak public var badgeDelegate: (any PULPulsate.PULPulsateBadgeDelegate)?
-  @objc public var externalResourceBundle: Foundation.Bundle? {
+  @objc public var resourceBundleIdentifier: Swift.String? {
     @objc get
     @objc set
   }
@@ -431,11 +425,9 @@ public typealias Completion = () -> Swift.Void
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
-  @objc public func startDebugLogging(enableNetworkLogs: Swift.Bool)
-  @objc public func stopDebugLogging()
   @objc public func startRemoteNotifications()
   @objc public func startRemoteNotifications(with notificationSettings: UserNotifications.UNAuthorizationOptions)
-  @objc public func getFeedNavigationController(completion: PULPulsate.Completion? = nil) -> UIKit.UINavigationController?
+  @objc public func getFeedNavigationController() -> UIKit.UINavigationController?
   @objc public func getFeed(_ page: Swift.String?, with listener: @escaping PULPulsate.FeedListener)
   @objc public func handleFeedClick(_ pulsateInboxItem: Any?)
   @objc public func closeAutomaticallyOpenedFeed()
@@ -455,6 +447,8 @@ public typealias Completion = () -> Swift.Void
   @objc public func showLastInAppNotification(_ forceShow: Swift.Bool = false)
   @objc public func setUserAuthorized(_ authorized: Swift.Bool)
   @objc public func isUserAuthorized() -> Swift.Bool
+  @objc public func setNewThreadButtonEnabled(_ buttonEnabled: Swift.Bool)
+  @objc public func isNewThreadButtonEnabled() -> Swift.Bool
   @objc public func updateFirstName(_ firstName: Swift.String?)
   @objc public func updateLastName(_ lastName: Swift.String?)
   @objc public func updateEmail(_ email: Swift.String?)
@@ -478,7 +472,6 @@ public typealias Completion = () -> Swift.Void
   @objc public func showCampaignExpired()
   @objc public func sendLocation(withBeaconEvents sendLocation: Swift.Bool)
   @objc public func getDeviceGuid() -> Swift.String?
-  @objc public func getFeedUnreadCount(completion: @escaping (Swift.Int) -> Swift.Void)
   @objc public func getBadgeCount()
   @objc public func saveUnauthorizedCampaign(withGUID guid: Swift.String?, andTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?)
   @objc public func saveUnauthorizedMessage(withGUID guid: Swift.String?, andTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?)
@@ -605,13 +598,13 @@ extension Swift.String {
 }
 @_inheritsConvenienceInitializers @objc public class PULPulsateFactory : ObjectiveC.NSObject {
   @objc public class func setBaseUrl(_ baseUrl: Swift.String)
-  @objc public class func setHTMLFeedBaseUrl(_ baseUrl: Swift.String)
-  @objc public class func getHTMLFeedBaseUrl() -> Swift.String
   @objc public class func getBaseUrl() -> Swift.String?
-  @objc public class func getInstance(withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
-  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
-  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstanceWithLocationEnabled(_ locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
+  @objc public class func initDefault(with token: PULPulsate.PULAccessToken?, withLocationEnabled locationEnabled: Swift.Bool, withPushEnabled pushEnabled: Swift.Bool, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstanceWithLaunchOptions(_ launchOptions: [Swift.String : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc override dynamic public init()
   @objc deinit
 }
@@ -794,7 +787,7 @@ extension UIKit.UIDevice {
   @objc public func messageFailed()
   @objc deinit
 }
-public typealias ButtonCallback = ((Swift.String) -> Swift.Void)
+public typealias ButtonCallback = (Swift.String) -> Swift.Void
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULButtonsBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @_Concurrency.MainActor @preconcurrency public var callBack: PULPulsate.ButtonCallback?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
@@ -841,87 +834,6 @@ extension PULPulsate.PULDBCustomAttribute {
   @objc @NSManaged dynamic public var value: Swift.String? {
     @objc get
     @objc set
-  }
-}
-public enum ReachabilityError : Swift.Error {
-  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
-  case failedToCreateWithHostname(Swift.String, Swift.Int32)
-  case unableToSetCallback(Swift.Int32)
-  case unableToSetDispatchQueue(Swift.Int32)
-  case unableToGetFlags(Swift.Int32)
-}
-@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
-public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension Foundation.NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
-}
-public class Reachability {
-  public typealias NetworkReachable = (PULPulsate.Reachability) -> ()
-  public typealias NetworkUnreachable = (PULPulsate.Reachability) -> ()
-  @available(*, unavailable, renamed: "Connection")
-  public enum NetworkStatus : Swift.CustomStringConvertible {
-    case notReachable, reachableViaWiFi, reachableViaWWAN
-    public var description: Swift.String {
-      get
-    }
-    public static func == (a: PULPulsate.Reachability.NetworkStatus, b: PULPulsate.Reachability.NetworkStatus) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public enum Connection : Swift.CustomStringConvertible {
-    case unavailable, wifi, cellular
-    public var description: Swift.String {
-      get
-    }
-    @available(*, deprecated, renamed: "unavailable")
-    public static let none: PULPulsate.Reachability.Connection
-    public static func == (a: PULPulsate.Reachability.Connection, b: PULPulsate.Reachability.Connection) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public var whenReachable: PULPulsate.Reachability.NetworkReachable?
-  public var whenUnreachable: PULPulsate.Reachability.NetworkUnreachable?
-  @available(*, deprecated, renamed: "allowsCellularConnection")
-  final public let reachableOnWWAN: Swift.Bool
-  public var allowsCellularConnection: Swift.Bool
-  public var notificationCenter: Foundation.NotificationCenter
-  @available(*, deprecated, renamed: "connection.description")
-  public var currentReachabilityString: Swift.String {
-    get
-  }
-  @available(*, unavailable, renamed: "connection")
-  public var currentReachabilityStatus: PULPulsate.Reachability.Connection {
-    get
-  }
-  public var connection: PULPulsate.Reachability.Connection {
-    get
-  }
-  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
-  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
-  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
-  @objc deinit
-}
-extension PULPulsate.Reachability {
-  public func startNotifier() throws
-  public func stopNotifier()
-  @available(*, deprecated, message: "Please use `connection != .none`")
-  public var isReachable: Swift.Bool {
-    get
-  }
-  @available(*, deprecated, message: "Please use `connection == .cellular`")
-  public var isReachableViaWWAN: Swift.Bool {
-    get
-  }
-  @available(*, deprecated, message: "Please use `connection == .wifi`")
-  public var isReachableViaWiFi: Swift.Bool {
-    get
-  }
-  public var description: Swift.String {
-    get
   }
 }
 extension PULPulsate.PULDBUserAction {
@@ -1067,9 +979,3 @@ extension PULPulsate.PULSystemManager : Swift.Sendable {}
 extension PULPulsate.PULCurrency : Swift.Equatable {}
 extension PULPulsate.PULCurrency : Swift.Hashable {}
 extension PULPulsate.PULCurrency : Swift.RawRepresentable {}
-@available(*, unavailable, renamed: "Connection")
-extension PULPulsate.Reachability.NetworkStatus : Swift.Equatable {}
-@available(*, unavailable, renamed: "Connection")
-extension PULPulsate.Reachability.NetworkStatus : Swift.Hashable {}
-extension PULPulsate.Reachability.Connection : Swift.Equatable {}
-extension PULPulsate.Reachability.Connection : Swift.Hashable {}

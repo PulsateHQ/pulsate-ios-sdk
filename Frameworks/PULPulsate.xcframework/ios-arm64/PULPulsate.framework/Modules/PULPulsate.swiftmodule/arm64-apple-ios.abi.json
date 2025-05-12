@@ -50114,7 +50114,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 7,
-      "value": "\"4.7.2\""
+      "value": "\"4.7.3\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -51190,21 +51190,21 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 33452,
+      "offset": 33647,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 33758,
+      "offset": 33953,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 33904,
+      "offset": 34099,
       "length": 5,
       "value": "false"
     },

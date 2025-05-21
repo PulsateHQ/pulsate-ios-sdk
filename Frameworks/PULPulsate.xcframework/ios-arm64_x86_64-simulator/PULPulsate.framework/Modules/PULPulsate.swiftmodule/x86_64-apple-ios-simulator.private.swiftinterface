@@ -295,6 +295,7 @@ public enum CrashModelType : Swift.Int {
   @objc public var currentLanguage: Swift.String?
   @objc public var timezone: Swift.String?
   @objc public var bundleIdentifier: Swift.String?
+  @objc public var isDebug: Swift.Bool
   @objc public var language: Swift.String?
   @objc public var isLocationEnabled: Foundation.NSNumber?
   @objc public var isBackgroundLocationEnabled: Foundation.NSNumber?
@@ -555,6 +556,15 @@ extension Swift.String {
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public enum PULBeaconAction : Swift.Int {
+  case pulBeaconExit
+  case pulBeaconEnter
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc @objcMembers public class PULInAppMessage : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
@@ -1042,6 +1052,9 @@ extension PULPulsate.PULUserGender : Swift.RawRepresentable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Equatable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Hashable {}
 extension PULPulsate.PULPrivacyLevel : Swift.RawRepresentable {}
+extension PULPulsate.PULBeaconAction : Swift.Equatable {}
+extension PULPulsate.PULBeaconAction : Swift.Hashable {}
+extension PULPulsate.PULBeaconAction : Swift.RawRepresentable {}
 extension PULPulsate.PULSystemManager : Swift.Sendable {}
 extension PULPulsate.PULCurrency : Swift.Equatable {}
 extension PULPulsate.PULCurrency : Swift.Hashable {}

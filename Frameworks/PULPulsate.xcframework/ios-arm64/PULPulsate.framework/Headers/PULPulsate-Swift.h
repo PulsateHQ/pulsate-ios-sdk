@@ -377,6 +377,11 @@ SWIFT_CLASS("_TtC10PULPulsate21PULBaseViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, PULBeaconAction, open) {
+  PULBeaconActionPulBeaconExit = 0,
+  PULBeaconActionPulBeaconEnter = 1,
+};
+
 SWIFT_PROTOCOL("_TtP10PULPulsate22PULBlockDataInjectable_")
 @protocol PULBlockDataInjectable <NSObject>
 - (void)injectData:(id _Nullable)data;
@@ -588,6 +593,7 @@ SWIFT_CLASS("_TtC10PULPulsate9PULDevice")
 @property (nonatomic, copy) NSString * _Nullable currentLanguage;
 @property (nonatomic, copy) NSString * _Nullable timezone;
 @property (nonatomic, copy) NSString * _Nullable bundleIdentifier;
+@property (nonatomic) BOOL isDebug;
 @property (nonatomic, copy) NSString * _Nullable language;
 @property (nonatomic, strong) NSNumber * _Nullable isLocationEnabled;
 @property (nonatomic, strong) NSNumber * _Nullable isBackgroundLocationEnabled;

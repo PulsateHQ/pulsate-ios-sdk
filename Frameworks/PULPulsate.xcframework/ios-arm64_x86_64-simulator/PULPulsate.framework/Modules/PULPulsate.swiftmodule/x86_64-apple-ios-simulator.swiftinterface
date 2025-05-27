@@ -388,8 +388,8 @@ public typealias Completion = () -> Swift.Void
     @objc get
     @objc set
   }
-  @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener, debugLogs: Swift.Bool = false)
-  @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener, debugLogs: Swift.Bool = false)
+  @objc public func startPulsateSession(debugLogs: Swift.Bool = false, _ listener: @escaping PULPulsate.RequestListener)
+  @objc public func startPulsateSession(forAlias alias: Swift.String, debugLogs: Swift.Bool = false, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()

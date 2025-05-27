@@ -954,10 +954,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, strong) NSBundle * _Nullable externalResourceBundle;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener debugLogs:(BOOL)debugLogs;
+- (void)startPulsateSessionWithDebugLogs:(BOOL)debugLogs :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener debugLogs:(BOOL)debugLogs;
+- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugLogs:(BOOL)debugLogs withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 - (void)clearAllNotifications;
 /// Logs out the current user
 - (void)logout:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
@@ -2548,10 +2548,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, strong) NSBundle * _Nullable externalResourceBundle;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSession:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener debugLogs:(BOOL)debugLogs;
+- (void)startPulsateSessionWithDebugLogs:(BOOL)debugLogs :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener debugLogs:(BOOL)debugLogs;
+- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugLogs:(BOOL)debugLogs withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 - (void)clearAllNotifications;
 /// Logs out the current user
 - (void)logout:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;

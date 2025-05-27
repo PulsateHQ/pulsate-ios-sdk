@@ -388,8 +388,8 @@ public typealias Completion = () -> Swift.Void
     @objc get
     @objc set
   }
-  @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
-  @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
+  @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener, debugLogs: Swift.Bool = false)
+  @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener, debugLogs: Swift.Bool = false)
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
@@ -407,6 +407,7 @@ public typealias Completion = () -> Swift.Void
   @objc public func getUseInitialsForUserAvatar() -> Swift.Bool
   @objc public func setLocationUpdatesEnabled(_ enabled: Swift.Bool)
   @objc public func isLocationEnabled() -> Swift.Bool
+  @objc public func setBuildEnvironment(isDebug enabled: Swift.Bool)
   @objc public func enable(inAppNotification enabled: Swift.Bool)
   @objc public func isInAppNotificationEnabled() -> Swift.Bool
   @objc public func setSmallInAppNotificationDuration(_ seconds: Swift.Int)

@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JHAVvFO/f5Vy316xs2BzKVM3bDQ=
+		W5DlEZJdbSmCmA5CFCFOgY4uvOY=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/izao9pPYVDZCGkiTpnKdCJ+BuU=
+		F/9Cyi4OJvtPjRbYAkn0ZbwibEU=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JHAVvFO/f5Vy316xs2BzKVM3bDQ=
+		W5DlEZJdbSmCmA5CFCFOgY4uvOY=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tO8wrHEp6O6QnNTq8fbxG6DmE64=
+		QKHD68ydDbSfOhxFW/+NwgLhXyY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -675,7 +675,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Blkb/a2eeE58dLiGdtcCACuTWHvEA7+jCy9rHrVpI5s=
+			qmDYKZXcwflXieCO3sIb98nYOahhReRTGaEp86gyxH4=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -703,14 +703,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGcvfI5RZ1OnGXn0503hGjbjf3B1inSMblGmsqUbbxY=
+			VwQEZRns/4VkTR2yaRzB7kr51wKWjOpvZ3jFLLnU8wA=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Blkb/a2eeE58dLiGdtcCACuTWHvEA7+jCy9rHrVpI5s=
+			qmDYKZXcwflXieCO3sIb98nYOahhReRTGaEp86gyxH4=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -738,7 +738,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KcrDfiRel4M1R4Q7kldGXQwNquzr78OoVpOXtgdd4PQ=
+			61NdzJPDwFvUm1FrGhk7vV7+/EMmojEANdQgOECbrdQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PULPulsate
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import BackgroundTasks
 import CommonCrypto
 import CoreData
@@ -295,6 +295,7 @@ public enum CrashModelType : Swift.Int {
   @objc public var currentLanguage: Swift.String?
   @objc public var timezone: Swift.String?
   @objc public var bundleIdentifier: Swift.String?
+  @objc public var isDebug: Swift.Bool
   @objc public var language: Swift.String?
   @objc public var isLocationEnabled: Foundation.NSNumber?
   @objc public var isBackgroundLocationEnabled: Foundation.NSNumber?
@@ -383,10 +384,6 @@ public typealias Completion = () -> Swift.Void
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateManager : ObjectiveC.NSObject {
   @objc @IBOutlet weak public var unauthorizedDelegate: (any PULPulsate.PULPulsateUnauthorizedManagerDelegate)?
   @objc @IBOutlet weak public var badgeDelegate: (any PULPulsate.PULPulsateBadgeDelegate)?
-  @objc public var externalResourceBundle: Foundation.Bundle? {
-    @objc get
-    @objc set
-  }
   @objc public func startPulsateSession(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startPulsateSession(forAlias alias: Swift.String, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
@@ -555,6 +552,15 @@ extension Swift.String {
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public enum PULBeaconAction : Swift.Int {
+  case pulBeaconExit
+  case pulBeaconEnter
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc @objcMembers public class PULInAppMessage : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
@@ -1042,6 +1048,9 @@ extension PULPulsate.PULUserGender : Swift.RawRepresentable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Equatable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Hashable {}
 extension PULPulsate.PULPrivacyLevel : Swift.RawRepresentable {}
+extension PULPulsate.PULBeaconAction : Swift.Equatable {}
+extension PULPulsate.PULBeaconAction : Swift.Hashable {}
+extension PULPulsate.PULBeaconAction : Swift.RawRepresentable {}
 extension PULPulsate.PULSystemManager : Swift.Sendable {}
 extension PULPulsate.PULCurrency : Swift.Equatable {}
 extension PULPulsate.PULCurrency : Swift.Hashable {}

@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		s/ujw6g1CRH1FdS5aRWcdmLmBpI=
+		bUemHaenOBO+/xboKYmFEuTouc0=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		s/ujw6g1CRH1FdS5aRWcdmLmBpI=
+		bUemHaenOBO+/xboKYmFEuTouc0=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -675,7 +675,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0NjfyAx1K+ArNYFrhKC1qPSmQkBJ0atmt3Y02Z9RH9o=
+			3fE/+4oBGHZqtNuJxLn0rxFuZJWiBEaN9ewfiEYyuIY=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -710,7 +710,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0NjfyAx1K+ArNYFrhKC1qPSmQkBJ0atmt3Y02Z9RH9o=
+			3fE/+4oBGHZqtNuJxLn0rxFuZJWiBEaN9ewfiEYyuIY=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

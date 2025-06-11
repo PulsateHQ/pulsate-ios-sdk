@@ -52777,51 +52777,121 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1049,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1074,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1107,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1180,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2205,
+      "offset": 1011,
       "length": 7,
       "value": "\"crash\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 1049,
       "length": 15,
       "value": "\"anr_exception\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 1091,
       "length": 11,
       "value": "\"debug_log\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 9,
+      "value": "\"webview\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1162,
+      "length": 10,
+      "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1196,
+      "length": 8,
+      "value": "\"beacon\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 10,
+      "value": "\"geofence\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1265,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1299,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1334,
+      "length": 10,
+      "value": "\"database\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1366,
+      "length": 6,
+      "value": "\"feed\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1395,
+      "length": 7,
+      "value": "\"inbox\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 8,
+      "value": "\"in_app\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1526,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1551,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1584,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1657,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/API\/PULSendBeaconEventRequest.swift",

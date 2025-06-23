@@ -981,6 +981,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 ///
 - (void)setPushNotificationEnabled:(BOOL)enabled;
 - (BOOL)isPushNotificationEnabled SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isBackgroundLocationPermissionEnabled SWIFT_WARN_UNUSED_RESULT;
 /// Sets user’s privacy settings.
 /// \param privacyLevel user’s privacy level
 ///

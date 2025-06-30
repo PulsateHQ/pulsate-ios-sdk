@@ -397,7 +397,6 @@ public typealias Completion = () -> Swift.Void
   @objc public func closeAutomaticallyOpenedFeed()
   @objc public func setPushNotificationEnabled(_ enabled: Swift.Bool)
   @objc public func isPushNotificationEnabled() -> Swift.Bool
-  @objc public func isBackgroundLocationPermissionEnabled() -> Swift.Bool
   @objc public func setPrivacy(_ privacyLevel: PULPulsate.PULPrivacyLevel)
   @objc public func getPrivacy() -> Swift.Int
   @objc public func useInitials(forUserAvatar useInitials: Swift.Bool)

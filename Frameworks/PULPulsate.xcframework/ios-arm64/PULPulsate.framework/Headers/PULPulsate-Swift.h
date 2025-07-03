@@ -965,12 +965,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)startLocation;
 - (void)startDebugLoggingWithEnableNetworkLogs:(BOOL)enableNetworkLogs;
 - (void)stopDebugLogging;
-/// If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
-/// This enables you to postpone the push query prompt.
-- (void)startRemoteNotifications;
-/// If you chose to have push disabled when instantiating the Pulsate Manager, you can enable it later.
-/// This enables you to postpone the push query prompt and customize the push settings
-- (void)startRemoteNotificationsWith:(UNAuthorizationOptions)notificationSettings;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
 - (UINavigationController * _Nullable)getFeedNavigationControllerWithCompletion:(void (^ _Nullable)(void))completion SWIFT_WARN_UNUSED_RESULT;
 /// If feed is opened automatically (by pressing a push notification for example) you might want to

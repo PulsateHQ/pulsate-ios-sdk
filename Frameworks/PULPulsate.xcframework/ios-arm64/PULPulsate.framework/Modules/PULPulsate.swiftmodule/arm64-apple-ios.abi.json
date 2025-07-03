@@ -18665,57 +18665,6 @@
           },
           {
             "kind": "Function",
-            "name": "startRemoteNotifications",
-            "printedName": "startRemoteNotifications()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)startRemoteNotifications",
-            "mangledName": "$s10PULPulsate0A7ManagerC24startRemoteNotificationsyyF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startRemoteNotifications",
-            "printedName": "startRemoteNotifications(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UNAuthorizationOptions",
-                "printedName": "UserNotifications.UNAuthorizationOptions",
-                "usr": "c:@E@UNAuthorizationOptions"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)startRemoteNotificationsWith:",
-            "mangledName": "$s10PULPulsate0A7ManagerC24startRemoteNotifications4withySo22UNAuthorizationOptionsV_tF",
-            "moduleName": "PULPulsate",
-            "objc_name": "startRemoteNotificationsWith:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getFeedNavigationController",
             "printedName": "getFeedNavigationController(completion:)",
             "children": [
@@ -27204,29 +27153,6 @@
               "Custom",
               "AccessControl",
               "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "registerToPushNotifications",
-            "printedName": "registerToPushNotifications()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)registerToPushNotifications",
-            "mangledName": "$s10PULPulsate16PULSystemManagerC27registerToPushNotificationsyyF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -50393,7 +50319,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 7,
-      "value": "\"4.7.5\""
+      "value": "\"4.7.6\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -51497,203 +51423,203 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15718,
+      "offset": 14970,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 16556,
+      "offset": 15808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 17734,
+      "offset": 16986,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 52871,
+      "offset": 51758,
       "length": 207,
       "value": "\"Beacon action - UUID: \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 52912,
+      "offset": 51799,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 52918,
+      "offset": 51805,
       "length": 1,
       "value": "\", Major: \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 52959,
+      "offset": 51846,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 52965,
+      "offset": 51852,
       "length": 1,
       "value": "\", Minor: \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53006,
+      "offset": 51893,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53012,
+      "offset": 51899,
       "length": 1,
       "value": "\", Action: \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53060,
+      "offset": 51947,
       "length": 7,
       "value": "\"Enter\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53070,
+      "offset": 51957,
       "length": 6,
       "value": "\"Exit\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53077,
+      "offset": 51964,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53169,
+      "offset": 52056,
       "length": 26,
       "value": "\"Beacon is nil, returning\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 53622,
+      "offset": 52509,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 53660,
+      "offset": 52547,
       "length": 48,
       "value": "\"Sending beacon event with location after delay\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 53827,
+      "offset": 52714,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 54090,
+      "offset": 52977,
       "length": 45,
       "value": "\"Beacon event with location sent after delay\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 54305,
+      "offset": 53192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 54335,
+      "offset": 53222,
       "length": 45,
       "value": "\"Beacon event sent and user update triggered\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 60095,
+      "offset": 58982,
       "length": 63,
       "value": "\"Start session failed, will retry in \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 60149,
+      "offset": 59036,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 60238,
+      "offset": 59125,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 60464,
+      "offset": 59351,
       "length": 38,
       "value": "\"Retrying start session after failure\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 60650,
+      "offset": 59537,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 60776,
+      "offset": 59663,
       "length": 64,
       "value": "\"Logout request failed, will retry in \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 60831,
+      "offset": 59718,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 60920,
+      "offset": 59807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 61142,
+      "offset": 60029,
       "length": 31,
       "value": "\"Retrying logout after failure\""
     },
@@ -52379,7 +52305,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13932,
+      "offset": 13058,
       "length": 5,
       "value": "false"
     },
@@ -54941,7 +54867,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 76833,
+      "offset": 71484,
       "length": 3,
       "value": "[]"
     },

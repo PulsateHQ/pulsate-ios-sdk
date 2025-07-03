@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/PULPulsate-Swift.h</key>
 		<data>
-		k9o1XOXqg/XP12qYGBxAX214iek=
+		fDNl/hKOyb4DUio2Yyh8h4FJ/t4=
 		</data>
 		<key>Headers/PULPulsate.h</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d9amOJEUW4T4PiKglrevN/p+9eU=
+		wYvzmbNRjClLNxEdztPLFgMai58=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aW8iJrs0pQ68kh4NEFNxDd1sb74=
+		LQrGj2M9JbASc5ET8gRS1HpqYjc=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HnsWuL0LFgznU3uZnMxBXR+e9eY=
+		5QmH04rdAbS9MxRrRdGIe3P3xSY=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HnsWuL0LFgznU3uZnMxBXR+e9eY=
+		5QmH04rdAbS9MxRrRdGIe3P3xSY=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		96FuAlyRsMLBXesHppgps2zJe2k=
+		0t6C1SJWTGkAO0BSnXbXt6Y7C1I=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aW8iJrs0pQ68kh4NEFNxDd1sb74=
+		LQrGj2M9JbASc5ET8gRS1HpqYjc=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		u1HpEzLQaKL9Ny5rJ4uPrNlhQEo=
+		dYdA2tB0a47wUC7OWLiHyEY/5OM=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		u1HpEzLQaKL9Ny5rJ4uPrNlhQEo=
+		dYdA2tB0a47wUC7OWLiHyEY/5OM=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1p70WXcuwJZGw5bQ+heegb+UnfU=
+		s0BzvpEUF/EHADV4QERVRHgmLf8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -661,7 +661,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WTS9n5OqnwvOazSqvOYwZzEZeb9VfbrH0TX0wRG+4lw=
+			qUOlsAI0IlF/97GbCvkXYEwf9il0OWfZZtF/z/sqzwA=
 			</data>
 		</dict>
 		<key>Headers/PULPulsate.h</key>
@@ -675,14 +675,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S9ov112VofFcce+mPPeBUtprR7hJviHHQA3waXEh7YQ=
+			hQ3VSxk/5JBoJeFr07LnudFXfeqzUvk0rhp8zbujlS4=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nn1QTYTFeW9HwxsNjCYkBnRKLDtrPuWKvbplD5n40zM=
+			y9ELA1J/YSfgaGu08zkZodhyKJ/Pbnhl2ABe7Bc74QI=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -696,28 +696,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nn1QTYTFeW9HwxsNjCYkBnRKLDtrPuWKvbplD5n40zM=
+			y9ELA1J/YSfgaGu08zkZodhyKJ/Pbnhl2ABe7Bc74QI=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CcChlqwMxIcjbpEG0tv+RcbTocp6QP0XzAba4iRE2dY=
+			bONv7YfEQoVGVvQnws8Q7G+gFGtF+/670Z2jZ9zv9Rs=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S9ov112VofFcce+mPPeBUtprR7hJviHHQA3waXEh7YQ=
+			hQ3VSxk/5JBoJeFr07LnudFXfeqzUvk0rhp8zbujlS4=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ku5QLRIdG4JuZ2OFJ26N3V+n2tiyKPn6QQ+ingFsI4E=
+			KiDNDffF75V8xcMNovaMvmpZAvNsjspxT11hBJNwn4w=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -731,14 +731,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ku5QLRIdG4JuZ2OFJ26N3V+n2tiyKPn6QQ+ingFsI4E=
+			KiDNDffF75V8xcMNovaMvmpZAvNsjspxT11hBJNwn4w=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cg2XQChYw92tSU48ESix9sPUcnB4QRJe5Ma38FGp+RQ=
+			od7BpFJRP68h5lazZFeEVZ3Uh0udE6yvW6bq6YqlKkM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

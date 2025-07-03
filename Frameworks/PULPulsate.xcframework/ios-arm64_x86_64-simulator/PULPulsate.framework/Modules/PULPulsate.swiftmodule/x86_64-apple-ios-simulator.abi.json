@@ -27158,29 +27158,6 @@
           },
           {
             "kind": "Function",
-            "name": "registerToPushNotifications",
-            "printedName": "registerToPushNotifications()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)registerToPushNotifications",
-            "mangledName": "$s10PULPulsate16PULSystemManagerC27registerToPushNotificationsyyF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "userNotificationCenter",
             "printedName": "userNotificationCenter(_:willPresent:withCompletionHandler:)",
             "children": [
@@ -50342,7 +50319,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 9,
-      "value": "\"4.7.6.2\""
+      "value": "\"4.7.6.3\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/iOSProjects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -54890,7 +54867,7 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/iOSProjects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 74644,
+      "offset": 71484,
       "length": 3,
       "value": "[]"
     },

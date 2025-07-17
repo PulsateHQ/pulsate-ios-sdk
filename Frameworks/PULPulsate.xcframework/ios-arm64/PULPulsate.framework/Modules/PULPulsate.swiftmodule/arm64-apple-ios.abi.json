@@ -50040,7 +50040,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38181,
+      "offset": 38179,
       "length": 14,
       "value": "\"HH:mm:ss.SSS\""
     },
@@ -50392,7 +50392,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.7.7-beta.3\""
+      "value": "\"4.7.7-beta.4\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -51979,7 +51979,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6368,
+      "offset": 6188,
       "length": 4,
       "value": "true"
     },

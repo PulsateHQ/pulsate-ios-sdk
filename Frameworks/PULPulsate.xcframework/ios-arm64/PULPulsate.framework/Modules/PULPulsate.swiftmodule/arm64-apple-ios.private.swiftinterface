@@ -610,11 +610,6 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency @objc public func applicationWillTerminate(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
-  @objc @_Concurrency.MainActor @preconcurrency public func enableShakeDetection()
-  @objc @_Concurrency.MainActor @preconcurrency public func disableShakeDetection()
-  @objc @_Concurrency.MainActor @preconcurrency public var isShakeDetectionEnabled: Swift.Bool {
-    @objc get
-  }
   @objc deinit
 }
 @objc @objcMembers public class PULRemoteStorage : ObjectiveC.NSObject {

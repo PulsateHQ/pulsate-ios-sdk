@@ -10162,6 +10162,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -27796,101 +27806,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "enableShakeDetection",
-            "printedName": "enableShakeDetection()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)enableShakeDetection",
-            "mangledName": "$s10PULPulsate16PULSystemManagerC20enableShakeDetectionyyF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disableShakeDetection",
-            "printedName": "disableShakeDetection()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)disableShakeDetection",
-            "mangledName": "$s10PULPulsate16PULSystemManagerC21disableShakeDetectionyyF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "isShakeDetectionEnabled",
-            "printedName": "isShakeDetectionEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(py)isShakeDetectionEnabled",
-            "mangledName": "$s10PULPulsate16PULSystemManagerC23isShakeDetectionEnabledSbvp",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PULPulsate@objc(cs)PULSystemManager(im)isShakeDetectionEnabled",
-                "mangledName": "$s10PULPulsate16PULSystemManagerC23isShakeDetectionEnabledSbvg",
-                "moduleName": "PULPulsate",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -45502,26 +45417,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -50145,7 +50040,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38183,
+      "offset": 38181,
       "length": 14,
       "value": "\"HH:mm:ss.SSS\""
     },
@@ -50497,7 +50392,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.7.7-beta.1\""
+      "value": "\"4.7.7-beta.2\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -52059,6 +51954,34 @@
       "offset": 244,
       "length": 2,
       "value": "30"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 456,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 583,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5873,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Performance\/CrashEye\/Classes\/CrashEye.swift",
@@ -55052,23 +54975,16 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1630,
+      "offset": 1523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 72143,
+      "offset": 71946,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 75095,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Configuration\/PULSystemKeychain.swift",
@@ -56203,27 +56119,6 @@
       "offset": 2161,
       "length": 44,
       "value": "\"pulsate_no_internet_connection_cross_color\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionWindow.swift",
-      "kind": "BooleanLiteral",
-      "offset": 414,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionWindow.swift",
-      "kind": "IntegerLiteral",
-      "offset": 486,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionWindow.swift",
-      "kind": "FloatLiteral",
-      "offset": 541,
-      "length": 3,
-      "value": "2.0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Feed\/Card\/Front\/DynamicViewBlocks\/PULImageHeaderBlock.swift",

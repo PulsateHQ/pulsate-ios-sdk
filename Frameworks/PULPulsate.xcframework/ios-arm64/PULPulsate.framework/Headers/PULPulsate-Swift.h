@@ -1460,12 +1460,6 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)application continueUserActivity:(NSUserActivity * _Nonnull)userActivity restorationHandler:(void (^ _Nonnull)(NSArray<id <UIUserActivityRestoring>> * _Nullable))restorationHandler SWIFT_WARN_UNUSED_RESULT;
-/// Enable shake detection for presenting logs
-- (void)enableShakeDetection;
-/// Disable shake detection
-- (void)disableShakeDetection;
-/// Check if shake detection is currently enabled
-@property (nonatomic, readonly) BOOL isShakeDetectionEnabled;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

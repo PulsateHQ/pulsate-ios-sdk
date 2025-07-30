@@ -1191,6 +1191,11 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
+/// Returns the debug list view controller
+///
+/// returns:
+/// UIViewController for displaying debug options list
+- (UIViewController * _Nonnull)getDebugViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2775,6 +2780,11 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
+/// Returns the debug list view controller
+///
+/// returns:
+/// UIViewController for displaying debug options list
+- (UIViewController * _Nonnull)getDebugViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

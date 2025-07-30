@@ -449,6 +449,7 @@ public typealias Completion = () -> Swift.Void
   @objc public func showFake3()
   @objc public func forceCrash()
   @objc public func forceANR()
+  @objc public func getDebugViewController() -> UIKit.UIViewController
   @objc override dynamic public init()
   @objc deinit
 }

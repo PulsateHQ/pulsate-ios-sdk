@@ -686,13 +686,6 @@
       },
       {
         "kind": "Import",
-        "name": "PULPulsate",
-        "printedName": "PULPulsate",
-        "declKind": "Import",
-        "moduleName": "PULPulsate"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -50027,84 +50020,84 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 565,
+      "offset": 547,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 683,
       "length": 22,
       "value": "\"pulsatehq.PULPulsate\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 735,
+      "offset": 717,
       "length": 12,
       "value": "\"PULPulsate\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "Array",
-      "offset": 790,
+      "offset": 772,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "Array",
-      "offset": 842,
+      "offset": 824,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 875,
+      "offset": 857,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 917,
+      "offset": 899,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "Array",
-      "offset": 976,
+      "offset": 958,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1018,
+      "offset": 1000,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1169,
+      "offset": 1318,
       "length": 29,
       "value": "\"com.pulsate.logs.background\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "Array",
-      "offset": 1263,
+      "offset": 1412,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48577,
+      "offset": 54569,
       "length": 14,
       "value": "\"HH:mm:ss.SSS\""
     },

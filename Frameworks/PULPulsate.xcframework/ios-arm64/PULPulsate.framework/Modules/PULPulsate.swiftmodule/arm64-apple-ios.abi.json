@@ -31651,6 +31651,13 @@
       },
       {
         "kind": "Import",
+        "name": "PULPulsate",
+        "printedName": "PULPulsate",
+        "declKind": "Import",
+        "moduleName": "PULPulsate"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -50097,7 +50104,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 54569,
+      "offset": 56324,
       "length": 14,
       "value": "\"HH:mm:ss.SSS\""
     },
@@ -52036,7 +52043,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULShakeDetectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13919,
+      "offset": 13911,
       "length": 4,
       "value": "true"
     },
@@ -55662,7 +55669,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/DebugListViewController.swift",
       "kind": "Array",
-      "offset": 346,
+      "offset": 364,
       "length": 16,
       "value": "[\"Logs\", \"User\"]"
     },

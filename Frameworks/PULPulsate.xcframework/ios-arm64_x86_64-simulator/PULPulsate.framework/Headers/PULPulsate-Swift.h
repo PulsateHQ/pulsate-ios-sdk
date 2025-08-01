@@ -953,18 +953,16 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionWithDebugLogs:(BOOL)debugLogs :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)startPulsateSessionWithDebugMode:(BOOL)debugMode :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugLogs:(BOOL)debugLogs withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugMode:(BOOL)debugMode withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 - (void)clearAllNotifications;
 /// Logs out the current user
 - (void)logout:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the location query prompt.
 - (void)startLocation;
-- (void)startDebugLoggingWithEnableNetworkLogs:(BOOL)enableNetworkLogs;
-- (void)stopDebugLogging;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
 - (UINavigationController * _Nullable)getFeedNavigationControllerWithCompletion:(void (^ _Nullable)(void))completion SWIFT_WARN_UNUSED_RESULT;
 /// If feed is opened automatically (by pressing a push notification for example) you might want to
@@ -1193,6 +1191,11 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
+/// Returns the debug list view controller
+///
+/// returns:
+/// UIViewController for displaying debug options list
+- (UIViewController * _Nonnull)getDebugViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2539,18 +2542,16 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 @property (nonatomic, weak) IBOutlet id <PULPulsateBadgeDelegate> _Nullable badgeDelegate;
 /// Starts Pulsate session lifecycle. If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionWithDebugLogs:(BOOL)debugLogs :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)startPulsateSessionWithDebugMode:(BOOL)debugMode :(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
-- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugLogs:(BOOL)debugLogs withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+- (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugMode:(BOOL)debugMode withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 - (void)clearAllNotifications;
 /// Logs out the current user
 - (void)logout:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the location query prompt.
 - (void)startLocation;
-- (void)startDebugLoggingWithEnableNetworkLogs:(BOOL)enableNetworkLogs;
-- (void)stopDebugLogging;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
 - (UINavigationController * _Nullable)getFeedNavigationControllerWithCompletion:(void (^ _Nullable)(void))completion SWIFT_WARN_UNUSED_RESULT;
 /// If feed is opened automatically (by pressing a push notification for example) you might want to
@@ -2779,6 +2780,11 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 - (void)showFake3;
 - (void)forceCrash;
 - (void)forceANR;
+/// Returns the debug list view controller
+///
+/// returns:
+/// UIViewController for displaying debug options list
+- (UIViewController * _Nonnull)getDebugViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

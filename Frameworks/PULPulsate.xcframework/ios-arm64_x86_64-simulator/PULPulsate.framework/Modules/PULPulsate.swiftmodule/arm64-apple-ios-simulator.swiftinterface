@@ -384,13 +384,11 @@ public typealias Completion = () -> Swift.Void
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateManager : ObjectiveC.NSObject {
   @objc @IBOutlet weak public var unauthorizedDelegate: (any PULPulsate.PULPulsateUnauthorizedManagerDelegate)?
   @objc @IBOutlet weak public var badgeDelegate: (any PULPulsate.PULPulsateBadgeDelegate)?
-  @objc public func startPulsateSession(debugLogs: Swift.Bool = false, _ listener: @escaping PULPulsate.RequestListener)
-  @objc public func startPulsateSession(forAlias alias: Swift.String, debugLogs: Swift.Bool = false, withListener listener: @escaping PULPulsate.RequestListener)
+  @objc public func startPulsateSession(debugMode: Swift.Bool = false, _ listener: @escaping PULPulsate.RequestListener)
+  @objc public func startPulsateSession(forAlias alias: Swift.String, debugMode: Swift.Bool = false, withListener listener: @escaping PULPulsate.RequestListener)
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
-  @objc public func startDebugLogging(enableNetworkLogs: Swift.Bool)
-  @objc public func stopDebugLogging()
   @objc public func getFeedNavigationController(completion: PULPulsate.Completion? = nil) -> UIKit.UINavigationController?
   @objc public func closeAutomaticallyOpenedFeed()
   @objc public func setPushNotificationEnabled(_ enabled: Swift.Bool)
@@ -451,6 +449,7 @@ public typealias Completion = () -> Swift.Void
   @objc public func showFake3()
   @objc public func forceCrash()
   @objc public func forceANR()
+  @objc public func getDebugViewController() -> UIKit.UIViewController
   @objc override dynamic public init()
   @objc deinit
 }

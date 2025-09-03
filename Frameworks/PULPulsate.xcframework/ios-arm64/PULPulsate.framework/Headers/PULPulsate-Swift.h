@@ -963,11 +963,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// If you chose to have location disabled when instantiating the Pulsate Manager, you can enable it later.
 /// This enables you to postpone the location query prompt.
 - (void)startLocation;
-/// Checks if debug logging is currently enabled
-///
-/// returns:
-/// true if debug logging is active, false otherwise
-- (BOOL)isDebugLoggingEnabled SWIFT_WARN_UNUSED_RESULT;
 /// Creates and returns a Pulsate Feeed Navigation Controller. You can choose to present it however you see fit.
 - (UINavigationController * _Nullable)getFeedNavigationControllerWithCompletion:(void (^ _Nullable)(void))completion SWIFT_WARN_UNUSED_RESULT;
 /// If feed is opened automatically (by pressing a push notification for example) you might want to

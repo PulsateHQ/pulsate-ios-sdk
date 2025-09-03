@@ -50449,7 +50449,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 14,
-      "value": "\"4.7.9-beta.3\""
+      "value": "\"4.7.9-beta.4\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -55038,15 +55038,8 @@
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1750,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/SystemModule\/PULSystemManager.swift",
       "kind": "Dictionary",
-      "offset": 76419,
+      "offset": 72469,
       "length": 3,
       "value": "[]"
     },
@@ -56207,92 +56200,43 @@
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 11932,
-      "length": 88,
-      "value": "\"Dismissing or popping view controller: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 12019,
-      "length": 25,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 12142,
-      "length": 54,
-      "value": "\"No navigation controller present, dismissing modally\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 12267,
+      "offset": 7387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 12420,
+      "offset": 7518,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 12453,
-      "length": 76,
-      "value": "\"Navigation controller present with \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 12511,
-      "length": 4,
-      "value": "\" view controllers\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 12604,
+      "offset": 7523,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 12643,
-      "length": 57,
-      "value": "\"Multiple view controllers in stack, popping current one\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 12807,
+      "offset": 7609,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
       "kind": "FloatLiteral",
-      "offset": 12903,
+      "offset": 7705,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
-      "kind": "StringLiteral",
-      "offset": 13080,
-      "length": 76,
-      "value": "\"Only one view controller in stack, dismissing entire navigation controller\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Modules\/ViewControllerPresenter\/PULViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 13231,
+      "offset": 7897,
       "length": 4,
       "value": "true"
     },

@@ -389,6 +389,7 @@ public typealias Completion = () -> Swift.Void
   @objc public func clearAllNotifications()
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
+  @objc public func isDebugLoggingEnabled() -> Swift.Bool
   @objc public func getFeedNavigationController(completion: PULPulsate.Completion? = nil) -> UIKit.UINavigationController?
   @objc public func closeAutomaticallyOpenedFeed()
   @objc public func setPushNotificationEnabled(_ enabled: Swift.Bool)
@@ -439,6 +440,7 @@ public typealias Completion = () -> Swift.Void
   @objc public func removeUnauthorizedMessage()
   @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
+  @objc deinit
   @objc public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func setPULPulsateLinkListener(_ listener: @escaping PULPulsate.PULPulsateLinkListener)
@@ -451,7 +453,6 @@ public typealias Completion = () -> Swift.Void
   @objc public func forceANR()
   @objc public func getDebugViewController() -> UIKit.UIViewController
   @objc override dynamic public init()
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULImageTouchViewEffect : PULPulsate.PULImageView {
   @objc @_Concurrency.MainActor @preconcurrency public var onlyChangeAlpha: Swift.Bool

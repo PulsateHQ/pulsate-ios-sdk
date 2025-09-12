@@ -377,11 +377,6 @@ SWIFT_CLASS("_TtC10PULPulsate21PULBaseViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, PULBeaconAction, open) {
-  PULBeaconActionPulBeaconExit = 0,
-  PULBeaconActionPulBeaconEnter = 1,
-};
-
 SWIFT_PROTOCOL("_TtP10PULPulsate22PULBlockDataInjectable_")
 @protocol PULBlockDataInjectable <NSObject>
 - (void)injectData:(id _Nullable)data;
@@ -990,7 +985,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 ///
 - (void)useInitialsForUserAvatar:(BOOL)useInitials;
 - (BOOL)getUseInitialsForUserAvatar SWIFT_WARN_UNUSED_RESULT;
-/// Enables or Disables the Geofencing and Beacon Scanning.
+/// Enables or Disables the Geofencing.
 /// By default enabled.
 - (void)setLocationUpdatesEnabled:(BOOL)enabled;
 - (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
@@ -1162,8 +1157,6 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// Attributes synchronize when the app is entering background. This method forces the synchronization to happen instantly.
 - (void)forceAttributeSync;
 - (void)showCampaignExpired;
-/// Decides if beacon actions should be sent with a location. The default is NO.
-- (void)sendLocationWithBeaconEvents:(BOOL)sendLocation;
 /// Returns the Device Guid that Pulsate uses to identify users.
 - (NSString * _Nullable)getDeviceGuid SWIFT_WARN_UNUSED_RESULT;
 - (void)getFeedUnreadCountWithCompletion:(void (^ _Nonnull)(NSInteger))completion;

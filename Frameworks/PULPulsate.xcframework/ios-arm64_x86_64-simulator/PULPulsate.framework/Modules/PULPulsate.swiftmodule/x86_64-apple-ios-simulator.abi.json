@@ -19968,35 +19968,6 @@
           },
           {
             "kind": "Function",
-            "name": "sendLocation",
-            "printedName": "sendLocation(withBeaconEvents:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PULPulsate@objc(cs)PULPulsateManager(im)sendLocationWithBeaconEvents:",
-            "mangledName": "$s10PULPulsate0A7ManagerC12sendLocation16withBeaconEventsySb_tF",
-            "moduleName": "PULPulsate",
-            "objc_name": "sendLocationWithBeaconEvents:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getDeviceGuid",
             "printedName": "getDeviceGuid()",
             "children": [
@@ -25574,258 +25545,6 @@
         "moduleName": "PULPulsate",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PULBeaconAction",
-        "printedName": "PULBeaconAction",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "pulBeaconExit",
-            "printedName": "pulBeaconExit",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PULPulsate.PULBeaconAction.Type) -> PULPulsate.PULBeaconAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PULBeaconAction",
-                    "printedName": "PULPulsate.PULBeaconAction",
-                    "usr": "c:@M@PULPulsate@E@PULBeaconAction"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PULPulsate.PULBeaconAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PULBeaconAction",
-                        "printedName": "PULPulsate.PULBeaconAction",
-                        "usr": "c:@M@PULPulsate@E@PULBeaconAction"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@PULPulsate@E@PULBeaconAction@PULBeaconActionPulBeaconExit",
-            "mangledName": "$s10PULPulsate15PULBeaconActionO13pulBeaconExityA2CmF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "pulBeaconEnter",
-            "printedName": "pulBeaconEnter",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PULPulsate.PULBeaconAction.Type) -> PULPulsate.PULBeaconAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PULBeaconAction",
-                    "printedName": "PULPulsate.PULBeaconAction",
-                    "usr": "c:@M@PULPulsate@E@PULBeaconAction"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PULPulsate.PULBeaconAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PULBeaconAction",
-                        "printedName": "PULPulsate.PULBeaconAction",
-                        "usr": "c:@M@PULPulsate@E@PULBeaconAction"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@PULPulsate@E@PULBeaconAction@PULBeaconActionPulBeaconEnter",
-            "mangledName": "$s10PULPulsate15PULBeaconActionO14pulBeaconEnteryA2CmF",
-            "moduleName": "PULPulsate",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PULPulsate.PULBeaconAction?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PULBeaconAction",
-                    "printedName": "PULPulsate.PULBeaconAction",
-                    "usr": "c:@M@PULPulsate@E@PULBeaconAction"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10PULPulsate15PULBeaconActionO8rawValueACSgSi_tcfc",
-            "mangledName": "$s10PULPulsate15PULBeaconActionO8rawValueACSgSi_tcfc",
-            "moduleName": "PULPulsate",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10PULPulsate15PULBeaconActionO8rawValueSivp",
-            "mangledName": "$s10PULPulsate15PULBeaconActionO8rawValueSivp",
-            "moduleName": "PULPulsate",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PULPulsate15PULBeaconActionO8rawValueSivg",
-                "mangledName": "$s10PULPulsate15PULBeaconActionO8rawValueSivg",
-                "moduleName": "PULPulsate",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@PULPulsate@E@PULBeaconAction",
-        "mangledName": "$s10PULPulsate15PULBeaconActionO",
-        "moduleName": "PULPulsate",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
         ]
       },
       {
@@ -50120,7 +49839,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/AppLogsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 56324,
+      "offset": 56279,
       "length": 14,
       "value": "\"HH:mm:ss.SSS\""
     },
@@ -50472,7 +50191,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 7,
-      "value": "\"4.7.9\""
+      "value": "\"4.8.0\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -50547,826 +50266,819 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1912,
-      "length": 41,
-      "value": "\"api\/mobile\/v2\/general\/send_beacon_event\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1980,
+      "offset": 1902,
       "length": 34,
       "value": "\"api\/mobile\/v4\/localizations\/data\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2051,
+      "offset": 1973,
       "length": 45,
       "value": "\"api\/mobile\/v2\/general\/get_rich_notification\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2047,
       "length": 34,
       "value": "\"api\/mobile\/v2\/messages\/get_inbox\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2191,
+      "offset": 2113,
       "length": 37,
       "value": "\"api\/mobile\/v2\/messages\/get_messages\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2259,
+      "offset": 2181,
       "length": 36,
       "value": "\"api\/mobile\/v2\/messages\/create_talk\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2325,
+      "offset": 2247,
       "length": 39,
       "value": "\"api\/mobile\/v2\/messages\/create_message\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2391,
+      "offset": 2313,
       "length": 28,
       "value": "\"api\/mobile\/v4\/sessions\/end\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
+      "offset": 2363,
       "length": 30,
       "value": "\"api\/mobile\/v2\/general\/logout\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2499,
+      "offset": 2421,
       "length": 42,
       "value": "\"api\/mobile\/v2\/general\/send_in_app_events\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2577,
+      "offset": 2499,
       "length": 47,
       "value": "\"api\/mobile\/v2\/general\/update_push_preferences\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2660,
+      "offset": 2582,
       "length": 48,
       "value": "\"api\/mobile\/v2\/general\/update_location_tracking\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2735,
+      "offset": 2657,
       "length": 31,
       "value": "\"api\/mobile\/v2\/general\/privacy\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 2711,
       "length": 31,
       "value": "\"api\/mobile\/v2\/general\/archive\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2850,
+      "offset": 2772,
       "length": 39,
       "value": "\"api\/mobile\/v2\/messages\/get_inbox_item\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2927,
+      "offset": 2849,
       "length": 20,
       "value": "\"kPULTextHeaderView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2989,
+      "offset": 2911,
       "length": 20,
       "value": "\"kPULNormalTextView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3053,
+      "offset": 2975,
       "length": 21,
       "value": "\"kPULAdminHeaderView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3033,
       "length": 15,
       "value": "\"kPULAdminView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3157,
+      "offset": 3079,
       "length": 23,
       "value": "\"kPULImageWithTextView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 3143,
       "length": 22,
       "value": "\"kPULCallToActionView\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3277,
+      "offset": 3199,
       "length": 13,
       "value": "\"kPULDivider\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3325,
+      "offset": 3247,
       "length": 14,
       "value": "\"kPULKeyValue\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3382,
+      "offset": 3304,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3418,
+      "offset": 3340,
       "length": 10,
       "value": "\"Other...\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3466,
+      "offset": 3388,
       "length": 11,
       "value": "\"Complaint\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3513,
+      "offset": 3435,
       "length": 20,
       "value": "\"Feature Suggestion\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3570,
+      "offset": 3492,
       "length": 10,
       "value": "\"Feedback\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3611,
+      "offset": 3533,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3643,
+      "offset": 3565,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3680,
+      "offset": 3602,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3714,
+      "offset": 3636,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3719,
+      "offset": 3641,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3724,
+      "offset": 3646,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3751,
+      "offset": 3673,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3794,
+      "offset": 3716,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3837,
+      "offset": 3759,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3893,
+      "offset": 3815,
       "length": 5,
       "value": "\"8.0\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3932,
+      "offset": 3854,
       "length": 9,
       "value": "\"Pulsate\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3982,
+      "offset": 3904,
       "length": 9,
       "value": "\"App Key\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4031,
+      "offset": 3953,
       "length": 8,
       "value": "\"App ID\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4077,
+      "offset": 3999,
       "length": 22,
       "value": "\"pulsatehq.PULPulsate\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4137,
+      "offset": 4059,
       "length": 27,
       "value": "\"pulsatehq.PULPulsate.logs\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4199,
+      "offset": 4121,
       "length": 12,
       "value": "\"PULPulsate\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4255,
+      "offset": 4177,
       "length": 17,
       "value": "\"PULPulsateBasic\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4315,
+      "offset": 4237,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4347,
+      "offset": 4269,
       "length": 14,
       "value": "\"PulsateModel\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4396,
+      "offset": 4318,
       "length": 6,
       "value": "\"momd\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4442,
+      "offset": 4364,
       "length": 24,
       "value": "\"PulsateVersion2.sqlite\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4504,
+      "offset": 4426,
       "length": 12,
       "value": "\"PULMessage\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4553,
+      "offset": 4475,
       "length": 14,
       "value": "\"kReloadInbox\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4600,
+      "offset": 4522,
       "length": 22,
       "value": "\"kPULOpenNotification\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4657,
+      "offset": 4579,
       "length": 15,
       "value": "\"kPULSendEvent\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4710,
+      "offset": 4632,
       "length": 18,
       "value": "\"kPULOpenCampaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4769,
+      "offset": 4691,
       "length": 20,
       "value": "\"kPULOpenSingleCard\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4831,
+      "offset": 4753,
       "length": 21,
       "value": "\"kPULDIsmissBackCard\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4890,
+      "offset": 4812,
       "length": 18,
       "value": "\"kPULDIsmissInApp\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4948,
+      "offset": 4870,
       "length": 19,
       "value": "\"kPULSendOpenEvent\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4995,
+      "offset": 4917,
       "length": 10,
       "value": "\"lightFin\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5032,
+      "offset": 4954,
       "length": 9,
       "value": "\"darkFin\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5061,
+      "offset": 4983,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5100,
+      "offset": 5022,
       "length": 3,
       "value": "3.6"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5139,
+      "offset": 5061,
       "length": 4,
       "value": "10.4"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5177,
+      "offset": 5099,
       "length": 5,
       "value": "-1009"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5212,
+      "offset": 5134,
       "length": 10,
       "value": "\"PULCache\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5258,
+      "offset": 5180,
       "length": 6,
       "value": "\"guid\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5303,
+      "offset": 5225,
       "length": 13,
       "value": "\"occurred_at\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5361,
+      "offset": 5283,
       "length": 19,
       "value": "\"occurred_at_array\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5415,
+      "offset": 5337,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5456,
+      "offset": 5378,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5499,
+      "offset": 5421,
       "length": 10,
       "value": "\"campaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5542,
+      "offset": 5464,
       "length": 6,
       "value": "\"talk\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5586,
+      "offset": 5508,
       "length": 15,
       "value": "\"push_delivery\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5637,
+      "offset": 5559,
       "length": 13,
       "value": "\"push_bounce\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5688,
+      "offset": 5610,
       "length": 14,
       "value": "\"dismiss_push\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5738,
+      "offset": 5660,
       "length": 12,
       "value": "\"push_click\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5795,
+      "offset": 5717,
       "length": 23,
       "value": "\"push_button_click_one\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5863,
+      "offset": 5785,
       "length": 23,
       "value": "\"push_button_click_two\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5933,
+      "offset": 5855,
       "length": 25,
       "value": "\"push_button_click_three\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6000,
+      "offset": 5922,
       "length": 25,
       "value": "\"push_button_click_reply\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6065,
+      "offset": 5987,
       "length": 17,
       "value": "\"in_app_delivery\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6120,
+      "offset": 6042,
       "length": 15,
       "value": "\"in_app_bounce\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6176,
+      "offset": 6098,
       "length": 19,
       "value": "\"in_app_impression\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6235,
+      "offset": 6157,
       "length": 16,
       "value": "\"in_app_dismiss\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6298,
+      "offset": 6220,
       "length": 25,
       "value": "\"in_app_button_click_one\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6370,
+      "offset": 6292,
       "length": 25,
       "value": "\"in_app_button_click_two\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6435,
+      "offset": 6357,
       "length": 17,
       "value": "\"in_app_time_out\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6487,
+      "offset": 6409,
       "length": 13,
       "value": "\"card_delete\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6545,
+      "offset": 6467,
       "length": 23,
       "value": "\"card_front_impression\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6619,
+      "offset": 6541,
       "length": 29,
       "value": "\"card_front_button_click_one\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6699,
+      "offset": 6621,
       "length": 29,
       "value": "\"card_front_button_click_two\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6774,
+      "offset": 6696,
       "length": 31,
       "value": "\"card_front_button_click_reply\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6849,
+      "offset": 6771,
       "length": 22,
       "value": "\"card_back_impression\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6921,
+      "offset": 6843,
       "length": 28,
       "value": "\"card_back_button_click_one\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6999,
+      "offset": 6921,
       "length": 28,
       "value": "\"card_back_button_click_two\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7051,
+      "offset": 6973,
       "length": 11,
       "value": "\"PULDBTalk\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7089,
+      "offset": 7011,
       "length": 14,
       "value": "\"PULDBMessage\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7131,
+      "offset": 7053,
       "length": 15,
       "value": "\"PULDBCampaign\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7171,
+      "offset": 7093,
       "length": 12,
       "value": "\"PULDBImage\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7219,
+      "offset": 7141,
       "length": 22,
       "value": "\"PULDBCustomAttribute\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7272,
+      "offset": 7194,
       "length": 17,
       "value": "\"PULDBUserAction\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7324,
+      "offset": 7246,
       "length": 19,
       "value": "\"PULLocationEntity\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7379,
+      "offset": 7301,
       "length": 13,
       "value": "\"PULDebugLog\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7417,
+      "offset": 7339,
       "length": 12,
       "value": "\"PULDBEvent\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7463,
+      "offset": 7385,
       "length": 14,
       "value": "\"campaignGUID\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7508,
+      "offset": 7430,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7545,
+      "offset": 7467,
       "length": 17,
       "value": "\"groupIdentifier\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7592,
+      "offset": 7514,
       "length": 12,
       "value": "\"identifier\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7638,
+      "offset": 7560,
       "length": 23,
       "value": "\"creationTimeTimestamp\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7693,
+      "offset": 7615,
       "length": 8,
       "value": "\"update\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7736,
+      "offset": 7658,
       "length": 11,
       "value": "\"increment\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7782,
+      "offset": 7704,
       "length": 11,
       "value": "\"decrement\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7823,
+      "offset": 7745,
       "length": 17,
       "value": "\"PULDBImpression\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7871,
+      "offset": 7793,
       "length": 22,
       "value": "\"PULLastKnownLocation\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7920,
+      "offset": 7842,
       "length": 21,
       "value": "\"PUL_USER_AUTHORIZED\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7997,
+      "offset": 7919,
       "length": 16,
       "value": "\"PULDebugAction\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8048,
+      "offset": 7970,
       "length": 21,
       "value": "\"PULDebugActionValue\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8142,
+      "offset": 8064,
       "length": 46,
       "value": "\"https:\/\/vercel-ack-server.vercel.app\/api\/ack\""
     },
@@ -51499,287 +51211,161 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 951,
+      "offset": 944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 991,
+      "offset": 976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1023,
+      "offset": 1308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1355,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1596,
+      "offset": 1549,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "Array",
-      "offset": 1750,
+      "offset": 1703,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2220,
+      "offset": 2173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2261,
+      "offset": 2214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2307,
+      "offset": 2260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 2415,
+      "offset": 2368,
       "length": 20,
       "value": "\"forceAttributeSync\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2511,
+      "offset": 2464,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 2502,
       "length": 12,
       "value": "\"sessionEnd\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 20033,
+      "offset": 19939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 20871,
+      "offset": 20777,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 22049,
+      "offset": 21955,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 56822,
-      "length": 207,
-      "value": "\"Beacon action - UUID: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 56863,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 56869,
-      "length": 1,
-      "value": "\", Major: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 56910,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 56916,
-      "length": 1,
-      "value": "\", Minor: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 56957,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 56963,
-      "length": 1,
-      "value": "\", Action: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 57011,
-      "length": 7,
-      "value": "\"Enter\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 57021,
-      "length": 6,
-      "value": "\"Exit\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 57028,
-      "length": 33,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 57120,
-      "length": 26,
-      "value": "\"Beacon is nil, returning\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 57573,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 57611,
-      "length": 48,
-      "value": "\"Sending beacon event with location after delay\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 57778,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 58041,
-      "length": 45,
-      "value": "\"Beacon event with location sent after delay\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 58256,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 58286,
-      "length": 45,
-      "value": "\"Beacon event sent and user update triggered\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
-      "kind": "StringLiteral",
-      "offset": 64046,
+      "offset": 61728,
       "length": 63,
       "value": "\"Start session failed, will retry in \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 64100,
+      "offset": 61782,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 64189,
+      "offset": 61871,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 64415,
+      "offset": 62097,
       "length": 38,
       "value": "\"Retrying start session after failure\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "IntegerLiteral",
-      "offset": 64601,
+      "offset": 62283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 64727,
+      "offset": 62409,
       "length": 64,
       "value": "\"Logout request failed, will retry in \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 64782,
+      "offset": 62464,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "BooleanLiteral",
-      "offset": 64871,
+      "offset": 62553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/SessionLifetimeMediator\/PULSessionLifetimeMediator.swift",
       "kind": "StringLiteral",
-      "offset": 65093,
+      "offset": 62775,
       "length": 31,
       "value": "\"Retrying logout after failure\""
     },
@@ -52017,7 +51603,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Configuration\/PULPulsateConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 27621,
+      "offset": 26297,
       "length": 4,
       "value": "\"en\""
     },
@@ -52514,7 +52100,7 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13504,
+      "offset": 13484,
       "length": 5,
       "value": "false"
     },
@@ -52752,63 +52338,63 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "StringLiteral",
-      "offset": 925,
+      "offset": 887,
       "length": 17,
       "value": "\"user_avatar_url\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "StringLiteral",
-      "offset": 971,
+      "offset": 933,
       "length": 21,
       "value": "\"in_app_notification\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "StringLiteral",
-      "offset": 6358,
+      "offset": 6320,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "StringLiteral",
-      "offset": 6372,
+      "offset": 6334,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "StringLiteral",
-      "offset": 6375,
+      "offset": 6337,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "StringLiteral",
-      "offset": 6401,
+      "offset": 6363,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 6757,
+      "offset": 6719,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "IntegerLiteral",
-      "offset": 6854,
+      "offset": 6816,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Session\/API\/PULSessionLifetimeRemoteStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 7000,
+      "offset": 6962,
       "length": 4,
       "value": "true"
     },
@@ -52976,233 +52562,86 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1196,
-      "length": 8,
-      "value": "\"beacon\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1230,
+      "offset": 1198,
       "length": 10,
       "value": "\"geofence\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1265,
+      "offset": 1233,
       "length": 9,
       "value": "\"session\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1299,
+      "offset": 1267,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1302,
       "length": 10,
       "value": "\"database\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1366,
+      "offset": 1334,
       "length": 6,
       "value": "\"feed\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1395,
+      "offset": 1363,
       "length": 7,
       "value": "\"inbox\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1426,
+      "offset": 1394,
       "length": 8,
       "value": "\"in_app\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1466,
+      "offset": 1434,
       "length": 16,
       "value": "\"detailed_state\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1574,
+      "offset": 1542,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1567,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1632,
+      "offset": 1600,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/API\/PULDebugLogRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1705,
+      "offset": 1673,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/API\/PULSendBeaconEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 314,
-      "length": 6,
-      "value": "\"guid\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/API\/PULSendBeaconEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 369,
-      "length": 8,
-      "value": "\"beacon\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/API\/PULSendBeaconEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 423,
-      "length": 18,
-      "value": "\"current_location\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "FloatLiteral",
-      "offset": 188,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "FloatLiteral",
-      "offset": 220,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 279,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 341,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "Dictionary",
-      "offset": 661,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "FloatLiteral",
-      "offset": 716,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "FloatLiteral",
-      "offset": 766,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "FloatLiteral",
-      "offset": 942,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeaconEntryMonitor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 984,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 6,
-      "value": "\"uuid\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "StringLiteral",
-      "offset": 247,
-      "length": 7,
-      "value": "\"major\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "StringLiteral",
-      "offset": 298,
-      "length": 7,
-      "value": "\"minor\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "StringLiteral",
-      "offset": 349,
-      "length": 7,
-      "value": "\"event\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "StringLiteral",
-      "offset": 405,
-      "length": 6,
-      "value": "\"exit\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "StringLiteral",
-      "offset": 461,
-      "length": 7,
-      "value": "\"enter\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "IntegerLiteral",
-      "offset": 544,
-      "length": 14,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/Beacon\/PULBeacon.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2874,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/UserData\/API\/PULSetPrivacyRequest.swift",
@@ -55111,77 +54550,35 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 949,
+      "offset": 773,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 3881,
-      "length": 102,
+      "offset": 3483,
+      "length": 64,
       "value": "\"Updating monitoring - Geofences: \""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3942,
+      "offset": 3544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
-      "length": 1,
-      "value": "\", Beacons: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3980,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3982,
+      "offset": 3546,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
-      "kind": "Array",
-      "offset": 4224,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4358,
-      "length": 64,
-      "value": "\"Setting up beacon monitoring for UUID: \""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4415,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4421,
-      "length": 32,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Location\/PULCoreLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4646,
+      "offset": 3793,
       "length": 1,
       "value": "1"
     },
@@ -55454,182 +54851,189 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 580,
-      "length": 28,
-      "value": "\"PULSATE-BEACON-MANAGER-LOG\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 641,
-      "length": 26,
-      "value": "\"PULSATE-BEACON-EVENT-LOG\""
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 581,
       "length": 29,
       "value": "\"PULSATE-LOCATION-UPDATE-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 769,
+      "offset": 647,
       "length": 30,
       "value": "\"PULSATE-GEOFENCE-MANAGER-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 712,
       "length": 28,
       "value": "\"PULSATE-GEOFENCE-EVENT-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 895,
+      "offset": 773,
       "length": 26,
       "value": "\"PULSATE-FEED-MANAGER-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 955,
+      "offset": 833,
       "length": 27,
       "value": "\"PULSATE-INBOX-MANAGER-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 895,
       "length": 28,
       "value": "\"PULSATE-IN-APP-MANAGER-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 959,
       "length": 29,
       "value": "\"PULSATE-NETWORK-MANAGER-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 1016,
       "length": 22,
       "value": "\"PULSATE-WEBIVIEW-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 1195,
+      "offset": 1073,
       "length": 28,
       "value": "\"PULSATE-DETAILED-STATE-LOG\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3017,
+      "offset": 2895,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3056,
+      "offset": 2934,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3203,
+      "offset": 3081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3244,
+      "offset": 3122,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3290,
+      "offset": 3168,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3341,
+      "offset": 3219,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3384,
+      "offset": 3262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3425,
+      "offset": 3303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3476,
+      "offset": 3354,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3522,
+      "offset": 3400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3568,
+      "offset": 3446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3626,
+      "offset": 3504,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3665,
+      "offset": 3543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3705,
+      "offset": 3583,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3747,
+      "offset": 3625,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3666,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3708,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3749,
       "length": 5,
       "value": "false"
     },
@@ -55643,21 +55047,21 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3830,
+      "offset": 3824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3871,
+      "offset": 3865,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3911,
+      "offset": 3910,
       "length": 5,
       "value": "false"
     },
@@ -55665,41 +55069,6 @@
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3950,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3989,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4025,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4066,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4111,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/DebugLogs\/PULDebugLogManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4151,
       "length": 5,
       "value": "false"
     },

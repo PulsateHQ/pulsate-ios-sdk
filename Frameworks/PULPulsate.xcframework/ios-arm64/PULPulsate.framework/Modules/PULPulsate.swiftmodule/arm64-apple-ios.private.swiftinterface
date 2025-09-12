@@ -429,7 +429,6 @@ public typealias Completion = () -> Swift.Void
   @objc public func createRevenueEvent(_ revenueEvent: PULPulsate.PULRevenueEvent?)
   @objc public func forceAttributeSync()
   @objc public func showCampaignExpired()
-  @objc public func sendLocation(withBeaconEvents sendLocation: Swift.Bool)
   @objc public func getDeviceGuid() -> Swift.String?
   @objc public func getFeedUnreadCount(completion: @escaping (Swift.Int) -> Swift.Void)
   @objc public func getBadgeCount()
@@ -551,15 +550,6 @@ extension Swift.String {
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
   @objc override dynamic public init()
   @objc deinit
-}
-@objc public enum PULBeaconAction : Swift.Int {
-  case pulBeaconExit
-  case pulBeaconEnter
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 @objc @objcMembers public class PULInAppMessage : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
@@ -1046,9 +1036,6 @@ extension PULPulsate.PULUserGender : Swift.RawRepresentable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Equatable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Hashable {}
 extension PULPulsate.PULPrivacyLevel : Swift.RawRepresentable {}
-extension PULPulsate.PULBeaconAction : Swift.Equatable {}
-extension PULPulsate.PULBeaconAction : Swift.Hashable {}
-extension PULPulsate.PULBeaconAction : Swift.RawRepresentable {}
 extension PULPulsate.PULSystemManager : Swift.Sendable {}
 extension PULPulsate.PULCurrency : Swift.Equatable {}
 extension PULPulsate.PULCurrency : Swift.Hashable {}

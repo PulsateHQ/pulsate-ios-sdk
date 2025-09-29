@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/PULPulsate-Swift.h</key>
 		<data>
-		zAtDLvQ8tZH324x1ZJg7SKOI3Z4=
+		GTStZzFmaGJkAvRDx0t0IUMLI1E=
 		</data>
 		<key>Headers/PULPulsate.h</key>
 		<data>
@@ -30,47 +30,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PzXxPf4+FIMtiRO4xGGnPVMQe/8=
+		Sb1HfZ2Fq6xmTqctWa0V5Grd6GM=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		enh49n73+XeEO/HN3U2Z4//r51k=
+		KLjKAP9N9CVcZHeOd0adH8ememE=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BoYXklLD9X0YA/x4AZUMRv3nTb0=
+		tZD5CWfBk+KIkUEXY915AXyMKno=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9jC4IrsrLL8uQgugP6FTVQKDnI0=
+		jME4PHDTsbARjX104KCbNBPJQbs=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BoYXklLD9X0YA/x4AZUMRv3nTb0=
+		tZD5CWfBk+KIkUEXY915AXyMKno=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mbujkpOvCXBgiSegGQoeeczlmjg=
+		a2rkK8QAuEe31eSQr84qoCVkfbw=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		enh49n73+XeEO/HN3U2Z4//r51k=
+		KLjKAP9N9CVcZHeOd0adH8ememE=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eUBuzzG3gpvZyjHZ9Y681xcGEj0=
+		a/EalFI1sycufTeiMaOL0wHfojk=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PS4B3KzHsw4xhW3rzd+1GNKJ6gg=
+		OGIwBY1rMlAGMgP1fasqf3B8aSI=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eUBuzzG3gpvZyjHZ9Y681xcGEj0=
+		a/EalFI1sycufTeiMaOL0wHfojk=
 		</data>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HDtzWolyAeWdr4kibqIKrJaH/n0=
+		yDXaeFeWevIOZ6qe3AZxxIEH4aw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>PULNoInternetConnectionView.nib</key>
 		<data>
-		HTvImwQc+8kAw6hDL8h5kXE6aW8=
+		MW2Yl15lLWxHfN5eQuuXNxIpMFo=
 		</data>
 		<key>PULNormalTextBlockView.nib</key>
 		<data>
@@ -428,15 +428,15 @@
 		</data>
 		<key>PulsateModel.momd/PulsateModel.mom</key>
 		<data>
-		86YeI4+s3ZGgO6eLJgCyV72BEsI=
+		oKJPBiopq+4pRcBcLmFalMoQd8c=
 		</data>
 		<key>PulsateModel.momd/PulsateModel2.0.mom</key>
 		<data>
-		iIm1kgXUz9RENmQMKQ2WdNLtL2U=
+		MMDb+/lPhYpU6HSlwshrp08AJAw=
 		</data>
 		<key>PulsateModel.momd/PulsateModel3.0.mom</key>
 		<data>
-		iIm1kgXUz9RENmQMKQ2WdNLtL2U=
+		MMDb+/lPhYpU6HSlwshrp08AJAw=
 		</data>
 		<key>PulsateModel.momd/PulsateModel3.0.omo</key>
 		<data>
@@ -661,7 +661,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H/1F0Epm3CoBEyZJiUMAM4Up71Tf0+VLXHBi9WO1Qn8=
+			OVQWu1pULWT57HsVapVsEHVkNdSPJG5tW+mxG6fZKaY=
 			</data>
 		</dict>
 		<key>Headers/PULPulsate.h</key>
@@ -675,70 +675,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5fgMq2GVTmAhvQW91hNCa1ADEHGmRdOLxSY48YywZiQ=
+			+GL+6VtVwpaMlzYOV1V64YCQ1SgqDxMR6BKot1Ayo/0=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bAJq+Hr1bUHbxO9HACSb9pKuUwu4kljQNM4q/sGiMlo=
+			ULT6el33RzeWXJ0EyNLCJ+wv5dd+NAQXuDs+qoXlqRc=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ajElpjQxGbpV5sn4dnHrPNPFhEiVymJc5UzlFEj4kBo=
+			EVVNf0R34aOBbPI8K4IK+H6/vJkv4govUXf2hxsY2rU=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bAJq+Hr1bUHbxO9HACSb9pKuUwu4kljQNM4q/sGiMlo=
+			ULT6el33RzeWXJ0EyNLCJ+wv5dd+NAQXuDs+qoXlqRc=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6vMeo9cSih+dyrHevvh0bI8z6n9omDac6QWfl3/8Rp4=
+			EF+/yQ22F5Xac8j/Wsl4WKY+ZtV3Eb2iQ0Xte/fF8nk=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5fgMq2GVTmAhvQW91hNCa1ADEHGmRdOLxSY48YywZiQ=
+			+GL+6VtVwpaMlzYOV1V64YCQ1SgqDxMR6BKot1Ayo/0=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NWdLFDc/gUyA8S9GX0NtjycP0QyaP4P0y7stBi4upRY=
+			qBvEyLqPQ8wTsJ51BWNe4syVoUKP+2D/GWtJ2IzmOMo=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5VD1JdzkBCjifSHf0TzVz9b4DJ0cgDJb/ZMluNYiZE=
+			Buceyr320hducwznKNswDxW5IXOR1zBEQZzXBvommQ0=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NWdLFDc/gUyA8S9GX0NtjycP0QyaP4P0y7stBi4upRY=
+			qBvEyLqPQ8wTsJ51BWNe4syVoUKP+2D/GWtJ2IzmOMo=
 			</data>
 		</dict>
 		<key>Modules/PULPulsate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qd+KiUnDwCRi8AVSIRNecu5rIAqiE+4HJzpAqLMO8vA=
+			KxhwhQxc1ErDPO+TseqSNmyZLIHFpS5rjL0f+7UnnXU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -794,7 +794,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UoekuLyHImDbbU2kf2XE6rQfYnEWBwLs+gD4K03t64Y=
+			vd8gatXQ90qFn0Kv6NobYrDlrG/SEEdpjdzVymJ5VQ8=
 			</data>
 		</dict>
 		<key>PULNormalTextBlockView.nib</key>
@@ -1135,21 +1135,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uk2D7JoWSKUWB2wjHCJCr6wE+TYlTFIAtt132c679Jk=
+			r44BMA82ICYZXM/LN1q5B35CnzwnkMa7W2U/bcrFgcw=
 			</data>
 		</dict>
 		<key>PulsateModel.momd/PulsateModel2.0.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HWJtJob/Binnft3Oegmi2m8q3hlaBcMm/19S5Dxunoc=
+			Od2l2417VFlSLf/5orV/ylnNiXPDmQ8qkdFPG333HVg=
 			</data>
 		</dict>
 		<key>PulsateModel.momd/PulsateModel3.0.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HWJtJob/Binnft3Oegmi2m8q3hlaBcMm/19S5Dxunoc=
+			Od2l2417VFlSLf/5orV/ylnNiXPDmQ8qkdFPG333HVg=
 			</data>
 		</dict>
 		<key>PulsateModel.momd/PulsateModel3.0.omo</key>

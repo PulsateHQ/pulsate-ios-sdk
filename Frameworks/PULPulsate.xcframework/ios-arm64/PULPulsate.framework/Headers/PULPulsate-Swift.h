@@ -720,6 +720,42 @@ SWIFT_CLASS("_TtC10PULPulsate15PULInAppMessage")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Configuration struct for in-app message theming and layout constants
+SWIFT_CLASS("_TtC10PULPulsate26PULInAppThemeConfiguration")
+@interface PULInAppThemeConfiguration : NSObject
+/// Height constant for small in-app messages
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat smallInAppHeight;)
++ (CGFloat)smallInAppHeight SWIFT_WARN_UNUSED_RESULT;
+/// Animation duration for in-app message transitions
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval animationDuration;)
++ (NSTimeInterval)animationDuration SWIFT_WARN_UNUSED_RESULT;
+/// Maximum height ratio for big in-app messages relative to screen height
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat maxHeightRatio;)
++ (CGFloat)maxHeightRatio SWIFT_WARN_UNUSED_RESULT;
+/// Corner radius for big in-app message cards
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat bigCardCornerRadius;)
++ (CGFloat)bigCardCornerRadius SWIFT_WARN_UNUSED_RESULT;
+/// Background alpha for big in-app message overlay
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat overlayBackgroundAlpha;)
++ (CGFloat)overlayBackgroundAlpha SWIFT_WARN_UNUSED_RESULT;
+/// Border width for close button
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat closeButtonBorderWidth;)
++ (CGFloat)closeButtonBorderWidth SWIFT_WARN_UNUSED_RESULT;
+/// Height for single button layout
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat singleButtonHeight;)
++ (CGFloat)singleButtonHeight SWIFT_WARN_UNUSED_RESULT;
+/// Height for double button layout
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat doubleButtonHeight;)
++ (CGFloat)doubleButtonHeight SWIFT_WARN_UNUSED_RESULT;
+/// Background color for big in-app message overlay
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull overlayBackgroundColor;)
++ (UIColor * _Nonnull)overlayBackgroundColor SWIFT_WARN_UNUSED_RESULT;
+/// Border color for close button
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull closeButtonBorderColor;)
++ (UIColor * _Nonnull)closeButtonBorderColor SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 SWIFT_CLASS("_TtC10PULPulsate20PULInitialsImageView")
 @interface PULInitialsImageView : UIImageView
 - (void)layoutSubviews;
@@ -1576,6 +1612,16 @@ typedef SWIFT_ENUM(NSInteger, PULUserGender, open) {
   PULUserGenderPulMale = 0,
   PULUserGenderPulFemale = 1,
 };
+
+/// Error handling utility for XIB loading operations
+SWIFT_CLASS("_TtC10PULPulsate25PULXIBLoadingErrorHandler")
+@interface PULXIBLoadingErrorHandler : NSObject
+/// Reports XIB loading errors to the logging system
+/// \param error The error to report
+///
++ (void)reportError:(NSError * _Nonnull)error;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)

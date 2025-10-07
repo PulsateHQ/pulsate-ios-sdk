@@ -10210,6 +10210,627 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PULXIBLoadingErrorHandler",
+        "printedName": "PULXIBLoadingErrorHandler",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "XIBLoadingError",
+            "printedName": "XIBLoadingError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "bundleNotFound",
+                "printedName": "bundleNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "XIBLoadingError",
+                        "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                        "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O14bundleNotFoundyA2EmF",
+                "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O14bundleNotFoundyA2EmF",
+                "moduleName": "PULPulsate"
+              },
+              {
+                "kind": "Var",
+                "name": "nibNotFound",
+                "printedName": "nibNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type) -> (Swift.String) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(nibName: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O11nibNotFoundyAESS_tcAEmF",
+                "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O11nibNotFoundyAESS_tcAEmF",
+                "moduleName": "PULPulsate"
+              },
+              {
+                "kind": "Var",
+                "name": "wrongViewType",
+                "printedName": "wrongViewType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type) -> (Swift.String, Swift.String) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(expected: Swift.String, actual: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O13wrongViewTypeyAESS_SStcAEmF",
+                "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O13wrongViewTypeyAESS_SStcAEmF",
+                "moduleName": "PULPulsate"
+              },
+              {
+                "kind": "Var",
+                "name": "viewCreationFailed",
+                "printedName": "viewCreationFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type) -> (Swift.String) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(nibName: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XIBLoadingError",
+                            "printedName": "PULPulsate.PULXIBLoadingErrorHandler.XIBLoadingError",
+                            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O18viewCreationFailedyAESS_tcAEmF",
+                "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O18viewCreationFailedyAESS_tcAEmF",
+                "moduleName": "PULPulsate"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O16errorDescriptionSSSgvp",
+                "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O16errorDescriptionSSSgvp",
+                "moduleName": "PULPulsate",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O16errorDescriptionSSSgvg",
+                    "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O16errorDescriptionSSSgvg",
+                    "moduleName": "PULPulsate",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O",
+            "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC010XIBLoadingC0O",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "loadView",
+            "printedName": "loadView(nibName:owner:expectedType:fallbackCreator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> τ_0_0)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> τ_0_0",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC8loadView7nibName5owner12expectedType15fallbackCreatorxSS_ypSgxmxycSgtKSo6UIViewCRbzlFZ",
+            "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC8loadView7nibName5owner12expectedType15fallbackCreatorxSS_ypSgxmxycSgtKSo6UIViewCRbzlFZ",
+            "moduleName": "PULPulsate",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+            "sugared_genericSig": "<T where T : UIKit.UIView>",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadViewWithFallback",
+            "printedName": "loadViewWithFallback(nibName:owner:expectedType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PULPulsate25PULXIBLoadingErrorHandlerC20loadViewWithFallback7nibName5owner12expectedTypexSS_ypSgxmtSo6UIViewCRbzlFZ",
+            "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC20loadViewWithFallback7nibName5owner12expectedTypexSS_ypSgxmtSo6UIViewCRbzlFZ",
+            "moduleName": "PULPulsate",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView>",
+            "sugared_genericSig": "<T where T : UIKit.UIView>",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportError",
+            "printedName": "reportError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PULPulsate@objc(cs)PULXIBLoadingErrorHandler(cm)reportError:",
+            "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC06reportC0yys0C0_pFZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULXIBLoadingErrorHandler",
+                "printedName": "PULPulsate.PULXIBLoadingErrorHandler",
+                "usr": "c:@M@PULPulsate@objc(cs)PULXIBLoadingErrorHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PULPulsate@objc(cs)PULXIBLoadingErrorHandler(im)init",
+            "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerCACycfc",
+            "moduleName": "PULPulsate",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PULPulsate@objc(cs)PULXIBLoadingErrorHandler",
+        "mangledName": "$s10PULPulsate25PULXIBLoadingErrorHandlerC",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10226,6 +10847,727 @@
         "moduleName": "PULPulsate",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PULInAppThemeConfiguration",
+        "printedName": "PULInAppThemeConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "smallInAppHeight",
+            "printedName": "smallInAppHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)smallInAppHeight",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC07smallInC6Height12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)smallInAppHeight",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC07smallInC6Height12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "animationDuration",
+            "printedName": "animationDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)animationDuration",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC17animationDurationSdvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)animationDuration",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC17animationDurationSdvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxHeightRatio",
+            "printedName": "maxHeightRatio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)maxHeightRatio",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC14maxHeightRatio12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)maxHeightRatio",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC14maxHeightRatio12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigCardCornerRadius",
+            "printedName": "bigCardCornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)bigCardCornerRadius",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC19bigCardCornerRadius12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)bigCardCornerRadius",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC19bigCardCornerRadius12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overlayBackgroundAlpha",
+            "printedName": "overlayBackgroundAlpha",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)overlayBackgroundAlpha",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22overlayBackgroundAlpha12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)overlayBackgroundAlpha",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22overlayBackgroundAlpha12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonBorderWidth",
+            "printedName": "closeButtonBorderWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)closeButtonBorderWidth",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22closeButtonBorderWidth12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)closeButtonBorderWidth",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22closeButtonBorderWidth12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "singleButtonHeight",
+            "printedName": "singleButtonHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)singleButtonHeight",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC18singleButtonHeight12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)singleButtonHeight",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC18singleButtonHeight12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "doubleButtonHeight",
+            "printedName": "doubleButtonHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)doubleButtonHeight",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC18doubleButtonHeight12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)doubleButtonHeight",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC18doubleButtonHeight12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overlayBackgroundColor",
+            "printedName": "overlayBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)overlayBackgroundColor",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22overlayBackgroundColorSo7UIColorCvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)overlayBackgroundColor",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22overlayBackgroundColorSo7UIColorCvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonBorderColor",
+            "printedName": "closeButtonBorderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cpy)closeButtonBorderColor",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22closeButtonBorderColorSo7UIColorCvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(cm)closeButtonBorderColor",
+                "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC22closeButtonBorderColorSo7UIColorCvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "customize",
+            "printedName": "customize(smallHeight:cornerRadius:overlayAlpha:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PULPulsate26PULInAppThemeConfigurationC9customize11smallHeight12cornerRadius12overlayAlphay14CoreFoundation7CGFloatVSg_A2KtFZ",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC9customize11smallHeight12cornerRadius12overlayAlphay12CoreGraphics7CGFloatVSg_A2KtFZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULInAppThemeConfiguration",
+                "printedName": "PULPulsate.PULInAppThemeConfiguration",
+                "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration(im)init",
+            "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationCACycfc",
+            "moduleName": "PULPulsate",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PULPulsate@objc(cs)PULInAppThemeConfiguration",
+        "mangledName": "$s10PULPulsate26PULInAppThemeConfigurationC",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -30508,6 +31850,36 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PULPulsate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -50185,6 +51557,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Big\/PULBigInAppMessageController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1613,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/TransitioningAnimations\/PULGrowingFromFrameTransition.swift",
       "kind": "BooleanLiteral",
       "offset": 338,
@@ -51970,6 +53349,83 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 457,
+      "length": 2,
+      "value": "85"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "FloatLiteral",
+      "offset": 579,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "FloatLiteral",
+      "offset": 715,
+      "length": 4,
+      "value": "0.90"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 867,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "FloatLiteral",
+      "offset": 987,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1091,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1190,
+      "length": 2,
+      "value": "68"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1290,
+      "length": 3,
+      "value": "114"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1466,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1476,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1485,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Performance\/CrashEye\/Classes\/CrashEye.swift",
       "kind": "IntegerLiteral",
       "offset": 992,
@@ -52496,15 +53952,8 @@
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Small\/PULSmallInAppMessageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 418,
-      "length": 2,
-      "value": "85"
-    },
-    {
-      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/InApp\/Small\/PULSmallInAppMessageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 673,
+      "offset": 719,
       "length": 5,
       "value": "false"
     },

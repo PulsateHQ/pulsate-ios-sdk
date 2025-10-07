@@ -287,6 +287,49 @@ extension PULPulsate.PULPulsateManager {
   @objc dynamic public func getAllLocations() -> [PULPulsate.PULLocation]
   @objc dynamic public func resetStoredLocations() throws
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class PULXIBLoadingErrorHandler : ObjectiveC.NSObject {
+  public enum XIBLoadingError : Swift.Error, Foundation.LocalizedError {
+    case bundleNotFound
+    case nibNotFound(nibName: Swift.String)
+    case wrongViewType(expected: Swift.String, actual: Swift.String)
+    case viewCreationFailed(nibName: Swift.String)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var errorDescription: Swift.String? {
+      get
+    }
+    #endif
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loadView<T>(nibName: Swift.String, owner: Any?, expectedType: T.Type, fallbackCreator: (() -> T)? = nil) throws -> T where T : UIKit.UIView
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loadViewWithFallback<T>(nibName: Swift.String, owner: Any?, expectedType: T.Type) -> T where T : UIKit.UIView
+  #endif
+  @objc public static func reportError(_ error: any Swift.Error)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PULInAppThemeConfiguration : ObjectiveC.NSObject {
+  @objc public static let smallInAppHeight: CoreFoundation.CGFloat
+  @objc public static let animationDuration: Swift.Double
+  @objc public static let maxHeightRatio: CoreFoundation.CGFloat
+  @objc public static let bigCardCornerRadius: CoreFoundation.CGFloat
+  @objc public static let overlayBackgroundAlpha: CoreFoundation.CGFloat
+  @objc public static let closeButtonBorderWidth: CoreFoundation.CGFloat
+  @objc public static let singleButtonHeight: CoreFoundation.CGFloat
+  @objc public static let doubleButtonHeight: CoreFoundation.CGFloat
+  @objc public static var overlayBackgroundColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public static var closeButtonBorderColor: UIKit.UIColor {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func customize(smallHeight: CoreFoundation.CGFloat? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, overlayAlpha: CoreFoundation.CGFloat? = nil)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULTopViewController : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getTopMostViewController() -> Any?

@@ -865,6 +865,9 @@ extension UIKit.UIDevice {
   @objc @_Concurrency.MainActor @preconcurrency public func getDeviceInfo(_ withPermissions: Swift.Bool) -> PULPulsate.PULDevice?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public func getDeviceInfoAsync(withPermissions: Swift.Bool, completion: @escaping (PULPulsate.PULDevice?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   #endif
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data)

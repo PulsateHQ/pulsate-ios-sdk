@@ -1456,13 +1456,15 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 @interface PULSystemManager : NSObject <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (nonnull instancetype)initWithPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate OBJC_DESIGNATED_INITIALIZER;
+/// Gets device information with real-time accurate push permissions (UI-safe)
+/// Returns instantly with automatically maintained up-to-date permission status<br/>
+/// Push permissions are kept fresh by intelligent background updates
+/// \param withPermissions Whether to include permission data
+///
 ///
 /// returns:
-///
+/// PULDevice with current, accurate permission information
 - (PULDevice * _Nullable)getDeviceInfo:(BOOL)withPermissions SWIFT_WARN_UNUSED_RESULT;
-/// Async version of getDeviceInfo that provides real-time push permission status
-/// Use this when you need accurate, up-to-date push permission status without blocking UI
-- (void)getDeviceInfoAsyncWithPermissions:(BOOL)withPermissions completion:(void (^ _Nonnull)(PULDevice * _Nullable))completion;
 - (id <UIApplicationDelegate, UNUserNotificationCenterDelegate> _Nullable)getPulsateSystemManager SWIFT_WARN_UNUSED_RESULT;
 /// <ul>
 ///   <li>
@@ -3092,13 +3094,15 @@ SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 @interface PULSystemManager : NSObject <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (nonnull instancetype)initWithPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate OBJC_DESIGNATED_INITIALIZER;
+/// Gets device information with real-time accurate push permissions (UI-safe)
+/// Returns instantly with automatically maintained up-to-date permission status<br/>
+/// Push permissions are kept fresh by intelligent background updates
+/// \param withPermissions Whether to include permission data
+///
 ///
 /// returns:
-///
+/// PULDevice with current, accurate permission information
 - (PULDevice * _Nullable)getDeviceInfo:(BOOL)withPermissions SWIFT_WARN_UNUSED_RESULT;
-/// Async version of getDeviceInfo that provides real-time push permission status
-/// Use this when you need accurate, up-to-date push permission status without blocking UI
-- (void)getDeviceInfoAsyncWithPermissions:(BOOL)withPermissions completion:(void (^ _Nonnull)(PULDevice * _Nullable))completion;
 - (id <UIApplicationDelegate, UNUserNotificationCenterDelegate> _Nullable)getPulsateSystemManager SWIFT_WARN_UNUSED_RESULT;
 /// <ul>
 ///   <li>

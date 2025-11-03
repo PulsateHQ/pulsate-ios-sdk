@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PULPulsate
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import BackgroundTasks
 import CommonCrypto
 import CoreData
@@ -23,14 +23,18 @@ import _SwiftConcurrencyShims
 extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency public func remove()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController, frame: CoreFoundation.CGRect? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public func remove(_ child: UIKit.UIViewController)
 }
 extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public func removeAllConstraints()
 }
-@_inheritsConvenienceInitializers @objc(PULDBUserAction) public class PULDBUserAction : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(PULDBUserAction) nonisolated public class PULDBUserAction : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULButton : UIKit.UIButton {
@@ -48,7 +52,9 @@ extension UIKit.UIView {
     @objc set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULLabelsConfiguration : ObjectiveC.NSObject {
@@ -91,49 +97,73 @@ extension UIKit.UIView {
 }
 @objc @objcMembers public class PULDynamicViewBlocks : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var viewBlocks: [Any]?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   @objc deinit
 }
 extension PULPulsate.PULLocationEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULLocationEntity>
-  @objc @NSManaged dynamic public var horizontalAccuracy: Foundation.NSNumber? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var horizontalAccuracy: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var latitude: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var latitude: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var longitude: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var longitude: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timeStampAsString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timeStampAsString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var verticalAccuracy: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var verticalAccuracy: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timeStamp: Foundation.Date? {
     @objc get
     @objc set
   }
+  #endif
 }
 @objc @objcMembers public class PULCustomAttributeAdapter : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var key: Swift.String?
   @objc public var value: Swift.String?
   @objc public var action: Swift.String?
   @objc public var type: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(dbObject dbCustomAttribute: PULPulsate.PULDBCustomAttribute?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
   @objc override dynamic public var hash: Swift.Int {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 public enum PULTextStyle : Swift.Int {
@@ -142,15 +172,21 @@ public enum PULTextStyle : Swift.Int {
   case pulSmallText
   case pulSmallHeaderText
   case pulHeading
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 extension UIKit.UIImageView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func pul_setImage(withURL url: Foundation.URL?, placeholder: UIKit.UIImage? = nil, cacheKey: Swift.String? = nil, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func pul_setImage(withFileName fileName: Swift.String?, placeholder: UIKit.UIImage? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public func pul_cancelImageLoad()
 }
 @objc public enum PULCallToActionType : Swift.Int {
@@ -162,7 +198,9 @@ extension UIKit.UIImageView {
   case pulOpenFeed
   case pulShowFeedBackCard
   case pulShowFeed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -179,8 +217,10 @@ extension UIKit.UIImageView {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PULDBEvent) public class PULDBEvent : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(PULDBEvent) nonisolated public class PULDBEvent : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class PULImageCache : ObjectiveC.NSObject {
@@ -191,49 +231,112 @@ extension UIKit.UIImageView {
 }
 extension PULPulsate.PULDebugLog {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDebugLog>
-  @objc @NSManaged dynamic public var message: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var message: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var messageType: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var messageType: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timeStamp: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timeStamp: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uid: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uid: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 @objc public protocol PULJSONSerializable : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
 }
 @objc public protocol PULPulsateUnauthorizedManagerDelegate {
   @objc func unauthorizedAction(_ action: Swift.String)
 }
 @objc @objcMembers public class PULSwipeToHideManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(view: UIKit.UIView?, andHideEventBlock hideEventBlock: @escaping (Swift.Bool) -> Swift.Void, andTimeoutEventBlock timeoutEventBlock: @escaping () -> Swift.Void)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class PulsateBundle {
   public static let main: Foundation.Bundle
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PULDBImpression) public class PULDBImpression : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(PULDBImpression) nonisolated public class PULDBImpression : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 extension PULPulsate.PULPulsateManager {
   @objc dynamic public func getAllLocations() -> [PULPulsate.PULLocation]
   @objc dynamic public func resetStoredLocations() throws
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class PULXIBLoadingErrorHandler : ObjectiveC.NSObject {
+  public enum XIBLoadingError : Swift.Error, Foundation.LocalizedError {
+    case bundleNotFound
+    case nibNotFound(nibName: Swift.String)
+    case wrongViewType(expected: Swift.String, actual: Swift.String)
+    case viewCreationFailed(nibName: Swift.String)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var errorDescription: Swift.String? {
+      get
+    }
+    #endif
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loadView<T>(nibName: Swift.String, owner: Any?, expectedType: T.Type, fallbackCreator: (() -> T)? = nil) throws -> T where T : UIKit.UIView
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loadViewWithFallback<T>(nibName: Swift.String, owner: Any?, expectedType: T.Type) -> T where T : UIKit.UIView
+  #endif
+  @objc public static func reportError(_ error: any Swift.Error)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PULInAppThemeConfiguration : ObjectiveC.NSObject {
+  @objc public static let smallInAppHeight: CoreFoundation.CGFloat
+  @objc public static let animationDuration: Swift.Double
+  @objc public static let maxHeightRatio: CoreFoundation.CGFloat
+  @objc public static let bigCardCornerRadius: CoreFoundation.CGFloat
+  @objc public static let overlayBackgroundAlpha: CoreFoundation.CGFloat
+  @objc public static let closeButtonBorderWidth: CoreFoundation.CGFloat
+  @objc public static let singleButtonHeight: CoreFoundation.CGFloat
+  @objc public static let doubleButtonHeight: CoreFoundation.CGFloat
+  @objc public static var overlayBackgroundColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc public static var closeButtonBorderColor: UIKit.UIColor {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func customize(smallHeight: CoreFoundation.CGFloat? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, overlayAlpha: CoreFoundation.CGFloat? = nil)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULTopViewController : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getTopMostViewController() -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func unwrapTopMostViewController() -> UIKit.UIViewController?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -244,18 +347,26 @@ extension PULPulsate.PULPulsateManager {
   @objc public var timestamp: Foundation.NSNumber?
   @objc public var timestampsArray: [Any]?
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
   @objc override dynamic public var hash: Swift.Int {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 public enum CrashModelType : Swift.Int {
   case signal
   case exception
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -270,16 +381,28 @@ public enum CrashModelType : Swift.Int {
   @objc public var age: Foundation.NSNumber?
   @objc public var isMale: Foundation.NSNumber?
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULCallToActionBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var buttons: [Any]?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getViewIdentifier() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCacheIdentifier() -> Swift.String?
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULDevice : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
@@ -301,37 +424,55 @@ public enum CrashModelType : Swift.Int {
   @objc public var isBackgroundLocationEnabled: Foundation.NSNumber?
   @objc public var isPushEnabled: Foundation.NSNumber?
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PULDebugLog) public class PULDebugLog : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(PULDebugLog) nonisolated public class PULDebugLog : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @objc public protocol PULBlockDataInjectable : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func injectData(_ data: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func injectData(_ data: Any?, isInApp: Swift.Bool)
+  #endif
 }
 extension PULPulsate.PULDBEvent {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBEvent>
-  @objc @NSManaged dynamic public var lat: Foundation.NSNumber? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lat: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lon: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lon: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timestamp: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timestamp: Foundation.NSNumber? {
     @objc get
     @objc set
   }
+  #endif
 }
 @objc @objcMembers public class PULAccessToken : ObjectiveC.NSObject {
   @objc public var accessToken: Swift.String?
   @objc public var deviceGUID: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(authorizationData authData: PULPulsate.PULAuthorizationData?)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULLocation : ObjectiveC.NSObject, Swift.Codable {
@@ -352,11 +493,19 @@ extension PULPulsate.PULDBEvent {
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULButtonTouchViewEffect : PULPulsate.PULButton {
   @objc @_Concurrency.MainActor @preconcurrency public var touchDownColor: UIKit.UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 public typealias RequestListener = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
@@ -366,7 +515,9 @@ public typealias Completion = () -> Swift.Void
 @objc public enum PULUserGender : Swift.Int {
   case pulMale
   case pulFemale
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -375,7 +526,9 @@ public typealias Completion = () -> Swift.Void
 @objc public enum PULPrivacyLevel : Swift.Int {
   case pulPrivacySubscribed
   case pulPrivacyUnsubscribed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -390,7 +543,9 @@ public typealias Completion = () -> Swift.Void
   @objc public func logout(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func startLocation()
   @objc public func isDebugLoggingEnabled() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getFeedNavigationController(completion: PULPulsate.Completion? = nil) -> UIKit.UINavigationController?
+  #endif
   @objc public func closeAutomaticallyOpenedFeed()
   @objc public func setPushNotificationEnabled(_ enabled: Swift.Bool)
   @objc public func isPushNotificationEnabled() -> Swift.Bool
@@ -408,40 +563,87 @@ public typealias Completion = () -> Swift.Void
   @objc public func showLastInAppNotification(_ forceShow: Swift.Bool = false)
   @objc public func setUserAuthorized(_ authorized: Swift.Bool)
   @objc public func isUserAuthorized() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updateFirstName(_ firstName: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updateLastName(_ lastName: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updateEmail(_ email: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updatePhoneNumber(_ phoneNumber: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getPhoneNumber() -> Swift.String?
+  #endif
   @objc public func updateAge(_ age: Swift.Int)
   @objc public func updateGender(_ gender: PULPulsate.PULUserGender)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createAttribute(_ propertyName: Swift.String?, withString value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createAttribute(_ propertyName: Swift.String?, withDecimal number: Foundation.NSDecimalNumber?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createAttribute(_ propertyName: Swift.String?, withInteger number: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createAttribute(_ propertyName: Swift.String?, withBoolean boolean: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createAttribute(_ propertyName: Swift.String?, withDate date: Foundation.Date?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func incrementIntegerAttribute(_ attributeName: Swift.String?, withInteger value: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func decrementIntegerAttribute(_ attributeName: Swift.String?, withInteger value: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func incrementDecimalAttribute(_ attributeName: Swift.String?, withDecimal value: Foundation.NSDecimalNumber?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func decrementDecimalAttribute(_ attributeName: Swift.String?, withDecimal value: Foundation.NSDecimalNumber?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createEvent(_ event: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createEvents(_ event: [Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createRevenueEvent(_ revenueEvent: PULPulsate.PULRevenueEvent?)
+  #endif
   @objc public func forceAttributeSync()
   @objc public func showCampaignExpired()
-  @objc public func sendLocation(withBeaconEvents sendLocation: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getDeviceGuid() -> Swift.String?
+  #endif
   @objc public func getFeedUnreadCount(completion: @escaping (Swift.Int) -> Swift.Void)
   @objc public func getBadgeCount()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func saveUnauthorizedCampaign(withGUID guid: Swift.String?, andTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func saveUnauthorizedMessage(withGUID guid: Swift.String?, andTitle title: Swift.String?, andAdminHeader adminHeader: PULPulsate.PULAdminHeaderBlock?, andCampaignGuid campaignGuid: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func saveUnauthorizedCtaAction(_ destination_type: Swift.String?, andDestination destination: Swift.String?)
+  #endif
   @objc public func showLastUnauthorizedMessage()
   @objc public func removeUnauthorizedMessage()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func receivedCampaign(_ campaignGUID: Swift.String?, withTitle title: Swift.String?, andNotificationMessage notificationMessage: Swift.String?, fromForeground foreground: Swift.Bool, fromClick isClick: Swift.Bool) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func received(_ inAppMessage: PULPulsate.PULInAppMessage?, _ forceShow: Swift.Bool)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
+  #endif
   @objc public func startBackgroundUpdates(_ listener: @escaping PULPulsate.RequestListener)
   @objc public func setPULPulsateLinkListener(_ listener: @escaping PULPulsate.PULPulsateLinkListener)
   @objc public func userHasLoggedIn()
@@ -458,29 +660,53 @@ public typealias Completion = () -> Swift.Void
   @objc @_Concurrency.MainActor @preconcurrency public var onlyChangeAlpha: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public func startTint()
   @objc @_Concurrency.MainActor @preconcurrency public func endTint()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PULDynamicCardViewController : UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public init(renderables viewBlocksRenderables: [Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func refresh(withRenderables viewBlocksRenderables: [Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func getAccessibilityMessage(_ viewBlocksRenderables: [Any]?) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public class func getEsimatedHeight(forRenderables viewBlockRenderables: [Swift.AnyObject]?, withWidth width: Swift.Int) -> Swift.Int
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func setSubviewsBackgroundColor(_ color: UIKit.UIColor?)
+  #endif
   @objc deinit
 }
 extension Foundation.Data {
   public func sha256() -> Swift.String
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sha256() -> Swift.String?
+  #endif
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PULNavigationController : UIKit.UINavigationController {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(rootViewController: UIKit.UIViewController)
@@ -491,15 +717,23 @@ extension Swift.String {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PULInitialsImageView : UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var image: UIKit.UIImage? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULDynamicImageView : UIKit.UIImageView {
@@ -511,11 +745,17 @@ extension Swift.String {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULImageViewBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
@@ -525,45 +765,64 @@ extension Swift.String {
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var bottomConstraint: UIKit.NSLayoutConstraint!
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var topConstraint: UIKit.NSLayoutConstraint!
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULTextBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var contentText: Swift.String?
   public var textStyle: PULPulsate.PULTextStyle?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getViewIdentifier() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCacheIdentifier() -> Swift.String?
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PULPulsateFactory : ObjectiveC.NSObject {
   @objc public class func setBaseUrl(_ baseUrl: Swift.String)
   @objc public class func setHTMLFeedBaseUrl(_ baseUrl: Swift.String)
   @objc public class func getHTMLFeedBaseUrl() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getBaseUrl() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getInstance(withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum PULBeaconAction : Swift.Int {
-  case pulBeaconExit
-  case pulBeaconEnter
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc @objcMembers public class PULInAppMessage : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULImageView : UIKit.UIImageView {
@@ -577,15 +836,23 @@ extension Swift.String {
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc @_Concurrency.MainActor @preconcurrency public func setImageColor(to color: UIKit.UIColor)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULAuthorizationData : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(withAppId pAppId: Swift.String?, andAppKey pAppKey: Swift.String?) throws
+  #endif
   @objc deinit
 }
 extension UIKit.UIDevice {
@@ -594,15 +861,23 @@ extension UIKit.UIDevice {
 @objc @objcMembers @_Concurrency.MainActor @preconcurrency public class PULSystemManager : ObjectiveC.NSObject, UIKit.UIApplicationDelegate, UserNotifications.UNUserNotificationCenterDelegate {
   @_Concurrency.MainActor @preconcurrency @objc public var window: UIKit.UIWindow?
   @objc @_Concurrency.MainActor @preconcurrency public init(pulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func getDeviceInfo(_ withPermissions: Swift.Bool) -> PULPulsate.PULDevice?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data)
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc @_Concurrency.MainActor @preconcurrency public func handlePulsatePushNotificationPayload(response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func handleActionButton(_ btnDictionary: [Swift.String : Any]?, withGuid guid: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
   @objc @_Concurrency.MainActor @preconcurrency public func getAllNotificationCategories() -> Swift.Set<UserNotifications.UNNotificationCategory>
   @_Concurrency.MainActor @preconcurrency @objc public func applicationDidBecomeActive(_ application: UIKit.UIApplication)
@@ -611,21 +886,31 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency @objc public func applicationWillResignActive(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor @preconcurrency @objc public func applicationWillTerminate(_ application: UIKit.UIApplication)
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULRemoteStorage : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(accessToken token: PULPulsate.PULAccessToken?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PULNormalTextBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var contentLabel: UIKit.UILabel!
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency public class func getEstimatedHeightForText(forData data: Swift.AnyObject, andWidth width: Swift.UInt) -> Swift.UInt
   @_Concurrency.MainActor @preconcurrency public class func getFont(forStyle style: PULPulsate.PULTextStyle) -> UIKit.UIFont
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc public enum PULCurrency : Swift.Int {
@@ -662,42 +947,70 @@ extension UIKit.UIDevice {
   case TRY
   case USD
   case ZAR
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc @objcMembers public class PULRevenueEvent : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAllCurrencyList() -> [PULPulsate.PULCurrency]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(name eventName: Swift.String?, andAmount amount: Foundation.NSDecimalNumber?, andCurrency currency: PULPulsate.PULCurrency)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func formatCurrency(toString currency: PULPulsate.PULCurrency) -> Swift.String?
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PULBaseViewController : UIKit.UIViewController {
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
 }
-@_inheritsConvenienceInitializers @objc(PULDBCustomAttribute) public class PULDBCustomAttribute : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(PULDBCustomAttribute) nonisolated public class PULDBCustomAttribute : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PULKeyValueTextBlockView : UIKit.UIView, PULPulsate.PULBlockDataInjectable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PULLocationEntity) public class PULLocationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(PULLocationEntity) nonisolated public class PULLocationEntity : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULEventAdapter : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dbObject dbEvent: PULPulsate.PULDBEvent?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
   @objc deinit
 }
 public typealias ButtonCallback = (Swift.String) -> Swift.Void
@@ -705,10 +1018,16 @@ public typealias ButtonCallback = (Swift.String) -> Swift.Void
   @objc @_Concurrency.MainActor @preconcurrency public var callBack: PULPulsate.ButtonCallback?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @objc @_Concurrency.MainActor @preconcurrency public func setCorners(_ corner: CoreFoundation.CGFloat)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func injectData(_ data: Any?, isInApp: Swift.Bool)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class PULStringKey : ObjectiveC.NSObject {
@@ -801,41 +1120,57 @@ public typealias ButtonCallback = (Swift.String) -> Swift.Void
 }
 extension PULPulsate.PULDBImpression {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBImpression>
-  @objc @NSManaged dynamic public var guid: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var guid: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isTalkImpression: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var isTalkImpression: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timestamp: Foundation.Date? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension PULPulsate.PULDBCustomAttribute {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBCustomAttribute>
-  @objc @NSManaged dynamic public var action: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var action: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var creationTimeTimestamp: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var creationTimeTimestamp: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var key: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var key: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var value: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var value: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
@@ -894,9 +1229,15 @@ public class Reachability {
   public var connection: PULPulsate.Reachability.Connection {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  #endif
   @objc deinit
 }
 extension PULPulsate.Reachability {
@@ -976,29 +1317,41 @@ extension PULPulsate.Reachability {
 }
 extension PULPulsate.PULDBUserAction {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<PULPulsate.PULDBUserAction>
-  @objc @NSManaged dynamic public var action: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var action: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var guid: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var guid: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timestamp: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 @objc @objcMembers public class PULImageBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var imageUrl: Swift.String?
   @objc public var width: Foundation.NSNumber?
   @objc public var height: Foundation.NSNumber?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULAdminHeaderBlock : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
@@ -1006,28 +1359,42 @@ extension PULPulsate.PULDBUserAction {
   @objc public var adminName: Swift.String?
   @objc public var title: Swift.String?
   @objc public var message: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PULBlurredView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func setBlurredBackgroundViewWithColorIdentifier(_ colorIdentifier: Swift.String?)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @objc @_Concurrency.MainActor @preconcurrency public func addSeparationLine(atBottom bottom: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PULImpressionRecord : ObjectiveC.NSObject, PULPulsate.PULJSONSerializable {
   @objc public var guid: Swift.String?
   @objc public var isTalk: Swift.Bool
   @objc public var impressionTimestamps: [Foundation.Date]?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init(dictionary: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getValueDictionary() -> [Swift.AnyHashable : Any]?
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PULPulsateError : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func createKeyError(withDescription description: Swift.String?, andCode errorCode: Swift.Int) -> (any Swift.Error)?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1046,9 +1413,6 @@ extension PULPulsate.PULUserGender : Swift.RawRepresentable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Equatable {}
 extension PULPulsate.PULPrivacyLevel : Swift.Hashable {}
 extension PULPulsate.PULPrivacyLevel : Swift.RawRepresentable {}
-extension PULPulsate.PULBeaconAction : Swift.Equatable {}
-extension PULPulsate.PULBeaconAction : Swift.Hashable {}
-extension PULPulsate.PULBeaconAction : Swift.RawRepresentable {}
 extension PULPulsate.PULSystemManager : Swift.Sendable {}
 extension PULPulsate.PULCurrency : Swift.Equatable {}
 extension PULPulsate.PULCurrency : Swift.Hashable {}

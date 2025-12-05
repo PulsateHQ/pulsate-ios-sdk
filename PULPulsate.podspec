@@ -1,18 +1,27 @@
 Pod::Spec.new do |s|
-  s.name             = "PULPulsate"
-  s.version          = "4.8.2"
-  s.summary          = "Pulsate SDK"
+  s.name        = 'PULPulsate'
+  s.version     = '4.8.2'
+  s.summary     = 'Pulsate SDK'
+ 
+  s.homepage    = 'https://pulsatehq.com/'
 
-  s.homepage         = "http://pulsatehq.com/"
+  s.license     = { :type => 'Commercial', :file => 'LICENSE' }
 
-  s.license          = 'Commercial'
-  s.author           = { "Pulsate" => "http://pulsatehq.com/" }
-  s.source           = { :git => "https://github.com/PulsateHQ/pulsate-ios-sdk.git", :tag => s.version.to_s }
+  s.authors     = { 'Pulsate' => 'support@pulsatehq.com' }
 
-  s.platform     = :ios, '13.0'
-  s.swift_version = '5.0'
-  s.requires_arc = true
+  s.source      = { :git => 'https://github.com/PulsateHQ/pulsate-ios-sdk.git',
+                    :tag => s.version.to_s }
+
+  s.ios.deployment_target = '13.0'
+
+  s.requires_arc   = true
+
+  s.swift_versions = ['5.0']
+
   s.vendored_frameworks = 'Frameworks/PULPulsate.xcframework'
+
   s.frameworks = 'CoreData', 'CoreLocation', 'SystemConfiguration', 'CoreBluetooth'
+
   s.static_framework = false
 end
+

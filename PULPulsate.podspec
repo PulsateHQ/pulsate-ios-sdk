@@ -2,8 +2,9 @@ Pod::Spec.new do |s|
   s.name        = 'PULPulsate'
   s.version     = '4.8.2'
   s.summary     = 'Pulsate SDK'
- 
-  s.homepage    = 'https://pulsatehq.com/'
+  s.description = 'Pulsate SDK for iOS - Mobile engagement platform for push notifications, in-app messaging, and location-based marketing.'
+
+  s.homepage    = 'https://github.com/PulsateHQ/pulsate-ios-sdk'
 
   s.license     = { :type => 'Commercial', :file => 'LICENSE' }
 

@@ -51883,7 +51883,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 7,
-      "value": "\"4.8.2\""
+      "value": "\"4.8.3\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -52756,21 +52756,35 @@
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7919,
+      "offset": 7915,
+      "length": 16,
+      "value": "\"PULStoredAppId\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 7957,
+      "length": 17,
+      "value": "\"PULStoredAppKey\""
+    },
+    {
+      "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 8030,
       "length": 16,
       "value": "\"PULDebugAction\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7970,
+      "offset": 8081,
       "length": 21,
       "value": "\"PULDebugActionValue\""
     },
     {
       "filePath": "\/Users\/ali\/Projects\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8064,
+      "offset": 8175,
       "length": 46,
       "value": "\"https:\/\/vercel-ack-server.vercel.app\/api\/ack\""
     },

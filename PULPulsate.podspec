@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'PULPulsate'
-  s.version     = '4.8.3'
+  s.version     = '4.9.0'
   s.summary     = 'Pulsate SDK'
   s.description = 'Pulsate SDK for iOS - Mobile engagement platform for push notifications, in-app messaging, and location-based marketing.'
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source      = { :git => 'https://github.com/PulsateHQ/pulsate-ios-sdk.git',
                     :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
 
   s.requires_arc   = true
 

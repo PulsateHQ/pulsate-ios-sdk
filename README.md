@@ -4,7 +4,7 @@
 
 # Pulsate iOS SDK
 
-• [iOS SDK Installation & Documentation](https://pulsate.readme.io/v2.7/docs/installing-the-pulsate-sdk)
+• [iOS SDK Installation & Documentation](https://docs.pulsatehq.com/v2.7.2/reference/installing-the-ios-pulsate-sdk)
 
 # Installation with CocoaPods
 
@@ -18,7 +18,7 @@ From Xcode 11 onwards, you can use [Swift Package Manager](https://swift.org/pac
 
 1. Select File > Swift Packages > Add Package Dependency
 2. Enter the repository URL: https://github.com/PulsateHQ/pulsate-ios-sdk.git
-3. Specify the version: Version 4.7.2 or later
+3. Specify the version: Version 4.10.0 or later
 
 ## Troubleshooting Swift Package Manager Issues
 

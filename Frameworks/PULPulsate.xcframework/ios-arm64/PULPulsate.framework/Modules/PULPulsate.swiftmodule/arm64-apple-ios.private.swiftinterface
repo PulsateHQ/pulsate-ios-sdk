@@ -577,8 +577,12 @@ extension Swift.String {
   @objc public class func setHTMLFeedBaseUrl(_ baseUrl: Swift.String)
   @objc public class func getHTMLFeedBaseUrl() -> Swift.String
   @objc public class func getBaseUrl() -> Swift.String?
+  @available(*, deprecated, message: "Pulsate acting as your app delegate is deprecated and will be removed in a future major release. Call getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:) and forward the push callbacks to getPulsateSystemManager(). Foreground/background need no forwarding since 4.10.0.")
   @objc public class func getInstance(withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
+  @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
+  @available(*, deprecated, message: "withPulsateAppDelegate will be removed in a future major release, together with Pulsate acting as your app delegate. Call getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:) - the same as passing withPulsateAppDelegate: false - and forward the push callbacks to getPulsateSystemManager(). Foreground/background need no forwarding since 4.10.0.")
   @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?, withPulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool) throws -> PULPulsate.PULPulsateManager
+  @available(*, deprecated, message: "Pulsate acting as your app delegate is deprecated and will be removed in a future major release. Call getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:) and forward the push callbacks to getPulsateSystemManager(). Foreground/background need no forwarding since 4.10.0.")
   @objc public class func getInstance(withAuthorizationData authorizationData: PULPulsate.PULAuthorizationData?, withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?) throws -> PULPulsate.PULPulsateManager
   @objc public class func getDefaultInstance() -> PULPulsate.PULPulsateManager?
   @objc override dynamic public init()
@@ -614,9 +618,9 @@ extension Swift.String {
 extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
 }
-@objc @objcMembers @_Concurrency.MainActor @preconcurrency public class PULSystemManager : ObjectiveC.NSObject, UIKit.UIApplicationDelegate, UserNotifications.UNUserNotificationCenterDelegate {
+@objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PULSystemManager : ObjectiveC.NSObject, UIKit.UIApplicationDelegate, UserNotifications.UNUserNotificationCenterDelegate {
   @_Concurrency.MainActor @preconcurrency @objc public var window: UIKit.UIWindow?
-  @objc @_Concurrency.MainActor @preconcurrency public init(pulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(pulsateAppDelegate isPulsateAppDelegate: Swift.Bool, andPulsateNotificationDelegate isPulsateNotificationDelegate: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public func getDeviceInfo(_ withPermissions: Swift.Bool) -> PULPulsate.PULDevice?
   @objc @_Concurrency.MainActor @preconcurrency public func getPulsateSystemManager() -> (any UIKit.UIApplicationDelegate & UserNotifications.UNUserNotificationCenterDelegate)?
   @_Concurrency.MainActor @preconcurrency @objc public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data)

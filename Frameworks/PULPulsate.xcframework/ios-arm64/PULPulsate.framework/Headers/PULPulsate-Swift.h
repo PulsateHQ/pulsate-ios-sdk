@@ -980,9 +980,34 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns nil if keys weren’t found
-+ (PULPulsateManager * _Nullable)getInstanceWithLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Pulsate acting as your app delegate is deprecated and will be removed in a future major release. Call getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:) and forward the push callbacks to getPulsateSystemManager(). Foreground/background need no forwarding since 4.10.0.");
+/// Creates pulsate manager instance with given API keys. If an instance already exists
+/// it returns it instead. This is the initializer to use: Pulsate never replaces your app delegate.
+/// Forward <code>application(_:didRegisterForRemoteNotificationsWithDeviceToken:)</code>,
+/// <code>application(_:didFailToRegisterForRemoteNotificationsWithError:)</code> and
+/// <code>application(_:didReceiveRemoteNotification:fetchCompletionHandler:)</code> to <code>getPulsateSystemManager()</code>.
+/// Foreground and background need no forwarding.
+/// \param authorizationData authorization data
+///
+/// \param launchOptions launchOptions should be passed from the app delegate
+///
+/// \param isPulsateNotificationDelegate <code>true</code> makes Pulsate the <code>UNUserNotificationCenter</code> delegate. With <code>false</code>, set
+/// your own delegate before <code>application(_:didFinishLaunchingWithOptions:)</code>
+/// returns and forward <code>userNotificationCenter(_:willPresent:withCompletionHandler:)</code>
+/// and <code>userNotificationCenter(_:didReceive:withCompletionHandler:)</code> for pushes whose
+/// <code>sender</code> is <code>Pulsate</code> or <code>PulsateDebug</code>.
+///
+/// \param error error
+///
+///
+/// returns:
+/// returns Pulsate Manager instance
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Creates pulsate manager instance with given API keys. If an instance already exists
 /// it returns it instead.
+/// Deprecated: <code>withPulsateAppDelegate</code> goes away with app-delegate mode in a future major release. Use
+/// <code>getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:)</code>, which behaves exactly
+/// like this with <code>withPulsateAppDelegate: false</code>.
 /// <ul>
 ///   <li>
 ///     Parameters:
@@ -991,15 +1016,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///     authorizationData:    authorization data
 ///   </li>
 ///   <li>
-///     locationEnabled:      hould location be enabled at start - this will show the location prompt on start of the session
-///   </li>
-///   <li>
-///     pushEnabled:          should push be enabled at start - this will show the notifications prompt on start of the
-///     session
-///   </li>
-///   <li>
-///     isPulsateAppDelegate: should Pulsate be the main App Delegate - by default Pulsate is the AppDelegate, if you set
-///     Pulsate to not be the AppDelegate you will need to redirect all needed callbacks to Pulsate
+///     isPulsateAppDelegate: <code>true</code> makes Pulsate replace <code>UIApplication.shared.delegate</code>
 ///   </li>
 ///   <li>
 ///     error:                error
@@ -1008,7 +1025,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions withPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("withPulsateAppDelegate will be removed in a future major release, together with Pulsate acting as your app delegate. Call getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:) - the same as passing withPulsateAppDelegate: false - and forward the push callbacks to getPulsateSystemManager(). Foreground/background need no forwarding since 4.10.0.");
 /// Creates pulsate manager instance with given API keys. If an instance already exists
 /// it returns it instead.
 /// <ul>
@@ -1031,7 +1048,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 ///
 /// returns:
 /// returns Pulsate Manager instance
-+ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
++ (PULPulsateManager * _Nullable)getInstanceWithAuthorizationData:(PULAuthorizationData * _Nullable)authorizationData withLaunchOptions:(NSDictionary * _Nullable)launchOptions error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Pulsate acting as your app delegate is deprecated and will be removed in a future major release. Call getInstance(withAuthorizationData:withLaunchOptions:andPulsateNotificationDelegate:) and forward the push callbacks to getPulsateSystemManager(). Foreground/background need no forwarding since 4.10.0.");
 + (PULPulsateManager * _Nullable)getDefaultInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1550,7 +1567,7 @@ SWIFT_CLASS("_TtC10PULPulsate21PULSwipeToHideManager")
 SWIFT_CLASS("_TtC10PULPulsate16PULSystemManager")
 @interface PULSystemManager : NSObject <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-- (nonnull instancetype)initWithPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPulsateAppDelegate:(BOOL)isPulsateAppDelegate andPulsateNotificationDelegate:(BOOL)isPulsateNotificationDelegate;
 /// Gets device information with real-time accurate push permissions (UI-safe)
 /// Returns instantly with automatically maintained up-to-date permission status<br/>
 /// Push permissions are kept fresh by intelligent background updates

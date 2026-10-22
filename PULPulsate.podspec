@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'PULPulsate'
-  s.version     = '4.10.0'
+  s.version     = '4.10.1'
   s.summary     = 'Pulsate SDK'
   s.description = 'Pulsate SDK for iOS - Mobile engagement platform for push notifications, in-app messaging, and location-based marketing.'
 

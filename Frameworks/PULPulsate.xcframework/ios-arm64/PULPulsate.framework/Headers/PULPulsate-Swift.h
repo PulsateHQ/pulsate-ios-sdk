@@ -801,7 +801,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat maxHeightRat
 /// Corner radius for big in-app message cards
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat bigCardCornerRadius;)
 + (CGFloat)bigCardCornerRadius SWIFT_WARN_UNUSED_RESULT;
-/// Background alpha for big in-app message overlay
+/// Default background alpha for big in-app message overlay
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat overlayBackgroundAlpha;)
 + (CGFloat)overlayBackgroundAlpha SWIFT_WARN_UNUSED_RESULT;
 /// Border width for close button
@@ -813,7 +813,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat singleButton
 /// Height for double button layout
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat doubleButtonHeight;)
 + (CGFloat)doubleButtonHeight SWIFT_WARN_UNUSED_RESULT;
-/// Background color for big in-app message overlay
+/// Background color for big in-app message overlay: the
+/// <code>pulsate_big_in_app_message_overlay_color</code> config color (<code>#AARRGGBB</code>, as on Android),
+/// or black at <code>overlayBackgroundAlpha</code> when none is set
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull overlayBackgroundColor;)
 + (UIColor * _Nonnull)overlayBackgroundColor SWIFT_WARN_UNUSED_RESULT;
 /// Border color for close button
@@ -1356,6 +1358,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull fake
 - (void)setBigInAppHeaderColor:(UIColor * _Nonnull)color;
 /// Sets the background color for big in-app notifications
 - (void)setBigInAppMessageBackgroundColor:(UIColor * _Nonnull)color;
+/// Sets the color of the dimmed overlay behind big in-app notifications.
+/// Its alpha sets how much of the app shows through, e.g. black at 0.5 alpha.
+- (void)setBigInAppMessageOverlayColor:(UIColor * _Nonnull)color;
 /// Sets the primary button color in big in-app notifications
 - (void)setBigInAppOneButtonColor:(UIColor * _Nonnull)color;
 /// Sets the primary button text color in big in-app notifications
@@ -1642,6 +1647,7 @@ SWIFT_CLASS("_TtC10PULPulsate21PULThemeConfiguration")
 @property (nonatomic, strong) UIColor * _Nullable smallInAppMessageBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppHeaderColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable bigInAppMessageOverlayColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonBackgroundColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppMessageButtonTextColor;
 @property (nonatomic, strong) UIColor * _Nullable bigInAppOneButtonColor;
@@ -1666,6 +1672,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey 
 + (PULThemeKey * _Nonnull)bigInAppHeader SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageBackground;)
 + (PULThemeKey * _Nonnull)bigInAppMessageBackground SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageOverlay;)
++ (PULThemeKey * _Nonnull)bigInAppMessageOverlay SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonBackground;)
 + (PULThemeKey * _Nonnull)bigInAppMessageButtonBackground SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PULThemeKey * _Nonnull bigInAppMessageButtonText;)

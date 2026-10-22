@@ -22299,6 +22299,35 @@
           },
           {
             "kind": "Function",
+            "name": "setBigInAppMessageOverlayColor",
+            "printedName": "setBigInAppMessageOverlayColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PULPulsate@objc(cs)PULPulsateManager(im)setBigInAppMessageOverlayColor:",
+            "mangledName": "$s10PULPulsate0A7ManagerC30setBigInAppMessageOverlayColoryySo7UIColorCF",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setBigInAppOneButtonColor",
             "printedName": "setBigInAppOneButtonColor(_:)",
             "children": [
@@ -43844,6 +43873,59 @@
           },
           {
             "kind": "Var",
+            "name": "bigInAppMessageOverlay",
+            "printedName": "bigInAppMessageOverlay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PULThemeKey",
+                "printedName": "PULPulsate.PULThemeKey",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cpy)bigInAppMessageOverlay",
+            "mangledName": "$s10PULPulsate11PULThemeKeyC22bigInAppMessageOverlayACvpZ",
+            "moduleName": "PULPulsate",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PULThemeKey",
+                    "printedName": "PULPulsate.PULThemeKey",
+                    "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeKey(cm)bigInAppMessageOverlay",
+                "mangledName": "$s10PULPulsate11PULThemeKeyC22bigInAppMessageOverlayACvgZ",
+                "moduleName": "PULPulsate",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "bigInAppMessageButtonBackground",
             "printedName": "bigInAppMessageButtonBackground",
             "children": [
@@ -45534,6 +45616,123 @@
                 "declKind": "Accessor",
                 "usr": "s:10PULPulsate21PULThemeConfigurationC30bigInAppMessageBackgroundColorSo7UIColorCSgvM",
                 "mangledName": "$s10PULPulsate21PULThemeConfigurationC30bigInAppMessageBackgroundColorSo7UIColorCSgvM",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bigInAppMessageOverlayColor",
+            "printedName": "bigInAppMessageOverlayColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(py)bigInAppMessageOverlayColor",
+            "mangledName": "$s10PULPulsate21PULThemeConfigurationC27bigInAppMessageOverlayColorSo7UIColorCSgvp",
+            "moduleName": "PULPulsate",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)bigInAppMessageOverlayColor",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC27bigInAppMessageOverlayColorSo7UIColorCSgvg",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PULPulsate@objc(cs)PULThemeConfiguration(im)setBigInAppMessageOverlayColor:",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC27bigInAppMessageOverlayColorSo7UIColorCSgvs",
+                "moduleName": "PULPulsate",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PULPulsate21PULThemeConfigurationC27bigInAppMessageOverlayColorSo7UIColorCSgvM",
+                "mangledName": "$s10PULPulsate21PULThemeConfigurationC27bigInAppMessageOverlayColorSo7UIColorCSgvM",
                 "moduleName": "PULPulsate",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -52141,7 +52340,7 @@
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 8,
-      "value": "\"4.10.0\""
+      "value": "\"4.10.1\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/PULConstants.swift",
@@ -53903,49 +54102,49 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 987,
+      "offset": 995,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1091,
+      "offset": 1099,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1190,
+      "offset": 1198,
       "length": 2,
       "value": "68"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1290,
+      "offset": 1298,
       "length": 3,
       "value": "114"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1466,
+      "offset": 1647,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1476,
+      "offset": 1657,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Utils\/Theme\/PULInAppThemeConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1485,
+      "offset": 1666,
       "length": 1,
       "value": "0"
     },
@@ -57550,70 +57749,77 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1134,
+      "length": 42,
+      "value": "\"pulsate_big_in_app_message_overlay_color\""
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 1252,
       "length": 52,
       "value": "\"pulsate_big_in_app_message_button_background_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1265,
+      "offset": 1374,
       "length": 57,
       "value": "\"pulsate_big_in_app_message_button_background_text_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1384,
+      "offset": 1493,
       "length": 34,
       "value": "\"pulsate_big_in_app_one_btn_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1484,
+      "offset": 1593,
       "length": 34,
       "value": "\"pulsate_big_in_app_one_txt_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1580,
+      "offset": 1689,
       "length": 34,
       "value": "\"pulsate_big_in_app_two_btn_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1680,
+      "offset": 1789,
       "length": 34,
       "value": "\"pulsate_big_in_app_two_txt_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1783,
+      "offset": 1892,
       "length": 42,
       "value": "\"pulsate_big_in_app_two_btn_outline_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 2039,
       "length": 49,
       "value": "\"pulsate_no_internet_connection_background_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2157,
       "length": 43,
       "value": "\"pulsate_no_internet_connection_text_color\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Pulsate\/Manager\/PULPulsateManagerTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2161,
+      "offset": 2270,
       "length": 44,
       "value": "\"pulsate_no_internet_connection_cross_color\""
     },
@@ -57751,6 +57957,13 @@
       "value": "3"
     },
     {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULImageIdentity.swift",
+      "kind": "Array",
+      "offset": 1387,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULDiagnosticSnapshot.swift",
       "kind": "IntegerLiteral",
       "offset": 5256,
@@ -57774,35 +57987,133 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
       "kind": "IntegerLiteral",
-      "offset": 814,
+      "offset": 965,
       "length": 3,
       "value": "512"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1024,
-      "length": 3,
-      "value": "256"
+      "offset": 1312,
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1339,
+      "offset": 1637,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1758,
       "length": 5,
       "value": "\"...\""
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1694,
+      "offset": 1883,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1925,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3115,
+      "length": 3,
+      "value": "-10"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3145,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3173,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3202,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3230,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3258,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3289,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3318,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3346,
+      "length": 2,
+      "value": "70"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3378,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3846,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4018,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULEvidenceLine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4258,
       "length": 1,
       "value": "0"
     },
@@ -57823,21 +58134,21 @@
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULCrashReportMapper.swift",
       "kind": "Dictionary",
-      "offset": 6190,
+      "offset": 6478,
       "length": 379,
       "value": "[(1, \"EXC_BAD_ACCESS\"), (2, \"EXC_BAD_INSTRUCTION\"), (3, \"EXC_ARITHMETIC\"), (4, \"EXC_EMULATION\"), (5, \"EXC_SOFTWARE\"), (6, \"EXC_BREAKPOINT\"), (7, \"EXC_SYSCALL\"), (8, \"EXC_MACH_SYSCALL\"), (9, \"EXC_RPC_ALERT\"), (10, \"EXC_CRASH\"), (11, \"EXC_RESOURCE\"), (12, \"EXC_GUARD\"), (13, \"EXC_CORPSE_NOTIFY\")]"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULCrashReportMapper.swift",
       "kind": "Dictionary",
-      "offset": 6643,
+      "offset": 6931,
       "length": 520,
       "value": "[(1, \"SIGHUP\"), (2, \"SIGINT\"), (3, \"SIGQUIT\"), (4, \"SIGILL\"), (5, \"SIGTRAP\"), (6, \"SIGABRT\"), (7, \"SIGEMT\"), (8, \"SIGFPE\"), (9, \"SIGKILL\"), (10, \"SIGBUS\"), (11, \"SIGSEGV\"), (12, \"SIGSYS\"), (13, \"SIGPIPE\"), (14, \"SIGALRM\"), (15, \"SIGTERM\"), (16, \"SIGURG\"), (17, \"SIGSTOP\"), (18, \"SIGTSTP\"), (19, \"SIGCONT\"), (20, \"SIGCHLD\"), (21, \"SIGTTIN\"), (22, \"SIGTTOU\"), (23, \"SIGIO\"), (24, \"SIGXCPU\"), (25, \"SIGXFSZ\"), (26, \"SIGVTALRM\"), (27, \"SIGPROF\"), (28, \"SIGWINCH\"), (29, \"SIGINFO\"), (30, \"SIGUSR1\"), (31, \"SIGUSR2\")]"
     },
     {
       "filePath": "\/Users\/rafaelskubisz\/Development\/PulsateProjects\/PulsateMobile\/Pulsate-iOS-SDK-Source-Refactored\/PULPulsate\/PULPulsate\/Features\/Diagnostics\/PULCrashReportMapper.swift",
       "kind": "Array",
-      "offset": 10912,
+      "offset": 11324,
       "length": 2,
       "value": "[]"
     },

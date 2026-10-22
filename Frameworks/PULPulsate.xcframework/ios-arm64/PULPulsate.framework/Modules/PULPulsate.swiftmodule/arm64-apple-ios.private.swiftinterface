@@ -951,6 +951,7 @@ extension PULPulsate.Reachability {
   @objc public static let smallInAppMessageBackground: PULPulsate.PULThemeKey
   @objc public static let bigInAppHeader: PULPulsate.PULThemeKey
   @objc public static let bigInAppMessageBackground: PULPulsate.PULThemeKey
+  @objc public static let bigInAppMessageOverlay: PULPulsate.PULThemeKey
   @objc public static let bigInAppMessageButtonBackground: PULPulsate.PULThemeKey
   @objc public static let bigInAppMessageButtonText: PULPulsate.PULThemeKey
   @objc public static let bigInAppOneButton: PULPulsate.PULThemeKey
@@ -973,6 +974,7 @@ extension PULPulsate.Reachability {
   @objc public var smallInAppMessageBackgroundColor: UIKit.UIColor?
   @objc public var bigInAppHeaderColor: UIKit.UIColor?
   @objc public var bigInAppMessageBackgroundColor: UIKit.UIColor?
+  @objc public var bigInAppMessageOverlayColor: UIKit.UIColor?
   @objc public var bigInAppMessageButtonBackgroundColor: UIKit.UIColor?
   @objc public var bigInAppMessageButtonTextColor: UIKit.UIColor?
   @objc public var bigInAppOneButtonColor: UIKit.UIColor?
@@ -991,6 +993,7 @@ extension PULPulsate.Reachability {
   @objc dynamic public func setSmallInAppMessageBackgroundColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppHeaderColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppMessageBackgroundColor(_ color: UIKit.UIColor)
+  @objc dynamic public func setBigInAppMessageOverlayColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppOneButtonColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppOneButtonTextColor(_ color: UIKit.UIColor)
   @objc dynamic public func setBigInAppTwoButtonColor(_ color: UIKit.UIColor)

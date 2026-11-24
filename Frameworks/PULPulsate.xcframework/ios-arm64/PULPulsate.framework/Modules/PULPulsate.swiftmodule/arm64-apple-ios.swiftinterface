@@ -14,6 +14,7 @@ import Network
 import OSLog
 import ObjectiveC
 @_exported import PULPulsate
+import SafariServices
 import Swift
 import SystemConfiguration
 import UIKit
@@ -23,6 +24,15 @@ import UserNotificationsUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public enum PULUrlOpenMode : Swift.Int {
+  case pulExternal = 0
+  case pulInApp = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency public func remove()
@@ -428,6 +438,9 @@ public typealias Completion = () -> Swift.Void
   @objc public func getUseInitialsForUserAvatar() -> Swift.Bool
   @objc public func setCrashReportingEnabled(_ enabled: Swift.Bool)
   @objc public func isCrashReportingEnabled() -> Swift.Bool
+  @objc public func setUrlOpenMode(_ mode: PULPulsate.PULUrlOpenMode)
+  @objc public func getUrlOpenMode() -> PULPulsate.PULUrlOpenMode
+  @objc public func openUrl(_ url: Swift.String) -> Swift.Bool
   @objc public func setLocationUpdatesEnabled(_ enabled: Swift.Bool)
   @objc public func isLocationEnabled() -> Swift.Bool
   @objc public func setBuildEnvironment(isDebug enabled: Swift.Bool)
@@ -1061,6 +1074,9 @@ extension PULPulsate.PULDBUserAction {
   @objc override dynamic public init()
   @objc deinit
 }
+extension PULPulsate.PULUrlOpenMode : Swift.Equatable {}
+extension PULPulsate.PULUrlOpenMode : Swift.Hashable {}
+extension PULPulsate.PULUrlOpenMode : Swift.RawRepresentable {}
 extension PULPulsate.PULTextStyle : Swift.Equatable {}
 extension PULPulsate.PULTextStyle : Swift.Hashable {}
 extension PULPulsate.PULTextStyle : Swift.RawRepresentable {}

@@ -988,6 +988,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 /// Forward <code>application(_:didRegisterForRemoteNotificationsWithDeviceToken:)</code>,
 /// <code>application(_:didFailToRegisterForRemoteNotificationsWithError:)</code> and
 /// <code>application(_:didReceiveRemoteNotification:fetchCompletionHandler:)</code> to <code>getPulsateSystemManager()</code>.
+/// Pulsate calls the completion handler of every push you forward at most once, so don’t also call
+/// it yourself: forward only pushes whose <code>sender</code> is <code>Pulsate</code> or <code>PulsateDebug</code> if you handle the rest.
+/// When iOS suspended the app past its 30-second budget for a push, Pulsate drops that push’s
+/// handler uncalled, so don’t rely on the call if you wrap the handler for your own bookkeeping.
 /// Foreground and background need no forwarding.
 /// \param authorizationData authorization data
 ///
@@ -1056,6 +1060,7 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateFactory")
 @end
 
 @protocol PULPulsateUnauthorizedManagerDelegate;
+SWIFT_ENUM_FWD_DECL(NSInteger, PULUrlOpenMode)
 SWIFT_ENUM_FWD_DECL(NSInteger, PULUserGender)
 @class NSDecimalNumber;
 @class PULRevenueEvent;
@@ -1070,6 +1075,10 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// Starts Pulsate session lifecycle for given user (alias). If location and push were set as enabled it’ll show the prompts to the user.
 /// Session starts when the app enters foreground and ends when it goes to background.
 - (void)startPulsateSessionForAlias:(NSString * _Nonnull)alias debugMode:(BOOL)debugMode withListener:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
+/// Resets the badge and removes every pending and delivered notification your app has - your
+/// own scheduled and delivered notifications and other SDKs’ included, not only Pulsate’s.
+/// Logout and starting a session for a different alias do not call this: they remove only
+/// Pulsate’s delivered notifications and reset the badge, leaving yours in place.
 - (void)clearAllNotifications;
 /// Logs out the current user
 - (void)logout:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
@@ -1122,6 +1131,42 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// whatever this returns. <code>set(x)</code> then <code>is()</code> must equal <code>x</code>, or a partner’s settings toggle
 /// flips back on its own on older devices.
 - (BOOL)isCrashReportingEnabled SWIFT_WARN_UNUSED_RESULT;
+/// Sets where the SDK opens the http/https links it handles: a push or push button with a URL
+/// destination, a URL button on an in-app message or Feed card, and a link inside the Feed.
+/// <code>pulExternal</code>, the default, opens them outside your app with <code>UIApplication.open</code>. <code>pulInApp</code>
+/// opens them in an <code>SFSafariViewController</code> on top of your app; closing it returns to where the
+/// user was. A URL push tapped while your app was not running shows the browser once your first
+/// screen is up.
+/// <code>pulInApp</code> never applies to <code>deeplink</code> destinations, which keep opening with
+/// <code>UIApplication.open</code> whatever their scheme so your Universal Links still route into your app,
+/// nor to <code>tel:</code>, <code>mailto:</code> or custom-scheme links. A <code>url</code> destination on your own Universal
+/// Link domain does open in the in-app browser: route it into your app from your link listener
+/// (<code>setPULPulsateLinkListener</code>), which still runs first in both modes. When the in-app browser
+/// can’t be shown, the link opens as under <code>pulExternal</code>.
+/// Feed links carry no <code>url</code> or <code>deeplink</code> type, so under <code>pulInApp</code> every http/https link in
+/// the Feed, including a Feed card’s https deeplink, opens in the in-app browser. To keep such a
+/// link out of it, use a custom-scheme deeplink or handle it in your link listener.
+/// The choice is stored on the device and survives restarts, updates and credential changes, so
+/// call it once, for example in <code>application(_:didFinishLaunchingWithOptions:)</code>.
+- (void)setUrlOpenMode:(enum PULUrlOpenMode)mode;
+/// The stored URL Open Mode: what was last passed to <code>setUrlOpenMode(_:)</code>, or <code>pulExternal</code> if it
+/// was never called.
+- (enum PULUrlOpenMode)getUrlOpenMode SWIFT_WARN_UNUSED_RESULT;
+/// Opens <code>url</code> the way the SDK opens a push or CTA <code>url</code> destination, following the URL Open
+/// Mode: in an <code>SFSafariViewController</code> under <code>pulInApp</code>, and outside your app with
+/// <code>UIApplication.open</code> under <code>pulExternal</code> or when the in-app browser can’t be shown.
+/// Use it for links your own code received, typically ones your link listener returned <code>true</code>
+/// for and handed to another layer, as a React Native or Flutter bridge does. The link listener
+/// is not called for it.
+/// Only http/https URLs with a host open. The SDK doesn’t know whether <code>url</code> came from a <code>url</code>
+/// or a <code>deeplink</code> destination, so it always treats it as a <code>url</code> one: route your own Universal
+/// Links into your app before calling this. Call it while your app is in the foreground. It can
+/// be called from any thread.
+///
+/// returns:
+/// <code>true</code> when the SDK started opening the link, whatever the route; <code>false</code> when
+/// <code>url</code> is not an http/https URL with a host, in which case nothing opens.
+- (BOOL)openUrl:(NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 /// Enables or Disables the Geofencing.
 /// By default enabled.
 - (void)setLocationUpdatesEnabled:(BOOL)enabled;
@@ -1312,10 +1357,29 @@ SWIFT_CLASS("_TtC10PULPulsate17PULPulsateManager")
 /// Shows the last in app notification. In App Notification need to be enabled.
 /// To enable in app notifications use enableInAppNotification(BOOL).
 - (id <UIApplicationDelegate, UNUserNotificationCenterDelegate> _Nullable)getPulsateSystemManager SWIFT_WARN_UNUSED_RESULT;
-/// Sends a request to the server to get the Pulsate badge count.
-/// The badge count will be returned in the PULPulsateBadgeDelegate badgeUpdated callback.
+/// Sends the pending stats and attributes to the server, then calls the listener. Call it from
+/// your background fetch.
+/// The listener is called only once the requests in flight with pending stats when it syncs
+/// are answered too, waiting at most 25 seconds after each was sent. When it waits, it is
+/// called on the main queue.
 - (void)startBackgroundUpdates:(void (^ _Nonnull)(BOOL, NSError * _Nullable))listener;
 /// Use PulsateLinkListener to listen links coming in compaigns. Return true if link already handeld otherwise return false so pulsate can handle.
+/// The listener is called on the main thread before the SDK opens any link from a push, a push
+/// button, an in-app message or Feed card CTA, or a link inside the Feed, in both URL Open Modes.
+/// Return <code>true</code> and the SDK opens nothing. Return <code>false</code> and the SDK opens it:
+/// <ul>
+///   <li>
+///     <code>pulExternal</code> (the default), and every link <code>pulInApp</code> doesn’t cover: <code>UIApplication.open</code>.
+///   </li>
+///   <li>
+///     <code>pulInApp</code>, for http/https links from <code>url</code> destinations and from the Feed: an
+///     <code>SFSafariViewController</code> presented on top of your app, or <code>UIApplication.open</code> if it can’t
+///     be shown.
+///   </li>
+/// </ul>
+/// <code>pulInApp</code> never covers <code>deeplink</code> destinations (even https ones), <code>tel:</code>, <code>mailto:</code> or custom
+/// schemes. It does cover a <code>url</code> destination on your own Universal Link domain: return <code>true</code>
+/// for it here and route it into your app yourself.
 /// \param listener 
 ///
 - (void)setPULPulsateLinkListener:(BOOL (^ _Nonnull)(NSString * _Nonnull))listener;
@@ -1704,6 +1768,18 @@ SWIFT_CLASS("_TtC10PULPulsate20PULTopViewController")
 + (UIViewController * _Nullable)unwrapTopMostViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+/// Where the SDK opens the http/https links it handles: a push or push button with a URL destination,
+/// a URL button on an in-app message or Feed card, and a link inside the Feed.
+/// Set it with <code>PULPulsateManager.setUrlOpenMode(_:)</code>. The choice is stored on the device.
+typedef SWIFT_ENUM(NSInteger, PULUrlOpenMode, open) {
+/// The default: links open outside your app, with <code>UIApplication.open</code>.
+  PULUrlOpenModePulExternal = 0,
+/// Links open in an <code>SFSafariViewController</code> on top of your app. <code>deeplink</code> destinations and
+/// non-http schemes (<code>tel:</code>, <code>mailto:</code>, custom schemes) still open as in <code>pulExternal</code>. When the
+/// in-app browser can’t be shown, the link opens as in <code>pulExternal</code>.
+  PULUrlOpenModePulInApp = 1,
+};
 
 SWIFT_CLASS("_TtC10PULPulsate7PULUser")
 @interface PULUser : NSObject <PULJSONSerializable>
